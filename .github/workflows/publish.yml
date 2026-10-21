@@ -1,8 +1,11 @@
 name: Daily editorial publication
 on:
   schedule:
-    - cron: '15 4 * * *'
+    - cron: '15 4,13 * * *'
   workflow_dispatch:
+concurrency:
+  group: techpulse-publish
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
