@@ -32,6 +32,28 @@ for (const topic of topics) {
     }
   } catch (e) { console.warn('RSS unavailable:', topic, e.message); }
 }
+// Publisher RSS feeds expose direct article URLs; Google News RSS URLs often do not.
+const publisherFeeds=[
+ 'https://techcrunch.com/feed/',
+ 'https://www.theverge.com/rss/index.xml',
+ 'https://www.engadget.com/rss.xml',
+ 'https://www.wired.com/feed/rss',
+ 'https://arstechnica.com/feed/'
+];
+for(const feed of publisherFeeds){
+ try{
+  const response=await fetch(feed,{headers:{'User-Agent':'Mozilla/5.0 TechPulseEditorial/1.0'},signal:AbortSignal.timeout(9000)});
+  if(!response.ok)continue;
+  const xml=await response.text();
+  for(const match of xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/g)){
+   const item=match[1],title=extract(item,'title'),link=extract(item,'link'),date=extract(item,'pubDate');
+   const timestamp=Date.parse(date);
+   if(!title||!/^https:\/\//.test(link)||!Number.isFinite(timestamp)||Date.now()-timestamp>3*86400000||timestamp>Date.now()+3600000)continue;
+   if(headlines.some(h=>h.title.toLowerCase()===title.toLowerCase()))continue;
+   headlines.push({title,url:link,published:new Date(timestamp).toISOString().slice(0,10)});
+  }
+ }catch(error){console.warn('Publisher RSS unavailable:',feed,error.message)}
+}
 // Fetch readable excerpts from original publishers where Google News exposes their URLs.
 // Reject sources with no verifiable article text; a headline alone is insufficient.
 const stripHtml=html=>html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();
