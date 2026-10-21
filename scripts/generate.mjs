@@ -65,16 +65,40 @@ const reviewPrompt = [
   'SOURCE: ' + JSON.stringify(sourceHeadline),
   'DRAFT: ' + JSON.stringify(a)
 ].join('\\n');
-const check = await fetch('https://api.openai.com/v1/chat/completions', {
-  method: 'POST',
-  headers: {Authorization: 'Bearer ' + key, 'Content-Type': 'application/json'},
-  body: JSON.stringify({model: process.env.OPENAI_MODEL || 'gpt-4.1-mini', response_format: {type: 'json_object'}, temperature: 0, messages: [{role: 'system', content: 'You are a skeptical fact-checker. Output JSON only.'}, {role: 'user', content: reviewPrompt}]})
-});
-if (!check.ok) throw Error('Editorial verification API failed: ' + await check.text());
-const verdict = JSON.parse((await check.json()).choices[0].message.content);
-if (verdict.approved !== true || !Array.isArray(verdict.issues) || verdict.issues.length) {
-  throw Error('Editorial review rejected draft: ' + JSON.stringify(verdict.issues || ['not approved']));
+async function chatJson(messages) {
+  const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {Authorization: 'Bearer ' + key, 'Content-Type': 'application/json'},
+    body: JSON.stringify({model: process.env.OPENAI_MODEL || 'gpt-4.1-mini', response_format: {type: 'json_object'}, temperature: 0, messages})
+  });
+  if (!response.ok) throw Error('Editorial API failed: ' + await response.text());
+  return JSON.parse((await response.json()).choices[0].message.content);
 }
+const review = draft => chatJson([
+  {role: 'system', content: 'You are a skeptical fact-checker. Output JSON only.'},
+  {role: 'user', content: reviewPrompt.replace('DRAFT: ' + JSON.stringify(a), 'DRAFT: ' + JSON.stringify(draft))}
+]);
+const valid = draft => /^[a-z0-9-]{8,110}$/.test(draft.slug || '') && !!draft.title && !!draft.description &&
+  Array.isArray(draft.sections) && draft.sections.length >= 3 && draft.sections.length <= 5 &&
+  draft.sections.every(x => x.heading && Array.isArray(x.paragraphs) && x.paragraphs.length >= 2 && x.paragraphs.every(p => typeof p === 'string' && p.length >= 70)) &&
+  Array.isArray(draft.sources) && draft.sources.length === 1 && draft.sources[0].title === source.title &&
+  draft.sources[0].url === source.url && draft.sources[0].published === source.published;
+let draft = a;
+let verdict = await review(draft);
+for (let attempt = 0; attempt < 2 && (verdict.approved !== true || !Array.isArray(verdict.issues) || verdict.issues.length); attempt++) {
+  console.log('Editorial rewrite attempt', attempt + 1, JSON.stringify(verdict.issues || []));
+  const revised = await chatJson([
+    {role: 'system', content: 'You are a careful Russian technology news editor. Output JSON only.'},
+    {role: 'user', content: 'Rewrite this article to address ALL fact-check issues. Only one news headline is known, not the full article. Remove unsupported specifics rather than inventing them. Keep 3-5 sections with at least two meaningful paragraphs each. Do not introduce new factual claims. Preserve slug, sources and date exactly. Return the full article JSON.\\nSOURCE: ' + JSON.stringify(sourceHeadline) + '\\nISSUES: ' + JSON.stringify(verdict.issues) + '\\nARTICLE: ' + JSON.stringify(draft)}
+  ]);
+  if (!valid(revised) || revised.slug !== a.slug || revised.date !== a.date) throw Error('Editorial rewrite returned invalid article');
+  draft = revised;
+  verdict = await review(draft);
+}
+if (verdict.approved !== true || !Array.isArray(verdict.issues) || verdict.issues.length) {
+  throw Error('Editorial review rejected after rewrites: ' + JSON.stringify(verdict.issues || ['not approved']));
+}
+Object.assign(a, draft);
 a.date = today;
 fs.writeFileSync('articles/' + a.slug + '.json', JSON.stringify(a, null, 2) + '\n');
 console.log('Created sourced news article:', a.title);
