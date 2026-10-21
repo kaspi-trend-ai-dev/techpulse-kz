@@ -54,6 +54,27 @@ const res = await fetch('https://api.openai.com/v1/chat/completions', {
 if (!res.ok) throw Error(await res.text());
 const a = JSON.parse((await res.json()).choices[0].message.content);
 if (!/^[a-z0-9-]{8,110}$/.test(a.slug || '') || !a.title || !a.description || !Array.isArray(a.sections) || a.sections.length < 3 || a.sections.length > 5 || a.sections.some(s => !s.heading || !Array.isArray(s.paragraphs) || s.paragraphs.length < 2 || s.paragraphs.some(p => typeof p !== 'string' || p.length < 70)) || !Array.isArray(a.sources) || a.sources.length !== 1 || !headlines.some(h => h.title === a.sources[0].title && h.url === a.sources[0].url && h.published === a.sources[0].published) || existing.some(e => e.title.toLowerCase() === a.title.toLowerCase()) || fs.existsSync('articles/' + a.slug + '.json')) throw Error('Invalid, unsourced or duplicate article');
+// Independent editorial review: a news headline is not evidence for unmentioned details.
+const source = a.sources[0];
+const sourceHeadline = headlines.find(h => h.title === source.title && h.url === source.url);
+const reviewPrompt = [
+  'Act as a strict fact-checking editor. The ONLY available evidence is one news headline and its publication date. No full article, press release or official confirmation has been read.',
+  'Check EVERY factual claim in the Russian draft (including headline, description, sections) against the source headline. Do not infer additional announcements, other devices, dates, prices, quotes, sources, or certainty from background knowledge.',
+  'A claim may be accepted only if directly supported by the headline or explicitly framed as general opinion/uncertainty. If the draft says officially confirmed without the source headline proving it, reject. If it cites outlets not in the source, reject.',
+  'Respond as JSON with approved (boolean), issues (array of strings). Be strict.',
+  'SOURCE: ' + JSON.stringify(sourceHeadline),
+  'DRAFT: ' + JSON.stringify(a)
+].join('\\n');
+const check = await fetch('https://api.openai.com/v1/chat/completions', {
+  method: 'POST',
+  headers: {Authorization: 'Bearer ' + key, 'Content-Type': 'application/json'},
+  body: JSON.stringify({model: process.env.OPENAI_MODEL || 'gpt-4.1-mini', response_format: {type: 'json_object'}, temperature: 0, messages: [{role: 'system', content: 'You are a skeptical fact-checker. Output JSON only.'}, {role: 'user', content: reviewPrompt}]})
+});
+if (!check.ok) throw Error('Editorial verification API failed: ' + await check.text());
+const verdict = JSON.parse((await check.json()).choices[0].message.content);
+if (verdict.approved !== true || !Array.isArray(verdict.issues) || verdict.issues.length) {
+  throw Error('Editorial review rejected draft: ' + JSON.stringify(verdict.issues || ['not approved']));
+}
 a.date = today;
 fs.writeFileSync('articles/' + a.slug + '.json', JSON.stringify(a, null, 2) + '\n');
 console.log('Created sourced news article:', a.title);
