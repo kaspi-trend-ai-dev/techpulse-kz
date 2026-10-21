@@ -53,7 +53,42 @@ const res = await fetch('https://api.openai.com/v1/chat/completions', {
 });
 if (!res.ok) throw Error(await res.text());
 const a = JSON.parse((await res.json()).choices[0].message.content);
-if (!/^[a-z0-9-]{8,110}$/.test(a.slug || '') || !a.title || !a.description || !Array.isArray(a.sections) || a.sections.length < 3 || a.sections.length > 5 || a.sections.some(s => !s.heading || !Array.isArray(s.paragraphs) || s.paragraphs.length < 2 || s.paragraphs.some(p => typeof p !== 'string' || p.length < 70)) || !Array.isArray(a.sources) || a.sources.length !== 1 || !headlines.some(h => h.title === a.sources[0].title && h.url === a.sources[0].url && h.published === a.sources[0].published) || existing.some(e => e.title.toLowerCase() === a.title.toLowerCase()) || fs.existsSync('articles/' + a.slug + '.json')) throw Error('Invalid, unsourced or duplicate article');
+const slugify = value => String(value || '').toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 100);
+const structuralIssues = article => {
+  const issues = [];
+  if (!article || typeof article !== 'object') return ['response is not an object'];
+  if (!article.title || typeof article.title !== 'string') issues.push('missing title');
+  if (!article.description || typeof article.description !== 'string') issues.push('missing description');
+  if (!Array.isArray(article.sections) || article.sections.length < 3 || article.sections.length > 5) issues.push('sections count must be 3-5');
+  else article.sections.forEach((section, index) => {
+    if (!section.heading) issues.push('section ' + index + ' missing heading');
+    if (!Array.isArray(section.paragraphs) || section.paragraphs.length < 2) issues.push('section ' + index + ' needs 2 paragraphs');
+    else if (section.paragraphs.some(p => typeof p !== 'string' || p.trim().length < 70)) issues.push('section ' + index + ' has short/invalid paragraphs');
+  });
+  if (!Array.isArray(article.sources) || article.sources.length !== 1 || !headlines.some(h => h.title === article.sources[0]?.title && h.url === article.sources[0]?.url && h.published === article.sources[0]?.published)) issues.push('source not found in fetched headlines');
+  if (!/^[a-z0-9-]{8,110}$/.test(article.slug || '')) issues.push('invalid slug');
+  if (existing.some(e => e.title.toLowerCase() === String(article.title || '').toLowerCase())) issues.push('duplicate title');
+  if (fs.existsSync('articles/' + article.slug + '.json')) issues.push('duplicate slug');
+  return issues;
+};
+a.slug = slugify(a.slug);
+let initialIssues = structuralIssues(a);
+for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
+  console.warn('Draft structure correction', attempt + 1, JSON.stringify(initialIssues));
+  const correction = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {Authorization: 'Bearer ' + key, 'Content-Type': 'application/json'},
+    body: JSON.stringify({model: process.env.OPENAI_MODEL || 'gpt-4.1-mini', response_format: {type: 'json_object'}, messages: [
+      {role: 'system', content: 'Repair the JSON structure only. Do not add factual claims. Output JSON.'},
+      {role: 'user', content: 'Fix these validation problems: ' + JSON.stringify(initialIssues) + '. Choose exactly one source from this list, copying title/url/published byte for byte: ' + JSON.stringify(headlines.slice(0,45)) + '. Avoid published titles: ' + JSON.stringify(previous) + '. Return the complete corrected article JSON. Draft: ' + JSON.stringify(a)}
+    ]})});
+  if (!correction.ok) throw Error('Draft repair API failed: ' + await correction.text());
+  const fixed = JSON.parse((await correction.json()).choices[0].message.content);
+  fixed.slug = slugify(fixed.slug);
+  Object.assign(a, fixed);
+  initialIssues = structuralIssues(a);
+}
+if (initialIssues.length) throw Error('Draft validation failed after repair: ' + JSON.stringify(initialIssues));
 // Independent editorial review: a news headline is not evidence for unmentioned details.
 const source = a.sources[0];
 const sourceHeadline = headlines.find(h => h.title === source.title && h.url === source.url);
