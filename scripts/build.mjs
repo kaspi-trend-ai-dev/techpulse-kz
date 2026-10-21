@@ -39,7 +39,8 @@ async function findPhoto(a){
    const license=meta.LicenseShortName?.value||'';
    if(!info?.thumburl||!/^https:\/\//.test(info.thumburl)||!/CC BY|CC0|Public domain|PD-/i.test(license))continue;
    if(!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(info.thumburl))continue;
-   const file='photo-'+a.slug+'.jpg';
+   const extension=/\.png(?:\?|$)/i.test(info.thumburl)?'png':/\.webp(?:\?|$)/i.test(info.thumburl)?'webp':'jpg';
+   const file='photo-'+a.slug+'.'+extension;
    const photo=await fetch(info.thumburl,{signal:AbortSignal.timeout(15000)});
    if(!photo.ok||!/^image\//.test(photo.headers.get('content-type')||''))continue;
    const buffer=Buffer.from(await photo.arrayBuffer());
@@ -51,7 +52,7 @@ async function findPhoto(a){
   }
  }catch(error){console.warn('Image search skipped for',a.slug,error.message)}
 }
-await Promise.all(items.map(findPhoto));
+for(let i=0;i<items.length;i+=8)await Promise.all(items.slice(i,i+8).map(findPhoto));
 const img=a=>{const photo=photoMap.get(a.slug);return photo?`<img src="${url(photo.path)}" alt="Фото к статье: ${esc(a.title)}" loading="lazy" width="1200" height="800">`:`<img src="${url('/assets/'+visual(a)+'.svg')}" alt="Иллюстрация к статье: ${esc(a.title)}" loading="lazy" width="800" height="440">`};
 const credit=a=>{const photo=photoMap.get(a.slug);return photo?`Фото: <a href="${esc(photo.source)}" target="_blank" rel="noopener noreferrer">Wikimedia Commons · ${esc(photo.credit)}</a> · ${esc(photo.license)}`:'Тематическая иллюстрация · TechPulse'};
 const related=a=>items.filter(b=>b.slug!==a.slug).sort((x,y)=>Number(categoryOf(y)===categoryOf(a))-Number(categoryOf(x)===categoryOf(a))).slice(0,4);
