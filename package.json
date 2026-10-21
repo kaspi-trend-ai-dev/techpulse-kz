@@ -1,1 +1,15 @@
-{"name":"techpulse-kz","version":"0.1.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","generate":"node scripts/generate.mjs && npm run build"},"engines":{"node":">=20"}}
+{
+  "name": "techpulse-kz",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "generate": "node scripts/generate.mjs && npm run check",
+    "audit": "node scripts/audit.mjs",
+    "check": "npm run build && npm run audit"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
