@@ -32,8 +32,24 @@ for (const topic of topics) {
     }
   } catch (e) { console.warn('RSS unavailable:', topic, e.message); }
 }
+// Fetch readable excerpts from original publishers where Google News exposes their URLs.
+// Reject sources with no verifiable article text; a headline alone is insufficient.
+const stripHtml=html=>html.replace(/<script\\b[^>]*>[\\s\\S]*?<\\/script>/gi,' ').replace(/<style\\b[^>]*>[\\s\\S]*?<\\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\\s+/g,' ').trim();
+async function fetchEvidence(entry){
+ try{
+  const response=await fetch(entry.url,{redirect:'follow',headers:{'User-Agent':'Mozilla/5.0 (compatible; TechPulseEditorial/1.0)'},signal:AbortSignal.timeout(9000)});
+  if(!response.ok)return null;
+  const finalUrl=response.url;
+  if(new URL(finalUrl).hostname.endsWith('news.google.com'))return null;
+  if(!/^https:\/\//.test(finalUrl))return null;
+  const html=(await response.text()).slice(0,500000);
+  const text=stripHtml((html.match(/<article\\b[^>]*>[\\s\\S]*?<\\/article>/i)||[])[0]||html);
+  if(text.length<800)return null;
+  return {url:finalUrl,excerpt:text.slice(0,9500)};
+ }catch{return null}
+}
 // Rank current topics by recency, multiple independent headline mentions, and broad consumer interest.
-const normalize=s=>s.toLowerCase().replace(/\\s+-\\s+[^-]+$/,'').replace(/[^a-z0-9а-яё ]/gi,' ').replace(/\\s+/g,' ').trim();
+const normalize=s=>s.toLowerCase().replace(/\s+-\s+[^-]+$/,'').replace(/[^a-z0-9а-яё ]/gi,' ').replace(/\s+/g,' ').trim();
 const tokens=s=>new Set(normalize(s).split(' ').filter(w=>w.length>3&&!['about','after','with','from','will','that','this','technology','latest','news'].includes(w)));
 const similarity=(a,b)=>{const x=tokens(a),y=tokens(b);const shared=[...x].filter(w=>y.has(w)).length;return shared/Math.max(1,Math.min(x.size,y.size))};
 const publishedTitles=existing.map(x=>x.title);
@@ -44,18 +60,26 @@ const ranked=headlines.filter(h=>!publishedTitles.some(t=>similarity(h.title,t)>
  return {...h,score:Math.max(0,3-age)+Math.min(5,mentions*1.5)+relevance};
 }).sort((a,b)=>b.score-a.score);
 if (ranked.length < 5) throw Error('Not enough distinct recent news headlines; refusing to fabricate or repeat news');
+// Try high-ranked stories until one has substantive source evidence.
+const evidence=[];
+for(const item of ranked.slice(0,25)){
+ const found=await fetchEvidence(item);
+ if(found)evidence.push({...item,sourceUrl:found.url,excerpt:found.excerpt});
+ if(evidence.length>=8)break;
+}
+if(!evidence.length)throw Error('No readable full-source articles found; skip publishing rather than invent details');
 const previous = existing.slice(-100).map(a => a.title);
 const prompt = [
   'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана.',
   'Создай ОДНУ интересную, динамичную новостную статью на основе ТОЛЬКО приведённых ниже реальных заголовков новостной ленты за последние 3 дня. Новости отсортированы по актуальности, упоминаниям и интересу широкой аудитории.',
   'Выбери один конкретный инфоповод о популярных брендах, гаджетах, известных предпринимателях, ИИ или технологиях. Заголовок цепляющий, но правдивый, без кликбейта, преувеличений и неподтверждённых фактов.',
-  'ВАЖНО: доступны лишь заголовки, даты и ссылки, не полные тексты. Не утверждай детали, которых нет в заголовке; прямо атрибутируй информацию источнику, отличай факты от контекста и мнений. Не выдумывай цитаты, цифры, спецификации, цены, даты релизов или действия знаменитостей. Не пиши будто тестировал устройство.',
+  'Доступны выдержки из текстов первоисточников. Используй только явно подтверждённые ими факты; не придумывай цитаты, цифры, характеристики, даты и заявления. Различай официальное подтверждение и сообщения журналистов. Не пиши будто тестировал устройство.',
   'Вместо вымышленных подробностей объясни, почему событие важно, что пока неизвестно, и что стоит проверить дальше. Никаких слухов как установленных фактов.',
-  'Выбери одну новость из списка, верни в sources ТОЧНО её title, url, published. Ссылку не изменяй. Если новость не даёт достаточно оснований для содержательной статьи, выбери другую.',
+  'Выбери одну новость из списка с текстом первоисточника. Верни в sources ТОЧНО её title, url, published. Ссылку не изменяй. Если данных недостаточно, выбери другую.',
   'Текст естественный, читаемый, 3-5 разделов, по 2-3 содержательных абзаца, без искусственного SEO-спама. Реклама HARMEX добавляется на сайте отдельно.',
   'Не повторяй опубликованные темы: ' + previous.join('; '),
   'Верни JSON: slug (латиница, цифры и дефисы), title, description, date (строго ' + today + '), category, sections (массив {heading, paragraphs: массив строк}), sources (массив из одного объекта {title,url,published}).',
-  'Доступные новости:\n' + JSON.stringify(ranked.slice(0, 45).map(({score,...h})=>h))
+  'Доступные новости:\n' + JSON.stringify(evidence.map(({score,...h})=>h))
 ].join('\n\n');
 const res = await fetch('https://api.openai.com/v1/chat/completions', {
   method: 'POST',
@@ -76,7 +100,7 @@ const structuralIssues = article => {
     if (!Array.isArray(section.paragraphs) || section.paragraphs.length < 2) issues.push('section ' + index + ' needs 2 paragraphs');
     else if (section.paragraphs.some(p => typeof p !== 'string' || p.trim().length < 70)) issues.push('section ' + index + ' has short/invalid paragraphs');
   });
-  if (!Array.isArray(article.sources) || article.sources.length !== 1 || !ranked.some(h => h.title === article.sources[0]?.title && h.url === article.sources[0]?.url && h.published === article.sources[0]?.published)) issues.push('source not found in fetched headlines');
+  if (!Array.isArray(article.sources) || article.sources.length !== 1 || !evidence.some(h => h.title === article.sources[0]?.title && h.url === article.sources[0]?.url && h.published === article.sources[0]?.published)) issues.push('source not found in fetched headlines');
   if (!/^[a-z0-9-]{8,110}$/.test(article.slug || '')) issues.push('invalid slug');
   if (existing.some(e => similarity(e.title,String(article.title||''))>=0.65)) issues.push('duplicate or near-duplicate topic');
   if (fs.existsSync('articles/' + article.slug + '.json')) issues.push('duplicate slug');
@@ -91,7 +115,7 @@ for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
     headers: {Authorization: 'Bearer ' + key, 'Content-Type': 'application/json'},
     body: JSON.stringify({model: process.env.OPENAI_MODEL || 'gpt-4.1-mini', response_format: {type: 'json_object'}, messages: [
       {role: 'system', content: 'Repair the JSON structure only. Do not add factual claims. Output JSON.'},
-      {role: 'user', content: 'Fix these validation problems: ' + JSON.stringify(initialIssues) + '. Choose exactly one source from this list, copying title/url/published byte for byte: ' + JSON.stringify(headlines.slice(0,45)) + '. Avoid published titles: ' + JSON.stringify(previous) + '. Return the complete corrected article JSON. Draft: ' + JSON.stringify(a)}
+      {role: 'user', content: 'Fix these validation problems: ' + JSON.stringify(initialIssues) + '. Choose exactly one source from this list, copying title/url/published byte for byte: ' + JSON.stringify(evidence.map(({score,...h})=>h)) + '. Avoid published titles: ' + JSON.stringify(previous) + '. Return the complete corrected article JSON. Draft: ' + JSON.stringify(a)}
     ]})});
   if (!correction.ok) throw Error('Draft repair API failed: ' + await correction.text());
   const fixed = JSON.parse((await correction.json()).choices[0].message.content);
@@ -102,11 +126,11 @@ for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
 if (initialIssues.length) throw Error('Draft validation failed after repair: ' + JSON.stringify(initialIssues));
 // Independent editorial review: a news headline is not evidence for unmentioned details.
 const source = a.sources[0];
-const sourceHeadline = ranked.find(h => h.title === source.title && h.url === source.url);
+const sourceHeadline = evidence.find(h => h.title === source.title && h.url === source.url);
 const reviewPrompt = [
-  'Act as a strict fact-checking editor. The ONLY available evidence is one news headline and its publication date. No full article, press release or official confirmation has been read.',
-  'Check EVERY factual claim in the Russian draft (including headline, description, sections) against the source headline. Do not infer additional announcements, other devices, dates, prices, quotes, sources, or certainty from background knowledge.',
-  'A claim may be accepted only if directly supported by the headline or explicitly framed as general opinion/uncertainty. If the draft says officially confirmed without the source headline proving it, reject. If it cites outlets not in the source, reject.',
+  'Act as a strict fact-checking editor. Available evidence is the source headline and an extracted excerpt from the original publisher; verify every factual claim against that evidence.',
+  'Check EVERY factual claim in the Russian draft (including headline, description, sections) against the source headline and excerpt. Do not infer other devices, dates, prices, quotes, sources, or certainty from background knowledge.',
+  'A factual claim may be accepted only if supported by the supplied excerpt; clearly labelled general commentary is allowed. Reject invented quotes, unsupported claims of official confirmation and invented attributions.',
   'Respond as JSON with approved (boolean), issues (array of strings). Be strict.',
   'SOURCE: ' + JSON.stringify(sourceHeadline),
   'DRAFT: ' + JSON.stringify(a)
@@ -135,7 +159,7 @@ for (let attempt = 0; attempt < 2 && (verdict.approved !== true || !Array.isArra
   console.log('Editorial rewrite attempt', attempt + 1, JSON.stringify(verdict.issues || []));
   const revised = await chatJson([
     {role: 'system', content: 'You are a careful Russian technology news editor. Output JSON only.'},
-    {role: 'user', content: 'Rewrite this article to address ALL fact-check issues. Only one news headline is known, not the full article. Remove unsupported specifics rather than inventing them. Keep 3-5 sections with at least two meaningful paragraphs each. Do not introduce new factual claims. Preserve slug, sources and date exactly. Return the full article JSON.\\nSOURCE: ' + JSON.stringify(sourceHeadline) + '\\nISSUES: ' + JSON.stringify(verdict.issues) + '\\nARTICLE: ' + JSON.stringify(draft)}
+    {role: 'user', content: 'Rewrite this article to address ALL fact-check issues. A source excerpt is available; remove unsupported specifics rather than inventing them. Keep 3-5 sections with at least two meaningful paragraphs each. Do not introduce new factual claims. Preserve slug, sources and date exactly. Return the full article JSON.\\nSOURCE: ' + JSON.stringify(sourceHeadline) + '\\nISSUES: ' + JSON.stringify(verdict.issues) + '\\nARTICLE: ' + JSON.stringify(draft)}
   ]);
   if (!valid(revised) || revised.slug !== a.slug || revised.date !== a.date) throw Error('Editorial rewrite returned invalid article');
   draft = revised;
