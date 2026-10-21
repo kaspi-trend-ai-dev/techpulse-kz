@@ -34,18 +34,18 @@ for (const topic of topics) {
 }
 // Fetch readable excerpts from original publishers where Google News exposes their URLs.
 // Reject sources with no verifiable article text; a headline alone is insufficient.
-const stripHtml=html=>html.replace(/<script\\b[^>]*>[\\s\\S]*?<\\/script>/gi,' ').replace(/<style\\b[^>]*>[\\s\\S]*?<\\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\\s+/g,' ').trim();
+const stripHtml=html=>html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();
 async function fetchEvidence(entry){
  try{
   const response=await fetch(entry.url,{redirect:'follow',headers:{'User-Agent':'Mozilla/5.0 (compatible; TechPulseEditorial/1.0)'},signal:AbortSignal.timeout(9000)});
   if(!response.ok)return null;
   const finalUrl=response.url;
-  if(new URL(finalUrl).hostname.endsWith('news.google.com'))return null;
-  if(!/^https:\/\//.test(finalUrl))return null;
+  if(!/^https:\/\//.test(finalUrl)||new URL(finalUrl).hostname.endsWith('news.google.com'))return null;
   const html=(await response.text()).slice(0,500000);
-  const text=stripHtml((html.match(/<article\\b[^>]*>[\\s\\S]*?<\\/article>/i)||[])[0]||html);
-  if(text.length<800)return null;
-  return {url:finalUrl,excerpt:text.slice(0,9500)};
+  const article=(html.match(/<article\b[^>]*>[\s\S]*?<\/article>/i)||[])[0]||html;
+  const body=stripHtml(article);
+  if(body.length<800)return null;
+  return {url:finalUrl,excerpt:body.slice(0,9500)};
  }catch{return null}
 }
 // Rank current topics by recency, multiple independent headline mentions, and broad consumer interest.
@@ -67,7 +67,7 @@ for(const item of ranked.slice(0,25)){
  if(found)evidence.push({...item,sourceUrl:found.url,excerpt:found.excerpt});
  if(evidence.length>=8)break;
 }
-if(!evidence.length)throw Error('No readable full-source articles found; skip publishing rather than invent details');
+if(!evidence.length)throw Error('No readable publisher articles found; Google News redirect links are not source text. Skipping unverified publication.');
 const previous = existing.slice(-100).map(a => a.title);
 const prompt = [
   'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана.',
