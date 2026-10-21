@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm run build
+      - run: npm run check
         env:
           SITE_URL: ${{ vars.SITE_URL }}
       - uses: actions/configure-pages@v5
