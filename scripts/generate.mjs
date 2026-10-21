@@ -32,11 +32,22 @@ for (const topic of topics) {
     }
   } catch (e) { console.warn('RSS unavailable:', topic, e.message); }
 }
-if (headlines.length < 5) throw Error('Not enough verified recent news headlines; refusing to fabricate news');
-const previous = existing.slice(-45).map(a => a.title);
+// Rank current topics by recency, multiple independent headline mentions, and broad consumer interest.
+const normalize=s=>s.toLowerCase().replace(/\\s+-\\s+[^-]+$/,'').replace(/[^a-z0-9а-яё ]/gi,' ').replace(/\\s+/g,' ').trim();
+const tokens=s=>new Set(normalize(s).split(' ').filter(w=>w.length>3&&!['about','after','with','from','will','that','this','technology','latest','news'].includes(w)));
+const similarity=(a,b)=>{const x=tokens(a),y=tokens(b);const shared=[...x].filter(w=>y.has(w)).length;return shared/Math.max(1,Math.min(x.size,y.size))};
+const publishedTitles=existing.map(x=>x.title);
+const ranked=headlines.filter(h=>!publishedTitles.some(t=>similarity(h.title,t)>=0.65)).map(h=>{
+ const age=(Date.now()-Date.parse(h.published+'T12:00:00Z'))/86400000;
+ const mentions=headlines.filter(other=>other!==h&&similarity(h.title,other.title)>=0.65).length;
+ const relevance=/apple|iphone|samsung|tesla|spacex|openai|chatgpt|google|nvidia|microsoft|xiaomi|ai |robot|launch|unveil|announce|release|breakthrough|billion|viral/i.test(h.title)?2:0;
+ return {...h,score:Math.max(0,3-age)+Math.min(5,mentions*1.5)+relevance};
+}).sort((a,b)=>b.score-a.score);
+if (ranked.length < 5) throw Error('Not enough distinct recent news headlines; refusing to fabricate or repeat news');
+const previous = existing.slice(-100).map(a => a.title);
 const prompt = [
   'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана.',
-  'Создай ОДНУ интересную, динамичную новостную статью на основе ТОЛЬКО приведённых ниже реальных заголовков новостной ленты за последние 3 дня.',
+  'Создай ОДНУ интересную, динамичную новостную статью на основе ТОЛЬКО приведённых ниже реальных заголовков новостной ленты за последние 3 дня. Новости отсортированы по актуальности, упоминаниям и интересу широкой аудитории.',
   'Выбери один конкретный инфоповод о популярных брендах, гаджетах, известных предпринимателях, ИИ или технологиях. Заголовок цепляющий, но правдивый, без кликбейта, преувеличений и неподтверждённых фактов.',
   'ВАЖНО: доступны лишь заголовки, даты и ссылки, не полные тексты. Не утверждай детали, которых нет в заголовке; прямо атрибутируй информацию источнику, отличай факты от контекста и мнений. Не выдумывай цитаты, цифры, спецификации, цены, даты релизов или действия знаменитостей. Не пиши будто тестировал устройство.',
   'Вместо вымышленных подробностей объясни, почему событие важно, что пока неизвестно, и что стоит проверить дальше. Никаких слухов как установленных фактов.',
@@ -44,7 +55,7 @@ const prompt = [
   'Текст естественный, читаемый, 3-5 разделов, по 2-3 содержательных абзаца, без искусственного SEO-спама. Реклама HARMEX добавляется на сайте отдельно.',
   'Не повторяй опубликованные темы: ' + previous.join('; '),
   'Верни JSON: slug (латиница, цифры и дефисы), title, description, date (строго ' + today + '), category, sections (массив {heading, paragraphs: массив строк}), sources (массив из одного объекта {title,url,published}).',
-  'Доступные новости:\n' + JSON.stringify(headlines.slice(0, 45))
+  'Доступные новости:\n' + JSON.stringify(ranked.slice(0, 45).map(({score,...h})=>h))
 ].join('\n\n');
 const res = await fetch('https://api.openai.com/v1/chat/completions', {
   method: 'POST',
@@ -65,9 +76,9 @@ const structuralIssues = article => {
     if (!Array.isArray(section.paragraphs) || section.paragraphs.length < 2) issues.push('section ' + index + ' needs 2 paragraphs');
     else if (section.paragraphs.some(p => typeof p !== 'string' || p.trim().length < 70)) issues.push('section ' + index + ' has short/invalid paragraphs');
   });
-  if (!Array.isArray(article.sources) || article.sources.length !== 1 || !headlines.some(h => h.title === article.sources[0]?.title && h.url === article.sources[0]?.url && h.published === article.sources[0]?.published)) issues.push('source not found in fetched headlines');
+  if (!Array.isArray(article.sources) || article.sources.length !== 1 || !ranked.some(h => h.title === article.sources[0]?.title && h.url === article.sources[0]?.url && h.published === article.sources[0]?.published)) issues.push('source not found in fetched headlines');
   if (!/^[a-z0-9-]{8,110}$/.test(article.slug || '')) issues.push('invalid slug');
-  if (existing.some(e => e.title.toLowerCase() === String(article.title || '').toLowerCase())) issues.push('duplicate title');
+  if (existing.some(e => similarity(e.title,String(article.title||''))>=0.65)) issues.push('duplicate or near-duplicate topic');
   if (fs.existsSync('articles/' + article.slug + '.json')) issues.push('duplicate slug');
   return issues;
 };
@@ -91,7 +102,7 @@ for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
 if (initialIssues.length) throw Error('Draft validation failed after repair: ' + JSON.stringify(initialIssues));
 // Independent editorial review: a news headline is not evidence for unmentioned details.
 const source = a.sources[0];
-const sourceHeadline = headlines.find(h => h.title === source.title && h.url === source.url);
+const sourceHeadline = ranked.find(h => h.title === source.title && h.url === source.url);
 const reviewPrompt = [
   'Act as a strict fact-checking editor. The ONLY available evidence is one news headline and its publication date. No full article, press release or official confirmation has been read.',
   'Check EVERY factual claim in the Russian draft (including headline, description, sections) against the source headline. Do not infer additional announcements, other devices, dates, prices, quotes, sources, or certainty from background knowledge.',
