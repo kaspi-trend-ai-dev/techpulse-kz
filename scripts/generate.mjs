@@ -84,12 +84,15 @@ const ranked=headlines.filter(h=>!publishedTitles.some(t=>similarity(h.title,t)>
 if (ranked.length < 5) throw Error('Not enough distinct recent news headlines; refusing to fabricate or repeat news');
 // Try high-ranked stories until one has substantive source evidence.
 const evidence=[];
-for(const item of ranked.slice(0,25)){
- const found=await fetchEvidence(item);
- if(found)evidence.push({...item,sourceUrl:found.url,excerpt:found.excerpt});
- if(evidence.length>=8)break;
+const candidates=ranked.filter(h=>!new URL(h.url).hostname.endsWith('news.google.com')).slice(0,24);
+for(let i=0;i<candidates.length&&evidence.length<8;i+=5){
+ const group=await Promise.all(candidates.slice(i,i+5).map(async item=>{
+  const found=await fetchEvidence(item);
+  return found?{...item,sourceUrl:found.url,excerpt:found.excerpt}:null;
+ }));
+ evidence.push(...group.filter(Boolean));
 }
-if(!evidence.length)throw Error('No readable publisher articles found; Google News redirect links are not source text. Skipping unverified publication.');
+if(!evidence.length)throw Error('No readable publisher articles found; skipping unverified publication');
 const previous = existing.slice(-100).map(a => a.title);
 const prompt = [
   'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана.',
