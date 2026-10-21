@@ -1,0 +1,23 @@
+name: TechPulse daily quality monitor
+on:
+  schedule:
+    - cron: '45 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate content and SEO before deployment
+        run: npm run check
+      - name: Verify public homepage and sitemap
+        run: |
+          curl --fail --location --retry 3 --retry-delay 10 --max-time 30 --silent --show-error https://harmex.asia/ -o /tmp/techpulse-home.html
+          curl --fail --location --retry 3 --retry-delay 10 --max-time 30 --silent --show-error https://harmex.asia/sitemap.xml -o /tmp/techpulse-sitemap.xml
+          grep -q 'TechPulse' /tmp/techpulse-home.html
+          grep -q 'https://harmex.asia/' /tmp/techpulse-sitemap.xml
