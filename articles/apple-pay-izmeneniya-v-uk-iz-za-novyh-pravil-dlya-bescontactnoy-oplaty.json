@@ -1,0 +1,45 @@
+{
+  "slug": "apple-pay-izmeneniya-v-uk-iz-za-novyh-pravil-dlya-bescontactnoy-oplaty",
+  "title": "Apple Pay в Великобритании может измениться из-за новых правил для бесконтактной оплаты",
+  "description": "В Великобритании планируется ужесточение регулирования бесконтактных платежей, что может повлиять на работу Apple Pay на iPhone и открыть дорогу новым NFC-конкурентам.",
+  "date": "2026-10-22",
+  "category": "Технологии и гаджеты",
+  "sections": [
+    {
+      "heading": "Что происходит с Apple Pay в Великобритании",
+      "paragraphs": [
+        "Власти Великобритании рассматривают новые меры регулирования, которые могут затронуть работу Apple Pay — популярного сервиса бесконтактной оплаты на iPhone. Эти изменения связаны с контактными платежами и использованием технологии NFC.",
+        "Подробности о том, как именно новые правила повлияют на Apple Pay и другие сервисы, пока не раскрываются."
+      ]
+    },
+    {
+      "heading": "Возможные последствия для рынка бесконтактных платежей",
+      "paragraphs": [
+        "Обсуждаемые изменения могут затронуть стандарты использования бесконтактных платежей на мобильных устройствах. Это может повлиять на то, как пользователи совершают платежи с помощью iPhone и других устройств.",
+        "В настоящее время информация о том, как новые правила будут реализованы и какие сервисы смогут получить доступ к NFC, отсутствует."
+      ]
+    },
+    {
+      "heading": "Что известно и чего ждать дальше",
+      "paragraphs": [
+        "Пока нет официальных подробностей о конкретных изменениях и сроках их внедрения. Пользователям и заинтересованным сторонам рекомендуется следить за официальными заявлениями и новостями по этой теме.",
+        "В дальнейшем станет ясно, как новые правила повлияют на работу Apple Pay и появятся ли альтернативные решения для бесконтактных платежей."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple Pay faces UK crackdown that could change iPhone tap-to-pay",
+      "url": "https://www.techradar.com/computing/payment-services/apple-pay-faces-uk-contactless-crackdown-new-rules-could-change-iphone-tap-to-pay-and-pave-the-way-for-nfc-rivals",
+      "published": "2026-10-21"
+    }
+  ],
+  "image": {
+    "url": "https://cdn.mos.cms.futurecdn.net/t8H8pX5RHzWp4uyKDzqeye-2560-80.jpg",
+    "source": "https://www.techradar.com/computing/payment-services/apple-pay-faces-uk-contactless-crackdown-new-rules-could-change-iphone-tap-to-pay-and-pave-the-way-for-nfc-rivals",
+    "credit": "https://www.techradar.com/author/alex-blake",
+    "license": "Лицензия не проверена",
+    "alt": "Apple Pay в Великобритании может измениться из-за новых правил для бесконтактной оплаты",
+    "verified": true
+  }
+}
