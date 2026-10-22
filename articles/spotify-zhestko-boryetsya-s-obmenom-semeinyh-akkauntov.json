@@ -1,0 +1,46 @@
+{
+  "region": "global",
+  "slug": "spotify-zhestko-boryetsya-s-obmenom-semeinyh-akkauntov",
+  "title": "Spotify жёстко борется с обменом семейных аккаунтов, но пользователи уже находят обходные пути",
+  "description": "Spotify ужесточает контроль за использованием семейных аккаунтов, пытаясь ограничить совместное пользование подписками. Тем не менее, пользователи быстро находят способы обхода новых правил, что ставит под вопрос эффективность нововведений.",
+  "date": "2026-10-22",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новые ограничения для семейных аккаунтов Spotify",
+      "paragraphs": [
+        "Spotify объявила о введении новых правил, направленных на ограничение совместного использования семейных подписок. Компания стремится более строго контролировать доступ к семейному тарифу.",
+        "Подробности о конкретных требованиях к участникам семейного аккаунта не раскрываются."
+      ]
+    },
+    {
+      "heading": "Пользователи находят обходные пути",
+      "paragraphs": [
+        "Несмотря на введённые ограничения, пользователи уже находят способы обходить новые правила. Это свидетельствует о том, что технические меры не всегда могут полностью предотвратить совместное использование аккаунтов.",
+        "Данная ситуация показывает необходимость дальнейшего наблюдения за поведением пользователей и возможной адаптации подходов к контролю."
+      ]
+    },
+    {
+      "heading": "Вопросы, связанные с новыми правилами",
+      "paragraphs": [
+        "Пока остаётся неизвестным, насколько эффективно Spotify сможет отслеживать и блокировать обходные методы без негативного влияния на опыт легальных пользователей.",
+        "Также интерес представляет влияние подобных изменений на рынок цифровых подписок и реакцию других сервисов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spotify is clamping down on Family account sharing – but users are already finding workarounds",
+      "url": "https://www.whathifi.com/streaming-entertainment/music-streaming/spotify-is-clamping-down-on-family-account-sharing-but-users-are-already-finding-workarounds",
+      "published": "2026-10-21"
+    }
+  ],
+  "image": {
+    "url": "https://cdn.mos.cms.futurecdn.net/z8hEi4hBS7S6prVvpt5RvC-1920-80.jpg",
+    "source": "https://www.whathifi.com/streaming-entertainment/music-streaming/spotify-is-clamping-down-on-family-account-sharing-but-users-are-already-finding-workarounds",
+    "credit": "https://www.whathifi.com/us/author/harry-mckerrell",
+    "license": "Лицензия не проверена",
+    "alt": "Spotify жёстко борется с обменом семейных аккаунтов, но пользователи уже находят обходные пути",
+    "verified": true
+  }
+}
