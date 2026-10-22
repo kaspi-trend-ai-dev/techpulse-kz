@@ -1,5 +1,39 @@
 import fs from 'node:fs';
 
+
+async function findLicensedImage(article, headline) {
+  // Fail closed: Commons images only, with machine-readable license and a strict topical match.
+  const title=String(headline||'').replace(/\s+-\s+[^-]+$/,'');
+  const words=title.match(/[A-Za-z][A-Za-z0-9-]{3,}/g)||[];
+  const stop=new Set(['with','from','that','this','will','after','about','could','would','their','first','latest','reveals','launches','announces','report','update','review','smart','technology']);
+  const terms=[...new Set(words.map(x=>x.toLowerCase()).filter(x=>!stop.has(x)))].slice(0,6);
+  if(terms.length<2)return null;
+  try{
+    const api=new URL('https://commons.wikimedia.org/w/api.php');
+    api.searchParams.set('action','query');api.searchParams.set('generator','search');
+    api.searchParams.set('gsrsearch',terms.slice(0,4).join(' ')+' filetype:bitmap');
+    api.searchParams.set('gsrnamespace','6');api.searchParams.set('gsrlimit','8');
+    api.searchParams.set('prop','imageinfo');api.searchParams.set('iiprop','url|extmetadata|size');
+    api.searchParams.set('iiurlwidth','1200');api.searchParams.set('format','json');
+    const res=await fetch(api,{signal:AbortSignal.timeout(10000)});
+    if(!res.ok)return null;
+    const pages=Object.values((await res.json()).query?.pages||{});
+    for(const page of pages){
+      const info=page.imageinfo?.[0],meta=info?.extmetadata||{};
+      if(!info?.thumburl||info.width<700||info.height<350)continue;
+      const license=String(meta.LicenseShortName?.value||'');
+      if(!/^(CC BY|CC0|Public domain|PD-)/i.test(license))continue;
+      const fileTitle=page.title.toLowerCase();
+      const matched=terms.filter(t=>fileTitle.includes(t));
+      if(matched.length<2)continue;
+      const credit=String(meta.Artist?.value||'').replace(/<[^>]*>/g,'').slice(0,160);
+      article.image={url:info.thumburl,alt:article.title,credit:credit||'Wikimedia Commons',license,source:info.descriptionurl,verified:true};
+      return article.image;
+    }
+  }catch(error){console.warn('Licensed image lookup skipped:',error.message)}
+  return null;
+}
+
 const key = process.env.OPENAI_API_KEY;
 if (!key) throw Error('Set OPENAI_API_KEY secret');
 const files = fs.readdirSync('articles').filter(x => x.endsWith('.json'));
@@ -237,5 +271,6 @@ if (verdict.approved !== true) {
 }
 Object.assign(a, draft);
 a.date = today;
+await findLicensedImage(a,source.title);
 fs.writeFileSync('articles/' + a.slug + '.json', JSON.stringify(a, null, 2) + '\n');
 console.log('Created sourced news article:', a.title);
