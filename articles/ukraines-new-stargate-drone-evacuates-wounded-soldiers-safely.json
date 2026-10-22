@@ -1,0 +1,46 @@
+{
+  "region": "global",
+  "slug": "ukraines-new-stargate-drone-evacuates-wounded-soldiers-safely",
+  "title": "Новый дрон StarGate Украины может эвакуировать раненых без риска для спасательной команды",
+  "description": "Дрон StarGate способен эвакуировать раненых солдат с поля боя, что снижает риски для спасательных экипажей.",
+  "date": "2026-10-22",
+  "category": "technology",
+  "sections": [
+    {
+      "heading": "Новый уровень эвакуации раненых с помощью дронов",
+      "paragraphs": [
+        "Дрон StarGate может эвакуировать раненых солдат с поля боя, что позволяет минимизировать необходимость отправки людей в опасные зоны для спасательных операций.",
+        "Использование таких технологий направлено на снижение рисков для спасательных экипажей."
+      ]
+    },
+    {
+      "heading": "Возможности применения",
+      "paragraphs": [
+        "Дрон StarGate предназначен для выполнения задач, связанных с эвакуацией пострадавших.",
+        "Применение подобных дронов может изменить подход к оказанию помощи в зонах конфликта."
+      ]
+    },
+    {
+      "heading": "Актуальные вопросы и дальнейшие исследования",
+      "paragraphs": [
+        "В настоящее время отсутствует подробная информация о работе дрона в сложных условиях, таких как плохая видимость, наличие препятствий и вражеский огонь.",
+        "Также не раскрыты данные о дальности полёта, уровне автономности и интеграции с системами командования. Эти аспекты требуют дальнейшего изучения."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ukraine’s new StarGate drone can evacuate wounded soldiers from the battlefield — without risking a rescue crew",
+      "url": "https://www.techradar.com/pro/ukraines-new-stargate-drone-can-evacuate-wounded-soldiers-from-the-battlefield-without-risking-a-rescue-crew",
+      "published": "2026-10-21"
+    }
+  ],
+  "image": {
+    "url": "https://cdn.mos.cms.futurecdn.net/s7Td4t7mAxUvt3tqZp3eAd-1224-80.png",
+    "source": "https://www.techradar.com/pro/ukraines-new-stargate-drone-can-evacuate-wounded-soldiers-from-the-battlefield-without-risking-a-rescue-crew",
+    "credit": "https://www.techradar.com/author/christian-cawley",
+    "license": "Лицензия не проверена",
+    "alt": "Новый дрон StarGate Украины может эвакуировать раненых без риска для спасательной команды",
+    "verified": true
+  }
+}

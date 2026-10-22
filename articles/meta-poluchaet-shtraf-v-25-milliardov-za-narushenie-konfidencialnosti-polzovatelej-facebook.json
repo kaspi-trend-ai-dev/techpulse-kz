@@ -1,0 +1,46 @@
+{
+  "region": "global",
+  "slug": "meta-poluchaet-shtraf-v-25-milliardov-za-narushenie-konfidencialnosti-polzovatelej-facebook",
+  "title": "Meta сталкивается с штрафом в $25 миллиардов",
+  "description": "Компания Meta сейчас сталкивается с потенциальным штрафом в 25 миллиардов долларов США.",
+  "date": "2026-10-22",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Причины штрафа Meta",
+      "paragraphs": [
+        "Meta сейчас сталкивается с штрафом в размере 25 миллиардов долларов. Компания ранее заявляла пользователям Facebook, что их данные находятся в безопасности.",
+        "Этот случай отражает растущие вопросы, связанные с защитой личных данных в социальных сетях и цифровых платформах, которые обрабатывают информацию миллионов пользователей."
+      ]
+    },
+    {
+      "heading": "Контекст и значение инцидента",
+      "paragraphs": [
+        "Ситуация с Meta подчеркивает важность вопросов конфиденциальности данных в современной технологической индустрии.",
+        "Этот случай привлекает внимание к тому, как крупные компании взаимодействуют с пользовательской информацией."
+      ]
+    },
+    {
+      "heading": "Дальнейшие перспективы",
+      "paragraphs": [
+        "Подробности о конкретных причинах и последствиях штрафа не раскрываются в доступных источниках.",
+        "Будет интересно наблюдать за развитием ситуации и возможными изменениями в политике конфиденциальности компании."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meta told Facebook users their data was safe. Now it's facing a $25 billion penalty.",
+      "url": "https://www.tomsguide.com/ai/meta-just-got-hit-with-a-usd25-billion-penalty-heres-what-social-media-users-need-to-know",
+      "published": "2026-10-21"
+    }
+  ],
+  "image": {
+    "url": "https://cdn.mos.cms.futurecdn.net/EerCsNfck6dk6ifJUrQqWF-2000-80.jpg",
+    "source": "https://www.tomsguide.com/ai/meta-just-got-hit-with-a-usd25-billion-penalty-heres-what-social-media-users-need-to-know",
+    "credit": "https://www.tomsguide.com/author/amanda-caswell",
+    "license": "Лицензия не проверена",
+    "alt": "Meta сталкивается с штрафом в $25 миллиардов",
+    "verified": true
+  }
+}
