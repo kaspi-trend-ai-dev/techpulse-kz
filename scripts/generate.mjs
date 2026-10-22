@@ -1,4 +1,5 @@
 import {licensedSourceImage} from './source-image.mjs';
+import {sameEvent} from './dedupe.mjs';
 import fs from 'node:fs';
 
 
@@ -124,7 +125,7 @@ const normalize=s=>s.toLowerCase().replace(/\s+-\s+[^-]+$/,'').replace(/[^a-z0-9
 const tokens=s=>new Set(normalize(s).split(' ').filter(w=>w.length>3&&!['about','after','with','from','will','that','this','technology','latest','news'].includes(w)));
 const similarity=(a,b)=>{const x=tokens(a),y=tokens(b);const shared=[...x].filter(w=>y.has(w)).length;return shared/Math.max(1,Math.min(x.size,y.size))};
 const publishedTitles=existing.map(x=>x.title);
-const ranked=headlines.filter(h=>!publishedTitles.some(t=>similarity(h.title,t)>=0.65)).map(h=>{
+const ranked=headlines.filter(h=>!publishedTitles.some(t=>similarity(h.title,t)>=0.65)&&!existing.some(e=>sameEvent(e,{title:h.title,sources:[{url:h.url,title:h.title}]}))).map(h=>{
  const age=(Date.now()-Date.parse(h.published+'T12:00:00Z'))/86400000;
  const mentions=headlines.filter(other=>other!==h&&similarity(h.title,other.title)>=0.65).length;
  const relevance=/apple|iphone|samsung|tesla|spacex|openai|chatgpt|google|nvidia|microsoft|xiaomi|ai |robot|launch|unveil|announce|release|breakthrough|billion|viral/i.test(h.title)?2:0;
@@ -186,7 +187,7 @@ const structuralIssues = article => {
   });
   if (!Array.isArray(article.sources) || article.sources.length !== 1 || !evidence.some(h => h.title === article.sources[0]?.title && h.url === article.sources[0]?.url && h.published === article.sources[0]?.published)) issues.push('source not found in fetched headlines');
   if (!/^[a-z0-9-]{8,110}$/.test(article.slug || '')) issues.push('invalid slug');
-  if (existing.some(e => similarity(e.title,String(article.title||''))>=0.65)) issues.push('duplicate or near-duplicate topic');
+  if (existing.some(e => sameEvent(e,article)||similarity(e.title,String(article.title||''))>=0.65)) issues.push('duplicate or near-duplicate event, even with rewritten headline');
   if (fs.existsSync('articles/' + article.slug + '.json')) issues.push('duplicate slug');
   return issues;
 };
@@ -271,6 +272,7 @@ if (verdict.approved !== true) {
   throw Error('Editorial review rejected after rewrites: ' + JSON.stringify(verdict.issues || ['not approved']));
 }
 Object.assign(a, draft);
+if(existing.some(e=>sameEvent(e,a)))throw Error('Duplicate news event blocked before publication');
 a.date = today;
 // Fail closed: no independently verified event-specific rights, so publish without a photo.
 // Do not use keyword-matched Commons pictures as substitutes for the original event.
