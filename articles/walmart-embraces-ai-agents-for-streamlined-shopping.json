@@ -33,5 +33,13 @@
       "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2018/01/gettyimages-903923942.jpeg?resize=1200,800",
+    "source": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+    "credit": "Sarah Perez",
+    "license": "Лицензия не проверена",
+    "alt": "Walmart embraces AI agents to simplify online shopping experience",
+    "verified": true
+  }
 }

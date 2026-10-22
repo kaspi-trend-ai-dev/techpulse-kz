@@ -40,5 +40,13 @@
       "url": "https://www.wired.com/story/europe-data-centers-climate-change/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://media.wired.com/photos/6ad7d5f6ceee34bd819fdbeb/191:100/w_1280,c_limit/Business_Can%20Europe%20Build%20Data%20Centers%20Without%20Giving%20Up%20Its%20Climate%20Goals_v2.jpg",
+    "source": "https://www.wired.com/story/europe-data-centers-climate-change/",
+    "credit": "Joel Khalili",
+    "license": "Лицензия не проверена",
+    "alt": "Европа хочет дата-центры, но климатические цели мешают развитию",
+    "verified": true
+  }
 }

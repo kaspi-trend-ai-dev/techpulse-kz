@@ -33,5 +33,13 @@
       "url": "https://arstechnica.com/gadgets/2026/10/justwatch-which-tackles-streaming-fragmentation-launches-own-streaming-service/",
       "published": "2026-10-20"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Global_banner_preview-2560x1440.png",
+    "source": "https://arstechnica.com/gadgets/2026/10/justwatch-which-tackles-streaming-fragmentation-launches-own-streaming-service/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "JustWatch запустил собственный стриминговый сервис: новый игрок на рынке видеоконтента",
+    "verified": true
+  }
 }

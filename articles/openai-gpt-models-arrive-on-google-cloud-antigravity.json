@@ -40,5 +40,13 @@
       "url": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2025/06/Google-cloud-IO-1152x648.jpg",
+    "source": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "OpenAI запускает свои последние модели ИИ на Google Cloud и Antigravity",
+    "verified": true
+  }
 }

@@ -33,5 +33,13 @@
       "url": "https://arstechnica.com/gaming/2026/10/the-past-present-and-future-share-a-show-floor-at-pinball-expo-2026/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/PXL_20261016_184926781-1152x648.jpg",
+    "source": "https://arstechnica.com/gaming/2026/10/the-past-present-and-future-share-a-show-floor-at-pinball-expo-2026/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "Multimorphic P3: новый уровень домашнего пинбола с модульной платформой и открытым SDK",
+    "verified": true
+  }
 }

@@ -33,5 +33,13 @@
       "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2157738833.jpg?resize=1200,800",
+    "source": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+    "credit": "Aditya Mehta",
+    "license": "Лицензия не проверена",
+    "alt": "Recursive представила Flint — модель для программирования на ноутбуке, созданную с помощью ИИ",
+    "verified": true
+  }
 }

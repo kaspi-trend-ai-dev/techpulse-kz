@@ -33,5 +33,13 @@
       "url": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/HTU8ja-XgAE6GwQ-1152x648.jpg",
+    "source": "https://arstechnica.com/space/2026/10/spacex-will-attempt-to-reach-weekly-starship-launches-by-early-2027/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "SpaceX планирует ловить ступени Starship на следующем запуске для ускорения полётов",
+    "verified": true
+  }
 }

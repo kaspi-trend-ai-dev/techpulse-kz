@@ -33,5 +33,13 @@
       "url": "https://arstechnica.com/gaming/2026/10/report-microsofts-project-helix-planned-for-2028-at-1200-to-1800-price/",
       "published": "2026-10-20"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2024/07/xbox-dominoes-1152x648.jpg",
+    "source": "https://arstechnica.com/gaming/2026/10/report-microsofts-project-helix-planned-for-2028-at-1200-to-1800-price/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "Microsoft планирует игровую консоль Project Helix на 2028 год с ценой до $1800",
+    "verified": true
+  }
 }

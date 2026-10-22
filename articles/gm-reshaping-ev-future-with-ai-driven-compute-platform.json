@@ -33,5 +33,13 @@
       "url": "https://techcrunch.com/2026/10/21/gm-is-betting-compute-and-ai-will-help-it-compete-with-chinese-automakers/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/Row-of-pre-production-vehicles-at-PPO.jpg?resize=1200,801",
+    "source": "https://techcrunch.com/2026/10/21/gm-is-betting-compute-and-ai-will-help-it-compete-with-chinese-automakers/",
+    "credit": "Tim De Chant, Kirsten Korosec",
+    "license": "Лицензия не проверена",
+    "alt": "GM переосмысливает будущее электромобилей с помощью новой вычислительной платформы",
+    "verified": true
+  }
 }

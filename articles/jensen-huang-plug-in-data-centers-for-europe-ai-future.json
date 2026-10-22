@@ -33,5 +33,13 @@
       "url": "https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://media.wired.com/photos/6ad8c8882adb51db52e1a235/191:100/w_1280,c_limit/GettyImages-2301295306.jpg",
+    "source": "https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/",
+    "credit": "Tom Bristow",
+    "license": "Лицензия не проверена",
+    "alt": "Jensen Huang представил решение для ускорения развития ИИ-инфраструктуры Европы — модульные дата-центры DSX Pod",
+    "verified": true
+  }
 }

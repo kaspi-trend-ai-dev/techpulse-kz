@@ -33,5 +33,13 @@
       "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://media.wired.com/photos/6ad8079d19d8dd7213438cc0/191:100/w_1280,c_limit/business_ai_lab_recursive_improvement.jpg",
+    "source": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
+    "credit": "Will Knight",
+    "license": "Лицензия не проверена",
+    "alt": "Новый уровень в искусственном интеллекте: модель Flint демонстрирует возможности рекурсивного самоулучшения",
+    "verified": true
+  }
 }

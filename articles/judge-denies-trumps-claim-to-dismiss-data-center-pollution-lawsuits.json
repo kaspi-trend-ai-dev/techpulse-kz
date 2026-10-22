@@ -33,5 +33,13 @@
       "url": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2025/04/xAI-Thermal-Image-1152x648.jpg",
+    "source": "https://arstechnica.com/tech-policy/2026/10/judge-rejects-trumps-wild-claim-epa-can-dismiss-data-center-pollution-lawsuits/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "Суд отклонил претензии Трампа на право отменять иски по загрязнению от дата-центров",
+    "verified": true
+  }
 }

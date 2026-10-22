@@ -40,5 +40,13 @@
       "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/09/meta-muse-finger-on-app-GettyImages-2293791808.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+    "credit": "Sarah Perez",
+    "license": "Лицензия не проверена",
+    "alt": "Meta’s AI Assistant Muse Surpasses 10 Million Users with Shopping as Leading Activity",
+    "verified": true
+  }
 }

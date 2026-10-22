@@ -33,5 +33,13 @@
       "url": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/",
       "published": "2026-10-20"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2299491134-1152x648.jpg",
+    "source": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "Meta изменяет условия использования из-за критики по ИИ и скрапингу данных",
+    "verified": true
+  }
 }

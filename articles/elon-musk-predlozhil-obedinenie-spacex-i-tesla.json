@@ -33,5 +33,13 @@
       "url": "https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/",
       "published": "2026-10-20"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/tesla-in-space-1152x648.jpg",
+    "source": "https://arstechnica.com/space/2026/10/spacex-and-tesla-into-a-single-company-has-a-lot-of-merit-musk-says/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "Илон Маск предложил объединить SpaceX и Tesla в одну компанию",
+    "verified": true
+  }
 }

@@ -40,5 +40,13 @@
       "url": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/",
       "published": "2026-10-21"
     }
-  ]
+  ],
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/OnStar-AI-Assistant.jpg?resize=1200,624",
+    "source": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/",
+    "credit": "Kirsten Korosec",
+    "license": "Лицензия не проверена",
+    "alt": "GM is giving OnStar an AI makeover",
+    "verified": true
+  }
 }
