@@ -121,6 +121,7 @@ const prompt = [
   'Доступны выдержки из текстов первоисточников. Используй только явно подтверждённые ими факты; не придумывай цитаты, цифры, характеристики, даты и заявления. Различай официальное подтверждение и сообщения журналистов. Не пиши будто тестировал устройство.',
   'Вместо вымышленных подробностей объясни, почему событие важно, что пока неизвестно, и что стоит проверить дальше. Никаких слухов как установленных фактов.',
   'Выбери одну новость из списка с текстом первоисточника. Верни в sources ТОЧНО её title, url, published. Ссылку не изменяй. Если данных недостаточно, выбери другую.',
+  'СТРОГО: весь заголовок, description, заголовки разделов и все абзацы — только на русском языке. Не копируй английские заголовки или абзацы из источника. Допустимы только собственные имена, бренды, названия продуктов и общепринятые технические обозначения латиницей.',
   'Текст естественный, читаемый, 3-5 разделов, по 2-3 содержательных абзаца, без искусственного SEO-спама. Реклама HARMEX добавляется на сайте отдельно.',
   'Не повторяй опубликованные темы: ' + previous.join('; '),
   'Верни JSON: slug (латиница, цифры и дефисы), title, description, date (строго ' + today + '), category, sections (массив {heading, paragraphs: массив строк}), sources (массив из одного объекта {title,url,published}).',
@@ -134,11 +135,14 @@ const res = await fetch('https://api.openai.com/v1/chat/completions', {
 if (!res.ok) throw Error(await res.text());
 const a = JSON.parse((await res.json()).choices[0].message.content);
 const slugify = value => String(value || '').toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 100);
+const hasRussianProse = value => typeof value === 'string' && (value.match(/[а-яё]/gi)||[]).length >= 12;
 const structuralIssues = article => {
   const issues = [];
   if (!article || typeof article !== 'object') return ['response is not an object'];
   if (!article.title || typeof article.title !== 'string') issues.push('missing title');
   if (!article.description || typeof article.description !== 'string') issues.push('missing description');
+  if(!hasRussianProse(article.title)||!hasRussianProse(article.description))issues.push('title and description must be written in Russian');
+  if(Array.isArray(article.sections)&&article.sections.some(s=>!hasRussianProse(s.heading)||!Array.isArray(s.paragraphs)||s.paragraphs.some(p=>!hasRussianProse(p))))issues.push('all section headings and paragraphs must be in Russian');
   if (!Array.isArray(article.sections) || article.sections.length < 3 || article.sections.length > 5) issues.push('sections count must be 3-5');
   else article.sections.forEach((section, index) => {
     if (!section.heading) issues.push('section ' + index + ' missing heading');
@@ -207,9 +211,9 @@ const review = draft => chatJson([
   {role: 'system', content: 'You are a skeptical fact-checker. Output JSON only.'},
   {role: 'user', content: reviewPrompt.replace('DRAFT: ' + JSON.stringify(a), 'DRAFT: ' + JSON.stringify(draft))}
 ]);
-const valid = draft => /^[a-z0-9-]{8,110}$/.test(draft.slug || '') && !!draft.title && !!draft.description &&
+const valid = draft => /^[a-z0-9-]{8,110}$/.test(draft.slug || '') && hasRussianProse(draft.title) && hasRussianProse(draft.description) &&
   Array.isArray(draft.sections) && draft.sections.length >= 3 && draft.sections.length <= 5 &&
-  draft.sections.every(x => x.heading && Array.isArray(x.paragraphs) && x.paragraphs.length >= 2 && x.paragraphs.every(p => typeof p === 'string' && p.length >= 70)) &&
+  draft.sections.every(x => hasRussianProse(x.heading) && Array.isArray(x.paragraphs) && x.paragraphs.length >= 2 && x.paragraphs.every(p => hasRussianProse(p) && p.length >= 70)) &&
   Array.isArray(draft.sources) && draft.sources.length === 1 && draft.sources[0].title === source.title &&
   draft.sources[0].url === source.url && draft.sources[0].published === source.published;
 let draft = a;
