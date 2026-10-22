@@ -1,6 +1,9 @@
 import fs from 'node:fs';
 const base='https://harmex.asia';const prefix=new URL(base).pathname.replace(/\/$/,'');const out='dist';fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out+'/articles',{recursive:true});fs.mkdirSync(out+'/assets',{recursive:true});
-const items=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x))).sort((a,b)=>b.date.localeCompare(a.date));
+const isRussian=a=>{const parts=[a.title,a.description,...(a.sections||[]).flatMap(s=>[s.heading,...(s.paragraphs||[])])].filter(x=>typeof x==='string');return parts.length>=4&&parts.every(t=>(t.match(/[а-яё]/gi)||[]).length>=Math.max(12,(t.match(/[a-zа-яё]/gi)||[]).length*.28))};
+const allItems=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x)));
+const items=allItems.filter(isRussian).sort((a,b)=>b.date.localeCompare(a.date));
+console.log('Russian editorial gate:',items.length,'published,',allItems.length-items.length,'excluded');
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const url=p=>prefix+p;
 const head=(title,desc,p)=>`<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${base+p}"><link rel="stylesheet" href="${url('/assets/style.css')}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website"><meta property="og:url" content="${base+p}"><meta name="robots" content="index,follow,max-image-preview:large"></head><body><header><nav><a class="logo" href="${url('/') }">TechPulse<span></span></a><a href="${url('/')}#articles">Статьи</a><a href="${url('/')}#harmex">HARMEX</a></nav></header>`;
 const foot='<footer>© TechPulse · Независимый журнал о технологиях Казахстана</footer></body></html>';
