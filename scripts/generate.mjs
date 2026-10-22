@@ -1,3 +1,4 @@
+import {licensedSourceImage} from './source-image.mjs';
 import fs from 'node:fs';
 
 
@@ -273,6 +274,6 @@ Object.assign(a, draft);
 a.date = today;
 // Fail closed: no independently verified event-specific rights, so publish without a photo.
 // Do not use keyword-matched Commons pictures as substitutes for the original event.
-delete a.image;
+a.image=await licensedSourceImage(a)||undefined;
 fs.writeFileSync('articles/' + a.slug + '.json', JSON.stringify(a, null, 2) + '\n');
 console.log('Created sourced news article:', a.title);
