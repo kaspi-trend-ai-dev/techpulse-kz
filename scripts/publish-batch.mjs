@@ -20,4 +20,7 @@ for(let i=0;i<quota;i++){
  console.warn('Article candidate rejected; skipping rather than publishing unverified material.',{attempt:i+1,status:run.status,error:run.error?.message});
 }
 console.log('Batch finished:',{succeeded,nowPublished:countToday(),target});
-if(succeeded===0&&quota>0)console.warn('No approved news published in this batch. Next scheduled run will retry.');
+if(succeeded===0&&quota>0){
+ console.error('EDITORIAL BATCH FAILED: zero new articles. Inspect source-fetch and AI errors above.');
+ process.exitCode=1;
+}
