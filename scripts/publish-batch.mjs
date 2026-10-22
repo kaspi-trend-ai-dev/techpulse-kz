@@ -19,17 +19,20 @@ while(Date.now()-started<runtimeMs-180000&&consecutiveFailures<maxConsecutiveFai
   env:{...process.env,EDITORIAL_ATTEMPT:String(attempts)},
   timeout:Math.min(180000,Math.max(1000,remaining))
  });
- if(run.status===0){
-  published++;
+ const saved=count()-before;
+ if(saved>published){
+  published=saved;
   consecutiveFailures=0;
-  console.log('Published article',published,'total',count());
+  console.log('Verified article files saved:',published,'total:',count());
  }else{
   consecutiveFailures++;
-  console.warn('Candidate failed; searching next story.',{attempts,consecutiveFailures,status:run.status,error:run.error?.message});
+  console.warn('No verified article saved this attempt; searching next story.',{attempts,consecutiveFailures,status:run.status,error:run.error?.message});
  }
 }
 console.log('Editorial batch summary:',{attempts,published,total:count(),durationSeconds:Math.round((Date.now()-started)/1000),consecutiveFailures});
 if(published===0){
  console.error('No article published this run; inspect source and generation errors.');
  process.exitCode=1;
+}else{
+ console.log('APPROVED ARTICLES RETAINED:',published,'Rejected attempts do not discard them.');
 }
