@@ -30,6 +30,7 @@ jobs:
       - run: npm run check
         env:
           SITE_URL: ${{ vars.SITE_URL }}
+          GA_MEASUREMENT_ID: G-PQDW0511J6
       - uses: actions/configure-pages@v5
         with:
           enablement: true
