@@ -1,0 +1,31 @@
+name: Backfill original article photos
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: techpulse-images
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Extract original source images for all existing articles
+        run: node scripts/backfill-images.mjs
+      - name: Commit updated articles and trigger site deployment
+        run: |
+          git config user.name 'techpulse-bot'
+          git config user.email 'techpulse-bot@users.noreply.github.com'
+          git add articles/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Backfill original article images'
+            git pull --rebase
+            git push
+          fi
