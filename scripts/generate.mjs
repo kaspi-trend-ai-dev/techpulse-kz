@@ -44,7 +44,7 @@ const today = new Date(Date.now()+5*60*60*1000).toISOString().slice(0, 10);
 const decode = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const extract = (s, tag) => decode((s.match(new RegExp('<' + tag + '(?:\\s[^>]*)?>([\\s\\S]*?)<\\/' + tag + '>')) || [,''])[1]).trim();
 const attempt=Number(process.env.EDITORIAL_ATTEMPT||1);
-const kazakhstanMode=process.env.EDITORIAL_REGION==='kz'||(process.env.EDITORIAL_REGION!=='global'&&attempt%3===0);
+const kazakhstanMode=process.env.EDITORIAL_REGION==='kz'||(process.env.EDITORIAL_REGION!=='global'&&attempt%4!==0);
 const localMatch=/казахстан|алматы|астан|шымкент|караган|қараған|актау|ақтау|атырау|павлодар|костанай|қостанай|актобе|ақтөбе|туркестан|түркістан|семей|қызылорд|кызылорд|казахск|kazakhstan|almaty|astana|shymkent|kazakh/i;
 const political=/президент|парламент|мажилис|сенат|депутат|министр|акимат|аким\b|правительств|выбор|оппозици|митинг|протест|политическ|партия|законопроект|конституци|санкци|геополит|president|parliament|election|opposition|protest|politic|government|minister|akimat/i;
 const globalTopics = [
@@ -164,11 +164,12 @@ const prompt = [
  ...(kazakhstanMode?['РЕЖИМ КАЗАХСТАН: выбирай только событие, непосредственно происходящее в Казахстане или затрагивающее жизнь страны. Темы: технологии, бизнес, образование, культура, спорт, туризм, наука, здоровье, городская жизнь. Не выбирай государственную политику, политических деятелей, выборы, оппозицию, протесты или политические конфликты. Укажи region: "kz".']:['РЕЖИМ МИР: выбирай международную новость; укажи region: "global".']),
   'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана. Цель сайта — привлекать читателей, которые выбирают телевизор, Smart TV и домашние развлечения, и знакомить их с HARMEX через отдельный рекламный блок.',
   'Создай ОДНУ интересную, динамичную новостную статью на основе ТОЛЬКО приведённых ниже реальных заголовков новостной ленты за последние 3 дня. Новости отсортированы по актуальности, упоминаниям и интересу широкой аудитории.',
-  'В первую очередь выбирай новости о телевизорах, Smart TV, видеосервисах, игровых приставках, домашнем кинотеатре и выборе электроники. Не приписывай рекламируемому HARMEX характеристики конкурентов. Не вставляй скрытую рекламу в редакционный текст.',
-  'Приоритет отдавай первому подходящему источнику в списке, чтобы повторные попытки выбирали разные новости. Выбери один конкретный инфоповод о популярных брендах, гаджетах, известных предпринимателях, ИИ или технологиях. Заголовок цепляющий, но правдивый, без кликбейта, преувеличений и неподтверждённых фактов.',
+  ...(kazakhstanMode?['Для казахстанской ленты выбирай наиболее значимое и свежее событие любой разрешённой тематики, не ограничивайся электроникой.']:['В первую очередь выбирай новости о телевизорах, Smart TV, видеосервисах, игровых приставках, домашнем кинотеатре и выборе электроники. Не приписывай рекламируемому HARMEX характеристики конкурентов. Не вставляй скрытую рекламу в редакционный текст.']),
+  'Приоритет отдавай первому подходящему источнику в списке, чтобы повторные попытки выбирали разные новости. Выбери один конкретный инфоповод из разрешённых тем. Заголовок яркий, эмоциональный, интригующий, с сильным новостным глаголом и конкретикой; не выдумывай сенсации, не искажай факты и не обещай того, чего нет в тексте.',
   'Доступны выдержки из текстов первоисточников. Используй только явно подтверждённые ими факты; не придумывай цитаты, цифры, характеристики, даты и заявления. Различай официальное подтверждение и сообщения журналистов. Не пиши будто тестировал устройство.',
   'Вместо вымышленных подробностей объясни, почему событие важно, что пока неизвестно, и что стоит проверить дальше. Никаких слухов как установленных фактов.',
   'Выбери одну новость из списка с текстом первоисточника. Верни в sources ТОЧНО её title, url, published. Ссылку не изменяй. Если данных недостаточно, выбери другую.',
+  'Авторский рерайт обязателен: осмысли первоисточник, выдели главное, измени композицию и формулировки, объясни значение новости читателю. Не копируй предложения, абзацы, структуру и заголовок из первоисточника, кроме точных названий, фактов и коротких атрибутированных цитат. Сохраняй ссылку на источник. Не делай поверхностную замену синонимов.',
   'СТРОГО: весь заголовок, description, заголовки разделов и все абзацы — только на русском языке. Не копируй английские заголовки или абзацы из источника. Допустимы только собственные имена, бренды, названия продуктов и общепринятые технические обозначения латиницей.',
   'Текст естественный, читаемый, 3-5 разделов, по 2-3 содержательных абзаца, без искусственного SEO-спама. Реклама HARMEX добавляется на сайте отдельно.',
   'Не повторяй опубликованные темы: ' + previous.join('; '),
@@ -244,9 +245,9 @@ if (initialIssues.length) throw Error('Draft validation failed after repair: ' +
 const source = a.sources[0];
 const sourceHeadline = evidence.find(h => h.title === source.title && h.url === source.url);
 const reviewPrompt = [
-  'Act as a strict fact-checking editor. Available evidence is the source headline and an extracted excerpt from the original publisher; verify every factual claim against that evidence.',
+  'Act as a strict fact-checking editor. Also check that the draft is an original synthesis, not copied wording or the same headline from the source. A strong attention-grabbing headline is welcome only if its claims are supported. Available evidence is the source headline and an extracted excerpt from the original publisher; verify every factual claim against that evidence.',
   'Check EVERY factual claim in the Russian draft (including headline, description, sections) against the source headline and excerpt. Do not infer other devices, dates, prices, quotes, sources, or certainty from background knowledge.',
-  'A factual claim may be accepted only if supported by the supplied excerpt; clearly labelled general commentary is allowed. Reject invented quotes, unsupported claims of official confirmation and invented attributions.',
+  'Reject close translations, copied source sentences, near-identical headline phrasing and invented sensational claims. A factual claim may be accepted only if supported by the supplied excerpt; clearly labelled general commentary is allowed. Reject invented quotes, unsupported claims of official confirmation and invented attributions.',
   'Respond as JSON with approved (boolean), issues (array of strings). Only put ACTUAL unsupported or incorrect claims in issues. Do not list supported claims or explanations. If all claims are supported, approved=true and issues=[]. The article date is the TechPulse publication date, not the original source date. Russian grammatical cases of proper names are valid.',
   'SOURCE: ' + JSON.stringify(sourceHeadline),
   'DRAFT: ' + JSON.stringify(a)
