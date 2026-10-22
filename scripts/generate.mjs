@@ -294,6 +294,7 @@ a.region=kazakhstanMode?'kz':'global';
 if(kazakhstanMode&&(!localMatch.test([a.title,a.description,a.sources?.[0]?.title].join(' '))||political.test([a.title,a.description,a.sources?.[0]?.title].join(' '))))throw Error('Kazakhstan editorial topic check failed');
 if(existing.some(e=>sameEvent(e,a)))throw Error('Duplicate news event blocked before publication');
 a.date = today;
+a.publishedAt = new Date().toISOString();
 // Fail closed: no independently verified event-specific rights, so publish without a photo.
 // Do not use keyword-matched Commons pictures as substitutes for the original event.
 a.image=await licensedSourceImage(a)||undefined;
