@@ -22,6 +22,7 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
           OPENAI_MODEL: gpt-4.1-mini
       - name: Commit article
+        if: always()
         run: |
           git config user.name 'techpulse-bot'
           git config user.email 'techpulse-bot@users.noreply.github.com'
