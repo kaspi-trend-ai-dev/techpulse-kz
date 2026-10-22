@@ -37,6 +37,12 @@ for(const a of kept){
 const sitemap=fs.existsSync(root+'/sitemap.xml')?fs.readFileSync(root+'/sitemap.xml','utf8'):'';
 for(const a of kept)if(!sitemap.includes('https://harmex.asia/articles/'+a.slug+'.html'))fail.push('Not in sitemap: '+a.slug);
 if(!sitemap.includes('https://harmex.asia/'))fail.push('Homepage not in sitemap');
+if(!sitemap.includes('https://harmex.asia/harmex.html'))fail.push('Partner page not in sitemap');
+if(!sitemap.includes('<lastmod>'))fail.push('Sitemap missing lastmod dates');
+if(!fs.readFileSync(root+'/status.html','utf8').includes('noindex,follow'))fail.push('Internal status page should be noindex');
+const partner=fs.readFileSync(root+'/harmex.html','utf8');
+if(!partner.includes('harmex_partner_view')||!partner.includes('harmex_click'))fail.push('Partner analytics events missing');
+if(!homepage.includes('og:site_name')||!homepage.includes('twitter:card'))fail.push('SEO social metadata missing');
 if(fs.existsSync(root+'/CNAME')&&fs.readFileSync(root+'/CNAME','utf8').trim()!=='harmex.asia')fail.push('Wrong custom domain');
 if(fail.length){console.error('AUDIT FAILED:\n'+fail.join('\n'));process.exit(1)}
 console.log('AUDIT OK:',kept.length,'articles, canonical URLs, sitemap, schema, domain and assets');
