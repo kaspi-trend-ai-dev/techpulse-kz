@@ -271,6 +271,8 @@ if (verdict.approved !== true) {
 }
 Object.assign(a, draft);
 a.date = today;
-await findLicensedImage(a,source.title);
+// Fail closed: no independently verified event-specific rights, so publish without a photo.
+// Do not use keyword-matched Commons pictures as substitutes for the original event.
+delete a.image;
 fs.writeFileSync('articles/' + a.slug + '.json', JSON.stringify(a, null, 2) + '\n');
 console.log('Created sourced news article:', a.title);
