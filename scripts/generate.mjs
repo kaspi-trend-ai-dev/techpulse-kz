@@ -44,7 +44,10 @@ const today = new Date(Date.now()+5*60*60*1000).toISOString().slice(0, 10);
 const decode = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const extract = (s, tag) => decode((s.match(new RegExp('<' + tag + '(?:\\s[^>]*)?>([\\s\\S]*?)<\\/' + tag + '>')) || [,''])[1]).trim();
 const attempt=Number(process.env.EDITORIAL_ATTEMPT||1);
-const topics = [
+const kazakhstanMode=process.env.EDITORIAL_REGION==='kz'||(process.env.EDITORIAL_REGION!=='global'&&attempt%3===0);
+const localMatch=/казахстан|алматы|астан|шымкент|караган|қараған|актау|ақтау|атырау|павлодар|костанай|қостанай|актобе|ақтөбе|туркестан|түркістан|семей|қызылорд|кызылорд|казахск|kazakhstan|almaty|astana|shymkent|kazakh/i;
+const political=/президент|парламент|мажилис|сенат|депутат|министр|акимат|аким\b|правительств|выбор|оппозици|митинг|протест|политическ|партия|законопроект|конституци|санкци|геополит|president|parliament|election|opposition|protest|politic|government|minister|akimat/i;
+const globalTopics = [
   'Samsung LG TCL Xiaomi Hisense smart TV new models prices features',
   'Google TV Android TV streaming YouTube Netflix television',
   '4K television display LED OLED QLED screen technology',
@@ -61,10 +64,12 @@ const topics = [
   'Google Android Meta WhatsApp social media updates',
   'electric vehicles batteries energy technology'
 ];
+const localTopics=['Казахстан технологии инновации стартапы','Алматы Астана бизнес предприниматели открытия','Казахстан образование наука университеты','Казахстан спорт культура туризм события','Казахстан медицина здоровье технологии','Казахстан транспорт авиация инфраструктура','Казахстан экология городская жизнь','Казахстан новые продукты сервисы компании'];
+const topics=kazakhstanMode?localTopics:globalTopics;
 const headlines = [];
 for (const topic of topics) {
   try {
-    const feed = 'https://news.google.com/rss/search?q=' + encodeURIComponent(topic + ' when:3d') + '&hl=en-US&gl=US&ceid=US:en';
+    const feed = 'https://news.google.com/rss/search?q=' + encodeURIComponent(topic + ' when:3d') + +(kazakhstanMode?'&hl=ru&gl=KZ&ceid=KZ:ru':'&hl=en-US&gl=US&ceid=US:en');
     const response = await fetch(feed, {headers: {'User-Agent': 'TechPulseEditorial/1.0'}, signal: AbortSignal.timeout(12000)});
     if (!response.ok) continue;
     const xml = await response.text();
@@ -80,7 +85,13 @@ for (const topic of topics) {
   } catch (e) { console.warn('RSS unavailable:', topic, e.message); }
 }
 // Publisher RSS feeds expose direct article URLs; Google News RSS URLs often do not.
-const publisherFeeds=[
+const publisherFeeds=kazakhstanMode?[
+ 'https://www.inform.kz/rss',
+ 'https://tengrinews.kz/rss/',
+ 'https://www.nur.kz/rss/all.rss',
+ 'https://kapital.kz/rss',
+ 'https://kz.kursiv.media/feed/'
+]:[
  'https://techcrunch.com/feed/',
  'https://www.theverge.com/rss/index.xml',
  'https://www.engadget.com/rss.xml',
@@ -125,14 +136,14 @@ const normalize=s=>s.toLowerCase().replace(/\s+-\s+[^-]+$/,'').replace(/[^a-z0-9
 const tokens=s=>new Set(normalize(s).split(' ').filter(w=>w.length>3&&!['about','after','with','from','will','that','this','technology','latest','news'].includes(w)));
 const similarity=(a,b)=>{const x=tokens(a),y=tokens(b);const shared=[...x].filter(w=>y.has(w)).length;return shared/Math.max(1,Math.min(x.size,y.size))};
 const publishedTitles=existing.map(x=>x.title);
-const ranked=headlines.filter(h=>!publishedTitles.some(t=>similarity(h.title,t)>=0.65)&&!existing.some(e=>sameEvent(e,{title:h.title,sources:[{url:h.url,title:h.title}]}))).map(h=>{
+const ranked=headlines.filter(h=>(!kazakhstanMode||(localMatch.test(h.title)&&!political.test(h.title)))&&!publishedTitles.some(t=>similarity(h.title,t)>=0.65)&&!existing.some(e=>sameEvent(e,{title:h.title,sources:[{url:h.url,title:h.title}]}))).map(h=>{
  const age=(Date.now()-Date.parse(h.published+'T12:00:00Z'))/86400000;
  const mentions=headlines.filter(other=>other!==h&&similarity(h.title,other.title)>=0.65).length;
  const relevance=/apple|iphone|samsung|tesla|spacex|openai|chatgpt|google|nvidia|microsoft|xiaomi|ai |robot|launch|unveil|announce|release|breakthrough|billion|viral/i.test(h.title)?2:0;
  const buyerIntent=/television|smart tv|google tv|android tv|oled|qled|mini.led|hdmi|home cinema|streaming|netflix|youtube|soundbar|playstation|ps5|xbox|hisense|tcl|tv review|tv price|tv deal/i.test(h.title)?8:0;
  return {...h,score:Math.max(0,3-age)+Math.min(5,mentions*1.5)+relevance+buyerIntent};
 }).sort((a,b)=>b.score-a.score);
-if (ranked.length < 5) throw Error('Not enough distinct recent news headlines; refusing to fabricate or repeat news');
+if (ranked.length < (kazakhstanMode?1:5)) throw Error('Not enough distinct recent news headlines; refusing to fabricate or repeat news');
 // Try high-ranked stories until one has substantive source evidence.
 const evidence=[];
 const direct=ranked.filter(h=>!new URL(h.url).hostname.endsWith('news.google.com'));
@@ -150,6 +161,7 @@ const previous = existing.slice(-100).map(a => a.title);
 const rotated=evidence.length?((attempt-1)%evidence.length):0;
 const chosenEvidence=[...evidence.slice(rotated),...evidence.slice(0,rotated)];
 const prompt = [
+ ...(kazakhstanMode?['РЕЖИМ КАЗАХСТАН: выбирай только событие, непосредственно происходящее в Казахстане или затрагивающее жизнь страны. Темы: технологии, бизнес, образование, культура, спорт, туризм, наука, здоровье, городская жизнь. Не выбирай государственную политику, политических деятелей, выборы, оппозицию, протесты или политические конфликты. Укажи region: "kz".']:['РЕЖИМ МИР: выбирай международную новость; укажи region: "global".']),
   'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана. Цель сайта — привлекать читателей, которые выбирают телевизор, Smart TV и домашние развлечения, и знакомить их с HARMEX через отдельный рекламный блок.',
   'Создай ОДНУ интересную, динамичную новостную статью на основе ТОЛЬКО приведённых ниже реальных заголовков новостной ленты за последние 3 дня. Новости отсортированы по актуальности, упоминаниям и интересу широкой аудитории.',
   'В первую очередь выбирай новости о телевизорах, Smart TV, видеосервисах, игровых приставках, домашнем кинотеатре и выборе электроники. Не приписывай рекламируемому HARMEX характеристики конкурентов. Не вставляй скрытую рекламу в редакционный текст.',
@@ -160,7 +172,7 @@ const prompt = [
   'СТРОГО: весь заголовок, description, заголовки разделов и все абзацы — только на русском языке. Не копируй английские заголовки или абзацы из источника. Допустимы только собственные имена, бренды, названия продуктов и общепринятые технические обозначения латиницей.',
   'Текст естественный, читаемый, 3-5 разделов, по 2-3 содержательных абзаца, без искусственного SEO-спама. Реклама HARMEX добавляется на сайте отдельно.',
   'Не повторяй опубликованные темы: ' + previous.join('; '),
-  'Верни JSON: slug (латиница, цифры и дефисы), title, description, date (строго ' + today + '), category, sections (массив {heading, paragraphs: массив строк}), sources (массив из одного объекта {title,url,published}).',
+  'Верни JSON: region (kz или global), slug (латиница, цифры и дефисы), title, description, date (строго ' + today + '), category, sections (массив {heading, paragraphs: массив строк}), sources (массив из одного объекта {title,url,published}).',
   'Доступные новости:\n' + JSON.stringify(chosenEvidence.map(({score,...h})=>h))
 ].join('\n\n');
 const res = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -175,6 +187,7 @@ const hasRussianProse = value => typeof value === 'string' && (value.match(/[а-
 const structuralIssues = article => {
   const issues = [];
   if (!article || typeof article !== 'object') return ['response is not an object'];
+  if(kazakhstanMode&&(!localMatch.test([article.title,article.description,article.sources?.[0]?.title].join(' '))||political.test([article.title,article.description,article.sources?.[0]?.title].join(' '))))issues.push('not an eligible nonpolitical Kazakhstan news event');
   if (!article.title || typeof article.title !== 'string') issues.push('missing title');
   if (!article.description || typeof article.description !== 'string') issues.push('missing description');
   if(!hasRussianProse(article.title)||!hasRussianProse(article.description))issues.push('title and description must be written in Russian');
@@ -194,6 +207,7 @@ const structuralIssues = article => {
   return issues;
 };
 a.slug = slugify(a.slug);
+a.region=kazakhstanMode?'kz':'global';
 // Resolve the cited source deterministically from the publisher evidence,
 // rather than asking the model to reproduce URLs and timestamps perfectly.
 function resolveSource(article) {
@@ -220,6 +234,7 @@ for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
   if (!correction.ok) throw Error('Draft repair API failed: ' + await correction.text());
   const fixed = JSON.parse((await correction.json()).choices[0].message.content);
   fixed.slug = slugify(fixed.slug);
+  fixed.region=kazakhstanMode?'kz':'global';
   resolveSource(fixed);
   Object.assign(a, fixed);
   initialIssues = structuralIssues(a);
@@ -264,6 +279,7 @@ for (let attempt = 0; attempt < 2 && verdict.approved !== true; attempt++) {
   ]);
   // The rewrite is allowed to improve prose, but immutable metadata belongs to the publisher pipeline.
   revised.slug=a.slug;
+  revised.region=a.region;
   revised.date=a.date;
   revised.sources=a.sources;
   if (!valid(revised)) {console.warn('Rewrite broke article structure; retaining previous draft for next attempt');continue;}
@@ -274,6 +290,8 @@ if (verdict.approved !== true) {
   throw Error('Editorial review rejected after rewrites: ' + JSON.stringify(verdict.issues || ['not approved']));
 }
 Object.assign(a, draft);
+a.region=kazakhstanMode?'kz':'global';
+if(kazakhstanMode&&(!localMatch.test([a.title,a.description,a.sources?.[0]?.title].join(' '))||political.test([a.title,a.description,a.sources?.[0]?.title].join(' '))))throw Error('Kazakhstan editorial topic check failed');
 if(existing.some(e=>sameEvent(e,a)))throw Error('Duplicate news event blocked before publication');
 a.date = today;
 // Fail closed: no independently verified event-specific rights, so publish without a photo.
