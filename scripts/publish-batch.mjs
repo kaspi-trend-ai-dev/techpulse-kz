@@ -15,10 +15,16 @@ while(Date.now()-started<runtimeMs-20000&&consecutiveFailures<maxConsecutiveFail
  attempts++;
  const remaining=runtimeMs-(Date.now()-started);
  const run=spawnSync(process.execPath,['scripts/generate.mjs'],{
-  stdio:'inherit',
+  encoding:'utf8',
   env:{...process.env,EDITORIAL_ATTEMPT:String(attempts)},
   timeout:Math.min(150000,Math.max(1000,remaining-10000))
  });
+ const output=(run.stdout||'')+'\n'+(run.stderr||'');
+ if(output)process.stdout.write(output);
+ if(/credit_balance_exhausted|insufficient_quota|You have no credits remaining/i.test(output)){
+  console.error('OPENAI_API_BILLING_REQUIRED: API credits exhausted; stopping attempts until billing is restored.');
+  break;
+ }
  const saved=count()-before;
  if(saved>published){
   published=saved;
