@@ -8,53 +8,25 @@ const categoryOf=a=>{const t=(a.title+' '+a.category).toLowerCase();if(/apple|ip
 const visual=a=>{const t=(a.title+' '+a.category).toLowerCase();return /apple|iphone|ipad|macbook/.test(t)?'laptop':/телевизор|smart tv|экран|hdmi/.test(t)?'tv':/ai|ии|openai|chatgpt|нейросет|nvidia/.test(t)?'ai':/samsung|xiaomi|смартфон|телефон/.test(t)?'phone':'chip'};
 const artwork=kind=>{const palette={laptop:['#18283e','#5187b9'],tv:['#1c2445','#6c64bf'],ai:['#182b39','#27a8a5'],phone:['#32234b','#a77ae5'],chip:['#22354c','#dc9258']}[kind];const shape={laptop:'<rect x="255" y="115" width="290" height="187" rx="14" fill="#0b1427" stroke="#c7ddf8" stroke-width="7"/><rect x="270" y="130" width="260" height="157" rx="5" fill="#7fc5f5" opacity=".32"/><path d="M220 316h360l-24 22H244z" fill="#c7ddf8"/>',tv:'<rect x="188" y="85" width="424" height="247" rx="16" fill="#10182e" stroke="#e2e9ff" stroke-width="8"/><rect x="203" y="100" width="394" height="217" rx="6" fill="#9a90ff" opacity=".32"/><path d="M375 332v26m50-26v26m-100 2h150" stroke="#dce8ff" stroke-width="9"/>',ai:'<circle cx="400" cy="210" r="108" fill="none" stroke="#b3fff3" stroke-width="9"/><circle cx="400" cy="210" r="48" fill="#b3fff3" opacity=".65"/><path d="M400 64v50m0 192v50M254 210h50m192 0h50M296 106l35 35m138 138 35 35m0-208-35 35M331 279l-35 35" stroke="#b3fff3" stroke-width="9"/>',phone:'<rect x="310" y="63" width="180" height="306" rx="30" fill="#11142b" stroke="#e2d6ff" stroke-width="8"/><rect x="327" y="85" width="146" height="256" rx="15" fill="#d7a7ff" opacity=".45"/><circle cx="400" cy="353" r="6" fill="#e2d6ff"/>',chip:'<rect x="306" y="118" width="188" height="188" rx="20" fill="#10233a" stroke="#ffe1ad" stroke-width="8"/><rect x="357" y="169" width="86" height="86" rx="10" fill="#ffe1ad" opacity=".65"/><path d="M330 82v36m70-36v36m70-36v36M330 306v36m70-36v36m70-36v36M270 145h36m-36 70h36m-36 70h36m188-140h36m-36 70h36m-36 70h36" stroke="#ffe1ad" stroke-width="10"/> '}[kind];return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="${palette[0]}"/><stop offset="1" stop-color="${palette[1]}"/></linearGradient></defs><rect width="800" height="440" fill="url(#bg)"/><circle cx="640" cy="80" r="160" fill="#fff" opacity=".07"/><circle cx="135" cy="375" r="175" fill="#fff" opacity=".06"/>${shape}</svg>`};
 for(const kind of ['laptop','tv','ai','phone','chip'])fs.writeFileSync(out+'/assets/'+kind+'.svg',artwork(kind));
-// Prefer relevant, freely licensed Wikimedia Commons photographs over generic icons.
-const photoMap=new Map();
-const queryFor=a=>{
- const t=(a.title+' '+a.category).toLowerCase();
- if(/iphone/.test(t))return 'iPhone Apple smartphone';
- if(/macbook|mac /.test(t))return 'Apple MacBook laptop';
- if(/ipad/.test(t))return 'Apple iPad tablet';
- if(/apple/.test(t))return 'Apple products devices';
- if(/tesla/.test(t))return 'Tesla electric car';
- if(/spacex/.test(t))return 'SpaceX rocket launch';
- if(/samsung/.test(t))return 'Samsung Galaxy smartphone';
- if(/xiaomi/.test(t))return 'Xiaomi smartphone';
- if(/nvidia/.test(t))return 'Nvidia graphics card';
- if(/openai|chatgpt/.test(t))return 'Artificial intelligence computer';
- if(/телевизор|smart tv|экран|hdmi/.test(t))return 'modern flat screen television';
- if(/смартфон|телефон/.test(t))return 'modern smartphone';
- return 'consumer electronics technology';
+// Unique editorial covers: no generic Wikimedia photo reused across unrelated stories.
+// Covers are generated deterministically for every article, avoiding misleading imagery.
+const hash=s=>[...s].reduce((n,ch)=>((n*31+ch.charCodeAt(0))>>>0),2166136261);
+const coverPath=a=>'/assets/cover-'+a.slug+'.svg';
+const coverSvg=a=>{
+ const h=hash(a.slug),kind=visual(a),hue=h%360,accent=(hue+65)%360;
+ const shapes={
+  tv:'<rect x="175" y="105" width="450" height="245" rx="18" fill="#091225" stroke="#d9ecff" stroke-width="9"/><rect x="192" y="123" width="416" height="209" rx="7" fill="url(#screen)"/><path d="M365 350v30m70-30v30m-125 0h180" stroke="#d9ecff" stroke-width="10"/>',
+  laptop:'<rect x="245" y="115" width="310" height="195" rx="15" fill="#091225" stroke="#d9ecff" stroke-width="8"/><rect x="260" y="130" width="280" height="165" fill="url(#screen)"/><path d="M210 320h380l-25 25H235z" fill="#d9ecff"/>',
+  phone:'<rect x="325" y="65" width="150" height="325" rx="28" fill="#091225" stroke="#d9ecff" stroke-width="9"/><rect x="342" y="88" width="116" height="268" rx="12" fill="url(#screen)"/>',
+  ai:'<circle cx="400" cy="225" r="125" fill="none" stroke="#d9ecff" stroke-width="11"/><circle cx="400" cy="225" r="70" fill="url(#screen)"/><path d="M400 60v40m0 250v40M235 225h40m250 0h40M280 105l35 35m170 170 35 35m0-240-35 35M315 310l-35 35" stroke="#d9ecff" stroke-width="10"/>',
+  chip:'<rect x="280" y="105" width="240" height="240" rx="25" fill="#091225" stroke="#d9ecff" stroke-width="9"/><rect x="340" y="165" width="120" height="120" rx="14" fill="url(#screen)"/><path d="M330 60v45m70-45v45m70-45v45M330 345v45m70-45v45m70-45v45M235 155h45m-45 70h45m-45 70h45m240-140h45m-45 70h45m-45 70h45" stroke="#d9ecff" stroke-width="9"/>'
+ };
+ const marker=esc(a.title).slice(0,70);
+ return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="Иллюстрация: ${marker}"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="hsl(${hue},48%,16%)"/><stop offset="1" stop-color="hsl(${accent},65%,35%)"/></linearGradient><linearGradient id="screen" x2="1" y2="1"><stop stop-color="hsl(${accent},85%,66%)"/><stop offset="1" stop-color="hsl(${hue},80%,46%)"/></linearGradient></defs><rect width="800" height="440" fill="url(#bg)"/><circle cx="${90+h%130}" cy="${90+(h>>4)%120}" r="180" fill="#fff" opacity=".045"/><circle cx="${590+(h>>7)%120}" cy="350" r="150" fill="#fff" opacity=".05"/>${shapes[kind]}<rect x="24" y="24" width="155" height="42" rx="11" fill="#fff" opacity=".15"/><text x="40" y="52" font-family="Arial,sans-serif" font-size="23" font-weight="bold" fill="#fff">TECHPULSE</text></svg>`;
 };
-async function findPhoto(a){
- const query=queryFor(a);
- try{
-  const endpoint='https://commons.wikimedia.org/w/api.php?'+new URLSearchParams({action:'query',generator:'search',gsrsearch:'filetype:bitmap '+query,gsrnamespace:'6',gsrlimit:'12',prop:'imageinfo',iiprop:'url|extmetadata',iiurlwidth:'1200',format:'json',origin:'*'});
-  const response=await fetch(endpoint,{headers:{'User-Agent':'TechPulseEditorial/1.0 (techpulse-kz; educational news site)'},signal:AbortSignal.timeout(10000)});
-  if(!response.ok)return;
-  const data=await response.json();
-  const pages=Object.values(data.query?.pages||{});
-  for(const page of pages){
-   const info=page.imageinfo?.[0],meta=info?.extmetadata||{};
-   const license=meta.LicenseShortName?.value||'';
-   if(!info?.thumburl||!/^https:\/\//.test(info.thumburl)||!/CC BY|CC0|Public domain|PD-/i.test(license))continue;
-   if(!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(info.thumburl))continue;
-   const extension=/\.png(?:\?|$)/i.test(info.thumburl)?'png':/\.webp(?:\?|$)/i.test(info.thumburl)?'webp':'jpg';
-   const file='photo-'+a.slug+'.'+extension;
-   const photo=await fetch(info.thumburl,{signal:AbortSignal.timeout(15000)});
-   if(!photo.ok||!/^image\//.test(photo.headers.get('content-type')||''))continue;
-   const buffer=Buffer.from(await photo.arrayBuffer());
-   if(buffer.length<10000||buffer.length>6e6)continue;
-   fs.writeFileSync(out+'/assets/'+file,buffer);
-   photoMap.set(a.slug,{path:'/assets/'+file,credit:page.title.replace(/^File:/,''),source:info.descriptionurl,license});
-   console.log('Photo:',a.slug,page.title,license);
-   return;
-  }
- }catch(error){console.warn('Image search skipped for',a.slug,error.message)}
-}
-for(let i=0;i<items.length;i+=8)await Promise.all(items.slice(i,i+8).map(findPhoto));
-const img=a=>{const photo=photoMap.get(a.slug);return photo?`<img src="${url(photo.path)}" alt="Фото к статье: ${esc(a.title)}" loading="lazy" width="1200" height="800">`:`<img src="${url('/assets/'+visual(a)+'.svg')}" alt="Иллюстрация к статье: ${esc(a.title)}" loading="lazy" width="800" height="440">`};
-const credit=a=>{const photo=photoMap.get(a.slug);return photo?`Фото: <a href="${esc(photo.source)}" target="_blank" rel="noopener noreferrer">Wikimedia Commons · ${esc(photo.credit)}</a> · ${esc(photo.license)}`:'Тематическая иллюстрация · TechPulse'};
+for(const a of items)fs.writeFileSync(out+coverPath(a),coverSvg(a));
+const img=a=>`<img src="${url(coverPath(a))}" alt="Авторская тематическая иллюстрация к статье: ${esc(a.title)}" loading="lazy" width="800" height="440">`;
+const credit=a=>'Тематическая иллюстрация · TechPulse';
 const related=a=>items.filter(b=>b.slug!==a.slug).sort((x,y)=>Number(categoryOf(y)===categoryOf(a))-Number(categoryOf(x)===categoryOf(a))).slice(0,4);
 const card=a=>`<a class="card" href="${url('/articles/'+a.slug+'.html')}" data-category="${esc(categoryOf(a))}"><span class="card-image">${img(a)}</span><span class="card-body"><span class="tag">${esc(categoryOf(a))}</span><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p><small>${esc(a.date)} · Читать →</small></span></a>`;
 const featured=items[0];
