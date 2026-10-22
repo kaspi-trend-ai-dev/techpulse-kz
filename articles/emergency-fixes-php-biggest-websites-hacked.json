@@ -1,0 +1,46 @@
+{
+  "region": "global",
+  "slug": "emergency-fixes-php-biggest-websites-hacked",
+  "title": "PHP выпускает экстренные обновления из-за хакерских атак на крупнейшие сайты",
+  "description": "PHP выпустил экстренные патчи в связи с сообщениями о хакерских атаках на крупные интернет-ресурсы.",
+  "date": "2026-10-22",
+  "category": "technology",
+  "sections": [
+    {
+      "heading": "Экстренные обновления безопасности PHP",
+      "paragraphs": [
+        "PHP выпустил экстренные обновления безопасности, направленные на устранение выявленных проблем в языке программирования. Эти обновления появились в ответ на сообщения о попытках взлома некоторых крупных веб-сайтов.",
+        "Информация о конкретных уязвимостях и деталях атак не раскрывается в источнике, однако факт выпуска патчей свидетельствует о необходимости обновления программного обеспечения."
+      ]
+    },
+    {
+      "heading": "Сообщения о хакерских атаках на крупные сайты",
+      "paragraphs": [
+        "Некоторые из крупнейших интернет-ресурсов сообщили о том, что стали объектами хакерских атак.",
+        "Подробности о масштабах атак, методах злоумышленников и последствиях для пользователей не предоставлены в доступном материале."
+      ]
+    },
+    {
+      "heading": "Рекомендации по безопасности",
+      "paragraphs": [
+        "В связи с выпуском обновлений безопасности рекомендуется владельцам и администраторам веб-платформ своевременно применять патчи для защиты своих ресурсов.",
+        "Обновление программного обеспечения является важной мерой для поддержания безопасности и предотвращения возможных инцидентов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "PHP releases emergency fixes as some of the world's biggest websites say they were targeted by hackers",
+      "url": "https://www.techradar.com/pro/security/php-releases-emergency-fixes-as-some-of-the-worlds-biggest-websites-say-they-were-targeted-by-hackers",
+      "published": "2026-10-22"
+    }
+  ],
+  "image": {
+    "url": "https://cdn.mos.cms.futurecdn.net/B73DML5s9XT2asace74Gnd-1920-80.jpg",
+    "source": "https://www.techradar.com/pro/security/php-releases-emergency-fixes-as-some-of-the-worlds-biggest-websites-say-they-were-targeted-by-hackers",
+    "credit": "https://www.techradar.com/author/sead-fadilpai",
+    "license": "Лицензия не проверена",
+    "alt": "PHP выпускает экстренные обновления из-за хакерских атак на крупнейшие сайты",
+    "verified": true
+  }
+}
