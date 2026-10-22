@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
   workflow_run:
-    workflows: ['Daily editorial publication', 'Backfill original article photos']
+    workflows: ['Frequent editorial publication', 'Backfill original article photos']
     types: [completed]
 permissions:
   contents: read
