@@ -9,6 +9,11 @@ const decode = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').r
 const extract = (s, tag) => decode((s.match(new RegExp('<' + tag + '(?:\\s[^>]*)?>([\\s\\S]*?)<\\/' + tag + '>')) || [,''])[1]).trim();
 const attempt=Number(process.env.EDITORIAL_ATTEMPT||1);
 const topics = [
+  'Samsung LG TCL Xiaomi Hisense smart TV new models prices features',
+  'Google TV Android TV streaming YouTube Netflix television',
+  '4K television display LED OLED QLED screen technology',
+  'PlayStation Xbox console TV HDMI gaming entertainment',
+  'home cinema soundbar TV setup technology',
   'Apple iPhone iPad Mac technology launch',
   'Samsung Xiaomi Sony LG new gadgets TV',
   'Elon Musk Tesla SpaceX technology',
@@ -44,7 +49,10 @@ const publisherFeeds=[
  'https://www.theverge.com/rss/index.xml',
  'https://www.engadget.com/rss.xml',
  'https://www.wired.com/feed/rss',
- 'https://arstechnica.com/feed/'
+ 'https://arstechnica.com/feed/',
+ 'https://www.whathifi.com/feeds.xml',
+ 'https://www.tomsguide.com/feeds.xml',
+ 'https://www.techradar.com/feeds.xml'
 ];
 for(const feed of publisherFeeds){
  try{
@@ -85,7 +93,8 @@ const ranked=headlines.filter(h=>!publishedTitles.some(t=>similarity(h.title,t)>
  const age=(Date.now()-Date.parse(h.published+'T12:00:00Z'))/86400000;
  const mentions=headlines.filter(other=>other!==h&&similarity(h.title,other.title)>=0.65).length;
  const relevance=/apple|iphone|samsung|tesla|spacex|openai|chatgpt|google|nvidia|microsoft|xiaomi|ai |robot|launch|unveil|announce|release|breakthrough|billion|viral/i.test(h.title)?2:0;
- return {...h,score:Math.max(0,3-age)+Math.min(5,mentions*1.5)+relevance};
+ const buyerIntent=/television|smart tv|google tv|android tv|oled|qled|mini.led|hdmi|home cinema|streaming|netflix|youtube|soundbar|playstation|ps5|xbox|hisense|tcl|tv review|tv price|tv deal/i.test(h.title)?8:0;
+ return {...h,score:Math.max(0,3-age)+Math.min(5,mentions*1.5)+relevance+buyerIntent};
 }).sort((a,b)=>b.score-a.score);
 if (ranked.length < 5) throw Error('Not enough distinct recent news headlines; refusing to fabricate or repeat news');
 // Try high-ranked stories until one has substantive source evidence.
@@ -105,8 +114,9 @@ const previous = existing.slice(-100).map(a => a.title);
 const rotated=evidence.length?((attempt-1)%evidence.length):0;
 const chosenEvidence=[...evidence.slice(rotated),...evidence.slice(0,rotated)];
 const prompt = [
-  'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана.',
+  'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана. Цель сайта — привлекать читателей, которые выбирают телевизор, Smart TV и домашние развлечения, и знакомить их с HARMEX через отдельный рекламный блок.',
   'Создай ОДНУ интересную, динамичную новостную статью на основе ТОЛЬКО приведённых ниже реальных заголовков новостной ленты за последние 3 дня. Новости отсортированы по актуальности, упоминаниям и интересу широкой аудитории.',
+  'В первую очередь выбирай новости о телевизорах, Smart TV, видеосервисах, игровых приставках, домашнем кинотеатре и выборе электроники. Не приписывай рекламируемому HARMEX характеристики конкурентов. Не вставляй скрытую рекламу в редакционный текст.',
   'Приоритет отдавай первому подходящему источнику в списке, чтобы повторные попытки выбирали разные новости. Выбери один конкретный инфоповод о популярных брендах, гаджетах, известных предпринимателях, ИИ или технологиях. Заголовок цепляющий, но правдивый, без кликбейта, преувеличений и неподтверждённых фактов.',
   'Доступны выдержки из текстов первоисточников. Используй только явно подтверждённые ими факты; не придумывай цитаты, цифры, характеристики, даты и заявления. Различай официальное подтверждение и сообщения журналистов. Не пиши будто тестировал устройство.',
   'Вместо вымышленных подробностей объясни, почему событие важно, что пока неизвестно, и что стоит проверить дальше. Никаких слухов как установленных фактов.',
