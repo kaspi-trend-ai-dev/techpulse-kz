@@ -1,23 +1,23 @@
 import fs from 'node:fs';
 import {spawnSync} from 'node:child_process';
 
-// Continuous editorial work during each hourly Actions window.
+// Frequent editorial work in short Actions windows, scheduled every five minutes.
 // No daily article cap or per-hour article quota; runtime and repeated failures
 // provide operational protection against unbounded API costs and stuck jobs.
 const started=Date.now();
-const runtimeMs=45*60*1000;
-const maxConsecutiveFailures=6;
+const runtimeMs=4*60*1000;
+const maxConsecutiveFailures=3;
 const count=()=>fs.readdirSync('articles').filter(x=>x.endsWith('.json')).length;
 const before=count();
 let published=0,attempts=0,consecutiveFailures=0;
-console.log('TechPulse continuous publishing:',{before,runtimeMinutes:45,articleQuota:'none',focus:'TV purchase-intent traffic'});
-while(Date.now()-started<runtimeMs-180000&&consecutiveFailures<maxConsecutiveFailures){
+console.log('TechPulse continuous publishing:',{before,runtimeMinutes:4,articleQuota:'none',focus:'TV purchase-intent traffic'});
+while(Date.now()-started<runtimeMs-20000&&consecutiveFailures<maxConsecutiveFailures){
  attempts++;
  const remaining=runtimeMs-(Date.now()-started);
  const run=spawnSync(process.execPath,['scripts/generate.mjs'],{
   stdio:'inherit',
   env:{...process.env,EDITORIAL_ATTEMPT:String(attempts)},
-  timeout:Math.min(180000,Math.max(1000,remaining))
+  timeout:Math.min(150000,Math.max(1000,remaining-10000))
  });
  const saved=count()-before;
  if(saved>published){
