@@ -9,9 +9,9 @@ for(const file of files){
  // Recheck any old images; old keyword matches are not sufficient evidence.
  const prior=Boolean(a.image);
  const image=await licensedSourceImage(a);
- if(image){a.image=image;added++}else{delete a.image;if(prior)removed++}
+ if(image){a.image=image;added++}else if(prior){console.log('Keeping existing image when source lookup has no replacement:',a.slug)}
  delete a.imageCheckedAt;
  checked++;
- fs.writeFileSync(path,JSON.stringify(a,null,2)+'\n');
+ if(image||!prior)fs.writeFileSync(path,JSON.stringify(a,null,2)+'\n');
 }
 console.log('Source-image rights audit:',{checked,withVerifiedImages:added,removedUnverified:removed});
