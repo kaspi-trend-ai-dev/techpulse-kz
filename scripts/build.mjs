@@ -4,7 +4,10 @@ const base='https://harmex.asia';const prefix=new URL(base).pathname.replace(/\/
 const isRussian=a=>{const parts=[a.title,a.description,...(a.sections||[]).flatMap(s=>[s.heading,...(s.paragraphs||[])])].filter(x=>typeof x==='string');return parts.length>=4&&parts.every(t=>(t.match(/[а-яё]/gi)||[]).length>=Math.max(12,(t.match(/[a-zа-яё]/gi)||[]).length*.28))};
 const allItems=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x)));
 const {kept,removed}=uniqueArticles(allItems.filter(isRussian));
-const items=kept.sort((a,b)=>b.date.localeCompare(a.date));
+const newsDate=a=>a.sources?.[0]?.published||a.date||'';
+const publicationTime=a=>a.publishedAt||a.date||'';
+const newsOrder=(a,b)=>newsDate(b).localeCompare(newsDate(a))||publicationTime(b).localeCompare(publicationTime(a))||String(b.slug).localeCompare(String(a.slug));
+const items=kept.sort(newsOrder);
 const publishedCount=items.length;
 if(publishedCount!==new Set(items.map(a=>a.slug)).size)throw Error('Article count does not match unique published slugs');
 console.log('Event duplicates hidden:',removed.length,removed.map(x=>x.article.slug));
@@ -20,7 +23,7 @@ const artwork=kind=>{const palette={laptop:['#18283e','#5187b9'],tv:['#1c2445','
 const credit=a=>'';
 const cover=a=>{const i=a.image;if(!i||i.verified!==true||!/^https:\/\//.test(i.url||''))return '';return '<img loading="lazy" decoding="async" src="'+esc(i.url)+'" alt="'+esc(i.alt||a.title)+'" referrerpolicy="no-referrer">'};
 const related=a=>{const terms=t=>new Set((t.toLowerCase().match(/[a-zа-яё0-9]{4,}/g)||[]).filter(x=>!['этого','который','технологии','новости','после','среди','может','стало','будет'].includes(x)));const words=terms(a.title+' '+a.category);return items.filter(b=>b.slug!==a.slug).map(b=>({b,score:(categoryOf(b)===categoryOf(a)?6:0)+[...terms(b.title+' '+b.category)].filter(x=>words.has(x)).length*2})).sort((x,y)=>y.score-x.score||y.b.date.localeCompare(x.b.date)).slice(0,4).map(x=>x.b)};
-const card=a=>`<a class="card" href="${url('/articles/'+a.slug+'.html')}" data-slug="${esc(a.slug)}" data-date="${esc(a.date)}" data-category="${esc(categoryOf(a))}" data-search="${esc([a.title,a.description,a.category,categoryOf(a),...(a.sections||[]).map(x=>x.heading)].join(' '))}">${cover(a)?`<span class="card-image">${cover(a)}</span>`:""}<span class="card-body"><span class="tag">${esc(categoryOf(a))}</span><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p><small>${esc(a.date)} · Читать →</small></span></a>`;
+const card=a=>`<a class="card" href="${url('/articles/'+a.slug+'.html')}" data-slug="${esc(a.slug)}" data-date="${esc(newsDate(a))}" data-published="${esc(publicationTime(a))}" data-category="${esc(categoryOf(a))}" data-search="${esc([a.title,a.description,a.category,categoryOf(a),...(a.sections||[]).map(x=>x.heading)].join(' '))}">${cover(a)?`<span class="card-image">${cover(a)}</span>`:""}<span class="card-body"><span class="tag">${esc(categoryOf(a))}</span><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p><small>${esc(a.date)} · Читать →</small></span></a>`;
 const featured=items[0];
 const featuredHtml=featured?`<section class="featured"><div><span class="eyebrow">ГЛАВНАЯ ТЕМА</span><h2><a href="${url('/articles/'+featured.slug+'.html')}">${esc(featured.title)}</a></h2><p>${esc(featured.description)}</p><a class="readmore" href="${url('/articles/'+featured.slug+'.html')}">Читать материал ↗</a></div>${cover(featured)?`<div class="featured-art">${cover(featured)}${credit(featured)}</div>`:""}</section>`:'';
 const cards=items.map(card).join('');
