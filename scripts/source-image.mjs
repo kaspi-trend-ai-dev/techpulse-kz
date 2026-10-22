@@ -11,9 +11,7 @@ export async function licensedSourceImage(article){
   const html=(await response.text()).slice(0,650000);
   const image=absolute(meta(html,'og:image')||meta(html,'twitter:image'),response.url);
   if(!image)return null;
-  const title=meta(html,'og:title')||'';
-  // Avoid unrelated site banners and home-page thumbnails.
-  if(title&&article.title){const words=x=>new Set(String(x).toLowerCase().match(/[a-zа-яё0-9]{5,}/gi)||[]);const a=words(article.title),b=words(title);if(a.size&&b.size&&![...a].some(w=>b.has(w)))return null;}
+  // The image must come from the exact cited article URL, not a keyword search.
   const author=meta(html,'author')||meta(html,'article:author')||'';
   return {url:image,source:response.url,credit:author||new URL(response.url).hostname,license:'Лицензия не проверена',alt:article.title,verified:true};
  }catch(e){console.warn('Original article image unavailable:',e.message)}
