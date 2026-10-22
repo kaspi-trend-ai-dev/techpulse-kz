@@ -1,32 +1,35 @@
 import fs from 'node:fs';
 import {spawnSync} from 'node:child_process';
 
-// Cumulative daily quota: recover missed hourly slots instead of dropping them.
-const now=new Date();
-const almaty=new Date(now.getTime()+5*60*60*1000);
-const today=almaty.toISOString().slice(0,10),hour=almaty.getUTCHours();
-const manual=process.env.GITHUB_EVENT_NAME==='workflow_dispatch';
-const target=50;
-const countToday=()=>fs.readdirSync('articles').filter(x=>x.endsWith('.json')).filter(x=>{
- try{return JSON.parse(fs.readFileSync('articles/'+x,'utf8')).date===today}catch{return false}
-}).length;
-const plannedByNow=2*(hour+1)+(hour>=2?1:0)+(hour>=14?1:0);
-const starting=countToday();
-const quota=Math.max(0,Math.min(target-starting,manual?3:plannedByNow-starting));
-const maxAttempts=Math.min(24,Math.max(quota*3,quota+3));
-console.log('TechPulse publication target:',{today,hour,timezone:'Asia/Almaty',manual,starting,plannedByNow,quota,maxAttempts,target});
-let succeeded=0,attempts=0;
-while(succeeded<quota&&attempts<maxAttempts){
+// Continuous editorial work during each hourly Actions window.
+// No daily article cap or per-hour article quota; runtime and repeated failures
+// provide operational protection against unbounded API costs and stuck jobs.
+const started=Date.now();
+const runtimeMs=45*60*1000;
+const maxConsecutiveFailures=6;
+const count=()=>fs.readdirSync('articles').filter(x=>x.endsWith('.json')).length;
+const before=count();
+let published=0,attempts=0,consecutiveFailures=0;
+console.log('TechPulse continuous publishing:',{before,runtimeMinutes:45,articleQuota:'none',focus:'TV purchase-intent traffic'});
+while(Date.now()-started<runtimeMs-180000&&consecutiveFailures<maxConsecutiveFailures){
  attempts++;
+ const remaining=runtimeMs-(Date.now()-started);
  const run=spawnSync(process.execPath,['scripts/generate.mjs'],{
-  stdio:'inherit',env:{...process.env,EDITORIAL_ATTEMPT:String(attempts)},
-  timeout:180000
+  stdio:'inherit',
+  env:{...process.env,EDITORIAL_ATTEMPT:String(attempts)},
+  timeout:Math.min(180000,Math.max(1000,remaining))
  });
- if(run.status===0){succeeded++;continue}
- console.warn('Candidate failed, trying another news story.',{attempts,status:run.status,error:run.error?.message});
+ if(run.status===0){
+  published++;
+  consecutiveFailures=0;
+  console.log('Published article',published,'total',count());
+ }else{
+  consecutiveFailures++;
+  console.warn('Candidate failed; searching next story.',{attempts,consecutiveFailures,status:run.status,error:run.error?.message});
+ }
 }
-console.log('Editorial batch summary:',{attempts,succeeded,nowPublished:countToday(),plannedByNow,target});
-if(succeeded<quota){
- console.error('Publication shortfall: remaining articles will be retried by next hourly run.');
+console.log('Editorial batch summary:',{attempts,published,total:count(),durationSeconds:Math.round((Date.now()-started)/1000),consecutiveFailures});
+if(published===0){
+ console.error('No article published this run; inspect source and generation errors.');
  process.exitCode=1;
 }
