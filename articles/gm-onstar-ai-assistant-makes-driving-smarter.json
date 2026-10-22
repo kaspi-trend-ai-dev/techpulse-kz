@@ -1,0 +1,44 @@
+{
+  "slug": "gm-onstar-ai-assistant-makes-driving-smarter",
+  "title": "GM is giving OnStar an AI makeover",
+  "description": "General Motors is upgrading its OnStar connected car service with a new AI assistant set to debut in the 2027 Cadillac Lyriq EV. This move marks a significant shift towards integrating advanced AI technology directly into vehicles, enhancing safety, convenience, and driver interaction.",
+  "date": "2026-10-22",
+  "category": "home-entertainment",
+  "sections": [
+    {
+      "heading": "OnStar gets a state-of-the-art AI upgrade",
+      "paragraphs": [
+        "General Motors announced a major reinvention of its OnStar service, introducing an AI-powered assistant designed to provide interactive and personalized support within vehicles. The new OnStar AI Assistant will first appear in the 2027 Cadillac Lyriq EV and is planned for gradual rollout across other GM models. This initiative reflects GM's vision to transform OnStar from a traditional call center into a connected intelligence platform.",
+        "Unlike earlier versions, the upgraded OnStar integrates agentic AI capabilities, allowing it to anticipate needs and offer proactive assistance. This includes features such as voice control for vehicle functions like climate settings and detailed information on the vehicle’s features."
+      ]
+    },
+    {
+      "heading": "Safety and connectivity at the forefront",
+      "paragraphs": [
+        "The AI-powered OnStar will utilize vehicle cameras to provide live views and automatically record incidents such as aggressive horn honks or crashes, securely uploading the footage to the companion app. These connected cameras enhance safety by collecting critical information for users without exposing sensitive data to GM or OnStar.",
+        "GM emphasizes user control, allowing customers to manage what data is shared and who can access it, with recordings being time-limited and encrypted. These measures come on the heels of regulatory scrutiny concerning data privacy related to telematics services, ensuring compliance and increased transparency."
+      ]
+    },
+    {
+      "heading": "A modern approach to software and AI integration",
+      "paragraphs": [
+        "The OnStar AI Assistant is part of a broader technological overhaul at GM, which includes adopting centralized vehicle computing architectures and next-generation AI tools. This holistic approach aims to embed AI deeply into the vehicle experience, moving beyond add-on features to core technology that defines how drivers interact with their cars.",
+        "This transition also signals GM’s recognition of the increasing importance of software in the automotive industry, especially as competitors, including Chinese manufacturers and Tesla, push ahead with AI and autonomous driving developments."
+      ]
+    },
+    {
+      "heading": "What remains to be seen",
+      "paragraphs": [
+        "While GM’s vision is ambitious, details such as the exact capabilities of the AI assistant, how well it integrates with other vehicle systems, and the user experience remain to be fully experienced by customers. The timeline for wider implementation beyond the Cadillac Lyriq EV is also yet to be detailed.",
+        "Additionally, how consumers will respond to managing permissions and privacy with these connected services in everyday use will be important to observe, especially as AI plays a larger role in vehicle operation."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "GM is giving OnStar an AI makeover",
+      "url": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/",
+      "published": "2026-10-21"
+    }
+  ]
+}
