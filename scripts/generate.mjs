@@ -7,12 +7,18 @@ const existing = files.map(x => JSON.parse(fs.readFileSync('articles/' + x, 'utf
 const today = new Date().toISOString().slice(0, 10);
 const decode = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const extract = (s, tag) => decode((s.match(new RegExp('<' + tag + '(?:\\s[^>]*)?>([\\s\\S]*?)<\\/' + tag + '>')) || [,''])[1]).trim();
+const attempt=Number(process.env.EDITORIAL_ATTEMPT||1);
 const topics = [
   'Apple iPhone iPad Mac technology launch',
   'Samsung Xiaomi Sony LG new gadgets TV',
   'Elon Musk Tesla SpaceX technology',
   'OpenAI Google Microsoft NVIDIA AI announcements',
-  'technology gadgets smartphones innovations'
+  'technology gadgets smartphones innovations',
+  'cybersecurity privacy data breach technology',
+  'gaming consoles PlayStation Xbox Nintendo Steam',
+  'robotics science chip semiconductors breakthrough',
+  'Google Android Meta WhatsApp social media updates',
+  'electric vehicles batteries energy technology'
 ];
 const headlines = [];
 for (const topic of topics) {
@@ -84,7 +90,9 @@ const ranked=headlines.filter(h=>!publishedTitles.some(t=>similarity(h.title,t)>
 if (ranked.length < 5) throw Error('Not enough distinct recent news headlines; refusing to fabricate or repeat news');
 // Try high-ranked stories until one has substantive source evidence.
 const evidence=[];
-const candidates=ranked.filter(h=>!new URL(h.url).hostname.endsWith('news.google.com')).slice(0,24);
+const direct=ranked.filter(h=>!new URL(h.url).hostname.endsWith('news.google.com'));
+const offset=direct.length?((attempt-1)*7)%direct.length:0;
+const candidates=[...direct.slice(offset),...direct.slice(0,offset)].slice(0,40);
 for(let i=0;i<candidates.length&&evidence.length<8;i+=5){
  const group=await Promise.all(candidates.slice(i,i+5).map(async item=>{
   const found=await fetchEvidence(item);
@@ -94,17 +102,19 @@ for(let i=0;i<candidates.length&&evidence.length<8;i+=5){
 }
 if(!evidence.length)throw Error('No readable publisher articles found; skipping unverified publication');
 const previous = existing.slice(-100).map(a => a.title);
+const rotated=evidence.length?((attempt-1)%evidence.length):0;
+const chosenEvidence=[...evidence.slice(rotated),...evidence.slice(0,rotated)];
 const prompt = [
   'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана.',
   'Создай ОДНУ интересную, динамичную новостную статью на основе ТОЛЬКО приведённых ниже реальных заголовков новостной ленты за последние 3 дня. Новости отсортированы по актуальности, упоминаниям и интересу широкой аудитории.',
-  'Выбери один конкретный инфоповод о популярных брендах, гаджетах, известных предпринимателях, ИИ или технологиях. Заголовок цепляющий, но правдивый, без кликбейта, преувеличений и неподтверждённых фактов.',
+  'Приоритет отдавай первому подходящему источнику в списке, чтобы повторные попытки выбирали разные новости. Выбери один конкретный инфоповод о популярных брендах, гаджетах, известных предпринимателях, ИИ или технологиях. Заголовок цепляющий, но правдивый, без кликбейта, преувеличений и неподтверждённых фактов.',
   'Доступны выдержки из текстов первоисточников. Используй только явно подтверждённые ими факты; не придумывай цитаты, цифры, характеристики, даты и заявления. Различай официальное подтверждение и сообщения журналистов. Не пиши будто тестировал устройство.',
   'Вместо вымышленных подробностей объясни, почему событие важно, что пока неизвестно, и что стоит проверить дальше. Никаких слухов как установленных фактов.',
   'Выбери одну новость из списка с текстом первоисточника. Верни в sources ТОЧНО её title, url, published. Ссылку не изменяй. Если данных недостаточно, выбери другую.',
   'Текст естественный, читаемый, 3-5 разделов, по 2-3 содержательных абзаца, без искусственного SEO-спама. Реклама HARMEX добавляется на сайте отдельно.',
   'Не повторяй опубликованные темы: ' + previous.join('; '),
   'Верни JSON: slug (латиница, цифры и дефисы), title, description, date (строго ' + today + '), category, sections (массив {heading, paragraphs: массив строк}), sources (массив из одного объекта {title,url,published}).',
-  'Доступные новости:\n' + JSON.stringify(evidence.map(({score,...h})=>h))
+  'Доступные новости:\n' + JSON.stringify(chosenEvidence.map(({score,...h})=>h))
 ].join('\n\n');
 const res = await fetch('https://api.openai.com/v1/chat/completions', {
   method: 'POST',
@@ -140,7 +150,7 @@ for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
     headers: {Authorization: 'Bearer ' + key, 'Content-Type': 'application/json'},
     body: JSON.stringify({model: process.env.OPENAI_MODEL || 'gpt-4.1-mini', response_format: {type: 'json_object'}, messages: [
       {role: 'system', content: 'Repair the JSON structure only. Do not add factual claims. Output JSON.'},
-      {role: 'user', content: 'Fix these validation problems: ' + JSON.stringify(initialIssues) + '. Choose exactly one source from this list, copying title/url/published byte for byte: ' + JSON.stringify(evidence.map(({score,...h})=>h)) + '. Avoid published titles: ' + JSON.stringify(previous) + '. Return the complete corrected article JSON. Draft: ' + JSON.stringify(a)}
+      {role: 'user', content: 'Fix these validation problems: ' + JSON.stringify(initialIssues) + '. Choose exactly one source from this list, copying title/url/published byte for byte: ' + JSON.stringify(chosenEvidence.map(({score,...h})=>h)) + '. Avoid published titles: ' + JSON.stringify(previous) + '. Return the complete corrected article JSON. Draft: ' + JSON.stringify(a)}
     ]})});
   if (!correction.ok) throw Error('Draft repair API failed: ' + await correction.text());
   const fixed = JSON.parse((await correction.json()).choices[0].message.content);
