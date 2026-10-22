@@ -8,6 +8,7 @@ for(const file of files){
  const a=JSON.parse(fs.readFileSync(path,'utf8'));
  // Recheck any old images; old keyword matches are not sufficient evidence.
  const prior=Boolean(a.image);
+ if(a.image?.verified&&/^https:\/\//.test(a.image.url||'')){checked++;continue}
  const image=await licensedSourceImage(a);
  if(image){a.image=image;added++}else if(prior){console.log('Keeping existing image when source lookup has no replacement:',a.slug)}
  delete a.imageCheckedAt;
