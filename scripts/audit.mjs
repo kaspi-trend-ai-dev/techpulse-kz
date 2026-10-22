@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import {uniqueArticles} from './dedupe.mjs';
 const root='dist';
 const fail=[];
-const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css','assets/search.js','assets/engagement.js','harmex.html'];
+const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css','assets/search.js','assets/engagement.js','assets/menu.js','harmex.html'];
 for(const p of required)if(!fs.existsSync(root+'/'+p))fail.push('Missing '+p);
 const isRussian=a=>{const parts=[a.title,a.description,...(a.sections||[]).flatMap(s=>[s.heading,...(s.paragraphs||[])])].filter(x=>typeof x==='string');return parts.length>=4&&parts.every(t=>(t.match(/[а-яё]/gi)||[]).length>=Math.max(12,(t.match(/[a-zа-яё]/gi)||[]).length*.28))};
 const articles=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x,'utf8'))).filter(isRussian);
@@ -11,7 +11,7 @@ if(removed.length)console.log('Historical duplicates excluded from build:',remov
 const homepage=fs.existsSync(root+'/index.html')?fs.readFileSync(root+'/index.html','utf8'):'';
 for(const marker of ['id="article-search"','id="article-grid"','id="results-count"','data-filter=','assets/search.js'])if(!homepage.includes(marker))fail.push('Homepage search/filter missing: '+marker);
 if(!fs.readFileSync('assets/search.js','utf8').includes('addEventListener'))fail.push('Search behavior missing');
-for(const marker of ['id="saved-articles"','id="popular-local"','assets/engagement.js'])if(!homepage.includes(marker))fail.push('Stage 2 homepage missing: '+marker);
+for(const marker of ['id="site-drawer"','id="drawer-saved-list"','id="popular-local"','assets/engagement.js'])if(!homepage.includes(marker))fail.push('Stage 2 homepage missing: '+marker);
 const seen=new Set();
 for(const a of kept){
  if(!/^[a-z0-9-]+$/.test(a.slug||''))fail.push('Invalid slug: '+a.slug);
