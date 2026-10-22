@@ -69,7 +69,7 @@ const topics=kazakhstanMode?localTopics:globalTopics;
 const headlines = [];
 for (const topic of topics) {
   try {
-    const feed = 'https://news.google.com/rss/search?q=' + encodeURIComponent(topic + ' when:3d') + +(kazakhstanMode?'&hl=ru&gl=KZ&ceid=KZ:ru':'&hl=en-US&gl=US&ceid=US:en');
+    const feed = 'https://news.google.com/rss/search?q=' + encodeURIComponent(topic + ' when:3d') + (kazakhstanMode?'&hl=ru&gl=KZ&ceid=KZ:ru':'&hl=en-US&gl=US&ceid=US:en');
     const response = await fetch(feed, {headers: {'User-Agent': 'TechPulseEditorial/1.0'}, signal: AbortSignal.timeout(12000)});
     if (!response.ok) continue;
     const xml = await response.text();
