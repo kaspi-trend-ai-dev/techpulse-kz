@@ -159,3 +159,28 @@ a.sponsor-lockup{color:inherit;text-decoration:none;transition:opacity .2s}a.spo
 .related{margin-top:32px}
 .related .grid{gap:16px}
 @media(max-width:700px){.article-actions{gap:9px}.article-actions button{flex:1;min-width:130px}.engagement-panel{padding:16px;margin:18px 0}.related .grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Slide-out navigation and saved articles */
+.menu-toggle{flex:0 0 auto;display:flex;flex-direction:column;justify-content:center;gap:5px;width:38px;height:40px;padding:9px;border:0;border-radius:9px;background:transparent;cursor:pointer}
+.menu-toggle span{display:block;width:20px;height:2px;border-radius:2px;background:#142b4d}
+.menu-toggle:hover,.menu-toggle:focus-visible{background:#edf3fc}
+.drawer-backdrop{position:fixed;inset:0;background:rgba(10,25,47,.5);z-index:29}
+.drawer-backdrop[hidden]{display:none}
+.site-drawer{position:fixed;inset:0 auto 0 0;width:min(360px,88vw);padding:22px;background:#fff;box-shadow:12px 0 35px #10192724;z-index:30;overflow-y:auto;transform:translateX(-110%);visibility:hidden;transition:transform .22s ease,visibility .22s}
+.site-drawer.is-open{transform:translateX(0);visibility:visible}
+.drawer-open{overflow:hidden}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;padding:0 0 18px;border-bottom:1px solid #e5e9f0}
+.drawer-top strong{font-size:24px;letter-spacing:-.06em}
+.drawer-dot{color:#1765d1}
+.drawer-close{border:0;background:#f0f4fa;color:#142b4d;width:36px;height:36px;border-radius:10px;font-size:27px;cursor:pointer;line-height:1}
+.site-drawer .drawer-links{display:flex;flex-direction:column;gap:3px;padding:18px 0;border-bottom:1px solid #e5e9f0}
+.site-drawer .drawer-links a{display:block;padding:11px 12px;border-radius:10px;color:#172c4b;text-decoration:none;font-size:15px;font-weight:650}
+.site-drawer .drawer-links a:hover,.site-drawer .drawer-links a:focus-visible{background:#eef4ff}
+.drawer-saved{padding-top:20px}
+.drawer-saved h2{font-size:18px;margin:0 0 10px;line-height:1.3}
+.drawer-saved p{font-size:14px;color:#64748b;line-height:1.5}
+#drawer-saved-list{display:grid;gap:9px}
+#drawer-saved-list a{display:block;background:#f2f6fc;padding:12px;border-radius:10px;color:#18385e;text-decoration:none;font-size:14px;font-weight:600;line-height:1.45}
+#drawer-saved-list a:hover{text-decoration:underline}
+@media(max-width:700px){nav{gap:9px}.menu-toggle{width:32px;padding:6px}.logo{font-size:clamp(19px,5vw,24px)}.site-drawer .drawer-links{gap:3px}}
+@media(prefers-reduced-motion:reduce){.site-drawer{transition:none}}
