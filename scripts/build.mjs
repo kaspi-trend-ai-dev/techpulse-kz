@@ -45,7 +45,7 @@ async function findPhoto(a){
   const response=await fetch(endpoint,{headers:{'User-Agent':'TechPulseEditorial/1.0 (https://harmex.asia)'},signal:AbortSignal.timeout(9000)});
   if(!response.ok)return;
   const pages=Object.values((await response.json()).query?.pages||{});
-  const terms=query.toLowerCase().split(/\\s+/).filter(w=>w.length>3);
+  const terms=query.toLowerCase().split(/\s+/).filter(w=>w.length>3);
   const scored=pages.map(page=>{
    const info=page.imageinfo?.[0],meta=info?.extmetadata||{};
    const description=clean(meta.ImageDescription?.value||'');
@@ -56,8 +56,8 @@ async function findPhoto(a){
   for(const {page,info,meta,score} of scored){
    const license=meta.LicenseShortName?.value||'';
    if(score<1||!info?.thumburl||usedPhotoUrls.has(info.thumburl)||!/CC BY|CC0|Public domain|PD-/i.test(license))continue;
-   if(!/\\.(jpg|jpeg|png|webp)(\\?|$)/i.test(info.thumburl))continue;
-   const extension=/\\.png(?:\\?|$)/i.test(info.thumburl)?'png':/\\.webp(?:\\?|$)/i.test(info.thumburl)?'webp':'jpg';
+   if(!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(info.thumburl))continue;
+   const extension=/\.png(?:\?|$)/i.test(info.thumburl)?'png':/\.webp(?:\?|$)/i.test(info.thumburl)?'webp':'jpg';
    const photo=await fetch(info.thumburl,{signal:AbortSignal.timeout(12000)});
    if(!photo.ok||!(photo.headers.get('content-type')||'').startsWith('image/'))continue;
    const buffer=Buffer.from(await photo.arrayBuffer());
@@ -79,7 +79,7 @@ const coverPath=a=>'/assets/cover-'+a.slug+'.svg';
 const coverSvg=a=>{
  const h=hash(a.slug),hue=h%360,accent=(hue+65)%360;
  const title=String(a.title||'').slice(0,115);
- const words=title.split(/\\s+/),lines=[''];
+ const words=title.split(/\s+/),lines=[''];
  for(const word of words){const i=lines.length-1;if((lines[i]+' '+word).trim().length>29&&lines.length<4)lines.push(word);else lines[i]=(lines[i]+' '+word).trim()}
  const textLines=lines.slice(0,4).map((line,i)=>`<text x="55" y="${180+i*56}" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#fff">${esc(line)}</text>`).join('');
  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="hsl(${hue},55%,16%)"/><stop offset="1" stop-color="hsl(${accent},65%,32%)"/></linearGradient></defs><rect width="800" height="440" fill="url(#bg)"/><circle cx="${600+h%120}" cy="110" r="190" fill="#fff" opacity=".06"/><text x="55" y="74" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#fff">TECHPULSE</text><path d="M55 98h690" stroke="#fff" opacity=".35"/>${textLines}</svg>`;
