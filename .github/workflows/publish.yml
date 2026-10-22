@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Backfill licensed images for existing articles
+        run: node scripts/backfill-images.mjs
       - run: node scripts/publish-batch.mjs
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
