@@ -86,3 +86,10 @@ a.sponsor-lockup{color:inherit;text-decoration:none;transition:opacity .2s}a.spo
 .partner-product .partner-purchase-note{font-size:12px;line-height:1.5;color:#718096;margin:12px 0 0}
 @media(max-width:760px){.partner-product{grid-template-columns:minmax(0,1fr);gap:22px}.partner-product-image img{max-width:560px;margin:auto}.partner-benefits{gap:8px}}
 @media(max-width:400px){.partner-benefits{grid-template-columns:1fr}.partner-benefits>div{padding:10px 13px}.partner-benefits span{margin-top:2px}}
+
+/* HARMEX benefits: explicit mobile card layout and readable separation */
+.partner-product .partner-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:26px 0 12px;padding:0;align-items:stretch}
+.partner-product .partner-benefits>div{display:flex;flex-direction:column;gap:7px;min-width:0;background:#fff;border:1px solid #d9e3f1;border-radius:14px;padding:17px 15px;box-shadow:0 3px 12px rgba(26,58,100,.04)}
+.partner-product .partner-benefits strong{display:block;margin:0;font-size:18px;font-weight:800;line-height:1.3;letter-spacing:-.015em;color:#142b4d}
+.partner-product .partner-benefits span{display:block;margin:0;font-size:13px;font-weight:450;line-height:1.5;color:#61728a}
+@media(max-width:760px){.partner-product .partner-benefits{grid-template-columns:1fr;gap:11px;margin:24px 0 14px}.partner-product .partner-benefits>div{padding:17px 19px;gap:5px}.partner-product .partner-benefits strong{font-size:19px}.partner-product .partner-benefits span{font-size:14px}}
