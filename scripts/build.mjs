@@ -8,85 +8,26 @@ const categoryOf=a=>{const t=(a.title+' '+a.category).toLowerCase();if(/apple|ip
 const visual=a=>{const t=(a.title+' '+a.category).toLowerCase();return /apple|iphone|ipad|macbook/.test(t)?'laptop':/телевизор|smart tv|экран|hdmi/.test(t)?'tv':/ai|ии|openai|chatgpt|нейросет|nvidia/.test(t)?'ai':/samsung|xiaomi|смартфон|телефон/.test(t)?'phone':'chip'};
 const artwork=kind=>{const palette={laptop:['#18283e','#5187b9'],tv:['#1c2445','#6c64bf'],ai:['#182b39','#27a8a5'],phone:['#32234b','#a77ae5'],chip:['#22354c','#dc9258']}[kind];const shape={laptop:'<rect x="255" y="115" width="290" height="187" rx="14" fill="#0b1427" stroke="#c7ddf8" stroke-width="7"/><rect x="270" y="130" width="260" height="157" rx="5" fill="#7fc5f5" opacity=".32"/><path d="M220 316h360l-24 22H244z" fill="#c7ddf8"/>',tv:'<rect x="188" y="85" width="424" height="247" rx="16" fill="#10182e" stroke="#e2e9ff" stroke-width="8"/><rect x="203" y="100" width="394" height="217" rx="6" fill="#9a90ff" opacity=".32"/><path d="M375 332v26m50-26v26m-100 2h150" stroke="#dce8ff" stroke-width="9"/>',ai:'<circle cx="400" cy="210" r="108" fill="none" stroke="#b3fff3" stroke-width="9"/><circle cx="400" cy="210" r="48" fill="#b3fff3" opacity=".65"/><path d="M400 64v50m0 192v50M254 210h50m192 0h50M296 106l35 35m138 138 35 35m0-208-35 35M331 279l-35 35" stroke="#b3fff3" stroke-width="9"/>',phone:'<rect x="310" y="63" width="180" height="306" rx="30" fill="#11142b" stroke="#e2d6ff" stroke-width="8"/><rect x="327" y="85" width="146" height="256" rx="15" fill="#d7a7ff" opacity=".45"/><circle cx="400" cy="353" r="6" fill="#e2d6ff"/>',chip:'<rect x="306" y="118" width="188" height="188" rx="20" fill="#10233a" stroke="#ffe1ad" stroke-width="8"/><rect x="357" y="169" width="86" height="86" rx="10" fill="#ffe1ad" opacity=".65"/><path d="M330 82v36m70-36v36m70-36v36M330 306v36m70-36v36m70-36v36M270 145h36m-36 70h36m-36 70h36m188-140h36m-36 70h36m-36 70h36" stroke="#ffe1ad" stroke-width="10"/> '}[kind];return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="${palette[0]}"/><stop offset="1" stop-color="${palette[1]}"/></linearGradient></defs><rect width="800" height="440" fill="url(#bg)"/><circle cx="640" cy="80" r="160" fill="#fff" opacity=".07"/><circle cx="135" cy="375" r="175" fill="#fff" opacity=".06"/>${shape}</svg>`};
 for(const kind of ['laptop','tv','ai','phone','chip'])fs.writeFileSync(out+'/assets/'+kind+'.svg',artwork(kind));
-// Match editorial photos to specific article subjects, never generic electronics.
-const photoMap=new Map(),usedPhotoUrls=new Set();
-const keywords=a=>{
- const title=(a.title||'').toLowerCase();
- const rules=[
-  [/macbook/i,'Apple MacBook laptop product'],
-  [/iphone/i,'Apple iPhone smartphone product'],
-  [/ipad/i,'Apple iPad tablet product'],
-  [/bose|skullcandy/i,'Bose Skullcandy headphones'],
-  [/tesla|optimus/i,'Tesla Optimus robot'],
-  [/playstation|ps5/i,'Sony PlayStation console'],
-  [/xbox/i,'Microsoft Xbox console'],
-  [/samsung/i,'Samsung electronics product'],
-  [/lg |oled/i,'LG OLED television'],
-  [/tcl/i,'TCL television'],
-  [/hisense/i,'Hisense television'],
-  [/телевизор|smart tv|экран|диагонал/i,'flat screen television in living room'],
-  [/apple/i,'Apple devices'],
-  [/meta|facebook/i,'Meta Platforms company logo'],
-  [/openai|chatgpt/i,'OpenAI logo'],
-  [/nvidia/i,'Nvidia graphics card'],
-  [/google/i,'Google technology logo'],
-  [/microsoft/i,'Microsoft technology logo'],
-  [/робот/i,'humanoid robot'],
-  [/смартфон/i,'modern smartphone']
- ];
- return rules.find(([re])=>re.test(title))?.[1]||null;
-};
-const clean=s=>String(s||'').replace(/<[^>]*>/g,'').replace(/&[^;]+;/g,' ').trim();
-async function findPhoto(a){
- const query=keywords(a);
- if(!query)return;
- try{
-  const endpoint='https://commons.wikimedia.org/w/api.php?'+new URLSearchParams({action:'query',generator:'search',gsrsearch:'filetype:bitmap '+query,gsrnamespace:'6',gsrlimit:'30',prop:'imageinfo',iiprop:'url|extmetadata',iiurlwidth:'1200',format:'json'});
-  const response=await fetch(endpoint,{headers:{'User-Agent':'TechPulseEditorial/1.0 (https://harmex.asia)'},signal:AbortSignal.timeout(9000)});
-  if(!response.ok)return;
-  const pages=Object.values((await response.json()).query?.pages||{});
-  const terms=query.toLowerCase().split(/\s+/).filter(w=>w.length>3);
-  const scored=pages.map(page=>{
-   const info=page.imageinfo?.[0],meta=info?.extmetadata||{};
-   const description=clean(meta.ImageDescription?.value||'');
-   const text=(page.title+' '+description).toLowerCase();
-   const score=terms.reduce((n,w)=>n+(text.includes(w)?1:0),0);
-   return {page,info,meta,score};
-  }).sort((a,b)=>b.score-a.score);
-  for(const {page,info,meta,score} of scored){
-   const license=meta.LicenseShortName?.value||'';
-   if(score<1||!info?.thumburl||usedPhotoUrls.has(info.thumburl)||!/CC BY|CC0|Public domain|PD-/i.test(license))continue;
-   if(!/\.(jpg|jpeg|png|webp)(\?|$)/i.test(info.thumburl))continue;
-   const extension=/\.png(?:\?|$)/i.test(info.thumburl)?'png':/\.webp(?:\?|$)/i.test(info.thumburl)?'webp':'jpg';
-   const photo=await fetch(info.thumburl,{signal:AbortSignal.timeout(12000)});
-   if(!photo.ok||!(photo.headers.get('content-type')||'').startsWith('image/'))continue;
-   const buffer=Buffer.from(await photo.arrayBuffer());
-   if(buffer.length<10000||buffer.length>6e6)continue;
-   const file='photo-'+a.slug+'.'+extension;
-   fs.writeFileSync(out+'/assets/'+file,buffer);
-   usedPhotoUrls.add(info.thumburl);
-   photoMap.set(a.slug,{path:'/assets/'+file,credit:page.title.replace(/^File:/,''),source:info.descriptionurl,license});
-   console.log('Matched unique photo:',a.slug,page.title);
-   return;
-  }
- }catch(error){console.warn('Image unavailable for',a.slug,error.message)}
-}
-for(const a of items)await findPhoto(a);
-// When a verifiably relevant photo cannot be found, create an original
-// article-specific typographic cover rather than a misleading stock photo.
+// Editorial integrity: never substitute loosely keyword-matched stock photos.
+// Until article-specific photos can be verified, use a distinct text-only cover
+// containing the actual headline. No unrelated photographs or generic icons.
 const hash=s=>[...s].reduce((n,ch)=>((n*31+ch.charCodeAt(0))>>>0),2166136261);
 const coverPath=a=>'/assets/cover-'+a.slug+'.svg';
 const coverSvg=a=>{
- const h=hash(a.slug),hue=h%360,accent=(hue+65)%360;
- const title=String(a.title||'').slice(0,115);
+ const h=hash(a.slug),hue=h%360,accent=(hue+55)%360;
+ const title=String(a.title||'').slice(0,125);
  const words=title.split(/\s+/),lines=[''];
- for(const word of words){const i=lines.length-1;if((lines[i]+' '+word).trim().length>29&&lines.length<4)lines.push(word);else lines[i]=(lines[i]+' '+word).trim()}
- const textLines=lines.slice(0,4).map((line,i)=>`<text x="55" y="${180+i*56}" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#fff">${esc(line)}</text>`).join('');
- return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="hsl(${hue},55%,16%)"/><stop offset="1" stop-color="hsl(${accent},65%,32%)"/></linearGradient></defs><rect width="800" height="440" fill="url(#bg)"/><circle cx="${600+h%120}" cy="110" r="190" fill="#fff" opacity=".06"/><text x="55" y="74" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#fff">TECHPULSE</text><path d="M55 98h690" stroke="#fff" opacity=".35"/>${textLines}</svg>`;
+ for(const word of words){
+  const i=lines.length-1;
+  if((lines[i]+' '+word).trim().length>31&&lines.length<4)lines.push(word);
+  else lines[i]=(lines[i]+' '+word).trim();
+ }
+ const textLines=lines.slice(0,4).map((line,i)=>`<text x="48" y="${173+i*57}" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#fff">${esc(line)}</text>`).join('');
+ return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="Обложка статьи"><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="hsl(${hue},42%,14%)"/><stop offset="1" stop-color="hsl(${accent},55%,29%)"/></linearGradient></defs><rect width="800" height="440" fill="url(#bg)"/><text x="48" y="65" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#fff">TECHPULSE</text><path d="M48 92h704" stroke="#fff" opacity=".35"/>${textLines}</svg>`;
 };
-for(const a of items)if(!photoMap.has(a.slug))fs.writeFileSync(out+coverPath(a),coverSvg(a));
-const img=a=>{const photo=photoMap.get(a.slug);return photo?`<img src="${url(photo.path)}" alt="Фотография к статье: ${esc(a.title)}" loading="lazy" width="1200" height="800">`:`<img src="${url(coverPath(a))}" alt="Редакционная обложка: ${esc(a.title)}" loading="lazy" width="800" height="440">`};
-const credit=a=>{const photo=photoMap.get(a.slug);return photo?`Фото: <a href="${esc(photo.source)}" target="_blank" rel="noopener noreferrer">Wikimedia Commons · ${esc(photo.credit)}</a> · ${esc(photo.license)}`:'Авторская текстовая обложка · TechPulse'};
+for(const a of items)fs.writeFileSync(out+coverPath(a),coverSvg(a));
+const img=a=>`<img src="${url(coverPath(a))}" alt="Обложка статьи: ${esc(a.title)}" loading="lazy" width="800" height="440">`;
+const credit=a=>'Редакционная обложка · TechPulse';
 const related=a=>items.filter(b=>b.slug!==a.slug).sort((x,y)=>Number(categoryOf(y)===categoryOf(a))-Number(categoryOf(x)===categoryOf(a))).slice(0,4);
 const card=a=>`<a class="card" href="${url('/articles/'+a.slug+'.html')}" data-category="${esc(categoryOf(a))}"><span class="card-image">${img(a)}</span><span class="card-body"><span class="tag">${esc(categoryOf(a))}</span><h3>${esc(a.title)}</h3><p>${esc(a.description)}</p><small>${esc(a.date)} · Читать →</small></span></a>`;
 const featured=items[0];
