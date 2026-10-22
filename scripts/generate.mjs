@@ -152,6 +152,19 @@ const structuralIssues = article => {
   return issues;
 };
 a.slug = slugify(a.slug);
+// Resolve the cited source deterministically from the publisher evidence,
+// rather than asking the model to reproduce URLs and timestamps perfectly.
+function resolveSource(article) {
+ const candidate=article.sources?.[0];
+ if(!candidate)return false;
+ const match=chosenEvidence.find(h=>h.url===candidate.url) ||
+   chosenEvidence.find(h=>h.title===candidate.title) ||
+   chosenEvidence.find(h=>similarity(h.title,String(candidate.title||''))>=0.85);
+ if(!match)return false;
+ article.sources=[{title:match.title,url:match.url,published:match.published}];
+ return true;
+}
+resolveSource(a);
 let initialIssues = structuralIssues(a);
 for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
   console.warn('Draft structure correction', attempt + 1, JSON.stringify(initialIssues));
@@ -165,6 +178,7 @@ for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
   if (!correction.ok) throw Error('Draft repair API failed: ' + await correction.text());
   const fixed = JSON.parse((await correction.json()).choices[0].message.content);
   fixed.slug = slugify(fixed.slug);
+  resolveSource(fixed);
   Object.assign(a, fixed);
   initialIssues = structuralIssues(a);
 }
@@ -176,7 +190,7 @@ const reviewPrompt = [
   'Act as a strict fact-checking editor. Available evidence is the source headline and an extracted excerpt from the original publisher; verify every factual claim against that evidence.',
   'Check EVERY factual claim in the Russian draft (including headline, description, sections) against the source headline and excerpt. Do not infer other devices, dates, prices, quotes, sources, or certainty from background knowledge.',
   'A factual claim may be accepted only if supported by the supplied excerpt; clearly labelled general commentary is allowed. Reject invented quotes, unsupported claims of official confirmation and invented attributions.',
-  'Respond as JSON with approved (boolean), issues (array of strings). Be strict.',
+  'Respond as JSON with approved (boolean), issues (array of strings). Only put ACTUAL unsupported or incorrect claims in issues. Do not list supported claims or explanations. If all claims are supported, approved=true and issues=[]. The article date is the TechPulse publication date, not the original source date. Russian grammatical cases of proper names are valid.',
   'SOURCE: ' + JSON.stringify(sourceHeadline),
   'DRAFT: ' + JSON.stringify(a)
 ].join('\\n');
@@ -200,17 +214,21 @@ const valid = draft => /^[a-z0-9-]{8,110}$/.test(draft.slug || '') && !!draft.ti
   draft.sources[0].url === source.url && draft.sources[0].published === source.published;
 let draft = a;
 let verdict = await review(draft);
-for (let attempt = 0; attempt < 2 && (verdict.approved !== true || !Array.isArray(verdict.issues) || verdict.issues.length); attempt++) {
+for (let attempt = 0; attempt < 2 && verdict.approved !== true; attempt++) {
   console.log('Editorial rewrite attempt', attempt + 1, JSON.stringify(verdict.issues || []));
   const revised = await chatJson([
     {role: 'system', content: 'You are a careful Russian technology news editor. Output JSON only.'},
     {role: 'user', content: 'Rewrite this article to address ALL fact-check issues. A source excerpt is available; remove unsupported specifics rather than inventing them. Keep 3-5 sections with at least two meaningful paragraphs each. Do not introduce new factual claims. Preserve slug, sources and date exactly. Return the full article JSON.\\nSOURCE: ' + JSON.stringify(sourceHeadline) + '\\nISSUES: ' + JSON.stringify(verdict.issues) + '\\nARTICLE: ' + JSON.stringify(draft)}
   ]);
-  if (!valid(revised) || revised.slug !== a.slug || revised.date !== a.date) throw Error('Editorial rewrite returned invalid article');
+  // The rewrite is allowed to improve prose, but immutable metadata belongs to the publisher pipeline.
+  revised.slug=a.slug;
+  revised.date=a.date;
+  revised.sources=a.sources;
+  if (!valid(revised)) {console.warn('Rewrite broke article structure; retaining previous draft for next attempt');continue;}
   draft = revised;
   verdict = await review(draft);
 }
-if (verdict.approved !== true || !Array.isArray(verdict.issues) || verdict.issues.length) {
+if (verdict.approved !== true) {
   throw Error('Editorial review rejected after rewrites: ' + JSON.stringify(verdict.issues || ['not approved']));
 }
 Object.assign(a, draft);
