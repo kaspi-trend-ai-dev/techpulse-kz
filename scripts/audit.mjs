@@ -11,7 +11,11 @@ if(removed.length)console.log('Historical duplicates excluded from build:',remov
 const homepage=fs.existsSync(root+'/index.html')?fs.readFileSync(root+'/index.html','utf8'):'';
 for(const marker of ['id="article-search"','id="article-grid"','id="results-count"','data-filter=','assets/search.js'])if(!homepage.includes(marker))fail.push('Homepage search/filter missing: '+marker);
 if(!fs.readFileSync('assets/search.js','utf8').includes('addEventListener'))fail.push('Search behavior missing');
-for(const marker of ['id="site-drawer"','id="drawer-saved-list"','id="popular-local"','assets/engagement.js'])if(!homepage.includes(marker))fail.push('Stage 2 homepage missing: '+marker);
+for(const marker of ['id="site-drawer"','id="drawer-saved-list"','assets/engagement.js'])if(!homepage.includes(marker))fail.push('Stage 2 homepage missing: '+marker);
+if(homepage.includes('id="popular-local"')||homepage.includes('Часто читают на этом устройстве'))fail.push('Removed local popularity block still visible');
+const cardCount=(homepage.match(/class="card"/g)||[]).length;
+if(cardCount!==kept.length)fail.push('Article card count mismatch: '+cardCount+' vs '+kept.length);
+if(!homepage.includes(kept.length+' из '+kept.length+' материалов')&&!homepage.includes('>'+kept.length+' материалов</p>'))fail.push('Displayed article count mismatch: '+kept.length);
 const seen=new Set();
 for(const a of kept){
  if(!/^[a-z0-9-]+$/.test(a.slug||''))fail.push('Invalid slug: '+a.slug);
