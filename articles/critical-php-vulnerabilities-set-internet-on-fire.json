@@ -35,11 +35,11 @@
     }
   ],
   "image": {
-    "url": "https://media.wired.com/photos/6ad8c3fad8fc6a7c8e751dc0/191:100/w_1280,c_limit/102126-PHP.jpg",
+    "url": "https://media.wired.com/photos/6ad8c3abc81397fca509f3d6/3:2/w_2560%2Cc_limit/102126-PHP-Breakdown.gif",
     "source": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/",
     "credit": "Matt Burgess",
     "license": "Лицензия не проверена",
-    "alt": "‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire",
+    "alt": "‘This Is Not a Drill Critical PHP Vulnerabilities Are Setting the Internet on Fire",
     "verified": true
   }
 }

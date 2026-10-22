@@ -36,11 +36,11 @@
     }
   ],
   "image": {
-    "url": "https://techcrunch.com/wp-content/uploads/2024/11/wordpress-automattic-v3.jpg?resize=1200,800",
+    "url": "https://techcrunch.com/wp-content/uploads/2024/11/wordpress-automattic-v3.jpg?w=1024",
     "source": "https://techcrunch.com/2026/10/21/automattic-begins-layoffs-following-board-upheaval-and-executive-departures/",
     "credit": "Sarah Perez",
     "license": "Лицензия не проверена",
-    "alt": "Automattic начинает увольнения после перестановок в совете директоров",
+    "alt": "WordPress and Automattic logos with abstract background",
     "verified": true
   }
 }

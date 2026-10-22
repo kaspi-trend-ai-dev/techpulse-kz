@@ -35,11 +35,11 @@
     }
   ],
   "image": {
-    "url": "https://techcrunch.com/wp-content/uploads/2024/05/cybersecurity-data-sharing-2024-v1.jpg?resize=1200,675",
+    "url": "https://techcrunch.com/wp-content/uploads/2024/05/cybersecurity-data-sharing-2024-v1.jpg?w=1024",
     "source": "https://techcrunch.com/2026/10/21/the-internet-is-having-a-very-bad-cybersecurity-day/",
     "credit": "Sarah Perez",
     "license": "Лицензия не проверена",
-    "alt": "Критические уязвимости в PHP выявлены в октябре 2026 года",
+    "alt": "a series of illustrated laptops featuring red, glitchy and matrix-like text symbolizing malware",
     "verified": true
   }
 }

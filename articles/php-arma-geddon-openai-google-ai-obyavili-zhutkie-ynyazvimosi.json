@@ -35,11 +35,11 @@
     }
   ],
   "image": {
-    "url": "https://techcrunch.com/wp-content/uploads/2021/12/GettyImages-460689215.jpg?resize=1200,801",
+    "url": "https://techcrunch.com/wp-content/uploads/2021/12/GettyImages-460689215.jpg?w=1024",
     "source": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
     "credit": "Julie Bort",
     "license": "Лицензия не проверена",
-    "alt": "PHP Armageddon: как ИИ обнаружил опасные уязвимости в миллионах веб-сайтов",
+    "alt": "Laptop computer engulfed in flames",
     "verified": true
   }
 }

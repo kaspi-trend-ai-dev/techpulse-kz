@@ -34,13 +34,5 @@
       "url": "https://www.techradar.com/pro/security/website-admins-across-the-world-bracing-for-impact-following-major-php-flaw-reveal",
       "published": "2026-10-21"
     }
-  ],
-  "image": {
-    "url": "https://cdn.mos.cms.futurecdn.net/pL5rBKGq88cnoqgdJgCXGS-2560-80.jpg",
-    "source": "https://www.techradar.com/pro/security/website-admins-across-the-world-bracing-for-impact-following-major-php-flaw-reveal",
-    "credit": "https://www.techradar.com/author/sead-fadilpai",
-    "license": "Лицензия не проверена",
-    "alt": "Администраторы сайтов по всему миру готовятся к последствиям крупной уязвимости PHP",
-    "verified": true
-  }
+  ]
 }

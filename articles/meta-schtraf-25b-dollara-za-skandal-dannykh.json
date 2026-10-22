@@ -35,11 +35,11 @@
     }
   ],
   "image": {
-    "url": "https://techcrunch.com/wp-content/uploads/2026/09/mark-zuckerberg-meta-connect.jpg?resize=1200,799",
+    "url": "https://techcrunch.com/wp-content/uploads/2026/09/mark-zuckerberg-meta-connect.jpg?w=1024",
     "source": "https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/",
     "credit": "Lucas Ropek",
     "license": "Лицензия не проверена",
-    "alt": "Meta должна выплатить $25 млрд за скандал с Cambridge Analytica",
+    "alt": "Mark Zuckerberg",
     "verified": true
   }
 }
