@@ -11,7 +11,7 @@ export async function licensedSourceImage(article){
   const html=(await response.text()).slice(0,650000);
   const image=absolute(meta(html,'og:image'),response.url);
   if(!image)return null;
-  // Page-wide copyright metadata is NOT a license for the photograph.
+  // Missing license metadata is not treated as a prohibition; inspect any image-specific rights data.\n  // But missing permission cannot itself authorize republication.\n  // Page-wide copyright metadata is NOT a license for the photograph.
   // Require a license URL explicitly associated with the image in structured data.
   const scripts=[...html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].map(m=>m[1]);
   const objects=[];
