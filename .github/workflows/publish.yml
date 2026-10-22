@@ -18,6 +18,8 @@ jobs:
           node-version: '22'
       - name: Remove duplicate events before editorial publication
         run: node scripts/cleanup-duplicates.mjs
+      - name: Restore historical article photos from Git
+        run: node scripts/restore-images.mjs
       - name: Backfill licensed images for existing articles
         run: node scripts/backfill-images.mjs
       - run: node scripts/publish-batch.mjs
