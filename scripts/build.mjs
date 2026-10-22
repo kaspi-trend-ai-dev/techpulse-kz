@@ -59,7 +59,7 @@ async function findPhoto(a){
    if(!/\\.(jpg|jpeg|png|webp)(\\?|$)/i.test(info.thumburl))continue;
    const extension=/\\.png(?:\\?|$)/i.test(info.thumburl)?'png':/\\.webp(?:\\?|$)/i.test(info.thumburl)?'webp':'jpg';
    const photo=await fetch(info.thumburl,{signal:AbortSignal.timeout(12000)});
-   if(!photo.ok||!/^image\\//.test(photo.headers.get('content-type')||''))continue;
+   if(!photo.ok||!(photo.headers.get('content-type')||'').startsWith('image/'))continue;
    const buffer=Buffer.from(await photo.arrayBuffer());
    if(buffer.length<10000||buffer.length>6e6)continue;
    const file='photo-'+a.slug+'.'+extension;
