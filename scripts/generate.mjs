@@ -186,6 +186,8 @@ const structuralIssues = article => {
     else if (section.paragraphs.some(p => typeof p !== 'string' || p.trim().length < 70)) issues.push('section ' + index + ' has short/invalid paragraphs');
   });
   if (!Array.isArray(article.sources) || article.sources.length !== 1 || !evidence.some(h => h.title === article.sources[0]?.title && h.url === article.sources[0]?.url && h.published === article.sources[0]?.published)) issues.push('source not found in fetched headlines');
+  if(article.sources?.[0]?.published){const age=Date.now()-Date.parse(article.sources[0].published+'T00:00:00Z');if(!Number.isFinite(age)||age>4*86400000||age< -86400000)issues.push('source publication date is stale or invalid');}
+  if(article.sources?.[0]?.url&&!/^https:\/\//i.test(article.sources[0].url))issues.push('source must use HTTPS');
   if (!/^[a-z0-9-]{8,110}$/.test(article.slug || '')) issues.push('invalid slug');
   if (existing.some(e => sameEvent(e,article)||similarity(e.title,String(article.title||''))>=0.65)) issues.push('duplicate or near-duplicate event, even with rewritten headline');
   if (fs.existsSync('articles/' + article.slug + '.json')) issues.push('duplicate slug');
