@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import {uniqueArticles} from './dedupe.mjs';
 const root='dist';
 const fail=[];
-const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css','assets/search.js','assets/engagement.js','assets/menu.js','harmex.html','status.html','editorial-status.json'];
+const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css','assets/search.js','assets/engagement.js','assets/menu.js','harmex.html','kazakhstan.html','status.html','editorial-status.json'];
 for(const p of required)if(!fs.existsSync(root+'/'+p))fail.push('Missing '+p);
 const isRussian=a=>{const parts=[a.title,a.description,...(a.sections||[]).flatMap(s=>[s.heading,...(s.paragraphs||[])])].filter(x=>typeof x==='string');return parts.length>=4&&parts.every(t=>(t.match(/[а-яё]/gi)||[]).length>=Math.max(12,(t.match(/[a-zа-яё]/gi)||[]).length*.28))};
 const articles=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x,'utf8'))).filter(isRussian);
@@ -20,6 +20,11 @@ const report=JSON.parse(fs.readFileSync(root+'/editorial-status.json','utf8'));
 if(report.published!==kept.length)fail.push('Editorial report count mismatch');
 if(report.sourceFiles!==fs.readdirSync('articles').filter(x=>x.endsWith('.json')).length)fail.push('Editorial report source count mismatch');
 if(!fs.readFileSync(root+'/status.html','utf8').includes('Работа редакции'))fail.push('Editorial status page missing');
+const kzPage=fs.readFileSync(root+'/kazakhstan.html','utf8');
+if(!kzPage.includes('Новости Казахстана')||!homepage.includes('kazakhstan.html'))fail.push('Kazakhstan section not linked or missing');
+if(!kzPage.includes('id="article-grid"'))fail.push('Kazakhstan article grid missing');
+const kzCount=kept.filter(a=>a.region==='kz').length;
+if((kzPage.match(/class="card"/g)||[]).length!==kzCount)fail.push('Kazakhstan page includes non-Kazakhstan articles');
 const seen=new Set();
 for(const a of kept){
  if(!/^[a-z0-9-]+$/.test(a.slug||''))fail.push('Invalid slug: '+a.slug);
@@ -37,6 +42,7 @@ for(const a of kept){
 const sitemap=fs.existsSync(root+'/sitemap.xml')?fs.readFileSync(root+'/sitemap.xml','utf8'):'';
 for(const a of kept)if(!sitemap.includes('https://harmex.asia/articles/'+a.slug+'.html'))fail.push('Not in sitemap: '+a.slug);
 if(!sitemap.includes('https://harmex.asia/'))fail.push('Homepage not in sitemap');
+if(!sitemap.includes('https://harmex.asia/kazakhstan.html'))fail.push('Kazakhstan section not in sitemap');
 if(!sitemap.includes('https://harmex.asia/harmex.html'))fail.push('Partner page not in sitemap');
 if(!sitemap.includes('<lastmod>'))fail.push('Sitemap missing lastmod dates');
 if(!fs.readFileSync(root+'/status.html','utf8').includes('noindex,follow'))fail.push('Internal status page should be noindex');
