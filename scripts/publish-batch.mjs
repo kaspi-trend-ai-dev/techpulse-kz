@@ -1,26 +1,29 @@
 import fs from 'node:fs';
 import {spawnSync} from 'node:child_process';
 
-// 2 articles per hour, with a third at 02:00 and 14:00 UTC = 50/day.
-const now=new Date();
-const today=now.toISOString().slice(0,10);
-const hour=now.getUTCHours();
+// Cumulative daily quota: recover missed hourly slots instead of dropping them.
+const now=new Date(),today=now.toISOString().slice(0,10),hour=now.getUTCHours();
 const target=50;
-const scheduled=2+([2,14].includes(hour)?1:0);
 const countToday=()=>fs.readdirSync('articles').filter(x=>x.endsWith('.json')).filter(x=>{
  try{return JSON.parse(fs.readFileSync('articles/'+x,'utf8')).date===today}catch{return false}
 }).length;
-const existing=countToday();
-const quota=Math.max(0,Math.min(scheduled,target-existing));
-console.log('TechPulse editorial batch:',{today,hour,existing,quota,target});
-let succeeded=0;
-for(let i=0;i<quota;i++){
- const run=spawnSync(process.execPath,['scripts/generate.mjs'],{stdio:'inherit',env:process.env,timeout:180000});
+const plannedByNow=2*(hour+1)+(hour>=2?1:0)+(hour>=14?1:0);
+const starting=countToday();
+const quota=Math.max(0,Math.min(target-starting,plannedByNow-starting));
+const maxAttempts=Math.min(24,Math.max(quota*3,quota+3));
+console.log('TechPulse publication target:',{today,hour,starting,plannedByNow,quota,maxAttempts,target});
+let succeeded=0,attempts=0;
+while(succeeded<quota&&attempts<maxAttempts){
+ attempts++;
+ const run=spawnSync(process.execPath,['scripts/generate.mjs'],{
+  stdio:'inherit',env:{...process.env,EDITORIAL_ATTEMPT:String(attempts)},
+  timeout:180000
+ });
  if(run.status===0){succeeded++;continue}
- console.warn('Article candidate rejected; skipping rather than publishing unverified material.',{attempt:i+1,status:run.status,error:run.error?.message});
+ console.warn('Candidate failed, trying another news story.',{attempts,status:run.status,error:run.error?.message});
 }
-console.log('Batch finished:',{succeeded,nowPublished:countToday(),target});
-if(succeeded===0&&quota>0){
- console.error('EDITORIAL BATCH FAILED: zero new articles. Inspect source-fetch and AI errors above.');
+console.log('Editorial batch summary:',{attempts,succeeded,nowPublished:countToday(),plannedByNow,target});
+if(succeeded<quota){
+ console.error('Publication shortfall: remaining articles will be retried by next hourly run.');
  process.exitCode=1;
 }
