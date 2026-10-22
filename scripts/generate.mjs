@@ -4,7 +4,7 @@ const key = process.env.OPENAI_API_KEY;
 if (!key) throw Error('Set OPENAI_API_KEY secret');
 const files = fs.readdirSync('articles').filter(x => x.endsWith('.json'));
 const existing = files.map(x => JSON.parse(fs.readFileSync('articles/' + x, 'utf8')));
-const today = new Date().toISOString().slice(0, 10);
+const today = new Date(Date.now()+5*60*60*1000).toISOString().slice(0, 10);
 const decode = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const extract = (s, tag) => decode((s.match(new RegExp('<' + tag + '(?:\\s[^>]*)?>([\\s\\S]*?)<\\/' + tag + '>')) || [,''])[1]).trim();
 const attempt=Number(process.env.EDITORIAL_ATTEMPT||1);
