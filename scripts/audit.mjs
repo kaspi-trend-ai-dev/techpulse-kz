@@ -3,7 +3,8 @@ const root='dist';
 const fail=[];
 const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css'];
 for(const p of required)if(!fs.existsSync(root+'/'+p))fail.push('Missing '+p);
-const articles=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x,'utf8')));
+const isRussian=a=>{const parts=[a.title,a.description,...(a.sections||[]).flatMap(s=>[s.heading,...(s.paragraphs||[])])].filter(x=>typeof x==='string');return parts.length>=4&&parts.every(t=>(t.match(/[а-яё]/gi)||[]).length>=Math.max(12,(t.match(/[a-zа-яё]/gi)||[]).length*.28))};
+const articles=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x,'utf8'))).filter(isRussian);
 const seen=new Set();
 for(const a of articles){
  if(!/^[a-z0-9-]+$/.test(a.slug||''))fail.push('Invalid slug: '+a.slug);
