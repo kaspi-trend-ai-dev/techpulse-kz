@@ -46,7 +46,16 @@ const extract = (s, tag) => decode((s.match(new RegExp('<' + tag + '(?:\\s[^>]*)
 const attempt=Number(process.env.EDITORIAL_ATTEMPT||1);
 const kazakhstanMode=process.env.EDITORIAL_REGION==='kz'||(process.env.EDITORIAL_REGION!=='global'&&attempt%4!==0);
 const localMatch=/казахстан|алматы|астан|шымкент|караган|қараған|актау|ақтау|атырау|павлодар|костанай|қостанай|актобе|ақтөбе|туркестан|түркістан|семей|қызылорд|кызылорд|казахск|kazakhstan|almaty|astana|shymkent|kazakh/i;
-const political=/президент|парламент|мажилис|сенат|депутат|министр|акимат|аким\b|правительств|выбор|оппозици|митинг|протест|политическ|партия|законопроект|конституци|санкци|геополит|president|parliament|election|opposition|protest|politic|government|minister|akimat/i;
+const political=/президент|парламент|мажилис|сенат|депутат|министр|акимат|аким[а-яё]*|правительств|выбор(?:ы|ов|ам|ами|ах)|избирательн|оппозици|митинг|протест|политическ|политическ[а-яё]*\s+парти[а-яё]*|законопроект|конституци|санкци|геополит|president|parliament|election|opposition|protest|politic|government|minister|akimat/i;
+// Explain topic failures rather than asking the model to repair an opaque category label.
+function topicIssues(article) {
+  const text=[article.title,article.description,article.sources?.[0]?.title].join(' ');
+  const issues=[];
+  if(!localMatch.test(text))issues.push('Kazakhstan topic: no supported local connection in headline, description or source');
+  const match=text.match(political);
+  if(match)issues.push('Kazakhstan topic: political term '+JSON.stringify(match[0]));
+  return issues;
+}
 const globalTopics = [
   'Samsung LG TCL Xiaomi Hisense smart TV new models prices features',
   'Google TV Android TV streaming YouTube Netflix television',
@@ -125,9 +134,10 @@ async function fetchEvidence(entry){
   const finalUrl=response.url;
   if(!/^https:\/\//.test(finalUrl)||new URL(finalUrl).hostname.endsWith('news.google.com'))return null;
   const html=(await response.text()).slice(0,500000);
-  const article=(html.match(/<article\b[^>]*>[\s\S]*?<\/article>/i)||[])[0]||html;
-  const body=stripHtml(article);
-  if(body.length<800)return null;
+  const article=(html.match(/<article\b[^>]*>[\s\S]*?<\/article>/i)||html.match(/<main\b[^>]*>[\s\S]*?<\/main>/i)||[])[0];
+  if(!article)return null; // Navigation and related headlines are not article evidence.
+  const body=stripHtml(article.replace(/<(nav|header|footer|aside)\b[^>]*>[\s\S]*?<\/\1>/gi,' '));
+  if(body.length<400)return null;
   return {url:finalUrl,excerpt:body.slice(0,9500)};
  }catch{return null}
 }
@@ -167,11 +177,11 @@ const prompt = [
   ...(kazakhstanMode?['Для казахстанской ленты выбирай наиболее значимое и свежее событие любой разрешённой тематики, не ограничивайся электроникой.']:['В первую очередь выбирай новости о телевизорах, Smart TV, видеосервисах, игровых приставках, домашнем кинотеатре и выборе электроники. Не приписывай рекламируемому HARMEX характеристики конкурентов. Не вставляй скрытую рекламу в редакционный текст.']),
   'Приоритет отдавай первому подходящему источнику в списке, чтобы повторные попытки выбирали разные новости. Выбери один конкретный инфоповод из разрешённых тем. Заголовок яркий, эмоциональный, интригующий, с сильным новостным глаголом и конкретикой; не выдумывай сенсации, не искажай факты и не обещай того, чего нет в тексте.',
   'Доступны выдержки из текстов первоисточников. Используй только явно подтверждённые ими факты; не придумывай цитаты, цифры, характеристики, даты и заявления. Различай официальное подтверждение и сообщения журналистов. Не пиши будто тестировал устройство.',
-  'Вместо вымышленных подробностей объясни, почему событие важно, что пока неизвестно, и что стоит проверить дальше. Никаких слухов как установленных фактов.',
+  'Объём зависит от подтверждённых фактов: если их мало, напиши короткую заметку. Не добавляй предположения о будущих моделях, обновлениях, рыночных последствиях или отсутствующих сведениях ради объёма. Совет читателю допустим только как явно обозначенный совет, без новых фактов о товаре.',
   'Выбери одну новость из списка с текстом первоисточника. Верни в sources ТОЧНО её title, url, published. Ссылку не изменяй. Если данных недостаточно, выбери другую.',
   'Авторский рерайт обязателен: осмысли первоисточник, выдели главное, измени композицию и формулировки, объясни значение новости читателю. Не копируй предложения, абзацы, структуру и заголовок из первоисточника, кроме точных названий, фактов и коротких атрибутированных цитат. Сохраняй ссылку на источник. Не делай поверхностную замену синонимов.',
   'СТРОГО: весь заголовок, description, заголовки разделов и все абзацы — только на русском языке. Не копируй английские заголовки или абзацы из источника. Допустимы только собственные имена, бренды, названия продуктов и общепринятые технические обозначения латиницей.',
-  'Текст естественный, читаемый, 3-5 разделов, по 2-3 содержательных абзаца, без искусственного SEO-спама. Реклама HARMEX добавляется на сайте отдельно.',
+  'Текст естественный, читаемый, 1-5 разделов, по 1-3 содержательных абзаца, без искусственного SEO-спама. Каждый абзац не короче 40 символов; заголовки разделов содержат не менее 12 русских букв. Не растягивай текст. Реклама HARMEX добавляется на сайте отдельно.',
   'Не повторяй опубликованные темы: ' + previous.join('; '),
   'Верни JSON: region (kz или global), slug (латиница, цифры и дефисы), title, description, date (строго ' + today + '), category, sections (массив {heading, paragraphs: массив строк}), sources (массив из одного объекта {title,url,published}).',
   'Доступные новости:\n' + JSON.stringify(chosenEvidence.map(({score,...h})=>h))
@@ -188,16 +198,16 @@ const hasRussianProse = value => typeof value === 'string' && (value.match(/[а-
 const structuralIssues = article => {
   const issues = [];
   if (!article || typeof article !== 'object') return ['response is not an object'];
-  if(kazakhstanMode&&(!localMatch.test([article.title,article.description,article.sources?.[0]?.title].join(' '))||political.test([article.title,article.description,article.sources?.[0]?.title].join(' '))))issues.push('not an eligible nonpolitical Kazakhstan news event');
+  if(kazakhstanMode)issues.push(...topicIssues(article));
   if (!article.title || typeof article.title !== 'string') issues.push('missing title');
   if (!article.description || typeof article.description !== 'string') issues.push('missing description');
   if(!hasRussianProse(article.title)||!hasRussianProse(article.description))issues.push('title and description must be written in Russian');
   if(Array.isArray(article.sections)&&article.sections.some(s=>!hasRussianProse(s.heading)||!Array.isArray(s.paragraphs)||s.paragraphs.some(p=>!hasRussianProse(p))))issues.push('all section headings and paragraphs must be in Russian');
-  if (!Array.isArray(article.sections) || article.sections.length < 3 || article.sections.length > 5) issues.push('sections count must be 3-5');
+  if (!Array.isArray(article.sections) || article.sections.length < 1 || article.sections.length > 5) issues.push('sections count must be 1-5');
   else article.sections.forEach((section, index) => {
     if (!section.heading) issues.push('section ' + index + ' missing heading');
-    if (!Array.isArray(section.paragraphs) || section.paragraphs.length < 2) issues.push('section ' + index + ' needs 2 paragraphs');
-    else if (section.paragraphs.some(p => typeof p !== 'string' || p.trim().length < 70)) issues.push('section ' + index + ' has short/invalid paragraphs');
+    if (!Array.isArray(section.paragraphs) || section.paragraphs.length < 1) issues.push('section ' + index + ' needs at least 1 paragraph');
+    else if (section.paragraphs.some(p => typeof p !== 'string' || p.trim().length < 40)) issues.push('section ' + index + ' has short/invalid paragraphs');
   });
   if (!Array.isArray(article.sources) || article.sources.length !== 1 || !evidence.some(h => h.title === article.sources[0]?.title && h.url === article.sources[0]?.url && h.published === article.sources[0]?.published)) issues.push('source not found in fetched headlines');
   if(article.sources?.[0]?.published){const age=Date.now()-Date.parse(article.sources[0].published+'T00:00:00Z');if(!Number.isFinite(age)||age>4*86400000||age< -86400000)issues.push('source publication date is stale or invalid');}
@@ -229,7 +239,7 @@ for (let attempt = 0; attempt < 2 && initialIssues.length; attempt++) {
     method: 'POST',
     headers: {Authorization: 'Bearer ' + key, 'Content-Type': 'application/json'},
     body: JSON.stringify({model: process.env.OPENAI_MODEL || 'gpt-4.1-mini', response_format: {type: 'json_object'}, messages: [
-      {role: 'system', content: 'Repair the JSON structure only. Do not add factual claims. Output JSON.'},
+      {role: 'system', content: 'Repair the listed validation problems using only the supplied evidence. Keep 1-5 sections with at least one paragraph per section. For topic failures choose a different eligible event and rewrite the whole draft faithfully; never hide political facts by deleting a keyword. Do not add factual claims. Output JSON.'},
       {role: 'user', content: 'Fix these validation problems: ' + JSON.stringify(initialIssues) + '. Choose exactly one source from this list, copying title/url/published byte for byte: ' + JSON.stringify(chosenEvidence.map(({score,...h})=>h)) + '. Avoid published titles: ' + JSON.stringify(previous) + '. Return the complete corrected article JSON. Draft: ' + JSON.stringify(a)}
     ]})});
   if (!correction.ok) throw Error('Draft repair API failed: ' + await correction.text());
@@ -247,7 +257,9 @@ const sourceHeadline = evidence.find(h => h.title === source.title && h.url === 
 const reviewPrompt = [
   'Act as a strict fact-checking editor. Also check that the draft is an original synthesis, not copied wording or the same headline from the source. A strong attention-grabbing headline is welcome only if its claims are supported. Available evidence is the source headline and an extracted excerpt from the original publisher; verify every factual claim against that evidence.',
   'Check EVERY factual claim in the Russian draft (including headline, description, sections) against the source headline and excerpt. Do not infer other devices, dates, prices, quotes, sources, or certainty from background knowledge.',
-  'Reject close translations, copied source sentences, near-identical headline phrasing and invented sensational claims. A factual claim may be accepted only if supported by the supplied excerpt; clearly labelled general commentary is allowed. Reject invented quotes, unsupported claims of official confirmation and invented attributions.',
+  'Reject close translations, copied source sentences, near-identical headline phrasing and invented sensational claims. A factual claim may be accepted if supported by the supplied source headline or article excerpt, preserving attribution and uncertainty; clearly labelled general commentary is allowed. Reject invented quotes, unsupported claims of official confirmation and invented attributions.',
+  'Accept faithful semantic paraphrases of supported facts: a reported price crash supports a reported price reduction, but not an invented amount, market, retailer or cause. Shared names, ratings and factual terminology alone are not copying. Reject copied expressive sentences and near-identical headlines, not the necessary restatement of a fact. Clearly labelled general buyer advice needs no source quote unless it asserts a product-specific fact. For every issue quote the problematic draft claim and explain the evidence gap; do not list supported claims as issues.',
+  ...(kazakhstanMode?['Also verify that the event concerns Kazakhstan and is nonpolitical. Reject state politics, elections, political figures, opposition, protests and political conflicts. Ordinary consumer choice or a shipment of products is not politics. Check the full draft and source excerpt, not just keywords.']:[]),
   'Respond as JSON with approved (boolean), issues (array of strings). Only put ACTUAL unsupported or incorrect claims in issues. Do not list supported claims or explanations. If all claims are supported, approved=true and issues=[]. The article date is the TechPulse publication date, not the original source date. Russian grammatical cases of proper names are valid.',
   'SOURCE: ' + JSON.stringify(sourceHeadline),
   'DRAFT: ' + JSON.stringify(a)
@@ -266,8 +278,8 @@ const review = draft => chatJson([
   {role: 'user', content: reviewPrompt.replace('DRAFT: ' + JSON.stringify(a), 'DRAFT: ' + JSON.stringify(draft))}
 ]);
 const valid = draft => /^[a-z0-9-]{8,110}$/.test(draft.slug || '') && hasRussianProse(draft.title) && hasRussianProse(draft.description) &&
-  Array.isArray(draft.sections) && draft.sections.length >= 3 && draft.sections.length <= 5 &&
-  draft.sections.every(x => hasRussianProse(x.heading) && Array.isArray(x.paragraphs) && x.paragraphs.length >= 2 && x.paragraphs.every(p => hasRussianProse(p) && p.length >= 70)) &&
+  Array.isArray(draft.sections) && draft.sections.length >= 1 && draft.sections.length <= 5 &&
+  draft.sections.every(x => hasRussianProse(x.heading) && Array.isArray(x.paragraphs) && x.paragraphs.length >= 1 && x.paragraphs.every(p => hasRussianProse(p) && p.trim().length >= 40)) &&
   Array.isArray(draft.sources) && draft.sources.length === 1 && draft.sources[0].title === source.title &&
   draft.sources[0].url === source.url && draft.sources[0].published === source.published;
 let draft = a;
@@ -276,7 +288,7 @@ for (let attempt = 0; attempt < 2 && verdict.approved !== true; attempt++) {
   console.log('Editorial rewrite attempt', attempt + 1, JSON.stringify(verdict.issues || []));
   const revised = await chatJson([
     {role: 'system', content: 'You are a careful Russian technology news editor. Output JSON only.'},
-    {role: 'user', content: 'Rewrite this article to address ALL fact-check issues. A source excerpt is available; remove unsupported specifics rather than inventing them. Keep 3-5 sections with at least two meaningful paragraphs each. Do not introduce new factual claims. Preserve slug, sources and date exactly. Return the full article JSON.\\nSOURCE: ' + JSON.stringify(sourceHeadline) + '\\nISSUES: ' + JSON.stringify(verdict.issues) + '\\nARTICLE: ' + JSON.stringify(draft)}
+    {role: 'user', content: 'Rewrite this article to address ALL fact-check issues. A source excerpt is available; remove unsupported specifics rather than inventing them. Keep 1-5 sections with at least one meaningful paragraph each (minimum 40 characters). Shorten the article when evidence is limited; do not pad it with speculation. Do not introduce new factual claims. Preserve slug, sources and date exactly. Return the full article JSON.\\nSOURCE: ' + JSON.stringify(sourceHeadline) + '\\nISSUES: ' + JSON.stringify(verdict.issues) + '\\nARTICLE: ' + JSON.stringify(draft)}
   ]);
   // The rewrite is allowed to improve prose, but immutable metadata belongs to the publisher pipeline.
   revised.slug=a.slug;
@@ -292,7 +304,8 @@ if (verdict.approved !== true) {
 }
 Object.assign(a, draft);
 a.region=kazakhstanMode?'kz':'global';
-if(kazakhstanMode&&(!localMatch.test([a.title,a.description,a.sources?.[0]?.title].join(' '))||political.test([a.title,a.description,a.sources?.[0]?.title].join(' '))))throw Error('Kazakhstan editorial topic check failed');
+const finalIssues=structuralIssues(a);
+if(finalIssues.length)throw Error('Final article validation failed: '+JSON.stringify(finalIssues));
 if(existing.some(e=>sameEvent(e,a)))throw Error('Duplicate news event blocked before publication');
 a.date = today;
 a.publishedAt = new Date().toISOString();
