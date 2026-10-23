@@ -10,13 +10,16 @@ const maxConsecutiveFailures=3;
 const count=()=>fs.readdirSync('articles').filter(x=>x.endsWith('.json')).length;
 const before=count();
 let published=0,attempts=0,consecutiveFailures=0;
+let previousAttemptFailed=false;
 console.log('TechPulse continuous publishing:',{before,runtimeMinutes:4,articleQuota:'none',focus:'TV purchase-intent traffic'});
 while(Date.now()-started<runtimeMs-20000&&consecutiveFailures<maxConsecutiveFailures){
  attempts++;
+ // After a failed local attempt, try global sources before the failure limit.
+ const region=process.env.EDITORIAL_REGION || (previousAttemptFailed?'global':(attempts%4===0?'global':'kz'));
  const remaining=runtimeMs-(Date.now()-started);
  const run=spawnSync(process.execPath,['scripts/generate.mjs'],{
   encoding:'utf8',
-  env:{...process.env,EDITORIAL_ATTEMPT:String(attempts)},
+  env:{...process.env,EDITORIAL_ATTEMPT:String(attempts),EDITORIAL_REGION:region},
   timeout:Math.min(150000,Math.max(1000,remaining-10000))
  });
  const output=(run.stdout||'')+'\n'+(run.stderr||'');
@@ -29,10 +32,12 @@ while(Date.now()-started<runtimeMs-20000&&consecutiveFailures<maxConsecutiveFail
  if(saved>published){
   published=saved;
   consecutiveFailures=0;
+  previousAttemptFailed=false;
   console.log('Verified article files saved:',published,'total:',count());
  }else{
   consecutiveFailures++;
-  console.warn('No verified article saved this attempt; searching next story.',{attempts,consecutiveFailures,status:run.status,error:run.error?.message});
+  previousAttemptFailed=region==='kz';
+  console.warn('No verified article saved this attempt; searching next story.',{attempts,region,consecutiveFailures,status:run.status,error:run.error?.message});
  }
 }
 console.log('Editorial batch summary:',{attempts,published,total:count(),durationSeconds:Math.round((Date.now()-started)/1000),consecutiveFailures});
