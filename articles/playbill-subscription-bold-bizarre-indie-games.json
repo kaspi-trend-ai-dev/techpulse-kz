@@ -1,0 +1,48 @@
+{
+  "region": "global",
+  "slug": "playbill-subscription-bold-bizarre-indie-games",
+  "title": "Новый подписной сервис Playbill предлагает коллекцию необычных инди-игр",
+  "description": "Появился новый подписной сервис Playbill, который предлагает коллекцию дерзких и нестандартных инди-игр. Сервис исключает игры с применением генеративного ИИ.",
+  "date": "2026-10-23",
+  "category": "gaming",
+  "sections": [
+    {
+      "heading": "Новый подписной сервис Playbill для любителей инди-игр",
+      "paragraphs": [
+        "Издатель Pantaloon запустил сервис подписки Playbill, ориентированный на поклонников независимых игр с необычными и экспериментальными идеями. Playbill представляет собой сервис, схожий по концепции с Xbox Game Pass, но с фокусом на «дерзкие и нестандартные» инди-проекты.",
+        "В стартовой линейке представлены сторонние игры, включая Buckshot Roulette, Silt, Ex Sanguis и Cabin Factory, а также игры собственной разработки Pantaloon: Sub-Verge, Occlude, It Takes a War, Boxroom, Rolla и музыкальный симулятор Offbeat. Все игры издателя становятся доступны подписчикам сразу после релиза."
+      ]
+    },
+    {
+      "heading": "Особенности сервиса и политика по играм с ИИ",
+      "paragraphs": [
+        "Playbill предлагает не только игры, но и демоверсии, тесты и прототипы в разделе под названием Green Room. В числе доступных тестов — Isle Goblin, Mr Magpie's Harmless Card Game и Lemonade Apocalypse.",
+        "Основатель Pantaloon Джамин Смит отметил, что сервис не будет включать игры, использующие генеративный искусственный интеллект в любой форме: «Playbill — это праздник ремесла создания игр».",
+        "Подписка стоит $5 в месяц или $60 в год. При ежегодной подписке доступны все текущие игры и будущие релизы. Месячные подписчики получают гарантированную игру каждый месяц, но набор игр ограничен партнерскими соглашениями. После шести месяцев подписки пользователи получают доступ ко всему каталогу."
+      ]
+    },
+    {
+      "heading": "Перспективы и особенности подписки Playbill",
+      "paragraphs": [
+        "Playbill предоставляет возможность познакомиться с экспериментальными жанрами и нестандартным игровым дизайном, что может быть интересно любителям инди-игр, ищущим новые впечатления вне популярных коммерческих проектов.",
+        "Сервис работает на основе ключей: игры могут быть удалены из каталога по мере исчерпания ключей, а новые проекты добавляются регулярно. Это стоит учитывать при выборе подписки и планировании использования сервиса."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "A new subscription service promises an evolving collection of 'bold and bizarre' indie games",
+      "url": "https://www.engadget.com/2294854/a-new-subscription-service-promises-an-evolving-collection-of-bold-and-bizarre-indie-games/",
+      "published": "2026-10-22"
+    }
+  ],
+  "publishedAt": "2026-10-23T03:03:09.385Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/a-new-subscription-service-promises-an-evolving-collection-of-bold-and-bizarre-indie-games/intro-1792701864.jpg",
+    "source": "https://www.engadget.com/2294854/a-new-subscription-service-promises-an-evolving-collection-of-bold-and-bizarre-indie-games/",
+    "credit": "Kris Holt",
+    "license": "Лицензия не проверена",
+    "alt": "Text reading ",
+    "verified": true
+  }
+}
