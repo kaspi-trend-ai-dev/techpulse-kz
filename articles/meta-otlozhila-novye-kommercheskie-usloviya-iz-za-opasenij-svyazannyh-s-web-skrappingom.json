@@ -1,0 +1,46 @@
+{
+  "region": "global",
+  "slug": "meta-otlozhila-novye-kommercheskie-usloviya-iz-za-opasenij-svyazannyh-s-web-skrappingom",
+  "title": "Meta отложила новые коммерческие условия из-за опасений по поводу web-scraping",
+  "description": "Meta перенесла дату вступления в силу обновленных коммерческих условий с 30 октября на 20 ноября, чтобы подробнее объяснить партнерам изменения и ответить на возникшие вопросы.",
+  "date": "2026-10-24",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Перенос даты вступления в силу новых условий",
+      "paragraphs": [
+        "Meta объявила о переносе даты вступления в силу обновленных коммерческих условий с 30 октября на 20 ноября. Компания намерена уделить больше времени для разъяснения изменений своим партнерам и заинтересованным сторонам."
+      ]
+    },
+    {
+      "heading": "Содержание обновленных условий и реакция партнеров",
+      "paragraphs": [
+        "Обновленные условия предусматривали использование Meta web-scraper и других автоматизированных инструментов для доступа, индексирования и анализа контента бизнес-аккаунтов и связанных с ними доменов и URL.",
+        "После публикации новых условий некоторые организации выразили обеспокоенность. В частности, News Media Alliance направила Meta открытое письмо с требованием отозвать обновленные правила до 30 октября, отмечая возможные негативные последствия для издателей."
+      ]
+    },
+    {
+      "heading": "Использование robots.txt и дальнейшие шаги",
+      "paragraphs": [
+        "Meta заявила, что объяснит партнерам, как используются веб-краулеры, и подчеркнула, что владельцы контента смогут использовать файл robots.txt для указания предпочтений по индексации и ограничению доступа к своему контенту.",
+        "Однако известно, что некоторые AI-компании игнорируют инструкции robots.txt, что остается предметом обсуждения."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meta is delaying its controversial new business terms amid scraping concerns",
+      "url": "https://www.engadget.com/2296124/meta-delaying-controversial-business-terms-scraping-concerns/",
+      "published": "2026-10-24"
+    }
+  ],
+  "publishedAt": "2026-10-24T11:26:47.953Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/meta-is-delaying-its-controversial-new-business-terms-amid-scraping-concerns/intro-1792836885.jpg",
+    "source": "https://www.engadget.com/2296124/meta-delaying-controversial-business-terms-scraping-concerns/",
+    "credit": "Mariella Moon",
+    "license": "Лицензия не проверена",
+    "alt": "Meta logo",
+    "verified": true
+  }
+}
