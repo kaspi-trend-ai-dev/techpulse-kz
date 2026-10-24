@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "sony-prekrashhaet-proizvodstvo-fizicheskih-diskov-vozmozhen-konflikt-igrokov",
+  "title": "Sony прекращает производство физических дисков PlayStation: что это значит для геймеров?",
+  "description": "Sony объявила, что с января 2028 года перестанет выпускать диски для игр PlayStation. Это решение вызвало дискуссии среди поклонников консолей о будущем физических носителей и владении играми.",
+  "date": "2026-10-25",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Почему Sony отказывается от физических дисков PlayStation",
+      "paragraphs": [
+        "Sony официально заявила, что с января 2028 года прекратит производство физических дисков для своих консолей PlayStation, что связано с резким ростом цифровых продаж — в последнем квартале они составляют 82% от всех продаж игр. Физические копии теперь приносят менее 4% дохода от продаж софта, что делает их экономически нерентабельными для компании.",
+        "Однако это решение вызвало неоднозначную реакцию игроков, для которых диски означают настоящее владение игрой, а не лишь лицензию на цифровой контент. Такую точку зрения поддерживает бывший глава Sony Computer Entertainment Кен Кутараги, хотя он сам понимает, что отказ от физических носителей — логичный шаг в условиях современных трендов."
+      ]
+    },
+    {
+      "heading": "Мнения ключевых фигур PlayStation и перспективы рынка",
+      "paragraphs": [
+        "Кен Кутараги, «отец PlayStation», считает, что отказ от дисков — это скорее менталитет игроков, чем экономическая ошибка. Он напоминает, что когда создавались PS2 и PS3, сетевые функции были менее востребованы, а сейчас большинство пользователей доверяют цифровому хранению своего контента.",
+        "Также Кутараги отмечает, что руководство Sony теперь видит PlayStation не только как игровую консоль, но и как терминал для цифрового контента, что подчеркивает важность потоковых сервисов и цифровых загрузок. Впрочем, более четверти миллиона подписчиков подали петицию за сохранение дисков, демонстрируя нерешенность фанатов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "'Father of the PlayStation' Ken Kutaragi sides with Sony on the physical discs debate",
+      "url": "https://www.engadget.com/2294585/ken-kutaragi-father-of-playstation-sides-with-sony-physical-games/",
+      "published": "2026-10-24"
+    }
+  ],
+  "publishedAt": "2026-10-24T19:24:34.014Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/father-of-the-playstation-ken-kutaragi-sides-with-sony-on-the-physical-discs-debate/intro-1792693371.jpg",
+    "source": "https://www.engadget.com/2294585/ken-kutaragi-father-of-playstation-sides-with-sony-physical-games/",
+    "credit": "Luke James",
+    "license": "Лицензия не проверена",
+    "alt": "A stack of various PlayStation 4 and PlayStation 5 game cases.",
+    "verified": true
+  }
+}

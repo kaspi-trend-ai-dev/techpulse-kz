@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "pochemu-vnutri-vashih-internet-kabeley-promyatyvaetsya-provoda",
+  "title": "Почему внутри ваших интернет-кабелей провода скручены",
+  "description": "Объяснение инженерного решения скручивания проводов внутри Ethernet-кабелей и его влияние на передачу сигналов.",
+  "date": "2026-10-25",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Уникальная роль скрученных пар проводов в интернет-кабелях",
+      "paragraphs": [
+        "Скрученные пары проводов внутри Ethernet-кабелей — не случайность, а продуманная инженерная особенность, которая зародилась ещё в 1880-х годах с использованием в первых телефонных линиях США. Это техническое решение позволяет существенно снизить помехи при передаче электрических сигналов.",
+        "Когда электрический ток проходит по проводу, вокруг него формируется магнитное поле. Если два провода идут параллельно друг другу без скрутки, создаваемые ими магнитные поля будут мешать передаче сигналов. Скручивание проводов обеспечивает противоположное магнитное воздействие, нейтрализующее эти помехи."
+      ]
+    },
+    {
+      "heading": "Конструкция современных Ethernet-кабелей и её значение",
+      "paragraphs": [
+        "Современные Ethernet-кабели состоят из четырёх пар медных проводов, каждая из которых скручена с разной плотностью. Это предотвращает новые помехи между парами, позволяя передавать данные без взаимных помех.",
+        "Кабели имеют фольгированную оболочку вокруг скрученных пар, которая помогает изолировать сигналы от внешних помех."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Why the wires in your ethernet cables are twisted",
+      "url": "https://www.engadget.com/2294278/why-wires-in-ethernet-cable-twisted-explained/",
+      "published": "2026-10-24"
+    }
+  ],
+  "publishedAt": "2026-10-24T19:26:25.948Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/why-the-wires-in-your-ethernet-cables-are-twisted/intro-1790877005.jpg",
+    "source": "https://www.engadget.com/2294278/why-wires-in-ethernet-cable-twisted-explained/",
+    "credit": "Anna Washenko",
+    "license": "Лицензия не проверена",
+    "alt": "Photo showing a close-up of coiled ethernet cables: a figure-8 wrapped black one set in a disc made by a flattened white cable. A third yellow cable is loosely wrapped around the white one.",
+    "verified": true
+  }
+}
