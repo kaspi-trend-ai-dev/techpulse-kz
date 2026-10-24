@@ -1,0 +1,44 @@
+{
+  "region": "global",
+  "slug": "people-are-using-ai-to-make-their-smart-tvs-dumb-again",
+  "title": "Commonwealth Fusion Systems получает $85 млн на разработку полупроводников для термоядерной энергетики",
+  "description": "Компания Commonwealth Fusion Systems получила финансирование от правительства США для разработки передовых полупроводников, необходимых для развития термоядерной энергетики.",
+  "date": "2026-10-24",
+  "category": "Технологии",
+  "sections": [
+    {
+      "heading": "Финансирование развития полупроводников для термоядерной энергетики",
+      "paragraphs": [
+        "Commonwealth Fusion Systems (CFS) объявила о получении $85 миллионов от правительства США на разработку передовых чипов для индустрии термоядерной энергетики. Эти средства выделены в рамках программы CHIPS Act Министерства торговли США."
+      ]
+    },
+    {
+      "heading": "Цели и направления использования инвестиций",
+      "paragraphs": [
+        "Средства будут направлены на развитие кремний-карбидных силовых полупроводников, которые применяются для управления высокими напряжениями в различных сферах, включая термоядерные реакторы. Также финансирование поддержит разработку новых радиочастотных генераторов и усовершенствованных электронных систем управления реактором, устойчивых к радиации."
+      ]
+    },
+    {
+      "heading": "Влияние на индустрию и энергетику",
+      "paragraphs": [
+        "По словам представителей CFS, эти разработки помогут создать более эффективные и экономичные термоядерные электростанции, а также укрепить цепочки поставок полупроводников в США. Это важный шаг для масштабирования производства коммерческих термоядерных установок в будущем."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Commonwealth Fusion Systems gets $85M to build better fusion-ready semiconductors",
+      "url": "https://techcrunch.com/2026/10/23/commonwealth-fusion-systems-gets-85m-to-build-better-fusion-ready-semiconductors/",
+      "published": "2026-10-23"
+    }
+  ],
+  "publishedAt": "2026-10-24T03:16:58.181Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/CFS-Brandon-Sorbom-Disrupt-2026.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/23/commonwealth-fusion-systems-gets-85m-to-build-better-fusion-ready-semiconductors/",
+    "credit": "Tim De Chant",
+    "license": "Лицензия не проверена",
+    "alt": "Brandon Sorbom - co founder of CFS",
+    "verified": true
+  }
+}
