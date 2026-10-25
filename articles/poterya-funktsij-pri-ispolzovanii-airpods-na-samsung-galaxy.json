@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "poterya-funktsij-pri-ispolzovanii-airpods-na-samsung-galaxy",
+  "title": "Что теряют владельцы Apple AirPods при подключении к Samsung Galaxy",
+  "description": "Использование Apple AirPods с телефонами Samsung Galaxy лишает пользователей ряда удобных функций, доступных только в экосистеме Apple. Об этом рассказываем, чтобы помочь правильно оценить возможности на разных устройствах.",
+  "date": "2026-10-25",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Ограничения подключения AirPods к Samsung Galaxy",
+      "paragraphs": [
+        "Apple AirPods могут подключаться к устройствам Samsung Galaxy по Bluetooth, но процесс сопряжения становится менее удобным, чем с iPhone. Вместо автоматического подключения при открытии кейса владельцам приходится вручную активировать режим поиска на наушниках, используя физические кнопки.",
+        "Более того, многие фирменные функции, такие как автоматическое переключение между устройствами и обнаружение нахождения наушника в ухе, при использовании AirPods с Android-устройствами недоступны."
+      ]
+    },
+    {
+      "heading": "Какие функции AirPods остаются недоступными на Android",
+      "paragraphs": [
+        "Среди потерянных возможностей — голосовой помощник Siri, пространственное аудио с отслеживанием головы, тест на посадку вкладышей, живой перевод и функции для контроля здоровья слуха. Все они требуют подключения к iPhone, iPad или Mac.",
+        "Обновления прошивки AirPods также доступны только при подключении к устройствам Apple, что снижает возможность получать новые функции и улучшения."
+      ]
+    },
+    {
+      "heading": "Частичное восстановление функционала через сторонние приложения",
+      "paragraphs": [
+        "Для Android-смартфонов существуют приложения, которые помогают вернуть некоторые функции AirPods, например CAPod и LibrePods. Они добавляют такие возможности, как уведомление об уровне заряда и автоматическое воспроизведение при вставлении наушника, но полноценность и стабильность работы таких решений ограничены.",
+        "Однако по цене AirPods Pro 3 сравнимы с Samsung Galaxy Buds 4 Pro, которые реализуют свои функции максимально полно на устройствах Galaxy, включая автопереключение и 360-градусный звук."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "What features do you lose if you use Apple AirPods with a Samsung Galaxy phone?",
+      "url": "https://www.engadget.com/2293387/features-lost-use-apple-airpods-with-samsung-galaxy-phone/",
+      "published": "2026-10-25"
+    }
+  ],
+  "publishedAt": "2026-10-25T16:52:53.406Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/what-features-do-you-lose-if-you-use-apple-airpods-with-a-samsung-galaxy-phone/intro-1792607815.jpg",
+    "source": "https://www.engadget.com/2293387/features-lost-use-apple-airpods-with-samsung-galaxy-phone/",
+    "credit": "Luke James",
+    "license": "Лицензия не проверена",
+    "alt": "AirPods Pro 3 alongside their charging case on a pink and blue background.",
+    "verified": true
+  }
+}
