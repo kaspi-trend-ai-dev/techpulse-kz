@@ -1,0 +1,44 @@
+{
+  "region": "global",
+  "slug": "starlink-v-ukraine-starshield-vozobnovil-rabotu",
+  "title": "Starlink восстановил нормальную работу военной сети Starshield в Украине",
+  "description": "Система Starshield, военная версия Starlink от SpaceX, вновь работает в Украине после периода ограничений, затрагивавших связь с беспилотниками.",
+  "date": "2026-10-25",
+  "category": "news",
+  "sections": [
+    {
+      "heading": "Возобновление работы Starshield и проблемы с дронами",
+      "paragraphs": [
+        "Система Starshield, являющаяся военной версией интернет-сети Starlink от SpaceX, снова функционирует в Украине. Ранее в течение десяти дней украинские беспилотники теряли связь при скорости около 100 миль в час (~160 км/ч), что осложняло управление ими."
+      ]
+    },
+    {
+      "heading": "Заявления Илона Маска и политический контекст",
+      "paragraphs": [
+        "Илон Маск заявил, что Украина нарушила условия использования Starlink, применяя сеть для наступательных операций с беспилотниками. Также сообщалось, что бывший президент США Дональд Трамп обращался к Маску с просьбой восстановить работу Starshield для Украины."
+      ]
+    },
+    {
+      "heading": "Текущая ситуация и дальнейшие наблюдения",
+      "paragraphs": [
+        "По словам украинского министра обороны, Starshield работает нормально, однако военные продолжают проводить тесты и не получили официальных объяснений причин предыдущих ограничений."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Starlink seems to be working normally again in Ukraine",
+      "url": "https://techcrunch.com/2026/10/24/starlink-seems-to-be-working-normally-again-in-ukraine/",
+      "published": "2026-10-24"
+    }
+  ],
+  "publishedAt": "2026-10-25T05:37:52.885Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/starlink.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/24/starlink-seems-to-be-working-normally-again-in-ukraine/",
+    "credit": "Anthony Ha",
+    "license": "Лицензия не проверена",
+    "alt": "Starlink",
+    "verified": true
+  }
+}
