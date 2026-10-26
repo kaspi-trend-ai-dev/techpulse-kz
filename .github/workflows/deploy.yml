@@ -1,4 +1,4 @@
-name: Deploy TechPulse
+name: Deploy HARMEX MEDIA
 on:
   push:
     branches: [main]
