@@ -27,10 +27,12 @@ for(const a of articles){
   const ps=paragraphs(a),body=ps.join(' ');
   const title=String(a.title||''),description=String(a.description||'');
   const sources=Array.isArray(a.sources)?a.sources:[];
+  // Original evergreen advice is not a syndicated news report; missing news sources is not necessarily an error.
+  const isGuide=!sources.length && /телевизор|smart tv|экран/i.test(title+' '+a.category) && /^(как|почему|телевизор|выбор|определение)/i.test(title);
   const add=(type,weight,message)=>issues.push({type,weight,message});
   if(!/^[a-z0-9-]{8,110}$/.test(a.slug||''))add('technical',4,'Некорректный slug');
   if(!/^20\d\d-\d\d-\d\d$/.test(a.date||''))add('technical',3,'Нет корректной даты');
-  if(!sources.some(s=>/^https:\/\//.test(s.url||'')))add('source',4,'Нет источника с HTTPS');
+  if(!isGuide&&!sources.some(s=>/^https:\/\//.test(s.url||'')))add('source',4,'Нет источника с HTTPS');
   if(title.length<30)add('metadata',2,'Заголовок слишком короткий');
   if(title.length>125)add('metadata',2,'Заголовок слишком длинный');
   if(description.length<100)add('metadata',2,'Мало информации в описании');
@@ -41,7 +43,7 @@ for(const a of articles){
   const repeated=ps.filter(p=>p.length>=90&&(occurrence.get(norm(p))||0)>=2).length;
   if(repeated>=2)add('repetition',4,repeated+' абзаца встречаются в нескольких статьях');
   if(removedBySlug.has(a.slug))add('duplicate',5,'Похожая статья: '+removedBySlug.get(a.slug));
-  if(a.region==='kz'&&!/(казахстан|казах|алматы|астана|шымкент|област|республик|almaty|astana|kazakhstan)/i.test(title+' '+description))
+  if(a.region==='kz'&&!/(казахстан|казах|алмат|астан|шымкент|област|республик|актоб|ақтөб|караган|қараған|павлодар|семей|кокшетау|көкшетау|атырау|актау|ақтау|костанай|қостанай|туркестан|түркістан|кызылорд|қызылорд|тараз|уральск|орал|усть-камен|өскемен|almaty|astana|kazakhstan)/i.test(title+' '+description))
     add('local',2,'Неочевидна связь с Казахстаном');
   if(a.region!=='kz'&&a.region!=='global')add('metadata',1,'Регион не указан');
   const facts=(body.match(/\d[\d,. ]*%?/g)||[]).length;
