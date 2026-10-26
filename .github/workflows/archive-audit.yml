@@ -4,6 +4,14 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit-historical.mjs'
+      - 'articles/kak-vybrat-diagonal-televizora.json'
+      - 'articles/pochemu-tormozit-smart-tv.json'
+      - 'articles/televizor-dlya-spalni.json'
+      - 'articles/opredelenie-optimalnogo-rasstoyaniya-do-ekrana-43-dyuyma-v-kazakhstane.json'
+      - 'articles/gran-turismo-ps5-limited-dualsense-preorders.json'
+      - 'articles/amazon-predstavil-pyat-novyh-kamer-dlya-umnogo-doma-blink.json'
+      - 'articles/microsoft-project-helix-2028-price-and-plans.json'
+      - 'articles/ogranicheniya-dvizheniya-mashin-na-letney-rezine-v-neskolkikh-regionakh-kazakhstana.json'
       - '.github/workflows/archive-audit.yml'
   schedule:
     - cron: '30 0 * * *'
