@@ -23,8 +23,8 @@ jobs:
         run: node scripts/backfill-images.mjs
       - name: Commit updated articles and trigger site deployment
         run: |
-          git config user.name 'techpulse-bot'
-          git config user.email 'techpulse-bot@users.noreply.github.com'
+          git config user.name 'harmex-media-bot'
+          git config user.email 'harmex-media-bot@users.noreply.github.com'
           git add -A articles/
           if ! git diff --cached --quiet; then
             git commit -m 'Backfill original article images'
