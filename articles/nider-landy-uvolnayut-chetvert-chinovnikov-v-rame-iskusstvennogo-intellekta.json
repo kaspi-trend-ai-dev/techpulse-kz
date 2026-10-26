@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "nider-landy-uvolnayut-chetvert-chinovnikov-v-rame-iskusstvennogo-intellekta",
+  "title": "Нидерланды сокращают 16% государственных служащих, опираясь на искусственный интеллект",
+  "description": "Правительство Нидерландов объявило о планах избавиться от 25 тысяч рабочих мест к 2035 году, используя ИИ для повышения эффективности и экономии бюджета.",
+  "date": "2026-10-26",
+  "category": "общество",
+  "sections": [
+    {
+      "heading": "Масштабное сокращение и причины реформы",
+      "paragraphs": [
+        "Нидерландское правительство решило сократить 16% сотрудников государственного сектора, что составляет порядка 25 тысяч штатных единиц. Это часть программы по повышению эффективности работы и сокращению затрат, рассчитанной на период до 2035 года.",
+        "Ожидается, что к 2027 году экономия затрат составит порядка 900 миллионов евро, а к 2035 году — 3,5 миллиарда евро. Исключение сделано для силовых ведомств — полиции и армии."
+      ]
+    },
+    {
+      "heading": "Внедрение искусственного интеллекта в госаппарат",
+      "paragraphs": [
+        "Для достижения экономии правительство намерено активно использовать искусственный интеллект, чтобы сделать работу государственных учреждений «проще, умнее и компактнее». Конкретные цели и планы по применению ИИ будут объявлены в первом квартале 2027 года.",
+        "Ранее в различных ведомствах уже были внедрены инициативы по использованию ИИ, и теперь государство планирует расширять эту практику для повышения производительности."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dutch government to cut 16 percent of workforce as part of AI efficiency push",
+      "url": "https://www.engadget.com/2297180/dutch-government-to-cut-16-percent-of-workforce-as-part-of-ai-efficiency-push/",
+      "published": "2026-10-26"
+    }
+  ],
+  "publishedAt": "2026-10-26T17:18:12.744Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/dutch-government-to-cut-16-percent-of-workforce-as-part-of-ai-efficiency-push/intro-1793034748.jpg",
+    "source": "https://www.engadget.com/2297180/dutch-government-to-cut-16-percent-of-workforce-as-part-of-ai-efficiency-push/",
+    "credit": "Jackson Chen",
+    "license": "Лицензия не проверена",
+    "alt": "A legislative session in the Dutch Parliament building.",
+    "verified": true
+  }
+}
