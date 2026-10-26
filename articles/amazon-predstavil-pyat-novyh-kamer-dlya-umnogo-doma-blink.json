@@ -37,5 +37,13 @@
     }
   ],
   "publishedAt": "2026-10-22T13:11:33.259Z",
-  "updatedAt": "2026-10-26"
+  "updatedAt": "2026-10-26",
+  "image": {
+    "url": "https://assets.aboutamazon.com/21/b1/ce065b0b4cd9a58fdf5a2338d72b/smaller-kindle-edition-hero-ube-amazon-news-lt.gif",
+    "source": "https://www.aboutamazon.com/news/devices/blink-4k-long-range-security-cameras",
+    "credit": "Amazon Staff",
+    "license": "Лицензия не проверена",
+    "alt": "Amazon introduces a completely redesigned Kindle family",
+    "verified": true
+  }
 }

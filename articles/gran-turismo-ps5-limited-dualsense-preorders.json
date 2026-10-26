@@ -40,5 +40,13 @@
     }
   ],
   "region": "global",
-  "updatedAt": "2026-10-26"
+  "updatedAt": "2026-10-26",
+  "image": {
+    "url": "https://www.gran-turismo.com/images/c/i1vDnAv6K1hFiW.jpg",
+    "source": "https://www.gran-turismo.com/ru/news/00_1366746.html",
+    "credit": "www.gran-turismo.com",
+    "license": "Лицензия не проверена",
+    "alt": "Sony открыла предзаказы DualSense Gran Turismo: цена и дата продаж",
+    "verified": true
+  }
 }
