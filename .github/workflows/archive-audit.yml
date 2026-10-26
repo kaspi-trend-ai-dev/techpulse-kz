@@ -1,0 +1,39 @@
+name: TechPulse archive content audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-historical.mjs'
+      - '.github/workflows/archive-audit.yml'
+  schedule:
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: techpulse-archive-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Review historical content without deleting pages
+        run: node scripts/audit-historical.mjs
+      - name: Commit historical content quality report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/content-audit.json reports/CONTENT-QUALITY.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Update TechPulse historical content quality report"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "Content quality report unchanged."
+          fi
