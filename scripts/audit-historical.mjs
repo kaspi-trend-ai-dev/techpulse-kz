@@ -61,7 +61,7 @@ fs.mkdirSync('reports',{recursive:true});
 fs.writeFileSync('reports/content-audit.json',JSON.stringify({summary,invalid,reviewQueue:audit.filter(x=>x.score>0)},null,2)+'\n');
 const esc=s=>String(s).replace(/\|/g,'\\|').replace(/[\r\n]/g,' ');
 const lines=[
- '# TechPulse — аудит архива статей','',
+ '# HARMEX MEDIA — аудит архива статей','',
  '> Автоматическая первичная проверка: замечания — признаки для редактора, а не подтверждённые санкции Google. Скрипт ничего не удаляет и не меняет URL.','',
  '| Показатель | Количество |','|---|---:|',
  '| JSON-файлов в архиве | '+summary.scanned+' |',
