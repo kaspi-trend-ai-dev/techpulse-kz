@@ -30,7 +30,7 @@ jobs:
       - name: Commit article
         if: always()
         run: |
-          git config user.name 'techpulse-bot'
-          git config user.email 'techpulse-bot@users.noreply.github.com'
+          git config user.name 'harmex-media-bot'
+          git config user.email 'harmex-media-bot@users.noreply.github.com'
           git add -A articles/
           git diff --cached --quiet || (git commit -m 'Publish editorial news batch' && git pull --rebase && git push)
