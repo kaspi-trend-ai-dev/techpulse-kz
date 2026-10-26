@@ -12,6 +12,8 @@ const homepage=fs.existsSync(root+'/index.html')?fs.readFileSync(root+'/index.ht
 const guideSlugs=['kak-vybrat-diagonal-televizora','pochemu-tormozit-smart-tv','televizor-dlya-spalni','opredelenie-optimalnogo-rasstoyaniya-do-ekrana-43-dyuyma-v-kazakhstane'];
 const newsItems=kept.filter(a=>!guideSlugs.includes(a.slug));
 if(homepage.includes('Практические гиды по телевизорам')||homepage.includes('guides.html'))fail.push('News homepage must not promote guides');
+for(const marker of ['НОВОСТНОЙ ПОРТАЛ','Новости Казахстана и мира','Главные события дня'])if(!homepage.includes(marker))fail.push('Homepage news-portal positioning missing: '+marker);
+if(homepage.includes('НОВОСТИ ТЕХНОЛОГИЙ')||homepage.includes('Технологии, гаджеты и искусственный интеллект — коротко и по делу.'))fail.push('Obsolete technology-only homepage intro remains');
 for(const slug of guideSlugs)if(homepage.includes('/articles/'+slug+'.html'))fail.push('Evergreen guide leaked into homepage news feed: '+slug);
 for(const marker of ['id="article-search"','id="article-grid"','id="results-count"','id="article-sort"','id="article-pages"','data-filter=','assets/search.js'])if(!homepage.includes(marker))fail.push('Homepage search/filter missing: '+marker);
 if(!fs.readFileSync('assets/search.js','utf8').includes('addEventListener'))fail.push('Search behavior missing');
