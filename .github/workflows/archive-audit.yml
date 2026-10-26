@@ -1,4 +1,4 @@
-name: TechPulse archive content audit
+name: HARMEX MEDIA archive content audit
 on:
   push:
     branches: [main]
@@ -39,7 +39,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/content-audit.json reports/CONTENT-QUALITY.md
           if ! git diff --cached --quiet; then
-            git commit -m "Update TechPulse historical content quality report"
+            git commit -m "Update HARMEX MEDIA historical content quality report"
             git pull --rebase origin main
             git push origin HEAD:main
           else
