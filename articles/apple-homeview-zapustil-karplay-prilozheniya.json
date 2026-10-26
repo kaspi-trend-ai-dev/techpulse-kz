@@ -1,0 +1,49 @@
+{
+  "region": "global",
+  "slug": "apple-homeview-zapustil-karplay-prilozheniya",
+  "title": "Apple HomeView запускает приложения CarPlay для домашних мультимедийных развлечений",
+  "description": "Apple представила HomeView — новое медиаустройство для умного дома, которое запускает совместимые приложения CarPlay с iPhone, расширяя возможности управления и развлечений без собственного App Store.",
+  "date": "2026-10-26",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "HomeView — новая платформа Apple для умного дома",
+      "paragraphs": [
+        "Apple анонсировала HomeView — новое устройство для управления мультимедийными и умными домашними системами. В основе его интерфейса лежит iOS-подобная система, но без собственного магазина приложений App Store.",
+        "Это означает, что устанавливать или скачивать приложения напрямую на HomeView нельзя, что стало неожиданностью для многих пользователей и разработчиков."
+      ]
+    },
+    {
+      "heading": "Использование приложений CarPlay на HomeView",
+      "paragraphs": [
+        "Apple решила интегрировать в HomeView приложения, совместимые с CarPlay — функцией, позволяющей отображать на дисплее автомобиля приложения с iPhone с адаптированным интерфейсом.",
+        "Для работы приложений HomeView требует наличия рядом iPhone, так как сама обработка происходит на смартфоне. Среди поддерживаемых приложений — основные аудио- и видеосервисы, такие как Spotify и Deezer.",
+        "При этом мессенджеры и чат-боты не поддерживаются, а популярные видео-приложения, включая Netflix, Disney+ и YouTube, отсутствуют на CarPlay и, следовательно, на HomeView."
+      ]
+    },
+    {
+      "heading": "Перспективы для разработчиков и пользователей",
+      "paragraphs": [
+        "Для разработчиков, чьи приложения уже поддерживают CarPlay, портирование на HomeView требует минимум усилий, что открывает новые возможности расширения аудитории.",
+        "Однако отсутствие полноценного App Store в HomeView ограничивает разнообразие доступных приложений и может отпугнуть разработчиков из-за более строгих правил распространения CarPlay приложений.",
+        "HomeView также поставляется с предустановленными приложениями Apple, такими как Safari, Music, Podcasts и Calendar, которые используют распознавание лиц для персонализации информации."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How do apps on the HomeView work, and what does CarPlay have to do with it?",
+      "url": "https://www.engadget.com/2294307/how-homeview-apps-work-what-carplay-have-to-do-with-it/",
+      "published": "2026-10-26"
+    }
+  ],
+  "publishedAt": "2026-10-26T16:32:24.062Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/how-do-apps-on-the-homeview-work-and-what-does-carplay-have-to-do-with-it/intro-1792422085.jpg",
+    "source": "https://www.engadget.com/2294307/how-homeview-apps-work-what-carplay-have-to-do-with-it/",
+    "credit": "Filipe Espósito",
+    "license": "Лицензия не проверена",
+    "alt": "Three units of Apple",
+    "verified": true
+  }
+}
