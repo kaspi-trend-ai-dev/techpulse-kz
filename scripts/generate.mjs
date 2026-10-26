@@ -1,5 +1,6 @@
 import {licensedSourceImage} from './source-image.mjs';
 import {sameEvent} from './dedupe.mjs';
+import {editorialQualityIssues} from './editorial-quality.mjs';
 import fs from 'node:fs';
 
 
@@ -177,7 +178,9 @@ const prompt = [
   ...(kazakhstanMode?['Для казахстанской ленты выбирай наиболее значимое и свежее событие любой разрешённой тематики, не ограничивайся электроникой.']:['В первую очередь выбирай новости о телевизорах, Smart TV, видеосервисах, игровых приставках, домашнем кинотеатре и выборе электроники. Не приписывай рекламируемому HARMEX характеристики конкурентов. Не вставляй скрытую рекламу в редакционный текст.']),
   'Приоритет отдавай первому подходящему источнику в списке, чтобы повторные попытки выбирали разные новости. Выбери один конкретный инфоповод из разрешённых тем. Заголовок яркий, эмоциональный, интригующий, с сильным новостным глаголом и конкретикой; не выдумывай сенсации, не искажай факты и не обещай того, чего нет в тексте.',
   'Доступны выдержки из текстов первоисточников. Используй только явно подтверждённые ими факты; не придумывай цитаты, цифры, характеристики, даты и заявления. Различай официальное подтверждение и сообщения журналистов. Не пиши будто тестировал устройство.',
-  'Объём зависит от подтверждённых фактов: если их мало, напиши короткую заметку. Не добавляй предположения о будущих моделях, обновлениях, рыночных последствиях или отсутствующих сведениях ради объёма. Совет читателю допустим только как явно обозначенный совет, без новых фактов о товаре.',
+  'Объём зависит от подтверждённых фактов: если их мало, НЕ публикуй слабую новость: выбери более содержательный первоисточник. Не добавляй предположения о будущих моделях, обновлениях, рыночных последствиях или отсутствующих сведениях ради объёма. Совет читателю допустим только как явно обозначенный совет, без новых фактов о товаре.',
+  'Редакционный стандарт: минимум два РАЗНЫХ проверяемых факта сверх пересказа заголовка (например, модель и подтверждённая особенность, точная дата и место, цена и условия, участники и результат). Каждый факт должен прямо следовать из исходного текста. Если их нет ни в одной новости, откажись от публикации, не выдумывай сведения.',
+  'Не заполняй разделы общими фразами вроде «может заинтересовать пользователей», «расширяет возможности», «отражает стремление», «важно следить за обновлениями». Каждая часть должна добавлять конкретную новую информацию: кто, что, когда, где, сколько и почему это важно именно читателю.',
   'Выбери одну новость из списка с текстом первоисточника. Верни в sources ТОЧНО её title, url, published. Ссылку не изменяй. Если данных недостаточно, выбери другую.',
   'Авторский рерайт обязателен: осмысли первоисточник, выдели главное, измени композицию и формулировки, объясни значение новости читателю. Не копируй предложения, абзацы, структуру и заголовок из первоисточника, кроме точных названий, фактов и коротких атрибутированных цитат. Сохраняй ссылку на источник. Не делай поверхностную замену синонимов.',
   'СТРОГО: весь заголовок, description, заголовки разделов и все абзацы — только на русском языке. Не копируй английские заголовки или абзацы из источника. Допустимы только собственные имена, бренды, названия продуктов и общепринятые технические обозначения латиницей.',
@@ -215,6 +218,7 @@ const structuralIssues = article => {
   if (!/^[a-z0-9-]{8,110}$/.test(article.slug || '')) issues.push('invalid slug');
   if (existing.some(e => sameEvent(e,article)||similarity(e.title,String(article.title||''))>=0.65)) issues.push('duplicate or near-duplicate event, even with rewritten headline');
   if (fs.existsSync('articles/' + article.slug + '.json')) issues.push('duplicate slug');
+  issues.push(...editorialQualityIssues(article));
   return issues;
 };
 a.slug = slugify(a.slug);
@@ -260,7 +264,8 @@ const reviewPrompt = [
   'Reject close translations, copied source sentences, near-identical headline phrasing and invented sensational claims. A factual claim may be accepted if supported by the supplied source headline or article excerpt, preserving attribution and uncertainty; clearly labelled general commentary is allowed. Reject invented quotes, unsupported claims of official confirmation and invented attributions.',
   'Accept faithful semantic paraphrases of supported facts: a reported price crash supports a reported price reduction, but not an invented amount, market, retailer or cause. Shared names, ratings and factual terminology alone are not copying. Reject copied expressive sentences and near-identical headlines, not the necessary restatement of a fact. Clearly labelled general buyer advice needs no source quote unless it asserts a product-specific fact. For every issue quote the problematic draft claim and explain the evidence gap; do not list supported claims as issues.',
   ...(kazakhstanMode?['Also verify that the event concerns Kazakhstan and is nonpolitical. Reject state politics, elections, political figures, opposition, protests and political conflicts. Ordinary consumer choice or a shipment of products is not politics. Check the full draft and source excerpt, not just keywords.']:[]),
-  'Respond as JSON with approved (boolean), issues (array of strings). Only put ACTUAL unsupported or incorrect claims in issues. Do not list supported claims or explanations. If all claims are supported, approved=true and issues=[]. The article date is the TechPulse publication date, not the original source date. Russian grammatical cases of proper names are valid.',
+  'Beyond accuracy, reject articles with fewer than two distinct source-supported details beyond the headline, shallow generic paragraphs, or repetitions of the same fact across sections. The goal is new information for readers, not keyword-filled text. If evidence is too thin for a useful article, approved=false and say why; NEVER invent details to pass.',
+  'Respond as JSON with approved (boolean), issues (array of strings). Only put ACTUAL unsupported or incorrect claims and genuine utility deficiencies in issues. Do not list supported claims or explanations. If all claims are supported, approved=true and issues=[]. The article date is the TechPulse publication date, not the original source date. Russian grammatical cases of proper names are valid.',
   'SOURCE: ' + JSON.stringify(sourceHeadline),
   'DRAFT: ' + JSON.stringify(a)
 ].join('\\n');
@@ -281,7 +286,7 @@ const valid = draft => /^[a-z0-9-]{8,110}$/.test(draft.slug || '') && hasRussian
   Array.isArray(draft.sections) && draft.sections.length >= 1 && draft.sections.length <= 5 &&
   draft.sections.every(x => hasRussianProse(x.heading) && Array.isArray(x.paragraphs) && x.paragraphs.length >= 1 && x.paragraphs.every(p => hasRussianProse(p) && p.trim().length >= 40)) &&
   Array.isArray(draft.sources) && draft.sources.length === 1 && draft.sources[0].title === source.title &&
-  draft.sources[0].url === source.url && draft.sources[0].published === source.published;
+  draft.sources[0].url === source.url && draft.sources[0].published === source.published && editorialQualityIssues(draft).length===0;
 let draft = a;
 let verdict = await review(draft);
 for (let attempt = 0; attempt < 2 && verdict.approved !== true; attempt++) {
