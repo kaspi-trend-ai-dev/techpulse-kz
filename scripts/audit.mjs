@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import {uniqueArticles} from './dedupe.mjs';
 const root='dist';
 const fail=[];
-const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css','assets/search.js','assets/engagement.js','assets/menu.js','harmex.html','kazakhstan.html','status.html','editorial-status.json'];
+const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css','assets/search.js','assets/engagement.js','assets/menu.js','harmex.html','kazakhstan.html','guides.html','status.html','editorial-status.json'];
 for(const p of required)if(!fs.existsSync(root+'/'+p))fail.push('Missing '+p);
 const isRussian=a=>{const parts=[a.title,a.description,...(a.sections||[]).flatMap(s=>[s.heading,...(s.paragraphs||[])])].filter(x=>typeof x==='string');return parts.length>=4&&parts.every(t=>(t.match(/[а-яё]/gi)||[]).length>=Math.max(12,(t.match(/[a-zа-яё]/gi)||[]).length*.28))};
 const articles=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x,'utf8'))).filter(isRussian);
@@ -23,6 +23,8 @@ if(!fs.readFileSync(root+'/status.html','utf8').includes('Работа реда�
 const kzPage=fs.readFileSync(root+'/kazakhstan.html','utf8');
 if(!kzPage.includes('Новости Казахстана')||!homepage.includes('kazakhstan.html'))fail.push('Kazakhstan section not linked or missing');
 if(!kzPage.includes('id="article-grid"'))fail.push('Kazakhstan article grid missing');
+const guidesPage=fs.readFileSync(root+'/guides.html','utf8');
+for(const slug of ['kak-vybrat-diagonal-televizora','pochemu-tormozit-smart-tv','televizor-dlya-spalni','opredelenie-optimalnogo-rasstoyaniya-do-ekrana-43-dyuyma-v-kazakhstane'])if(!guidesPage.includes('/articles/'+slug+'.html'))fail.push('Missing evergreen guide from buyer hub: '+slug);
 const kzCount=kept.filter(a=>a.region==='kz').length;
 if((kzPage.match(/class="card"/g)||[]).length!==kzCount)fail.push('Kazakhstan page includes non-Kazakhstan articles');
 const seen=new Set();
@@ -44,6 +46,7 @@ for(const a of kept)if(!sitemap.includes('https://harmex.asia/articles/'+a.slug+
 if(!sitemap.includes('https://harmex.asia/'))fail.push('Homepage not in sitemap');
 if(!sitemap.includes('https://harmex.asia/kazakhstan.html'))fail.push('Kazakhstan section not in sitemap');
 if(!sitemap.includes('https://harmex.asia/harmex.html'))fail.push('Partner page not in sitemap');
+if(!sitemap.includes('https://harmex.asia/guides.html'))fail.push('TV buyer guides hub not in sitemap');
 if(!sitemap.includes('<lastmod>'))fail.push('Sitemap missing lastmod dates');
 if(!fs.readFileSync(root+'/status.html','utf8').includes('noindex,follow'))fail.push('Internal status page should be noindex');
 const partner=fs.readFileSync(root+'/harmex.html','utf8');
