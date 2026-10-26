@@ -12,6 +12,7 @@ const homepage=fs.existsSync(root+'/index.html')?fs.readFileSync(root+'/index.ht
 const guideSlugs=['kak-vybrat-diagonal-televizora','pochemu-tormozit-smart-tv','televizor-dlya-spalni','opredelenie-optimalnogo-rasstoyaniya-do-ekrana-43-dyuyma-v-kazakhstane'];
 const newsItems=kept.filter(a=>!guideSlugs.includes(a.slug));
 if(homepage.includes('Практические гиды по телевизорам')||homepage.includes('guides.html'))fail.push('News homepage must not promote guides');
+if(homepage.includes('data-filter="Телевизоры"')||homepage.includes('data-category="Телевизоры"')||homepage.includes('class="tag">Телевизоры</span>'))fail.push('Removed television news category is still visible on homepage');
 for(const marker of ['НОВОСТНОЙ ПОРТАЛ','Новости Казахстана и мира','Главные события дня'])if(!homepage.includes(marker))fail.push('Homepage news-portal positioning missing: '+marker);
 if(homepage.includes('НОВОСТИ ТЕХНОЛОГИЙ')||homepage.includes('Технологии, гаджеты и искусственный интеллект — коротко и по делу.'))fail.push('Obsolete technology-only homepage intro remains');
 for(const slug of guideSlugs)if(homepage.includes('/articles/'+slug+'.html'))fail.push('Evergreen guide leaked into homepage news feed: '+slug);
