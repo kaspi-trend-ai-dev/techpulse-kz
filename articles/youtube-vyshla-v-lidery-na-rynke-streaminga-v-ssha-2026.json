@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "youtube-vyshla-v-lidery-na-rynke-streaminga-v-ssha-2026",
+  "title": "YouTube обошла Netflix и другие сервисы, став лидером стриминга на ТВ в США в 2026 году",
+  "description": "По данным Nielsen за июль 2026 года, YouTube занимает 14,2% времени просмотра телевизора в США, почти вдвое опережая Netflix (7,8%). Бесплатные платформы Roku Channel и Tubi также обошли некоторые платные сервисы, демонстрируя новый тренд на рынке цифрового видео.",
+  "date": "2026-10-27",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "YouTube занял первое место по просмотрам на ТВ-сервисах в США",
+      "paragraphs": [
+        "Nielsen в июле 2026 года зафиксировала, что YouTube стал самым просматриваемым стриминговым сервисом на телевидении в США, заняв 14,2% доли просмотра. Это почти в два раза больше, чем у Netflix с 7,8%. При этом речь идет именно о времени просмотра через телевизор, без учета мобильных устройств.",
+        "Интересно, что YouTube смог обойти даже крупные специализированные сервисы, учитывая, что данная статистика не включает просмотры на телефонах и планшетах. Это отражает сильную позицию платформы как источника развлекательного и познавательного контента, доступного бесплатно с рекламой."
+      ]
+    },
+    {
+      "heading": "Бесплатные стриминговые платформы набирают популярность",
+      "paragraphs": [
+        "В июле 2026 года Roku Channel занял пятое место с долей просмотра 2,9%, опередив Peacock (2,6%). Платформа Tubi, также бесплатная с рекламой, показала 2% и опередила стриминговые сервисы Warner Bros. Discovery, включая HBO Max.",
+        "Roku Channel и Tubi предоставляют возможность смотреть живые каналы, сериалы и фильмы бесплатно, компенсируя это рекламой. Это меняет фактор конкуренции на рынке, где подписные сервисы сталкиваются с растущим интересом к бесплатным вариантам."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "The most popular streaming platforms in the US might not be what you think",
+      "url": "https://www.engadget.com/2295216/most-popular-streaming-platforms-united-states-not-what-you-think/",
+      "published": "2026-10-26"
+    }
+  ],
+  "publishedAt": "2026-10-26T23:52:06.327Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/the-most-popular-streaming-platforms-in-the-us-might-not-be-what-you-think/intro-1792763480.jpg",
+    "source": "https://www.engadget.com/2295216/most-popular-streaming-platforms-united-states-not-what-you-think/",
+    "credit": "Husain Parvez",
+    "license": "Лицензия не проверена",
+    "alt": "A hand holding a black TV remote, in front of a television displaying blurred streaming thumbnails.",
+    "verified": true
+  }
+}
