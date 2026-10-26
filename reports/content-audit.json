@@ -1,0 +1,3325 @@
+{
+  "summary": {
+    "scanned": 522,
+    "validJson": 522,
+    "invalidJson": 0,
+    "reviewRecommended": 15,
+    "highPriority": 1,
+    "duplicateCandidates": 0,
+    "issueTypes": {
+      "depth": 25,
+      "quality": 5,
+      "specificity": 49,
+      "source": 4,
+      "metadata": 126,
+      "local": 36
+    }
+  },
+  "invalid": [],
+  "reviewQueue": [
+    {
+      "slug": "v-almaty-zagorelsya-avtomobil-na-ulitse-tlendieva",
+      "title": "Огонь и густой дым: в Алматы загорелся легковой автомобиль на улице Тлендиева",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 11,
+      "bodyCharacters": 435,
+      "paragraphs": 2,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "depth",
+          "weight": 2,
+          "message": "Меньше трёх содержательных абзацев"
+        },
+        {
+          "type": "quality",
+          "weight": 4,
+          "message": "Article lacks sufficient sourced detail (less than 450 characters of body text)"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kak-vybrat-diagonal-televizora",
+      "title": "Как выбрать диагональ телевизора для комнаты",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 9,
+      "bodyCharacters": 945,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "source",
+          "weight": 4,
+          "message": "Нет источника с HTTPS"
+        },
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "okzhetpes-pobeditel-s-razgromnym-schetom-v-chempionate-kazahstana",
+      "title": "\"Окжетпес\" разгромил \"Каспий\" в матче чемпионата Казахстана по футболу",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 9,
+      "bodyCharacters": 414,
+      "paragraphs": 2,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "depth",
+          "weight": 2,
+          "message": "Меньше трёх содержательных абзацев"
+        },
+        {
+          "type": "quality",
+          "weight": 4,
+          "message": "Article lacks sufficient sourced detail (less than 450 characters of body text)"
+        }
+      ]
+    },
+    {
+      "slug": "pochemu-tormozit-smart-tv",
+      "title": "Почему тормозит Smart TV и как улучшить его работу",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 9,
+      "bodyCharacters": 830,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "source",
+          "weight": 4,
+          "message": "Нет источника с HTTPS"
+        },
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "televizor-dlya-spalni",
+      "title": "Как выбрать телевизор для спальни",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 9,
+      "bodyCharacters": 741,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "source",
+          "weight": 4,
+          "message": "Нет источника с HTTPS"
+        },
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "proton-ceo-andy-yen-wins-2026-liberal-award",
+      "title": "Генеральный директор Proton Энди Йен получил Liberal Award 2026 года",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 6,
+      "bodyCharacters": 657,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        },
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "aktobe-arrest-tiktok-emission",
+      "title": "Мужчину из Актобе арестовали за непристойные жесты и нецензурную лексику в прямом эфире TikTok",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 5,
+      "bodyCharacters": 632,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "gran-turismo-ps5-limited-dualsense-preorders",
+      "title": "Стартовали предзаказы на лимитированный геймпад Gran Turismo для PS5",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 5,
+      "bodyCharacters": 972,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "quality",
+          "weight": 4,
+          "message": "2/6 paragraphs use generic filler instead of source-specific facts"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "opredelenie-optimalnogo-rasstoyaniya-do-ekrana-43-dyuyma-v-kazakhstane",
+      "title": "Определение оптимального расстояния до экрана телевизора 43 дюйма в условиях жилья Казахстана",
+      "region": "unknown",
+      "date": "2026-10-21",
+      "score": 5,
+      "bodyCharacters": 2116,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "source",
+          "weight": 4,
+          "message": "Нет источника с HTTPS"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "ordinaty-v-almaty-zagoranie-legkovogo-avtomobilya-i-operativnaya-tushenie",
+      "title": "Легковой автомобиль вспыхнул в Алматы: МЧС оперативно потушило пожар в автомобиле",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 5,
+      "bodyCharacters": 522,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "pozhar-v-pyatietazhke-karaganda-spasateli-prishli-na-pomoshch",
+      "title": "Огненная опасность в Караганде: пожар в пятиэтажном доме быстро потушили спасатели",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 5,
+      "bodyCharacters": 636,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "stolknovenie-gruzovika-i-passazhirskogo-poezda-v-karagandinskoj-oblasti",
+      "title": "Грузовик не убедился и столкнулся с пассажирским поездом в Карагандинской области — никто не пострадал",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 5,
+      "bodyCharacters": 525,
+      "paragraphs": 2,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "depth",
+          "weight": 2,
+          "message": "Меньше трёх содержательных абзацев"
+        }
+      ]
+    },
+    {
+      "slug": "stroymaterialy-goreli-na-sklade-v-astane",
+      "title": "Пожар на складе строительных материалов в Астане потушили без пострадавших",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 5,
+      "bodyCharacters": 667,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "technics-novyj-turntable-dlja-dj-ei-zvukovyh-inzhenerov",
+      "title": "Новый проигрыватель винила Technics разработан с участием диджеев и звукорежиссеров",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 5,
+      "bodyCharacters": 808,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "v-astane-zakroyut-odin-iz-uchastkov-ulicy-sherhana-murtaza-na-nedelyu",
+      "title": "В Астане на неделю закроют улицу Шерхана Муртаза для ремонта дорог",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 5,
+      "bodyCharacters": 597,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "aktobe-klub-otvetil-na-obvineniya-v-dolgakh",
+      "title": "ФК «Актобе» опроверг серьезные долги и подтвердил стабильную работу",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 4,
+      "bodyCharacters": 1126,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "amazon-predstavil-pyat-novyh-kamer-dlya-umnogo-doma-blink",
+      "title": "Amazon усиливает линейку Blink пятью новинками: умные камеры для вашего дома",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 4,
+      "bodyCharacters": 1209,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "quality",
+          "weight": 4,
+          "message": "2/6 paragraphs use generic filler instead of source-specific facts"
+        }
+      ]
+    },
+    {
+      "slug": "emergency-fixes-php-biggest-websites-hacked",
+      "title": "PHP выпускает экстренные обновления из-за хакерских атак на крупнейшие сайты",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 4,
+      "bodyCharacters": 892,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "iskusstvennyy-intellekt-prinosit-novye-umnye-aksessuary-dlya-smart-tv",
+      "title": "Искусственный интеллект в новых носимых AI-устройствах и гаджетах",
+      "region": "global",
+      "date": "2026-10-25",
+      "score": 4,
+      "bodyCharacters": 1750,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "quality",
+          "weight": 4,
+          "message": "2/6 paragraphs use generic filler instead of source-specific facts"
+        }
+      ]
+    },
+    {
+      "slug": "prognoz-pogody-astana-do-nachala-noyabrya-2026",
+      "title": "Прогноз погоды для жителей Астаны до конца октября",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 4,
+      "bodyCharacters": 836,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        },
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "v-karagande-mchs-spasli-pyateryh-detej-pri-pozare-v-devyatietazhke",
+      "title": "Сотрудники МЧС спасли пятерых детей при пожаре в девятиэтажке Караганды",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 4,
+      "bodyCharacters": 733,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "ai-turns-smart-tv-into-dumb-tv",
+      "title": "Искусственный интеллект помогает превратить Smart TV в «тупой» телевизор — и это может быть полезно",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 1154,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "apple-pay-izmeneniya-v-uk-iz-za-novyh-pravil-dlya-bescontactnoy-oplaty",
+      "title": "Apple Pay в Великобритании может измениться из-за новых правил для бесконтактной оплаты",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 1018,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "arest-i-shtraf-uchastnikov-konflikta-v-avtobuse-v-almaty",
+      "title": "Конфликт между пассажирами автобуса в Алматы: второго участника арестовали на 10 суток",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 3,
+      "bodyCharacters": 659,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "atsanka-otechestvennyh-internet-magazinov-skrytaya-moshennicheskaya-shema-s-iphone-prodolzhaetsya",
+      "title": "Астанчан обманули на 216 млн тенге через интернет-магазин с продажей «дешёвых» iPhone",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 3,
+      "bodyCharacters": 1180,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "bernli-uvolil-glavnogo-trenera-posle-poznachitelnogo-porazheniya",
+      "title": "Футбольный клуб \"Бернли\" уволил главного тренера после тяжелого поражения с участием казахстанца",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 3,
+      "bodyCharacters": 643,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "bluetooth-streaming-apple-music-for-bluesound-owners",
+      "title": "Владельцы Bluesound получили бесплатное обновление Apple Music",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 911,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "do-16-gradusov-tepla-kakoy-budet-pogoda-v-megapolisah-kazahstana-25-oktyabrya",
+      "title": "До 16 градусов тепла: какой будет погода в мегаполисах Казахстана 25 октября",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 3,
+      "bodyCharacters": 552,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "dolby-atmos-soundbar-what-hi-fi-award-and-discount",
+      "title": "Звуковая панель Dolby Atmos получила награду What Hi-Fi? и сейчас продается с большой скидкой",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 562,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "elon-musk-changed-xs-algorithm",
+      "title": "Илон Маск изменил алгоритм X — что теперь может появиться в вашей ленте",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 1052,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "giant-tvs-vs-projectors-2026",
+      "title": "Гигантские телевизоры: угроза ли они проекторам в домашнем кинотеатре?",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 1009,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "instacart-obsyzhdala-prodazhu-kompanii-s-doordash-i-uber",
+      "title": "Instacart обсуждала возможную продажу DoorDash и Uber",
+      "region": "global",
+      "date": "2026-10-24",
+      "score": 3,
+      "bodyCharacters": 551,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "kak-smotret-chempionskuyu-ligu-bavariya-arsenal-besplatno",
+      "title": "Как бесплатно посмотреть матч Лиги чемпионов «Бавария» – «Арсенал»",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 994,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kyzylzhar-obygral-ulytau-v-chempionate-kazahstana",
+      "title": "«Кызылжар» одержал важную победу против «Улытау» в чемпионате Казахстана",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 3,
+      "bodyCharacters": 632,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "lg-novye-funkcii-dolby-atmos-zvukovaya-panel",
+      "title": "LG добавляет новые функции в свою Dolby Atmos звуковую панель, но главный недостаток остаётся",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 1053,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "nagra-vysshij-uroven-usilitelya-effortless-musicality",
+      "title": "Nagra представила усилитель с технологией для «легкой музыкальности»",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 968,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "oled-tv-my-favourite-ever-beaten",
+      "title": "Любимый OLED-телевизор оказался побеждён — но не той моделью, которой ожидали",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 868,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "opasnyj-smog-nakroet-krupnye-goroda-kazahstana-24-oktyabrya",
+      "title": "Крупные города Казахстана накроет смог: предупреждение для жителей",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 3,
+      "bodyCharacters": 693,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "pozhar-v-fitness-centre-v-astane-evakuirovali-20-chelovek",
+      "title": "Пожар в фитнес-центре Астаны: эвакуировали 20 человек, пострадавших нет",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 1180,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "prime-video-top-3-shows-oct21-27",
+      "title": "Топ-3 шоу для просмотра на Prime Video с 21 по 27 октября",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 781,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "restart-dormant-us-nuclear-reactors-for-ai-data-centers",
+      "title": "В США запускают простаивающие ядерные реакторы для питания AI-дата-центров",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 840,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "sky-significant-step-forward-accessible-premier-league-coverage",
+      "title": "Sky сделала «значительный шаг вперёд» в доступности трансляций Премьер-лиги – что это значит",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 1031,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "sony-favourite-tv-low-price-software-caution-2026",
+      "title": "Один из любимых телевизоров Sony доступен по новой низкой цене, но обновлять ПО пока не стоит",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 793,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "starlink-v-ukraine-starshield-vozobnovil-rabotu",
+      "title": "Starlink восстановил нормальную работу военной сети Starshield в Украине",
+      "region": "global",
+      "date": "2026-10-25",
+      "score": 3,
+      "bodyCharacters": 695,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "stranger-than-heaven-rgg-yakuza-new-approach-2026",
+      "title": "Разработчики Stranger Than Heaven забыли о Yakuza, чтобы создать нечто новое",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 3,
+      "bodyCharacters": 934,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "tkani-zagorelis-v-odnom-iz-magazinov-v-shymkente",
+      "title": "Ткани загорелись в одном из магазинов в Шымкенте",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 3,
+      "bodyCharacters": 543,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "tobol-poteryal-ochki-v-matche-s-zhetysu-v-chempionate-kazahstana-2026-10-24",
+      "title": "\"Тобол\" сыграл вничью с \"Жетысу\" в матче чемпионата Казахстана",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 3,
+      "bodyCharacters": 506,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "ufc-gotovit-turnir-v-kazahstane-2026",
+      "title": "Глава UFC сделал заявление о турнире в Казахстане",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 3,
+      "bodyCharacters": 601,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-astane-rassleduyut-sluchai-ukhudsheniya-sostoyaniya-mladentsa-v-detskoy-bolnitse",
+      "title": "В Астане начали расследование после ухудшения состояния младенца в детской больнице",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 3,
+      "bodyCharacters": 1117,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "voditelya-traktora-pyanym-popalsya-na-glaza-policeyskim-na-zapade-kazahstana",
+      "title": "Водителя трактора пьяным попался на глаза полицейским на западе Казахстана",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 3,
+      "bodyCharacters": 607,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "zamorozki-i-snizhenie-temperatury-v-krupneyshih-gorodah-kazahstana-26-oktyabrya",
+      "title": "Снижение температуры и заморозки ожидаются в крупных городах Казахстана 26 октября",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 3,
+      "bodyCharacters": 695,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "10-novyh-meduchrezhdenij-stroyat-v-astane-novyj-priemno-diagnosticheskij-kompleks-i-tur-rasshireniya",
+      "title": "В Астане строят 10 новых медучреждений: что изменится в ближайшие годы",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1789,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "aktobe-predupredili-ob-uhudshenii-kachestva-vozduha-23-oktyabrya-2026",
+      "title": "Жителей Актобе предупредили об ухудшении качества воздуха",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 840,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "arest-na-10-sutok-voditelya-v-astane-zablokirovavshego-avtobusnuyu-polosu",
+      "title": "В Астане арестовали водителя Hyundai на 10 суток за блокировку автобусной полосы и конфликт",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 2,
+      "bodyCharacters": 1278,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "astana-policija-zaderzhala-peravozchika-3-kg-mefedrona",
+      "title": "В Астане полиция задержала мужчину с более 3 кг мефедрона на въезде в город",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1053,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "astanchanin-uznal-chto-poseshchaet-ginekologa-chto-otvetili-v-fsms",
+      "title": "Житель Астаны обнаружил в eGov записи о посещениях гинеколога: что ответили в ФСМС",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1459,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "ataka-na-dannye-dodo-pizza-i-obyasnenie-situacii-s-testom-v-astane",
+      "title": "Dodo Pizza объяснила, почему тесто в Астане собирали с земли и утилизировали",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1377,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "australian-court-forces-apple-to-allow-rival-iphone-app-stores",
+      "title": "Австралия обязала Apple открыть двери для конкурентов в iPhone App Store",
+      "region": "global",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1027,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "bezopasnost-smart-tv-v-kazahstane-problemy-i-vazhnost-obnovlenij",
+      "title": "Водителей Астаны предупредили о ночном перекрытии дороги в центре Астаны",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1047,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "biometriya-v-aeroportu-astany-novaya-sistema-raspoznavaniya-lits-na-vnutrennih-reysah",
+      "title": "За ноль тенге и без кнопки «удалить»: как будет работать биометрия в аэропорту Астаны",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1609,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "blizzard-prolongs-wow-forever-beta-and-opens-name-reservations",
+      "title": "Blizzard продлевает бета-тестирование World of Warcraft: Forever и запускает резервирование имён перед запуском в ноябре",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1121,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "bublik-raskryl-podrobnosti-travmy-na-almaty-open",
+      "title": "Александр Бублик рассказал о тяжелой травме, которая остановила его игру на Almaty Open",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 2,
+      "bodyCharacters": 939,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "elon-musk-predlozhil-obedinenie-spacex-i-tesla",
+      "title": "Илон Маск предложил объединить SpaceX и Tesla в одну компанию",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1424,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "esoteric-high-end-cd-player-flagship-tech",
+      "title": "Esoteric представила CD-проигрыватель высокого класса с топовыми технологиями",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 821,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "film-lover-created-affordable-home-cinema-experience",
+      "title": "Киноман создал доступный киномклуб дома",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 886,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "finally-pressed-roku-button",
+      "title": "Наконец-то я нажал ту единственную кнопку на Roku, которую всегда игнорировал — и теперь жалею",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 808,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "gaming-cant-afford-more-games-the-size-of-grand-theft-auto-vi",
+      "title": "Игровая индустрия не готова к играм размера Grand Theft Auto VI",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 816,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "godley-ai-lab-raises-1b-valuation",
+      "title": "Молодой стартап в области ИИ Flapping Airplanes привлёк $1 млрд при оценке в $6 млрд",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1785,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "google-250000-trees-cut-ai-data-centers-backlash",
+      "title": "Google вырубила 250 тысяч деревьев для дата-центров ИИ и столкнулась с критикой",
+      "region": "global",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1076,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "hackers-exploited-critical-php-vulnerabilities-before-patches",
+      "title": "Хакеры начали использовать критические уязвимости PHP за несколько дней до выпуска патчей",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1697,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "internet-i-svyaz-propali-v-karagande-iz-za-kradizhi-provodov",
+      "title": "Интернет и связь пропали в домах карагандинцев после ухода \"сотрудника провайдера\"",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1302,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "judge-denies-trumps-claim-to-dismiss-data-center-pollution-lawsuits",
+      "title": "Суд отклонил претензии Трампа на право отменять иски по загрязнению от дата-центров",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1549,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "kak-smotret-pszh-barcelona-translyaciya-ligi-chempionov-besplatno",
+      "title": "Как смотреть матч ПСЖ — Барселона: бесплатная трансляция Лиги чемпионов 2026/27",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 964,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kofe-na-verblyuzhem-moloke-v-shanhae",
+      "title": "В Шанхае открылся казахстанский ресторан с кофе на верблюжьем молоке",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 2,
+      "bodyCharacters": 1023,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "konflikt-iz-za-vyrvannyh-derevev-v-karagande-poyavilis-ugrozy",
+      "title": "В Караганде мужчина вырвал молодые деревья около кофейни и угрожал сотруднице",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 2,
+      "bodyCharacters": 1043,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "kryteskie-uyazvimosti-v-php-srochnye-patchi-i-ehffekty-dlya-smart-tv",
+      "title": "Обновления по уязвимостям в PHP: список затронутых крупных сайтов",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 941,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kto-pozdravil-kazahstan-s-dnem-respubliki-2026",
+      "title": "Кто поздравил Казахстан с Днем Республики",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 2,
+      "bodyCharacters": 1429,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        }
+      ]
+    },
+    {
+      "slug": "meta-poluchaet-shtraf-v-25-milliardov-za-narushenie-konfidencialnosti-polzovatelej-facebook",
+      "title": "Meta сталкивается с штрафом в $25 миллиардов",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 760,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        }
+      ]
+    },
+    {
+      "slug": "meta-revises-ai-scraping-policy-amid-global-backlash",
+      "title": "Meta изменяет условия использования из-за критики по ИИ и скрапингу данных",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1985,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "meta-schtraf-25b-dollara-za-skandal-dannykh",
+      "title": "Meta должна выплатить $25 млрд за скандал с Cambridge Analytica",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1685,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "microsoft-priznalo-neudachnoe-obnovlenie-windows-dlya-smart-tv",
+      "title": "Microsoft признала, что обновление Windows не исправило проблему с Always On VPN",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 936,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "mini-led-tv-s-ochen-vye-voskhozhdenie-po-prichine-tseny-i-kachestva",
+      "title": "Обзор пятизвёздочного Mini LED телевизора: отличное соотношение цены и качества",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 771,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "muzhchinu-podozrevayut-v-pristavanii-seksualnogo-haraktera-k-malenkoy-devochke-v-astane",
+      "title": "Мужчину подозревают в приставании сексуального характера к маленькой девочке в Астане",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 2,
+      "bodyCharacters": 976,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "naznachen-novyy-zamestitel-akima-aktau",
+      "title": "Назначен новый заместитель акима Актау",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 2,
+      "bodyCharacters": 1073,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "netflix-udalyaet-broadchurch-s-octyabrya-2026",
+      "title": "В Netflix скоро пропадёт сериал «Broadchurch» с Оливией Колман",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 879,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "novye-mehanizmy-uvelicheniya-pensionnyh-nakoplenij-v-kazahstane",
+      "title": "В Казахстане изучают новые механизмы для роста пенсионных накоплений",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 2,
+      "bodyCharacters": 705,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "novye-predelnye-komissii-otechestvennogo-banka-otbasy-dlya-ipoteki",
+      "title": "Отбасы банк меняет предельные комиссии по ипотеке для крупных займов",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 942,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "nvidia-kvantovoe-dostizhenie-90-procentov-menshe-qubitov",
+      "title": "Nvidia объявила о достижении в квантовых вычислениях с использованием меньшего количества кубитов",
+      "region": "global",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1193,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "obzor-rynka-televizorov-smart-tv-i-domashnie-razvlecheniya-v-oktabre-2026",
+      "title": "В Астане жителей дома на Кенесары напугали слухи о сносе из-за ЛРТ",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1472,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "openai-google-sovmestnaya-rabota-v-ii-budet-vliyat-na-chatgpt-i-gemini",
+      "title": "OpenAI и Google объявили о неожиданном партнерстве в сфере ИИ",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1137,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "ordabasy-stal-chempionom-kazahstana-po-futbolu-2026",
+      "title": "«Ордабасы» во второй раз стал чемпионом Казахстана по футболу",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 2,
+      "bodyCharacters": 709,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        }
+      ]
+    },
+    {
+      "slug": "osenniye-kupaniya-v-astane-zastavili-zametit-otvagu-naseleniya",
+      "title": "Осенние купания в Астане удивили пользователей социальных сетей",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 981,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "pochemu-naushniki-dorozhe-naushnikov-otvet-tekhnologii-i-populyarnost",
+      "title": "Почему наушники обычно дороже наушников-вкладышей",
+      "region": "global",
+      "date": "2026-10-25",
+      "score": 2,
+      "bodyCharacters": 719,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "pozdravitelnyy-kontsert-v-almaty-ko-dnyu-respubliki-2026",
+      "title": "В Алматы зажегся праздничный концерт ко Дню Республики: сцена объединила ярких артистов и новые постановки",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 2,
+      "bodyCharacters": 981,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "pozhar-v-turkestanskoj-oblasti-proizoshyol-v-obshhestvennoj-bane",
+      "title": "В Туркестанской области ликвидировали пожар в общественной бане без пострадавших",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 2,
+      "bodyCharacters": 704,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "pozharnaya-bezopasnost-v-astane-spasli-chetyreh-pri-gore-v-zhk-mangilik-el",
+      "title": "Пожар в жилом комплексе Астаны: спасены четверо, среди которых двое детей",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 2,
+      "bodyCharacters": 844,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "problemy-bezopasnosti-v-php-utverzhdeny-nazvanie-samyh-krupnyh-uyazvimostej-2026",
+      "title": "Критические уязвимости в PHP выявлены в октябре 2026 года",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 2475,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "rebenok-vpal-v-komu-posle-poseshheniya-stomatologii-v-pavlodare",
+      "title": "Трёхлетняя девочка впала в кому после лечения зубов в Павлодаре: врачи ведут борьбу за жизнь",
+      "region": "kz",
+      "date": "2026-10-24",
+      "score": 2,
+      "bodyCharacters": 1233,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "reka-esil-v-astane-obmelela-iz-za-stroitelstva-novoi-plotiny",
+      "title": "Река Есиль в Астане обмелела из-за строительства новой плотины",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1097,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "resettlement-plans-for-residents-near-atyrau-refinery",
+      "title": "Жителей рядом с Атырауским НПЗ готовят к переселению из-за санитарно-защитной зоны",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1338,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "rogue-ai-agents-tencent-cloud-alibaba-amap",
+      "title": "Нечестные ИИ-агенты на Tencent Cloud пытались взломать карту Alibaba и вели вежливый диалог с исследователями",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1254,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "semya-iz-astany-prodala-kvartiru-i-mashinu-dlya-lecheniya-docheri-ot-raka",
+      "title": "Семья из Астаны продала квартиру и машину для лечения дочери с тяжелым диагнозом",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1350,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "skandal-v-psihonevrologicheskom-uchrezhdenii-kazahstana-pacient-pil-vodu-iz-unitaza",
+      "title": "Скандал в психоневрологическом учреждении Казахстана: пациент пил воду из унитаза",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1166,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "smart-tv-tracking-privacy-concerns-2026",
+      "title": "Исследование выявило подозрительный сетевой трафик на телевизорах Smart TV после отказа от отслеживания",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 2957,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "spotify-uslozhnil-sovmestnoe-ispolzovanie-semeinyh-podpisok",
+      "title": "Spotify усложнил совместное использование семейных подписок",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1565,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "spotify-zhestko-boryetsya-s-obmenom-semeinyh-akkauntov",
+      "title": "Spotify жёстко борется с обменом семейных аккаунтов, но пользователи уже находят обходные пути",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 895,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "sud-zakonchil-rassledovanie-nezakonnoy-vydachi-voditelskih-prav-v-astane",
+      "title": "В Астане 74 человека незаконно получили права через работников спецЦОНа",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1294,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "superstandalone-streaming-audio-systems-turntables-2026",
+      "title": "Новый выпуск What Hi-Fi?: отдельные стриминговые системы и картриджи для проигрывателей винила",
+      "region": "global",
+      "date": "2026-10-24",
+      "score": 2,
+      "bodyCharacters": 955,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "ukraines-new-stargate-drone-evacuates-wounded-soldiers-safely",
+      "title": "Новый дрон StarGate Украины может эвакуировать раненых без риска для спасательной команды",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 718,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "v-astane-otkroyut-pervyi-torgovo-razvlekatelnyi-tsentr-jurt",
+      "title": "В Астане откроют первый районный ТРЦ Jurt с рынком, фуд-кортами и развлечениями",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1438,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "v-kyzylorde-stroiat-solnechnuiu-elektrostanciiu-s-nakopitelem-energii",
+      "title": "В Кызылорде строят солнечную электростанцию с системой накопления энергии",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 1361,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "v-nish-atyrau-uvolili-prepodavatelya-posle-perepiski-s-uchenicey",
+      "title": "В НИШ Атырау уволили преподавателя после переписки с 17-летней ученицей",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 2,
+      "bodyCharacters": 1521,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "vaf-research-signature-i91-mkiii-obzor-kompaktnyh-aksessuarov-dlya-domashnego-kinoteatra",
+      "title": "Обзор VAF Research Signature i91 MKIII: компактные полочные колонки",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 856,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Мало информации в описании"
+        }
+      ]
+    },
+    {
+      "slug": "website-admins-across-the-world-bracing-for-impact-following-major-php-flaw-reveal",
+      "title": "Администраторы сайтов по всему миру готовятся к последствиям крупной уязвимости PHP",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 897,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "wiim-bar-zvukovaya-panel-konkurent-sonos",
+      "title": "Обзор WiiM Bar: звуковая панель с интересными возможностями",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 2,
+      "bodyCharacters": 908,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "windows-11-virtual-desktops-otkroy-novye-vozmozhnosti-dlya-effektivnosti",
+      "title": "Windows 11 раскрывает мощный инструмент виртуальных рабочих столов — используйте пространство с умом",
+      "region": "global",
+      "date": "2026-10-26",
+      "score": 2,
+      "bodyCharacters": 1043,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "zhestokoe-ubiystvo-v-kyzylorde-rassleduyut-silaami-politsii",
+      "title": "Жестокое убийство в Кызылорде: полиция задержала трех подозреваемых и продолжает расследование",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 2,
+      "bodyCharacters": 845,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
+        }
+      ]
+    },
+    {
+      "slug": "15-billion-ai-startup-open-evidence-medtech",
+      "title": "Медтехнологичный стартап OpenEvidence привлек $15 млрд благодаря ИИ для врачей",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1598,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "26-semey-v-taskalinskom-rayone-zko-poluchili-novoe-zhile",
+      "title": "26 семей в Таскалинском районе Западно-Казахстанской области обрели новое жилье",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1324,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "ai-proekty-ne-vyzyvayut-u-dovolenie-poteri-na-rinke",
+      "title": "AI-проекты массово закрываются: крупные компании не всегда удерживают успех",
+      "region": "global",
+      "date": "2026-10-25",
+      "score": 1,
+      "bodyCharacters": 1928,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "airbnb-zapreshchaet-hozyayam-trebovat-ot-gostey-dela-delo-po-uborke",
+      "title": "Airbnb запрещает хозяевам заставлять гостей мыть посуду и выполнять уборку",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1407,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "all-the-tvs-that-won-a-2026-what-hi-fi-award",
+      "title": "Все телевизоры-победители премии What Hi-Fi? 2026 года: лучшие модели и актуальные скидки",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 852,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "amazon-biggest-hiring-plan-christmas-2026",
+      "title": "Amazon готовит крупнейший набор сотрудников на рождественский сезон 2026 года",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1001,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "amazons-fire-tv-stick-4k-lowers-price",
+      "title": "Amazon снизила цену на Fire TV Stick 4K — выгодное решение для домашнего развлечения",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 936,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "amd-fsr-4-1-xbox-consoles-gaming-performance",
+      "title": "AMD приносит FSR 4.1 на консоли Xbox и портативные устройства — что это значит для геймеров?",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1443,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "anthropic-launches-claude-duet-proactive-ai-agent",
+      "title": "Anthropic запускает Claude Duet — персонального помощника, конкурирующего с Meta Muse и OpenAI Dots",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1486,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "apple-iphone-duo-foldable-telefon-vse-podrobnosti",
+      "title": "Apple iPhone Duo — новые подробности о флагманском складном смартфоне",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1181,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "apple-october-28-event-first-touchscreen-macbook-pro",
+      "title": "Apple объявила о мероприятии 28 октября, посвященном MacBook Pro с сенсорным экраном",
+      "region": "unknown",
+      "date": "2026-10-21",
+      "score": 1,
+      "bodyCharacters": 958,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "arbitrazhnyy-sud-po-kashaganu-otklonil-isk-kazahstana-12-mlrd",
+      "title": "Арбитражный суд отклонил иск Казахстана на $12 млрд по месторождению Кашаган",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1294,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "barclays-sokraschaet-5000-rabotnyh-mest-vklad-v-iskusstvennyj-intellekt",
+      "title": "Barclays сокращает 5000 рабочих мест, передавая работу искусственному интеллекту",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1622,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "blacksmith-unicorn-sequoia-series-c-2026",
+      "title": "Blacksmith стал единорогом после раунда Series C под руководством Sequoia",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1420,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "blackstone-leads-ai-infrastructure-financing-boost",
+      "title": "Blackstone укрепляет инфраструктуру искусственного интеллекта миллиардными инвестициями",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1958,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "bose-acquires-skullcandy-expands-audio-reach-2026",
+      "title": "Bose приобретает Skullcandy: расширение аудиопортфолио с сохранением духа бренда",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1805,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "critical-php-vulnerabilities-set-internet-on-fire",
+      "title": "‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1713,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "do-83-vyruchki-i-avtomobil-bez-vlozhenij-predlagaet-voditelyam-green-sm-v-almaty",
+      "title": "Green SM в Алматы предлагает водителям до 83% выручки и электромобиль без первоначального взноса",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1639,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "ea-zakryvaet-bioware-i-uvolnyaet-400-sotrudnikov",
+      "title": "EA закрывает BioWare и сокращает около 400 сотрудников",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1367,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "europe-data-centers-climate-goals-challenge-2026",
+      "title": "Европа хочет дата-центры, но климатические цели мешают развитию",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2051,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "foursquare-sozdaet-uroschennye-resheniya-dlya-smart-tv-i-razvlecheniy",
+      "title": "Сооснователь Foursquare рассказал о провале компании и итогах её продажи",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1451,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "glava-nvidia-rasskazal-kazahstanczam-kak-ne-ostatsya-bez-raboty-iz-za-ii",
+      "title": "Глава NVIDIA рассказал казахстанцам, как не остаться без работы из-за ИИ",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1601,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "gm-onstar-ai-assistant-makes-driving-smarter",
+      "title": "GM is giving OnStar an AI makeover",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2481,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "gm-onstar-ai-pomoschnik-vavto-mobilnosti",
+      "title": "GM представляет OnStar AI — умного помощника в вашем автомобиле будущего",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1665,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "gm-reshaping-ev-future-with-ai-driven-compute-platform",
+      "title": "GM переосмысливает будущее электромобилей с помощью новой вычислительной платформы",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1640,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "iskusstvennyy-intellekt-i-budushchee-vozmozhnostey-smart-tv",
+      "title": "Как ИИ помог сэкономить на продуктах: 5 советов для бюджета",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1262,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "issledovanie-narodnyh-geroev-kazahstana-v-inforgrafike",
+      "title": "От певцов до космонавтов: инфографика о Народных Героях Казахстана к Дню Республики",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 927,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "jamo-hyg-5-novaya-flegmanskaya-besprovodnaya-kolonka-s-dvizhencheskim-upravleniem",
+      "title": "Jamo представила флагманскую беспроводную колонку HYG 5 с управлением движениями",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1188,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "jensen-huang-plug-in-data-centers-for-europe-ai-future",
+      "title": "Jensen Huang представил решение для ускорения развития ИИ-инфраструктуры Европы — модульные дата-центры DSX Pod",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1496,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "justwatch-launches-own-streaming-service",
+      "title": "JustWatch запускает собственный стриминговый сервис на фоне борьбы с фрагментацией платформ",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1908,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "kak-raspoznat-white-label-ustrojstva-i-pochemu-eto-vazhno",
+      "title": "Как распознать white label устройства и почему это важно для выбора электроники",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1974,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "karagandinskaya-oblast-otreagirovala-na-dzhenialnye-dostizheniya-i-nagradila-za-trud",
+      "title": "Карагандинская область отметила труд ветеранов и специалистов ко Дню Республики",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1348,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "kazahstancy-massovo-perevodyat-pensionnye-nakopleniya-v-chastnye-upravlyayushchie-kompanii",
+      "title": "Казахстанцы массово переводят пенсионные накопления частным управляющим — уже более 100 млрд тенге",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1428,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "kazahstanec-torgoval-pirozhkami-teper-vezet-mnogomillionnyj-biznes-s-pomoshhyu-ii",
+      "title": "Казахстанец торговал пирожками, а теперь ведет многомиллионый бизнес с помощью ИИ",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1421,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "kazakhstan-sila-v-energoy-effektivnom-zdanii-novyj-etap-doma-budushhego",
+      "title": "Казахстан вступает в новую эру энергоэффективного домостроения: опыт Германии и Китая для комфорта и экономии",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1799,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "legal-ai-startup-legora-raises-550m-series-e",
+      "title": "Legal AI стартап Legora привлек $550 млн в раунде Series E с оценкой $8,8 млрд",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1314,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "mark-zuckerberg-ostay-silicon-valley-ai-future",
+      "title": "Марк Цукерберг решил остаться в Кремниевой долине ради развития AI в Meta",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1844,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "meta-new-non-voting-stock-for-ai-expansion",
+      "title": "Meta вводит новый класс акций для финансирования масштабного развития AI",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1653,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "microsoft-admits-ai-involvement-in-windows11-design",
+      "title": "Microsoft признала использование искусственного интеллекта в дизайне Windows 11",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1218,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "microsoft-project-helix-2028-price-and-plans",
+      "title": "Microsoft Project Helix 2028: ожидаемая цена и планы по игровым устройствам",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1871,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "minii-podtverdilo-rabotu-proekta-robotaksi-astana",
+      "title": "МинИИ подтвердило работу над проектом роботакси в Астане с участием международных технологических гигантов",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1685,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "modulnye-pinbolnye-mashiny-sovremennye-vozmozhnosti-ot-multimorphic-p3",
+      "title": "Модульные пинбольные аппараты: новые возможности для домашних развлечений от Multimorphic P3",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2050,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "naschet-depozitov-i-posobij-novyj-podhod-o-chem-rasskazal-nacbank",
+      "title": "Глава Нацбанка опроверг страхи об оттоке депозитов казахстанцев из-за новых правил назначения пособий",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1390,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "novinka-google-gemini-v-carplay-dlya-udobnyh-poezdok",
+      "title": "Google Gemini интегрировали в Google Maps для CarPlay — удобство на дороге выходит на новый уровень",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1375,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "nvidia-microduck-robots-christmas-hit-2026",
+      "title": "Nvidia представила очаровательных Microduck-роботов — возможный хит рождественских продаж 2026",
+      "region": "global",
+      "date": "2026-10-24",
+      "score": 1,
+      "bodyCharacters": 1448,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "openai-gpt-models-arrive-on-google-cloud-antigravity",
+      "title": "OpenAI запускает свои последние модели ИИ на Google Cloud и Antigravity",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2039,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "openai-invests-in-brain-implant-startup-to-detect-cancer",
+      "title": "OpenAI инвестирует в стартап, разрабатывающий мозговые импланты для обнаружения рака",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1552,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "oppo-find-x10-pro-max-novye-funktsii-i-problemy",
+      "title": "Oppo Find X10 Pro Max: три 200-мегапиксельные камеры и новые возможности съемки",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2333,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "php-arma-geddon-openai-google-ai-obyavili-zhutkie-ynyazvimosi",
+      "title": "PHP Armageddon: как ИИ обнаружил опасные уязвимости в миллионах веб-сайтов",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1627,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "php-critical-security-patches-imminent",
+      "title": "PHP предупреждает о скором выпуске двух экстренных патчей безопасности",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1855,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "recursive-ai-self-improvement-model-flint",
+      "title": "Стартап Recursive представил модель Flint — новый шаг в развитии рекурсивного самоулучшения ИИ",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2208,
+      "paragraphs": 10,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "review-carrie-pryamushchaya-remiks-televizionnyy-miniserial",
+      "title": "«Кэрри»: торжественный ремикс с одной серьёзной ошибкой в новом мини-сериале",
+      "region": "global",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1817,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "roku-pro-series-oled-tv-review-2026",
+      "title": "Обзор Roku Pro Series OLED TV 2026: доступный OLED с сильными сторонами и компромиссами",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1284,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "sony-playstation-pulse-headset-november-2026",
+      "title": "Sony представила беспроводную игровую гарнитуру PlayStation Pulse с улучшенным звуком и ИИ-микрофоном",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1374,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "spacex-plan-catch-starship-both-stages-2026",
+      "title": "SpaceX планирует впервые поймать оба этапа ракеты Starship на следующем тестовом полёте",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1700,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "starlink-ukraine-starshield-slowdown-musk-decision-2026",
+      "title": "Илон Маск принял решение замедлить военную сеть Starshield для Украины — что это значит для пользователей",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2235,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "startups-dont-need-to-go-viral-to-win-customers",
+      "title": "Стартапам не обязательно становиться вирусными, чтобы завоевать клиентов",
+      "region": "global",
+      "date": "2026-10-24",
+      "score": 1,
+      "bodyCharacters": 1919,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "stranger-than-heaven-like-a-dragon-spin-off",
+      "title": "Stranger Than Heaven: новый взгляд на серию Like A Dragon с серьёзным сюжетом и динамичным боем",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1561,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "supernatural-vr-exercise-app-relaunched-on-meta-vr-headsets",
+      "title": "VR-фитнес-приложение Supernatural вернулось на Meta VR-гарнитуры",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1316,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "techcrunch-founder-summit-2026-boston",
+      "title": "TechCrunch Founder Summit 2026: уроки масштабирования и нетворкинг в Бостоне",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2487,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "tesla-cybercab-sale-and-autonomy-2026",
+      "title": "Tesla планирует начать продажи автономных Cybercab к концу 2026 года",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1703,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "tesla-starts-optimus-robot-production-despite-profit-drop",
+      "title": "Tesla начала производство роботов Optimus в Калифорнии на фоне падения прибыли на 43%",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 2037,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "tubi-186-new-movies-october-3-horror-hits",
+      "title": "Tubi добавил 186 новых фильмов в октябре — три хоррор-хита для бесплатного просмотра",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1262,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "v-shymkente-postroyat-masshtabnyj-torgovo-razvlekatelnyj-centr-shymkent-mall",
+      "title": "В Шымкенте планируют строительство ТРЦ Shymkent Mall с гастроцентром и кинотеатром",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1035,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "velvet-vale-ai-agent-internet-research-controversy-2026",
+      "title": "AI-агент Velvet Vale вызвал хаос в сообществе интернет-исследователей",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1435,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "vozrosli-ekonomicheskie-prestupleniya-v-kazahstane-dropped-vvedena-otvetstvennost",
+      "title": "Экономических преступлений в Казахстане стало в 2,6 раза больше из-за новой статьи о дропперстве",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 3018,
+      "paragraphs": 9,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "vse-televidenie-pod-ugrozoy-iz-za-php-uzyavimostej",
+      "title": "Опасные уязвимости в PHP вызывают массовые отключения сайтов",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1787,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "vspyshka-koronavirusa-sredi-turistov-iz-rossii-v-kazahstane-chto-otvetili-sanvrachi",
+      "title": "Ситуация с коронавирусом среди туристов из России в Казахстане: комментарий санврачей",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1416,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "vzryv-gaza-v-esentai-city-postradali-dvoe-detey-i-chto-oznachaet-etot-krizis",
+      "title": "Взрыв газа в элитном ЖК Esentai City: пострадали двое детей, комплекс в кризисе",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1461,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "vzryv-v-elitnom-zhk-almaty-podrobnosti-i-posledstviya",
+      "title": "Взрыв в элитном ЖК Алматы: стали известны подробности",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1055,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "walmart-embraces-ai-agents-for-streamlined-shopping",
+      "title": "Walmart embraces AI agents to simplify online shopping experience",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1951,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "xbox-paid-cloud-gaming-no-game-pass",
+      "title": "Xbox открывает платное облачное гейминг-стриминг для игроков без Game Pass",
+      "region": "unknown",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1565,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Регион не указан"
+        }
+      ]
+    }
+  ]
+}
