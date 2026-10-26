@@ -13,7 +13,7 @@ const guideSlugs=new Set(['kak-vybrat-diagonal-televizora','pochemu-tormozit-sma
 // News-only homepage: evergreen guides remain at existing URLs but never appear in the news feed.
 const newsItems=items.filter(a=>!guideSlugs.has(a.slug));
 const publishedCount=newsItems.length;
-if(publishedCount!==new Set(items.map(a=>a.slug)).size)throw Error('Article count does not match unique published slugs');
+if(items.length!==new Set(items.map(a=>a.slug)).size)throw Error('Article count does not match unique published slugs');
 console.log('Event duplicates hidden:',removed.length,removed.map(x=>x.article.slug));
 console.log('Russian editorial gate:',items.length,'published,',allItems.length-items.length,'excluded');
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const url=p=>prefix+p;
@@ -50,4 +50,4 @@ const latest=items[0]?.date||null;
 const status={generatedAt:new Date().toISOString(),sourceFiles:allItems.length,published:items.length,excludedLanguage:rejectedLanguage.length,excludedDuplicates:removed.length,latestPublishedDate:latest,duplicateExamples:removed.slice(0,15).map(x=>({excluded:x.article.slug,retained:x.kept.slug})),note:'Снимок данных последней сборки. Не является живым состоянием GitHub Actions или журналом всех попыток публикации.'};
 fs.writeFileSync(out+'/editorial-status.json',JSON.stringify(status,null,2));
 fs.writeFileSync(out+'/status.html',head('Работа редакции — TechPulse','Публичная сводка публикаций и редакционной проверки TechPulse.','/status.html')+`<main class="status-page"><h1>Работа редакции</h1><p>Данные последней сборки сайта. Это не журнал запусков робота в реальном времени.</p><div class="status-metrics"><div><strong>${status.published}</strong><span>Опубликовано</span></div><div><strong>${status.sourceFiles}</strong><span>Файлов статей</span></div><div><strong>${status.excludedDuplicates}</strong><span>Дубликатов исключено</span></div><div><strong>${status.excludedLanguage}</strong><span>Не прошли языковую проверку</span></div></div><p><b>Последняя дата публикации:</b> ${esc(status.latestPublishedDate||'Нет данных')}</p><p><b>Сборка:</b> ${esc(status.generatedAt)}</p><p>Для проверки успешности запуска робота и причин ошибок откройте <a href="https://github.com/kaspi-trend-ai-dev/techpulse-kz/actions">GitHub Actions</a>. Счётчики показывают состояние опубликованного каталога, а не количество попыток генерации.</p><a href="${url('/')}">← К новостям</a></main>`+foot);
-fs.writeFileSync(out+'/CNAME','harmex.asia\n');fs.writeFileSync(out+'/.nojekyll','');console.log('Built',publishedCount,'articles from',allItems.length,'source files');
+fs.writeFileSync(out+'/CNAME','harmex.asia\n');fs.writeFileSync(out+'/.nojekyll','');console.log('Built',publishedCount,'news cards from',items.length,'article pages and',allItems.length,'source files');
