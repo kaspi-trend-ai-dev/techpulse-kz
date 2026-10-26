@@ -3,16 +3,15 @@
     "scanned": 522,
     "validJson": 522,
     "invalidJson": 0,
-    "reviewRecommended": 15,
+    "reviewRecommended": 7,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
       "depth": 25,
       "quality": 5,
-      "specificity": 49,
-      "source": 4,
-      "metadata": 126,
-      "local": 36
+      "specificity": 46,
+      "metadata": 119,
+      "local": 1
     }
   },
   "invalid": [],
@@ -49,37 +48,6 @@
       ]
     },
     {
-      "slug": "kak-vybrat-diagonal-televizora",
-      "title": "Как выбрать диагональ телевизора для комнаты",
-      "region": "unknown",
-      "date": "2026-10-22",
-      "score": 9,
-      "bodyCharacters": 945,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "source",
-          "weight": 4,
-          "message": "Нет источника с HTTPS"
-        },
-        {
-          "type": "metadata",
-          "weight": 2,
-          "message": "Мало информации в описании"
-        },
-        {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Регион не указан"
-        },
-        {
-          "type": "specificity",
-          "weight": 2,
-          "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
       "slug": "okzhetpes-pobeditel-s-razgromnym-schetom-v-chempionate-kazahstana",
       "title": "\"Окжетпес\" разгромил \"Каспий\" в матче чемпионата Казахстана по футболу",
       "region": "kz",
@@ -102,68 +70,6 @@
           "type": "quality",
           "weight": 4,
           "message": "Article lacks sufficient sourced detail (less than 450 characters of body text)"
-        }
-      ]
-    },
-    {
-      "slug": "pochemu-tormozit-smart-tv",
-      "title": "Почему тормозит Smart TV и как улучшить его работу",
-      "region": "unknown",
-      "date": "2026-10-22",
-      "score": 9,
-      "bodyCharacters": 830,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "source",
-          "weight": 4,
-          "message": "Нет источника с HTTPS"
-        },
-        {
-          "type": "metadata",
-          "weight": 2,
-          "message": "Мало информации в описании"
-        },
-        {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Регион не указан"
-        },
-        {
-          "type": "specificity",
-          "weight": 2,
-          "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
-      "slug": "televizor-dlya-spalni",
-      "title": "Как выбрать телевизор для спальни",
-      "region": "unknown",
-      "date": "2026-10-22",
-      "score": 9,
-      "bodyCharacters": 741,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "source",
-          "weight": 4,
-          "message": "Нет источника с HTTPS"
-        },
-        {
-          "type": "metadata",
-          "weight": 2,
-          "message": "Мало информации в описании"
-        },
-        {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Регион не указан"
-        },
-        {
-          "type": "specificity",
-          "weight": 2,
-          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -194,27 +100,6 @@
       ]
     },
     {
-      "slug": "aktobe-arrest-tiktok-emission",
-      "title": "Мужчину из Актобе арестовали за непристойные жесты и нецензурную лексику в прямом эфире TikTok",
-      "region": "kz",
-      "date": "2026-10-26",
-      "score": 5,
-      "bodyCharacters": 632,
-      "paragraphs": 4,
-      "issues": [
-        {
-          "type": "depth",
-          "weight": 3,
-          "message": "Менее 700 знаков основного текста"
-        },
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
       "slug": "gran-turismo-ps5-limited-dualsense-preorders",
       "title": "Стартовали предзаказы на лимитированный геймпад Gran Turismo для PS5",
       "region": "unknown",
@@ -227,27 +112,6 @@
           "type": "quality",
           "weight": 4,
           "message": "2/6 paragraphs use generic filler instead of source-specific facts"
-        },
-        {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Регион не указан"
-        }
-      ]
-    },
-    {
-      "slug": "opredelenie-optimalnogo-rasstoyaniya-do-ekrana-43-dyuyma-v-kazakhstane",
-      "title": "Определение оптимального расстояния до экрана телевизора 43 дюйма в условиях жилья Казахстана",
-      "region": "unknown",
-      "date": "2026-10-21",
-      "score": 5,
-      "bodyCharacters": 2116,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "source",
-          "weight": 4,
-          "message": "Нет источника с HTTPS"
         },
         {
           "type": "metadata",
@@ -278,27 +142,6 @@
       ]
     },
     {
-      "slug": "pozhar-v-pyatietazhke-karaganda-spasateli-prishli-na-pomoshch",
-      "title": "Огненная опасность в Караганде: пожар в пятиэтажном доме быстро потушили спасатели",
-      "region": "kz",
-      "date": "2026-10-25",
-      "score": 5,
-      "bodyCharacters": 636,
-      "paragraphs": 4,
-      "issues": [
-        {
-          "type": "depth",
-          "weight": 3,
-          "message": "Менее 700 знаков основного текста"
-        },
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
       "slug": "stolknovenie-gruzovika-i-passazhirskogo-poezda-v-karagandinskoj-oblasti",
       "title": "Грузовик не убедился и столкнулся с пассажирским поездом в Карагандинской области — никто не пострадал",
       "region": "kz",
@@ -320,27 +163,6 @@
       ]
     },
     {
-      "slug": "stroymaterialy-goreli-na-sklade-v-astane",
-      "title": "Пожар на складе строительных материалов в Астане потушили без пострадавших",
-      "region": "kz",
-      "date": "2026-10-25",
-      "score": 5,
-      "bodyCharacters": 667,
-      "paragraphs": 3,
-      "issues": [
-        {
-          "type": "depth",
-          "weight": 3,
-          "message": "Менее 700 знаков основного текста"
-        },
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
       "slug": "technics-novyj-turntable-dlja-dj-ei-zvukovyh-inzhenerov",
       "title": "Новый проигрыватель винила Technics разработан с участием диджеев и звукорежиссеров",
       "region": "unknown",
@@ -358,48 +180,6 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
-        },
-        {
-          "type": "specificity",
-          "weight": 2,
-          "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
-      "slug": "v-astane-zakroyut-odin-iz-uchastkov-ulicy-sherhana-murtaza-na-nedelyu",
-      "title": "В Астане на неделю закроют улицу Шерхана Муртаза для ремонта дорог",
-      "region": "kz",
-      "date": "2026-10-25",
-      "score": 5,
-      "bodyCharacters": 597,
-      "paragraphs": 3,
-      "issues": [
-        {
-          "type": "depth",
-          "weight": 3,
-          "message": "Менее 700 знаков основного текста"
-        },
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "aktobe-klub-otvetil-na-obvineniya-v-dolgakh",
-      "title": "ФК «Актобе» опроверг серьезные долги и подтвердил стабильную работу",
-      "region": "kz",
-      "date": "2026-10-25",
-      "score": 4,
-      "bodyCharacters": 1126,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
         },
         {
           "type": "specificity",
@@ -462,48 +242,6 @@
       ]
     },
     {
-      "slug": "prognoz-pogody-astana-do-nachala-noyabrya-2026",
-      "title": "Прогноз погоды для жителей Астаны до конца октября",
-      "region": "kz",
-      "date": "2026-10-26",
-      "score": 4,
-      "bodyCharacters": 836,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "metadata",
-          "weight": 2,
-          "message": "Мало информации в описании"
-        },
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "v-karagande-mchs-spasli-pyateryh-detej-pri-pozare-v-devyatietazhke",
-      "title": "Сотрудники МЧС спасли пятерых детей при пожаре в девятиэтажке Караганды",
-      "region": "kz",
-      "date": "2026-10-24",
-      "score": 4,
-      "bodyCharacters": 733,
-      "paragraphs": 4,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        },
-        {
-          "type": "specificity",
-          "weight": 2,
-          "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
       "slug": "ai-turns-smart-tv-into-dumb-tv",
       "title": "Искусственный интеллект помогает превратить Smart TV в «тупой» телевизор — и это может быть полезно",
       "region": "unknown",
@@ -521,6 +259,22 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "aktobe-arrest-tiktok-emission",
+      "title": "Мужчину из Актобе арестовали за непристойные жесты и нецензурную лексику в прямом эфире TikTok",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 3,
+      "bodyCharacters": 632,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         }
       ]
     },
@@ -558,27 +312,6 @@
           "type": "depth",
           "weight": 3,
           "message": "Менее 700 знаков основного текста"
-        }
-      ]
-    },
-    {
-      "slug": "atsanka-otechestvennyh-internet-magazinov-skrytaya-moshennicheskaya-shema-s-iphone-prodolzhaetsya",
-      "title": "Астанчан обманули на 216 млн тенге через интернет-магазин с продажей «дешёвых» iPhone",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 3,
-      "bodyCharacters": 1180,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Слишком длинное описание"
-        },
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -826,23 +559,18 @@
       ]
     },
     {
-      "slug": "pozhar-v-fitness-centre-v-astane-evakuirovali-20-chelovek",
-      "title": "Пожар в фитнес-центре Астаны: эвакуировали 20 человек, пострадавших нет",
+      "slug": "pozhar-v-pyatietazhke-karaganda-spasateli-prishli-na-pomoshch",
+      "title": "Огненная опасность в Караганде: пожар в пятиэтажном доме быстро потушили спасатели",
       "region": "kz",
-      "date": "2026-10-22",
+      "date": "2026-10-25",
       "score": 3,
-      "bodyCharacters": 1180,
-      "paragraphs": 6,
+      "bodyCharacters": 636,
+      "paragraphs": 4,
       "issues": [
         {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Слишком длинное описание"
-        },
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         }
       ]
     },
@@ -968,6 +696,22 @@
       ]
     },
     {
+      "slug": "stroymaterialy-goreli-na-sklade-v-astane",
+      "title": "Пожар на складе строительных материалов в Астане потушили без пострадавших",
+      "region": "kz",
+      "date": "2026-10-25",
+      "score": 3,
+      "bodyCharacters": 667,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "tkani-zagorelis-v-odnom-iz-magazinov-v-shymkente",
       "title": "Ткани загорелись в одном из магазинов в Шымкенте",
       "region": "kz",
@@ -1016,23 +760,18 @@
       ]
     },
     {
-      "slug": "v-astane-rassleduyut-sluchai-ukhudsheniya-sostoyaniya-mladentsa-v-detskoy-bolnitse",
-      "title": "В Астане начали расследование после ухудшения состояния младенца в детской больнице",
+      "slug": "v-astane-zakroyut-odin-iz-uchastkov-ulicy-sherhana-murtaza-na-nedelyu",
+      "title": "В Астане на неделю закроют улицу Шерхана Муртаза для ремонта дорог",
       "region": "kz",
-      "date": "2026-10-23",
+      "date": "2026-10-25",
       "score": 3,
-      "bodyCharacters": 1117,
-      "paragraphs": 6,
+      "bodyCharacters": 597,
+      "paragraphs": 3,
       "issues": [
         {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Слишком длинное описание"
-        },
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         }
       ]
     },
@@ -1069,98 +808,18 @@
       ]
     },
     {
-      "slug": "10-novyh-meduchrezhdenij-stroyat-v-astane-novyj-priemno-diagnosticheskij-kompleks-i-tur-rasshireniya",
-      "title": "В Астане строят 10 новых медучреждений: что изменится в ближайшие годы",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1789,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "aktobe-predupredili-ob-uhudshenii-kachestva-vozduha-23-oktyabrya-2026",
-      "title": "Жителей Актобе предупредили об ухудшении качества воздуха",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 840,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "arest-na-10-sutok-voditelya-v-astane-zablokirovavshego-avtobusnuyu-polosu",
-      "title": "В Астане арестовали водителя Hyundai на 10 суток за блокировку автобусной полосы и конфликт",
+      "slug": "aktobe-klub-otvetil-na-obvineniya-v-dolgakh",
+      "title": "ФК «Актобе» опроверг серьезные долги и подтвердил стабильную работу",
       "region": "kz",
       "date": "2026-10-25",
       "score": 2,
-      "bodyCharacters": 1278,
+      "bodyCharacters": 1126,
       "paragraphs": 6,
       "issues": [
         {
-          "type": "local",
+          "type": "specificity",
           "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "astana-policija-zaderzhala-peravozchika-3-kg-mefedrona",
-      "title": "В Астане полиция задержала мужчину с более 3 кг мефедрона на въезде в город",
-      "region": "kz",
-      "date": "2026-10-22",
-      "score": 2,
-      "bodyCharacters": 1053,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "astanchanin-uznal-chto-poseshchaet-ginekologa-chto-otvetili-v-fsms",
-      "title": "Житель Астаны обнаружил в eGov записи о посещениях гинеколога: что ответили в ФСМС",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1459,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "ataka-na-dannye-dodo-pizza-i-obyasnenie-situacii-s-testom-v-astane",
-      "title": "Dodo Pizza объяснила, почему тесто в Астане собирали с земли и утилизировали",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1377,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -1177,38 +836,6 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
-      "slug": "bezopasnost-smart-tv-v-kazahstane-problemy-i-vazhnost-obnovlenij",
-      "title": "Водителей Астаны предупредили о ночном перекрытии дороги в центре Астаны",
-      "region": "kz",
-      "date": "2026-10-22",
-      "score": 2,
-      "bodyCharacters": 1047,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "biometriya-v-aeroportu-astany-novaya-sistema-raspoznavaniya-lits-na-vnutrennih-reysah",
-      "title": "За ноль тенге и без кнопки «удалить»: как будет работать биометрия в аэропорту Астаны",
-      "region": "kz",
-      "date": "2026-10-22",
-      "score": 2,
-      "bodyCharacters": 1609,
-      "paragraphs": 8,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -1388,22 +1015,6 @@
       ]
     },
     {
-      "slug": "internet-i-svyaz-propali-v-karagande-iz-za-kradizhi-provodov",
-      "title": "Интернет и связь пропали в домах карагандинцев после ухода \"сотрудника провайдера\"",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1302,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
       "slug": "judge-denies-trumps-claim-to-dismiss-data-center-pollution-lawsuits",
       "title": "Суд отклонил претензии Трампа на право отменять иски по загрязнению от дата-центров",
       "region": "unknown",
@@ -1453,22 +1064,6 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
-      "slug": "konflikt-iz-za-vyrvannyh-derevev-v-karagande-poyavilis-ugrozy",
-      "title": "В Караганде мужчина вырвал молодые деревья около кофейни и угрожал сотруднице",
-      "region": "kz",
-      "date": "2026-10-25",
-      "score": 2,
-      "bodyCharacters": 1043,
-      "paragraphs": 4,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -1595,38 +1190,6 @@
       ]
     },
     {
-      "slug": "muzhchinu-podozrevayut-v-pristavanii-seksualnogo-haraktera-k-malenkoy-devochke-v-astane",
-      "title": "Мужчину подозревают в приставании сексуального характера к маленькой девочке в Астане",
-      "region": "kz",
-      "date": "2026-10-26",
-      "score": 2,
-      "bodyCharacters": 976,
-      "paragraphs": 4,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "naznachen-novyy-zamestitel-akima-aktau",
-      "title": "Назначен новый заместитель акима Актау",
-      "region": "kz",
-      "date": "2026-10-24",
-      "score": 2,
-      "bodyCharacters": 1073,
-      "paragraphs": 7,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
       "slug": "netflix-udalyaet-broadchurch-s-octyabrya-2026",
       "title": "В Netflix скоро пропадёт сериал «Broadchurch» с Оливией Колман",
       "region": "global",
@@ -1691,22 +1254,6 @@
       ]
     },
     {
-      "slug": "obzor-rynka-televizorov-smart-tv-i-domashnie-razvlecheniya-v-oktabre-2026",
-      "title": "В Астане жителей дома на Кенесары напугали слухи о сносе из-за ЛРТ",
-      "region": "kz",
-      "date": "2026-10-22",
-      "score": 2,
-      "bodyCharacters": 1472,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
       "slug": "openai-google-sovmestnaya-rabota-v-ii-budet-vliyat-na-chatgpt-i-gemini",
       "title": "OpenAI и Google объявили о неожиданном партнерстве в сфере ИИ",
       "region": "global",
@@ -1735,22 +1282,6 @@
           "type": "metadata",
           "weight": 2,
           "message": "Мало информации в описании"
-        }
-      ]
-    },
-    {
-      "slug": "osenniye-kupaniya-v-astane-zastavili-zametit-otvagu-naseleniya",
-      "title": "Осенние купания в Астане удивили пользователей социальных сетей",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 981,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -1803,22 +1334,6 @@
       ]
     },
     {
-      "slug": "pozharnaya-bezopasnost-v-astane-spasli-chetyreh-pri-gore-v-zhk-mangilik-el",
-      "title": "Пожар в жилом комплексе Астаны: спасены четверо, среди которых двое детей",
-      "region": "kz",
-      "date": "2026-10-25",
-      "score": 2,
-      "bodyCharacters": 844,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
       "slug": "problemy-bezopasnosti-v-php-utverzhdeny-nazvanie-samyh-krupnyh-uyazvimostej-2026",
       "title": "Критические уязвимости в PHP выявлены в октябре 2026 года",
       "region": "unknown",
@@ -1840,50 +1355,18 @@
       ]
     },
     {
-      "slug": "rebenok-vpal-v-komu-posle-poseshheniya-stomatologii-v-pavlodare",
-      "title": "Трёхлетняя девочка впала в кому после лечения зубов в Павлодаре: врачи ведут борьбу за жизнь",
+      "slug": "prognoz-pogody-astana-do-nachala-noyabrya-2026",
+      "title": "Прогноз погоды для жителей Астаны до конца октября",
       "region": "kz",
-      "date": "2026-10-24",
+      "date": "2026-10-26",
       "score": 2,
-      "bodyCharacters": 1233,
+      "bodyCharacters": 836,
       "paragraphs": 6,
       "issues": [
         {
-          "type": "local",
+          "type": "metadata",
           "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "reka-esil-v-astane-obmelela-iz-za-stroitelstva-novoi-plotiny",
-      "title": "Река Есиль в Астане обмелела из-за строительства новой плотины",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1097,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "resettlement-plans-for-residents-near-atyrau-refinery",
-      "title": "Жителей рядом с Атырауским НПЗ готовят к переселению из-за санитарно-защитной зоны",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1338,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
+          "message": "Мало информации в описании"
         }
       ]
     },
@@ -1905,22 +1388,6 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
-        }
-      ]
-    },
-    {
-      "slug": "semya-iz-astany-prodala-kvartiru-i-mashinu-dlya-lecheniya-docheri-ot-raka",
-      "title": "Семья из Астаны продала квартиру и машину для лечения дочери с тяжелым диагнозом",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1350,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -1962,22 +1429,6 @@
       ]
     },
     {
-      "slug": "spotify-uslozhnil-sovmestnoe-ispolzovanie-semeinyh-podpisok",
-      "title": "Spotify усложнил совместное использование семейных подписок",
-      "region": "kz",
-      "date": "2026-10-22",
-      "score": 2,
-      "bodyCharacters": 1565,
-      "paragraphs": 7,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
       "slug": "spotify-zhestko-boryetsya-s-obmenom-semeinyh-akkauntov",
       "title": "Spotify жёстко борется с обменом семейных аккаунтов, но пользователи уже находят обходные пути",
       "region": "global",
@@ -1990,22 +1441,6 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
-      "slug": "sud-zakonchil-rassledovanie-nezakonnoy-vydachi-voditelskih-prav-v-astane",
-      "title": "В Астане 74 человека незаконно получили права через работников спецЦОНа",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1294,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -2042,50 +1477,18 @@
       ]
     },
     {
-      "slug": "v-astane-otkroyut-pervyi-torgovo-razvlekatelnyi-tsentr-jurt",
-      "title": "В Астане откроют первый районный ТРЦ Jurt с рынком, фуд-кортами и развлечениями",
+      "slug": "v-karagande-mchs-spasli-pyateryh-detej-pri-pozare-v-devyatietazhke",
+      "title": "Сотрудники МЧС спасли пятерых детей при пожаре в девятиэтажке Караганды",
       "region": "kz",
-      "date": "2026-10-22",
+      "date": "2026-10-24",
       "score": 2,
-      "bodyCharacters": 1438,
-      "paragraphs": 6,
+      "bodyCharacters": 733,
+      "paragraphs": 4,
       "issues": [
         {
-          "type": "local",
+          "type": "specificity",
           "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "v-kyzylorde-stroiat-solnechnuiu-elektrostanciiu-s-nakopitelem-energii",
-      "title": "В Кызылорде строят солнечную электростанцию с системой накопления энергии",
-      "region": "kz",
-      "date": "2026-10-22",
-      "score": 2,
-      "bodyCharacters": 1361,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
-        }
-      ]
-    },
-    {
-      "slug": "v-nish-atyrau-uvolili-prepodavatelya-posle-perepiski-s-uchenicey",
-      "title": "В НИШ Атырау уволили преподавателя после переписки с 17-летней ученицей",
-      "region": "kz",
-      "date": "2026-10-23",
-      "score": 2,
-      "bodyCharacters": 1521,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -2150,22 +1553,6 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
-      "slug": "zhestokoe-ubiystvo-v-kyzylorde-rassleduyut-silaami-politsii",
-      "title": "Жестокое убийство в Кызылорде: полиция задержала трех подозреваемых и продолжает расследование",
-      "region": "kz",
-      "date": "2026-10-26",
-      "score": 2,
-      "bodyCharacters": 845,
-      "paragraphs": 4,
-      "issues": [
-        {
-          "type": "local",
-          "weight": 2,
-          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -2352,6 +1739,22 @@
       "date": "2026-10-22",
       "score": 1,
       "bodyCharacters": 1294,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "atsanka-otechestvennyh-internet-magazinov-skrytaya-moshennicheskaya-shema-s-iphone-prodolzhaetsya",
+      "title": "Астанчан обманули на 216 млн тенге через интернет-магазин с продажей «дешёвых» iPhone",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1180,
       "paragraphs": 6,
       "issues": [
         {
@@ -2970,6 +2373,22 @@
       ]
     },
     {
+      "slug": "pozhar-v-fitness-centre-v-astane-evakuirovali-20-chelovek",
+      "title": "Пожар в фитнес-центре Астаны: эвакуировали 20 человек, пострадавших нет",
+      "region": "kz",
+      "date": "2026-10-22",
+      "score": 1,
+      "bodyCharacters": 1180,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "recursive-ai-self-improvement-model-flint",
       "title": "Стартап Recursive представил модель Flint — новый шаг в развитии рекурсивного самоулучшения ИИ",
       "region": "unknown",
@@ -3174,6 +2593,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "v-astane-rassleduyut-sluchai-ukhudsheniya-sostoyaniya-mladentsa-v-detskoy-bolnitse",
+      "title": "В Астане начали расследование после ухудшения состояния младенца в детской больнице",
+      "region": "kz",
+      "date": "2026-10-23",
+      "score": 1,
+      "bodyCharacters": 1117,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
