@@ -1,4 +1,4 @@
-name: TechPulse daily quality monitor
+name: HARMEX MEDIA daily quality monitor
 on:
   push:
     branches: [main]
@@ -21,13 +21,13 @@ jobs:
         run: npm run check
       - name: Check HTTP-to-HTTPS redirect
         run: |
-          curl --silent --show-error --head --max-time 20 http://harmex.asia/ -o /tmp/techpulse-http-headers
-          cat /tmp/techpulse-http-headers
-          grep -Eiq '^HTTP/[0-9.]+ 30(1|2|7|8)' /tmp/techpulse-http-headers
-          grep -Eiq '^location: https://harmex\.asia(/|$)' /tmp/techpulse-http-headers
+          curl --silent --show-error --head --max-time 20 http://harmex.asia/ -o /tmp/harmex-media-http-headers
+          cat /tmp/harmex-media-http-headers
+          grep -Eiq '^HTTP/[0-9.]+ 30(1|2|7|8)' /tmp/harmex-media-http-headers
+          grep -Eiq '^location: https://harmex\.asia(/|$)' /tmp/harmex-media-http-headers
       - name: Verify public homepage and sitemap
         run: |
-          curl --fail --location --retry 3 --retry-delay 10 --max-time 30 --silent --show-error https://harmex.asia/ -o /tmp/techpulse-home.html
-          curl --fail --location --retry 3 --retry-delay 10 --max-time 30 --silent --show-error https://harmex.asia/sitemap.xml -o /tmp/techpulse-sitemap.xml
-          grep -q 'TechPulse' /tmp/techpulse-home.html
-          grep -q 'https://harmex.asia/' /tmp/techpulse-sitemap.xml
+          curl --fail --location --retry 3 --retry-delay 10 --max-time 30 --silent --show-error https://harmex.asia/ -o /tmp/harmex-media-home.html
+          curl --fail --location --retry 3 --retry-delay 10 --max-time 30 --silent --show-error https://harmex.asia/sitemap.xml -o /tmp/harmex-media-sitemap.xml
+          grep -q 'HARMEX MEDIA' /tmp/harmex-media-home.html
+          grep -q 'https://harmex.asia/' /tmp/harmex-media-sitemap.xml
