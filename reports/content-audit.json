@@ -3,14 +3,14 @@
     "scanned": 522,
     "validJson": 522,
     "invalidJson": 0,
-    "reviewRecommended": 7,
+    "reviewRecommended": 6,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
       "depth": 25,
-      "quality": 5,
+      "quality": 3,
       "specificity": 46,
-      "metadata": 119,
+      "metadata": 117,
       "local": 1
     }
   },
@@ -100,27 +100,6 @@
       ]
     },
     {
-      "slug": "gran-turismo-ps5-limited-dualsense-preorders",
-      "title": "Стартовали предзаказы на лимитированный геймпад Gran Turismo для PS5",
-      "region": "unknown",
-      "date": "2026-10-22",
-      "score": 5,
-      "bodyCharacters": 972,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "quality",
-          "weight": 4,
-          "message": "2/6 paragraphs use generic filler instead of source-specific facts"
-        },
-        {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Регион не указан"
-        }
-      ]
-    },
-    {
       "slug": "ordinaty-v-almaty-zagoranie-legkovogo-avtomobilya-i-operativnaya-tushenie",
       "title": "Легковой автомобиль вспыхнул в Алматы: МЧС оперативно потушило пожар в автомобиле",
       "region": "kz",
@@ -185,22 +164,6 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
-        }
-      ]
-    },
-    {
-      "slug": "amazon-predstavil-pyat-novyh-kamer-dlya-umnogo-doma-blink",
-      "title": "Amazon усиливает линейку Blink пятью новинками: умные камеры для вашего дома",
-      "region": "global",
-      "date": "2026-10-22",
-      "score": 4,
-      "bodyCharacters": 1209,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "quality",
-          "weight": 4,
-          "message": "2/6 paragraphs use generic filler instead of source-specific facts"
         }
       ]
     },
@@ -2187,22 +2150,6 @@
       "date": "2026-10-22",
       "score": 1,
       "bodyCharacters": 1218,
-      "paragraphs": 6,
-      "issues": [
-        {
-          "type": "metadata",
-          "weight": 1,
-          "message": "Регион не указан"
-        }
-      ]
-    },
-    {
-      "slug": "microsoft-project-helix-2028-price-and-plans",
-      "title": "Microsoft Project Helix 2028: ожидаемая цена и планы по игровым устройствам",
-      "region": "unknown",
-      "date": "2026-10-22",
-      "score": 1,
-      "bodyCharacters": 1871,
       "paragraphs": 6,
       "issues": [
         {

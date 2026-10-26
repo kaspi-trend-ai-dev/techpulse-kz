@@ -6,17 +6,17 @@
 |---|---:|
 | JSON-файлов в архиве | 522 |
 | Успешно прочитаны | 522 |
-| Статей для ручной проверки (оценка ≥5) | 7 |
+| Статей для ручной проверки (оценка ≥5) | 6 |
 | Высокий приоритет (оценка ≥10) | 1 |
 | Кандидатов на дубли | 0 |
 | Некорректных JSON | 0 |
 
 ## Признаки для проверки
 
-- metadata: 119
+- metadata: 117
 - specificity: 46
 - depth: 25
-- quality: 5
+- quality: 3
 - local: 1
 
 ## Первые 40 статей на редакционную проверку
@@ -26,7 +26,6 @@
 | 11 | [Огонь и густой дым: в Алматы загорелся легковой автомобиль на улице Тлендиева](https://harmex.asia/articles/v-almaty-zagorelsya-avtomobil-na-ulitse-tlendieva.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев; Article lacks sufficient sourced detail (less than 450 characters of body text) |
 | 9 | ["Окжетпес" разгромил "Каспий" в матче чемпионата Казахстана по футболу](https://harmex.asia/articles/okzhetpes-pobeditel-s-razgromnym-schetom-v-chempionate-kazahstana.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев; Article lacks sufficient sourced detail (less than 450 characters of body text) |
 | 6 | [Генеральный директор Proton Энди Йен получил Liberal Award 2026 года](https://harmex.asia/articles/proton-ceo-andy-yen-wins-2026-liberal-award.html) | Мало информации в описании; Менее 700 знаков основного текста; Регион не указан |
-| 5 | [Стартовали предзаказы на лимитированный геймпад Gran Turismo для PS5](https://harmex.asia/articles/gran-turismo-ps5-limited-dualsense-preorders.html) | 2/6 paragraphs use generic filler instead of source-specific facts; Регион не указан |
 | 5 | [Легковой автомобиль вспыхнул в Алматы: МЧС оперативно потушило пожар в автомобиле](https://harmex.asia/articles/ordinaty-v-almaty-zagoranie-legkovogo-avtomobilya-i-operativnaya-tushenie.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Грузовик не убедился и столкнулся с пассажирским поездом в Карагандинской области — никто не пострадал](https://harmex.asia/articles/stolknovenie-gruzovika-i-passazhirskogo-poezda-v-karagandinskoj-oblasti.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
 | 5 | [Новый проигрыватель винила Technics разработан с участием диджеев и звукорежиссеров](https://harmex.asia/articles/technics-novyj-turntable-dlja-dj-ei-zvukovyh-inzhenerov.html) | Мало информации в описании; Регион не указан; Нет числовых данных при коротком материале (проверить вручную) |
