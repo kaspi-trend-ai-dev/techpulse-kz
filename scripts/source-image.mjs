@@ -27,7 +27,7 @@ export async function licensedSourceImage(article){
  const source=article.sources?.[0]?.url;
  if(!source||!/^https:\/\//.test(source)||new URL(source).hostname.endsWith('news.google.com'))return null;
  try{
-  const response=await fetch(source,{signal:AbortSignal.timeout(12000),headers:{'User-Agent':'Mozilla/5.0 (compatible; TechPulseEditorial/1.0)'}});
+  const response=await fetch(source,{signal:AbortSignal.timeout(12000),headers:{'User-Agent':'Mozilla/5.0 (compatible; HarmexMediaEditorial/1.0)'}});
   if(!response.ok)return null;
   const html=(await response.text()).slice(0,650000);
   const original=imageFromBody(html,response.url);
