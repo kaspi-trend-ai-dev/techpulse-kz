@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "apple-zapustit-bezkontaktnuyu-diagnostiku-vozvrashchennykh-iphone",
+  "title": "Apple внедряет бесконтактную диагностику для возвращённых iPhone — экономия времени и борьба с кражами",
+  "description": "Компания Apple начала использовать технологию Presto для проверки работоспособности возвращённых в магазинах iPhone без вскрытия оригинальной упаковки. Это позволяет быстрее возвращать устройства в продажу и предотвращать мошенничество с кражами.",
+  "date": "2026-10-27",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новаторский подход Apple к обработке возвратов iPhone",
+      "paragraphs": [
+        "Apple представила новую систему диагностики для возвращаемых iPhone, позволяющую проводить проверку техники без нарушения заводской упаковки. Это особенно важно для снижения затрат времени и ресурсов на перепаковку и ревизию устройств.",
+        "За этот процесс отвечает технология Presto, изначально предназначенная для обновления программного обеспечения iPhone без вскрытия коробок. Теперь её используют для удалённой проверки функциональности возвращённых смартфонов."
+      ]
+    },
+    {
+      "heading": "Почему это важно для пользователей и розничных продавцов",
+      "paragraphs": [
+        "До этого сотрудники магазинов вынуждены были открывать упаковку возвращённых iPhone, чтобы проверить их работоспособность, что приводило к невозможности продаж устройств как новых.",
+        "Нововведение Apple помогает бороться с мошенниками, которые пытались возвращать ворованные или вскрытые телефоны, а также сокращает время, необходимое для обработки возвратов и повторного выставления устройств на продажу."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple will reportedly run diagnostics on returned iPhones without opening the packaging",
+      "url": "https://www.engadget.com/2296630/apple-will-reportedly-run-diagnostics-on-returned-iphones-without-opening-the-packaging/",
+      "published": "2026-10-26"
+    }
+  ],
+  "publishedAt": "2026-10-26T19:54:32.066Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/apple-will-reportedly-run-diagnostics-on-returned-iphones-without-opening-the-packaging/intro-1793020431.jpg",
+    "source": "https://www.engadget.com/2296630/apple-will-reportedly-run-diagnostics-on-returned-iphones-without-opening-the-packaging/",
+    "credit": "Steve Dent",
+    "license": "Лицензия не проверена",
+    "alt": "An iPhone Duo is shown at Apple",
+    "verified": true
+  }
+}
