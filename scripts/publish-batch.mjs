@@ -11,7 +11,7 @@ const count=()=>fs.readdirSync('articles').filter(x=>x.endsWith('.json')).length
 const before=count();
 let published=0,attempts=0,consecutiveFailures=0;
 let previousAttemptFailed=false;
-console.log('TechPulse continuous publishing:',{before,runtimeMinutes:4,articleQuota:'none',focus:'TV purchase-intent traffic'});
+console.log('HARMEX MEDIA continuous publishing:',{before,runtimeMinutes:4,articleQuota:'none',focus:'Kazakhstan and world news, source-based reporting'});
 while(Date.now()-started<runtimeMs-20000&&consecutiveFailures<maxConsecutiveFailures){
  attempts++;
  // After a failed local attempt, try global sources before the failure limit.
