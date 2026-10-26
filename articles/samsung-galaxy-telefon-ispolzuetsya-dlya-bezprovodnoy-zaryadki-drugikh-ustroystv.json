@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "samsung-galaxy-telefon-ispolzuetsya-dlya-bezprovodnoy-zaryadki-drugikh-ustroystv",
+  "title": "Samsung Galaxy научился проводит энергию: беспроводная зарядка для других устройств",
+  "description": "Samsung представила функцию Wireless PowerShare, которая позволяет новым моделям Galaxy заряжать другие гаджеты по беспроводной связи, расширяя возможности мобильных устройств.",
+  "date": "2026-10-27",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Как работает функция Wirelss PowerShare на Samsung Galaxy",
+      "paragraphs": [
+        "Новейшие смартфоны серии Samsung Galaxy S20-26, а также модели Note 20 и 10, Z Fold, Z TriFold и Z Flip получили возможность использовать Wireless PowerShare — инновационный режим, позволяющий заряжать другие совместимые устройства, располагая их задними панелями друг к другу.",
+        "Для запуска функции нужно открыть панель уведомлений и включить Wireless PowerShare, после чего источник электроэнергии может передавать заряд до тех пор, пока в нем останется не менее 30% заряда аккумулятора."
+      ]
+    },
+    {
+      "heading": "Совместимость и особенности использования беспроводной зарядки Samsung",
+      "paragraphs": [
+        "Wireless PowerShare поддерживает зарядку любых телефонов, соответствующих стандарту WPC Qi, включая iPhone и множество других брендов, а также Samsung Galaxy Ring, Galaxy Buds и большинство Galaxy Watches, за исключением некоторых моделей.",
+        "Несмотря на удобство, эта технология менее эффективна по сравнению с проводной зарядкой: большая часть энергии теряется на нагрев, что может негативно сказываться на сроке службы аккумуляторов обоих устройств."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to use your Samsung Galaxy phone to wirelessly charge other devices",
+      "url": "https://www.engadget.com/2294444/how-to-use-samsung-galaxy-phone-wireless-powershare-charging/",
+      "published": "2026-10-26"
+    }
+  ],
+  "publishedAt": "2026-10-26T21:55:41.896Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/how-to-use-your-samsung-galaxy-phone-to-wirelessly-charge-other-devices/intro-1792690102.jpg",
+    "source": "https://www.engadget.com/2294444/how-to-use-samsung-galaxy-phone-wireless-powershare-charging/",
+    "credit": "Jack Peachey",
+    "license": "Лицензия не проверена",
+    "alt": "Two phones engaging in wireless power sharing.",
+    "verified": true
+  }
+}
