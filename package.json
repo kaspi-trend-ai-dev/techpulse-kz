@@ -7,7 +7,7 @@
     "build": "node scripts/build.mjs",
     "generate": "node scripts/generate.mjs && npm run check",
     "audit": "node scripts/audit.mjs",
-    "check": "npm run build && npm run audit"
+    "check": "node --test scripts/editorial-quality.test.mjs && npm run build && npm run audit"
   },
   "engines": {
     "node": ">=20"
