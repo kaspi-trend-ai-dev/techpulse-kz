@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import {uniqueArticles} from './dedupe.mjs';
 const root='dist';
 const fail=[];
-const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css','assets/search.js','assets/engagement.js','assets/menu.js','harmex.html','kazakhstan.html','guides.html','status.html','editorial-status.json'];
+const required=['index.html','robots.txt','sitemap.xml','CNAME','assets/style.css','assets/search.js','assets/engagement.js','assets/menu.js','harmex.html','kazakhstan.html','guides.html','about.html','status.html','editorial-status.json'];
 for(const p of required)if(!fs.existsSync(root+'/'+p))fail.push('Missing '+p);
 const isRussian=a=>{const parts=[a.title,a.description,...(a.sections||[]).flatMap(s=>[s.heading,...(s.paragraphs||[])])].filter(x=>typeof x==='string');return parts.length>=4&&parts.every(t=>(t.match(/[а-яё]/gi)||[]).length>=Math.max(12,(t.match(/[a-zа-яё]/gi)||[]).length*.28))};
 const articles=fs.readdirSync('articles').filter(x=>x.endsWith('.json')).map(x=>JSON.parse(fs.readFileSync('articles/'+x,'utf8'))).filter(isRussian);
@@ -12,6 +12,11 @@ const homepage=fs.existsSync(root+'/index.html')?fs.readFileSync(root+'/index.ht
 const guideSlugs=['kak-vybrat-diagonal-televizora','pochemu-tormozit-smart-tv','televizor-dlya-spalni','opredelenie-optimalnogo-rasstoyaniya-do-ekrana-43-dyuyma-v-kazakhstane'];
 const newsItems=kept.filter(a=>!guideSlugs.includes(a.slug));
 if(homepage.includes('Практические гиды по телевизорам')||homepage.includes('guides.html'))fail.push('News homepage must not promote guides');
+for(const marker of ['HARMEX MEDIA','og:site_name','application-name'])if(!homepage.includes(marker))fail.push('New brand missing: '+marker);
+if(homepage.includes('TechPulse')||homepage.includes('При поддержке'))fail.push('Old brand/self sponsorship in homepage');
+if(!homepage.includes('href="/about.html"'))fail.push('About link not on homepage');
+const about=fs.readFileSync(root+'/about.html','utf8');
+if(!about.includes('HARMEX MEDIA')||!about.includes('HARMEX Electronics')||!about.includes('Редакционные принципы'))fail.push('About page missing brand and commercial disclosure');
 if(homepage.includes('data-filter="Телевизоры"')||homepage.includes('data-category="Телевизоры"')||homepage.includes('class="tag">Телевизоры</span>'))fail.push('Removed television news category is still visible on homepage');
 for(const marker of ['НОВОСТНОЙ ПОРТАЛ','Новости Казахстана и мира','Главные события дня'])if(!homepage.includes(marker))fail.push('Homepage news-portal positioning missing: '+marker);
 if(homepage.includes('НОВОСТИ ТЕХНОЛОГИЙ')||homepage.includes('Технологии, гаджеты и искусственный интеллект — коротко и по делу.'))fail.push('Obsolete technology-only homepage intro remains');
@@ -52,13 +57,16 @@ const sitemap=fs.existsSync(root+'/sitemap.xml')?fs.readFileSync(root+'/sitemap.
 for(const a of kept)if(!sitemap.includes('https://harmex.asia/articles/'+a.slug+'.html'))fail.push('Not in sitemap: '+a.slug);
 if(!sitemap.includes('https://harmex.asia/'))fail.push('Homepage not in sitemap');
 if(!sitemap.includes('https://harmex.asia/kazakhstan.html'))fail.push('Kazakhstan section not in sitemap');
-if(!sitemap.includes('https://harmex.asia/harmex.html'))fail.push('Partner page not in sitemap');
+if(!sitemap.includes('https://harmex.asia/harmex.html'))fail.push('Electronics page not in sitemap');
+if(!sitemap.includes('https://harmex.asia/about.html'))fail.push('About page not in sitemap');
 if(!sitemap.includes('https://harmex.asia/guides.html'))fail.push('TV buyer guides hub not in sitemap');
 if(!sitemap.includes('<lastmod>'))fail.push('Sitemap missing lastmod dates');
 if(!fs.readFileSync(root+'/status.html','utf8').includes('noindex,follow'))fail.push('Internal status page should be noindex');
 const partner=fs.readFileSync(root+'/harmex.html','utf8');
-if(!partner.includes('harmex_partner_view')||!partner.includes('harmex_click'))fail.push('Partner analytics events missing');
+if(!partner.includes('harmex_partner_view')||!partner.includes('harmex_click'))fail.push('Electronics analytics events missing');
 if(!homepage.includes('og:site_name')||!homepage.includes('twitter:card'))fail.push('SEO social metadata missing');
+if(!homepage.includes('"name":"HARMEX MEDIA"'))fail.push('WebSite schema name missing');
+for(const a of kept.slice(0,20)){const p=root+'/articles/'+a.slug+'.html';if(fs.existsSync(p)){const html=fs.readFileSync(p,'utf8');if(!html.includes('HARMEX MEDIA')||html.includes('TechPulse')||html.includes('ПРИ ПОДДЕРЖКЕ HARMEX'))fail.push('Article brand mismatch: '+a.slug)}}
 if(fs.existsSync(root+'/CNAME')&&fs.readFileSync(root+'/CNAME','utf8').trim()!=='harmex.asia')fail.push('Wrong custom domain');
 if(fail.length){console.error('AUDIT FAILED:\n'+fail.join('\n'));process.exit(1)}
 console.log('AUDIT OK:',kept.length,'articles, canonical URLs, sitemap, schema, domain and assets');
