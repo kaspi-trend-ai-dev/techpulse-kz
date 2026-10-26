@@ -80,7 +80,7 @@ const headlines = [];
 for (const topic of topics) {
   try {
     const feed = 'https://news.google.com/rss/search?q=' + encodeURIComponent(topic + ' when:3d') + (kazakhstanMode?'&hl=ru&gl=KZ&ceid=KZ:ru':'&hl=en-US&gl=US&ceid=US:en');
-    const response = await fetch(feed, {headers: {'User-Agent': 'TechPulseEditorial/1.0'}, signal: AbortSignal.timeout(12000)});
+    const response = await fetch(feed, {headers: {'User-Agent': 'HarmexMediaEditorial/1.0'}, signal: AbortSignal.timeout(12000)});
     if (!response.ok) continue;
     const xml = await response.text();
     for (const match of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
@@ -113,7 +113,7 @@ const publisherFeeds=kazakhstanMode?[
 ];
 for(const feed of publisherFeeds){
  try{
-  const response=await fetch(feed,{headers:{'User-Agent':'Mozilla/5.0 TechPulseEditorial/1.0'},signal:AbortSignal.timeout(9000)});
+  const response=await fetch(feed,{headers:{'User-Agent':'Mozilla/5.0 HarmexMediaEditorial/1.0'},signal:AbortSignal.timeout(9000)});
   if(!response.ok)continue;
   const xml=await response.text();
   for(const match of xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/g)){
@@ -130,7 +130,7 @@ for(const feed of publisherFeeds){
 const stripHtml=html=>html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();
 async function fetchEvidence(entry){
  try{
-  const response=await fetch(entry.url,{redirect:'follow',headers:{'User-Agent':'Mozilla/5.0 (compatible; TechPulseEditorial/1.0)'},signal:AbortSignal.timeout(9000)});
+  const response=await fetch(entry.url,{redirect:'follow',headers:{'User-Agent':'Mozilla/5.0 (compatible; HarmexMediaEditorial/1.0)'},signal:AbortSignal.timeout(9000)});
   if(!response.ok)return null;
   const finalUrl=response.url;
   if(!/^https:\/\//.test(finalUrl)||new URL(finalUrl).hostname.endsWith('news.google.com'))return null;
@@ -173,9 +173,9 @@ const rotated=evidence.length?((attempt-1)%evidence.length):0;
 const chosenEvidence=[...evidence.slice(rotated),...evidence.slice(0,rotated)];
 const prompt = [
  ...(kazakhstanMode?['РЕЖИМ КАЗАХСТАН: выбирай только событие, непосредственно происходящее в Казахстане или затрагивающее жизнь страны. Темы: технологии, бизнес, образование, культура, спорт, туризм, наука, здоровье, городская жизнь. Не выбирай государственную политику, политических деятелей, выборы, оппозицию, протесты или политические конфликты. Укажи region: "kz".']:['РЕЖИМ МИР: выбирай международную новость; укажи region: "global".']),
-  'Ты редактор русскоязычного технологического медиа TechPulse для Казахстана. Цель сайта — привлекать читателей, которые выбирают телевизор, Smart TV и домашние развлечения, и знакомить их с HARMEX через отдельный рекламный блок.',
+  'Ты редактор русскоязычного новостного портала HARMEX MEDIA для аудитории Казахстана. Цель — достоверно и содержательно освещать события Казахстана и мира: общество, экономику, бизнес, технологии, науку, культуру и спорт. HARMEX Electronics — отдельное коммерческое направление бренда; новости не должны быть скрытой рекламой электроники.',
   'Создай ОДНУ интересную, динамичную новостную статью на основе ТОЛЬКО приведённых ниже реальных заголовков новостной ленты за последние 3 дня. Новости отсортированы по актуальности, упоминаниям и интересу широкой аудитории.',
-  ...(kazakhstanMode?['Для казахстанской ленты выбирай наиболее значимое и свежее событие любой разрешённой тематики, не ограничивайся электроникой.']:['В первую очередь выбирай новости о телевизорах, Smart TV, видеосервисах, игровых приставках, домашнем кинотеатре и выборе электроники. Не приписывай рекламируемому HARMEX характеристики конкурентов. Не вставляй скрытую рекламу в редакционный текст.']),
+  ...(kazakhstanMode?['Для казахстанской ленты выбирай наиболее значимое и свежее событие любой разрешённой тематики, не ограничивайся электроникой.']:['В международной ленте выбирай самые значимые свежие проверяемые новости науки, технологий, бизнеса, общества, культуры и спорта; не фокусируйся на телевизорах или продажах. Не вставляй рекламу HARMEX в редакционный текст.']),
   'Приоритет отдавай первому подходящему источнику в списке, чтобы повторные попытки выбирали разные новости. Выбери один конкретный инфоповод из разрешённых тем. Заголовок яркий, эмоциональный, интригующий, с сильным новостным глаголом и конкретикой; не выдумывай сенсации, не искажай факты и не обещай того, чего нет в тексте.',
   'Доступны выдержки из текстов первоисточников. Используй только явно подтверждённые ими факты; не придумывай цитаты, цифры, характеристики, даты и заявления. Различай официальное подтверждение и сообщения журналистов. Не пиши будто тестировал устройство.',
   'Объём зависит от подтверждённых фактов: если их мало, НЕ публикуй слабую новость: выбери более содержательный первоисточник. Не добавляй предположения о будущих моделях, обновлениях, рыночных последствиях или отсутствующих сведениях ради объёма. Совет читателю допустим только как явно обозначенный совет, без новых фактов о товаре.',
@@ -265,7 +265,7 @@ const reviewPrompt = [
   'Accept faithful semantic paraphrases of supported facts: a reported price crash supports a reported price reduction, but not an invented amount, market, retailer or cause. Shared names, ratings and factual terminology alone are not copying. Reject copied expressive sentences and near-identical headlines, not the necessary restatement of a fact. Clearly labelled general buyer advice needs no source quote unless it asserts a product-specific fact. For every issue quote the problematic draft claim and explain the evidence gap; do not list supported claims as issues.',
   ...(kazakhstanMode?['Also verify that the event concerns Kazakhstan and is nonpolitical. Reject state politics, elections, political figures, opposition, protests and political conflicts. Ordinary consumer choice or a shipment of products is not politics. Check the full draft and source excerpt, not just keywords.']:[]),
   'Beyond accuracy, reject articles with fewer than two distinct source-supported details beyond the headline, shallow generic paragraphs, or repetitions of the same fact across sections. The goal is new information for readers, not keyword-filled text. If evidence is too thin for a useful article, approved=false and say why; NEVER invent details to pass.',
-  'Respond as JSON with approved (boolean), issues (array of strings). Only put ACTUAL unsupported or incorrect claims and genuine utility deficiencies in issues. Do not list supported claims or explanations. If all claims are supported, approved=true and issues=[]. The article date is the TechPulse publication date, not the original source date. Russian grammatical cases of proper names are valid.',
+  'Respond as JSON with approved (boolean), issues (array of strings). Only put ACTUAL unsupported or incorrect claims and genuine utility deficiencies in issues. Do not list supported claims or explanations. If all claims are supported, approved=true and issues=[]. The article date is the HARMEX MEDIA publication date, not the original source date. Russian grammatical cases of proper names are valid.',
   'SOURCE: ' + JSON.stringify(sourceHeadline),
   'DRAFT: ' + JSON.stringify(a)
 ].join('\\n');
@@ -292,7 +292,7 @@ let verdict = await review(draft);
 for (let attempt = 0; attempt < 2 && verdict.approved !== true; attempt++) {
   console.log('Editorial rewrite attempt', attempt + 1, JSON.stringify(verdict.issues || []));
   const revised = await chatJson([
-    {role: 'system', content: 'You are a careful Russian technology news editor. Output JSON only.'},
+    {role: 'system', content: 'You are a careful Russian-language general news editor. Output JSON only.'},
     {role: 'user', content: 'Rewrite this article to address ALL fact-check issues. A source excerpt is available; remove unsupported specifics rather than inventing them. Keep 1-5 sections with at least one meaningful paragraph each (minimum 40 characters). Shorten the article when evidence is limited; do not pad it with speculation. Do not introduce new factual claims. Preserve slug, sources and date exactly. Return the full article JSON.\\nSOURCE: ' + JSON.stringify(sourceHeadline) + '\\nISSUES: ' + JSON.stringify(verdict.issues) + '\\nARTICLE: ' + JSON.stringify(draft)}
   ]);
   // The rewrite is allowed to improve prose, but immutable metadata belongs to the publisher pipeline.
