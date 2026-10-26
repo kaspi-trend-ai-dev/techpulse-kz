@@ -5,7 +5,7 @@ body{background:#fff;color:#17202d}header{box-shadow:0 1px 10px #10182708}main{m
 @media(max-width:560px){main{padding:12px 14px 45px}.hero{padding:30px 24px;min-height:240px}.hero h1{font-size:38px}.hero p{font-size:15px}.featured>div:first-child{padding:23px}.featured-art{min-height:170px}.featured-art img{min-height:170px}.grid{grid-template-columns:1fr;gap:16px}.card-body{padding:18px 20px}.card h3{font-size:20px}.article{padding:22px 6px}.article h1{font-size:33px}.article p{font-size:16px}.filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}.filter{white-space:nowrap}.section-title h2{font-size:27px}}
 
 
-/* TechPulse editorial identity */
+/* HARMEX MEDIA editorial identity */
 :root{--ink:#101c31;--blue:#1263eb;--line:#e5eaf1}
 body{background:#fff}
 header{border-bottom:2px solid #1263eb}
@@ -132,7 +132,7 @@ a.sponsor-lockup{color:inherit;text-decoration:none;transition:opacity .2s}a.spo
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-/* Compact TechPulse homepage masthead */
+/* Compact HARMEX MEDIA homepage masthead */
 .homepage{padding-top:24px}
 .homepage .article-directory{scroll-margin-top:90px}
 .homepage .compact-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:0 0 22px;padding:0 0 18px;border-bottom:1px solid #e5e9f0}
@@ -201,3 +201,13 @@ a.sponsor-lockup{color:inherit;text-decoration:none;transition:opacity .2s}a.spo
 .status-metrics strong{font-size:32px;color:#173f78}
 .status-metrics span{font-size:13px;color:#52647d;line-height:1.4}
 @media(max-width:700px){.status-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.status-page{padding:24px 16px 50px}.list-controls{align-items:flex-start}.status-metrics strong{font-size:26px}}
+
+/* HARMEX MEDIA newsroom identity */
+.logo{letter-spacing:-.045em;white-space:nowrap}.logo span{color:#1765d1;font-weight:850}
+nav .header-about{font-size:13px;color:#52647d;font-weight:700}
+.sponsor-feature .sponsor-dot,.sponsor-aside .sponsor-dot{font-size:.46em;letter-spacing:.015em;white-space:nowrap;font-weight:750}
+footer a{color:inherit;text-underline-offset:3px}
+.media-about{max-width:880px}.media-about .partner-story{margin-bottom:22px}
+.media-about .partner-story h1{font-size:clamp(30px,5vw,48px);margin:0 0 12px;line-height:1.15}
+.media-about .partner-story h2{font-size:clamp(23px,3vw,29px)}.media-about .partner-story p{line-height:1.75}
+@media(max-width:700px){nav .header-about{display:none}.logo{font-size:clamp(20px,5vw,24px)}.sponsor-feature .sponsor-wordmark{overflow-wrap:anywhere}}
