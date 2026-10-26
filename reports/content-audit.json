@@ -1,7 +1,7 @@
 {
   "summary": {
-    "scanned": 522,
-    "validJson": 522,
+    "scanned": 532,
+    "validJson": 532,
     "invalidJson": 0,
     "reviewRecommended": 6,
     "highPriority": 1,
@@ -10,7 +10,7 @@
       "depth": 25,
       "quality": 3,
       "specificity": 46,
-      "metadata": 117,
+      "metadata": 118,
       "local": 1
     }
   },
@@ -2551,6 +2551,22 @@
       "score": 1,
       "bodyCharacters": 1117,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "v-pavlodare-u-nedonoshennogo-mladenca-obnaruzhili-perelom-semya-trebuet-proverki",
+      "title": "В Павлодаре у недоношенного младенца выявили перелом бедра: родственники требуют проверки центра",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 1,
+      "bodyCharacters": 730,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "metadata",
