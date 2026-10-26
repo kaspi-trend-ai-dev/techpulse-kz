@@ -1,0 +1,48 @@
+{
+  "region": "global",
+  "slug": "tesla-turo-renault-ts-drive-adoption",
+  "title": "Tesla и Turo сотрудничают для продвижения автопилота Full Self-Driving с поддержкой водителя",
+  "description": "Платформа аренды автомобилей Turo начнет выделять Tesla с системой автопилота Full Self-Driving (FSD) и предоставит арендодателям бесплатный пробный месяц услуги.",
+  "date": "2026-10-26",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Сотрудничество Tesla и Turo для продвижения автопилота",
+      "paragraphs": [
+        "Компания Turo, крупный сервис аренды автомобилей, станет первым маркетплейсом, который будет выделять Tesla с активным Full Self-Driving (FSD) — системой продвинутой помощи водителю, требующей наблюдения.",
+        "Арендодатели, сдающие Tesla на платформе, получат бесплатный пробный месяц подписки на FSD. Turo будет проверять наличие активированного автопилота, используя программный интерфейс Tesla."
+      ]
+    },
+    {
+      "heading": "Популярность Tesla на платформе Turo",
+      "paragraphs": [
+        "По данным Turo, Tesla Model 3 и Model Y занимают третье и четвёртое места по популярности среди автомобилей на платформе в этом году.",
+        "Tesla сообщила, что около 1,7 миллиона клиентов во всем мире оплатили FSD, а более 75% покупателей Tesla в Северной Америке в третьем квартале оформили подписку на эту услугу."
+      ]
+    },
+    {
+      "heading": "Особенности аренды FSD Tesla через Turo",
+      "paragraphs": [
+        "Арендаторам FSD-автомобилей будут предоставляться предупреждения о необходимости следить за дорогой и быть готовыми взять управление на себя в любой момент.",
+        "Также будет доступен обучающий материал, подготовленный Tesla, для ознакомления с использованием автопилота.",
+        "Объявления об аренде таких автомобилей будут помечены как «Self-Driving», что позволит пользователям безопасно познакомиться с технологией."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tesla turns to Turo to boost adoption of Full Self-Driving (Supervised)",
+      "url": "https://techcrunch.com/2026/10/26/tesla-turns-to-turo-to-boost-adoption-of-full-self-driving-supervised/",
+      "published": "2026-10-26"
+    }
+  ],
+  "publishedAt": "2026-10-26T17:54:55.514Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/06/tesla-fsd-GettyImages-2277686230.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/26/tesla-turns-to-turo-to-boost-adoption-of-full-self-driving-supervised/",
+    "credit": "Sean O&#039;Kane",
+    "license": "Лицензия не проверена",
+    "alt": "A car driver tests a Tesla&#039;s FSD (Full Self Driving) system on a road in Sabadell near Barcelona.",
+    "verified": true
+  }
+}
