@@ -1,0 +1,39 @@
+{
+  "region": "global",
+  "slug": "anthropic-otechnoiskusstvennyj-gigant-vyhodyt-na-birzhu",
+  "title": "Anthropic официально подаёт заявку на IPO",
+  "description": "Компания Anthropic официально подала документы для первичного публичного размещения акций (IPO). В первом полугодии 2026 года выручка компании выросла до $16,3 млрд, несмотря на операционные убытки в $693 млн. Семь сооснователей сохранят контроль над компанией более чем на 50% голосов, что вызвало дискуссии о корпоративном управлении.",
+  "date": "2026-10-26",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Финансовые показатели Anthropic",
+      "paragraphs": [
+        "Anthropic зарегистрировала значительный рост выручки: в первой половине 2026 года она составила $16,3 млрд, что значительно выше по сравнению с аналогичным периодом прошлого года. При этом операционные убытки снизились с $2,1 млрд в первой половине 2025 года до $693 млн."
+      ]
+    },
+    {
+      "heading": "Корпоративное управление и контроль сооснователей",
+      "paragraphs": [
+        "Семь сооснователей Anthropic сохранят общий контроль над 50,1% голосов акционеров через объединение Founder LLC, что позволит им влиять на стратегию компании после выхода на биржу.",
+        "Для обеспечения миссии по безопасности ИИ компания учредила Long-Term Benefit Trust, который назначает большую часть совета директоров, что вызывает обсуждения об ограничении влияния публичных акционеров на решения."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anthropic officially files for its public debut",
+      "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+      "published": "2026-10-26"
+    }
+  ],
+  "publishedAt": "2026-10-26T15:40:26.360Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+    "credit": "Rebecca Bellan",
+    "license": "Лицензия не проверена",
+    "alt": "In this photo illustration, the icon for the AI app &quot;Claude&quot; by Anthropic is seen through running water as it is displayed on a digital screen.",
+    "verified": true
+  }
+}
