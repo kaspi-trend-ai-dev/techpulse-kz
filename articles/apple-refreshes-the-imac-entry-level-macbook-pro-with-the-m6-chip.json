@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "apple-refreshes-the-imac-entry-level-macbook-pro-with-the-m6-chip",
+  "title": "Apple обновляет iMac и начальную модель MacBook Pro с чипом M6",
+  "description": "Apple объявила обновление iMac и начальной модели 14-дюймового MacBook Pro с новым чипом M6, обеспечивающим значительные улучшения производительности и поддержку новых стандартов беспроводной связи.",
+  "date": "2026-10-28",
+  "category": "technology",
+  "sections": [
+    {
+      "heading": "Новые конфигурации чипа M6 для iMac и MacBook Pro",
+      "paragraphs": [
+        "Apple обновила iMac и начальную модель 14-дюймового MacBook Pro с внедрением чипа M6, который ранее был представлен в Mac mini. iMac доступен с двумя вариантами чипа M6: один с двумя портами Thunderbolt и 10-ядерным CPU и GPU, и другой с четырьмя портами Thunderbolt, предлагающий 12 ядер CPU и GPU.",
+        "Модель iMac с двумя портами поддерживает до 24 ГБ оперативной памяти и до 1 ТБ накопителя, в то время как версия с четырьмя портами может быть оснащена до 32 ГБ оперативной памяти и 2 ТБ SSD. MacBook Pro получил единственный вариант чипа M6 с 12 ядрами CPU и GPU, поддержкой до 32 ГБ ОЗУ и до 4 ТБ хранилища."
+      ]
+    },
+    {
+      "heading": "Значительные улучшения производительности и новые стандарты подключения",
+      "paragraphs": [
+        "Чип M6 обеспечивает прирост производительности, включая до 40% ускорение CPU, вдвое увеличенную графическую производительность и почти пятикратное ускорение локального искусственного интеллекта по сравнению с предыдущим поколением M4 в iMac. Кроме того, скорость чтения и записи SSD в iMac удваивается с обновлением до M6.",
+        "Обе обновлённые модели теперь оснащены чипом N1 для беспроводного соединения, поддерживающим Wi-Fi 7 и Bluetooth 6. Для iMac также появилась новая опция с портом Ethernet на 2,5 Гбит/с, в то время как MacBook Pro по-прежнему не имеет Ethernet-порта."
+      ]
+    },
+    {
+      "heading": "Цена и доступность",
+      "paragraphs": [
+        "Дизайн iMac и MacBook Pro остался без изменений по сравнению с предыдущими моделями. Стоимость iMac составляет от $1 499 за модель с двумя портами и $1 699 – с четырьмя портами. Базовая версия MacBook Pro с чипом M6 стартует с цены $1 999.",
+        "Предзаказы начинаются 28 октября 2026 года, а начало поставок запланировано на 6 ноября."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple refreshes the iMac, entry-level MacBook Pro with the M6 chip",
+      "url": "https://arstechnica.com/apple/2026/10/apple-refreshes-the-imac-entry-level-macbook-pro-with-the-m6-chip/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-27T23:39:26.040Z",
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/M6-iMac-640x360.jpg",
+    "source": "https://arstechnica.com/apple/2026/10/apple-refreshes-the-imac-entry-level-macbook-pro-with-the-m6-chip/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "An array of iMacs in different colors",
+    "verified": true
+  }
+}
