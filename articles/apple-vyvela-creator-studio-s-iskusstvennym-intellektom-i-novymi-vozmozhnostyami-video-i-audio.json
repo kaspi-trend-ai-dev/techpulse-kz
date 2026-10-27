@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "apple-vyvela-creator-studio-s-iskusstvennym-intellektom-i-novymi-vozmozhnostyami-video-i-audio",
+  "title": "Apple расширила Creator Studio: MotionVFX для Final Cut и повсеместный ИИ в новом обновлении",
+  "description": "Apple выпустила крупное обновление Creator Studio с интеграцией MotionVFX в Final Cut Pro и тестовой ИИ-помощницей в Logic Pro и других приложениях. Апдейт выходит в ноябре и призван повысить эффективность работы креаторов.",
+  "date": "2026-10-27",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Интеграция MotionVFX с Final Cut Pro расширяет творческие возможности",
+      "paragraphs": [
+        "Компания Apple объявила о существенном обновлении программного пакета Creator Studio, готовящемся к выпуску в ноябре 2026 года. Главным нововведением стала интеграция профессиональных видеоеффектов MotionVFX напрямую в приложение Final Cut Pro, купленное Apple ранее в этом году.",
+        "Такое расширение функционала позволяет монтажёрам получить быстрый доступ к широкому набору графики, тем, заголовков и переходов, а также специализированным инструментам ротоскопинга и цветокоррекции. Встроенный Content Hub предлагает коллекцию стоковых видео, фото и фонов для использования в проектах без необходимости искать сторонние ресурсы."
+      ]
+    },
+    {
+      "heading": "ИИ-инструменты проникают во все приложения пакета с новыми возможностями",
+      "paragraphs": [
+        "Обновление вводит ИИ-технологии по всей линейке приложений Apple Creator Studio, включая Final Cut Pro и Pixelmator Pro. Например, в Pixelmator Pro теперь можно выделить участок изображения и ввести текстовое описание желаемого изменения, которое выполнит искусственный интеллект.",
+        "В музыке происходит сотрудничество Apple с OpenAI: в Logic Pro появилась бета-версия ИИ-помощника, который способен редактировать треки, создавать новые композиции и генерировать вокальные партии на основе текстовых подсказок. Такой же чат-бот доступен и в офисных приложениях Keynote, Pages и Numbers для ускорения рабочих процессов."
+      ]
+    },
+    {
+      "heading": "Требования и доступность обновления Creator Studio в ноябре",
+      "paragraphs": [
+        "Некоторые функции требуют наличия компьютера с Apple Silicon и работы под macOS 26.6 или выше, для использования ИИ-возможностей в Logic Pro необходима macOS 27 Golden Gate.",
+        "Обновление будет бесплатным для действующих подписчиков Apple Creator Studio, стоимость подписки — 13 долларов в месяц или 129 долларов в год, при этом новым пользователям предоставляется бесплатный пробный месяц. Покупка отдельных приложений Final Cut Pro, Logic Pro и Pixelmator Pro возможна отдельно."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple Creator Studio update adds MotionVFX to Final Cut, and AI to everywhere",
+      "url": "https://www.engadget.com/2298428/apple-creator-studio-update-adds-motionvfx-to-final-cut-and-ai-to-everywhere/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-27T18:24:57.429Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/apple-creator-studio-update-adds-motionvfx-to-final-cut-and-ai-to-everywhere/intro-1793118031.jpg",
+    "source": "https://www.engadget.com/2298428/apple-creator-studio-update-adds-motionvfx-to-final-cut-and-ai-to-everywhere/",
+    "credit": "Matt Tate",
+    "license": "Лицензия не проверена",
+    "alt": "Apple Creator Studio logo on a black background",
+    "verified": true
+  }
+}
