@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "chatgpt-ishchet-otvety-v-icloud-mail-i-kalendarike-apple",
+  "title": "ChatGPT получил поддержку iCloud: теперь можно работать с почтой и календарём Apple",
+  "description": "OpenAI добавила в ChatGPT новые плагины для работы с сервисами iCloud Mail и iCloud Calendar, позволяя пользователям управлять почтой и событиями календаря Apple прямо через чат-бота.",
+  "date": "2026-10-28",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новое взаимодействие ChatGPT с экосистемой Apple",
+      "paragraphs": [
+        "С октября 2026 года OpenAI добавила плагины, позволяющие ChatGPT работать с почтой и календарём iCloud. Пользователи могут авторизоваться через Apple ID и использовать AI для поиска писем, обновления событий в календаре и других задач, связанных со службами Apple.",
+        "Эти возможности доступны на всех планах ChatGPT — бесплатном и платном, а также на разных платформах: веб, настольной версии и iOS."
+      ]
+    },
+    {
+      "heading": "Технические нюансы и особенности новой интеграции",
+      "paragraphs": [
+        "Плагины дают ChatGPT доступ только к данным Apple, то есть к почте и календарю iCloud, и не взаимодействуют напрямую с штатными почтовыми и календарными приложениями macOS. Если пользователь пользуется другими сервисами, такими как Gmail или Outlook, их поддержка остаётся в рамках соответствующих плагинов ChatGPT.",
+        "Для активации услуг требуется создание специального пароля приложений Apple, что гарантирует безопасность и контроль доступа."
+      ]
+    },
+    {
+      "heading": "Значение обновления и отношения OpenAI с Apple",
+      "paragraphs": [
+        "Добавление поддержки iCloud подчёркивает сложные, но взаимовыгодные отношения между OpenAI и Apple. Несмотря на разногласия — включая судебные споры — обе компании продолжают сотрудничать, интегрируя модели искусственного интеллекта OpenAI в продукты Apple, такие как Pages и Keynote.",
+        "Интеграция ChatGPT с экосистемой Apple расширяет практическое применение ИИ, упрощая повседневные задачи пользователей и укрепляя позиции OpenAI на рынке."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "ChatGPT can work with your iCloud Mail and Calendar thanks to new plugin support",
+      "url": "https://www.engadget.com/2299026/chatgpt-can-work-with-your-icloud-mail-and-calendar-thanks-to-new-plugin-support/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-27T22:36:51.026Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/chatgpt-can-work-with-your-icloud-mail-and-calendar-thanks-to-new-plugin-support/intro-1793135485.jpg",
+    "source": "https://www.engadget.com/2299026/chatgpt-can-work-with-your-icloud-mail-and-calendar-thanks-to-new-plugin-support/",
+    "credit": "Ian Carlos Campbell",
+    "license": "Лицензия не проверена",
+    "alt": "A ChatGPT prompt box surrounded by objects and illustrations.",
+    "verified": true
+  }
+}
