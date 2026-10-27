@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "openai-predstavlyaet-pomoshchnika-dots-s-postoyannym-rabochim-rezhimom",
+  "title": "OpenAI запустила AI-помощника dots с постоянным фоновым режимом работы",
+  "description": "Компания OpenAI представила нового цифрового помощника dots, который работает непрерывно, анализируя календари, почту и другие инструменты пользователя, чтобы помогать в работе. Продукт доступен с сентября 2026 года для подписчиков Pro-уровня и выше и отличается особенностями проактивности и управления данными.",
+  "date": "2026-10-27",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Уникальные возможности и функционал AI-помощника dots",
+      "paragraphs": [
+        "OpenAI создала цифрового помощника dots, который функционирует в постоянном фоновом режиме, помогая пользователям организовывать рабочие задачи. При подключении к календарю, электронной почте и другим программам, dots предупреждает о предстоящих событиях и помогает оперативно справляться с делами.",
+        "Продукт доступен в приложениях ChatGPT на десктопах и мобильных устройствах для пользователей с подпиской Pro и выше, стоимость которой начинается от 100 долларов в месяц."
+      ]
+    },
+    {
+      "heading": "Особенности безопасности и приватности данных пользователя",
+      "paragraphs": [
+        "OpenAI обеспечивает контроль над доступом dots к пользовательским данным, предоставляя опции отключения обучения модели на основе личных данных. Помощник активно исследует информацию, чтобы быть более полезным, но также требует разрешения на доступ к различным сервисам.",
+        "При этом dots не ограничивается только простой автоматизацией задач — он способен предлагать решения на основе анализа ситуации, как, например, обнаружение и диагностика сбоев в работе у клиента из сферы дрон-доставок."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
+      "url": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-27T02:13:59.118Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/55593495974_7bfdac6a15_k.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
+    "credit": "Tim Fernholz",
+    "license": "Лицензия не проверена",
+    "alt": "OpenAI enterprise product lead Alexander Embiricos talks about dots, the company&#039;s AI personal assistant, at TechCrunch Disrupt 2026.",
+    "verified": true
+  }
+}
