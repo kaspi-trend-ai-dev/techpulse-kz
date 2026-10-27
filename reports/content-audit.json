@@ -1,16 +1,16 @@
 {
   "summary": {
-    "scanned": 532,
-    "validJson": 532,
+    "scanned": 582,
+    "validJson": 582,
     "invalidJson": 0,
-    "reviewRecommended": 6,
+    "reviewRecommended": 8,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 25,
+      "depth": 30,
       "quality": 3,
-      "specificity": 46,
-      "metadata": 118,
+      "specificity": 51,
+      "metadata": 119,
       "local": 1
     }
   },
@@ -168,6 +168,48 @@
       ]
     },
     {
+      "slug": "unikalnyj-noyabrskij-parad-planet-v-kazahstane-2026",
+      "title": "Казахстанцы увидят ноябрьский парад планет",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 5,
+      "bodyCharacters": 515,
+      "paragraphs": 2,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "depth",
+          "weight": 2,
+          "message": "Меньше трёх содержательных абзацев"
+        }
+      ]
+    },
+    {
+      "slug": "zatvorili-muzhchinu-v-zhenskom-tualete-atyrau",
+      "title": "В Атырау задержали мужчину, который находился в женском туалете торгового центра",
+      "region": "kz",
+      "date": "2026-10-26",
+      "score": 5,
+      "bodyCharacters": 589,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "emergency-fixes-php-biggest-websites-hacked",
       "title": "PHP выпускает экстренные обновления из-за хакерских атак на крупнейшие сайты",
       "region": "global",
@@ -233,6 +275,22 @@
       "score": 3,
       "bodyCharacters": 632,
       "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "anthropic-otechnoiskusstvennyj-gigant-vyhodyt-na-birzhu",
+      "title": "Anthropic официально подаёт заявку на IPO",
+      "region": "global",
+      "date": "2026-10-26",
+      "score": 3,
+      "bodyCharacters": 668,
+      "paragraphs": 3,
       "issues": [
         {
           "type": "depth",
@@ -481,6 +539,22 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "nani-poproshchalsya-s-aktobe-poslednij-match",
+      "title": "Нани попрощался с «Актобе» и казахстанскими болельщиками",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 3,
+      "bodyCharacters": 576,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         }
       ]
     },
@@ -787,6 +861,38 @@
       ]
     },
     {
+      "slug": "apple-tv-udivit-udobnymi-gorkami-na-pulte-upravleniya",
+      "title": "Apple TV удивляет удобными скрытыми горками на пульте управления",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 1142,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "apple-zapustit-bezkontaktnuyu-diagnostiku-vozvrashchennykh-iphone",
+      "title": "Apple внедряет бесконтактную диагностику для возвращённых iPhone — экономия времени и борьба с кражами",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 864,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "australian-court-forces-apple-to-allow-rival-iphone-app-stores",
       "title": "Австралия обязала Apple открыть двери для конкурентов в iPhone App Store",
       "region": "global",
@@ -974,6 +1080,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "high-tech-theft-gps-spoofing-steals-100-million-data-center-cargo",
+      "title": "Высокотехнологичные воры используют подделку GPS для кражи грузов с оборудованием на $100 млн",
+      "region": "global",
+      "date": "2026-10-26",
+      "score": 2,
+      "bodyCharacters": 1199,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -1330,6 +1452,22 @@
           "type": "metadata",
           "weight": 2,
           "message": "Мало информации в описании"
+        }
+      ]
+    },
+    {
+      "slug": "real-inspiration-for-sherlock-holmes-scottish-surgeon-joseph-bell",
+      "title": "Раскрыт реальный прототип Шерлока Холмса — шотландский хирург Джозеф Белл и его вклад в медицину",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 1188,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -2716,6 +2854,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "zhivye-chervi-v-glazakh-cheloveka-yuzhnaya-koreya-izvlekli-11-parazitov",
+      "title": "В Южной Корее извлекли из глаз мужчины 11 живых червей, часть из которых была беременна",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 1,
+      "bodyCharacters": 1201,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     }
