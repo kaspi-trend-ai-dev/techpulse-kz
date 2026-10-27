@@ -1,0 +1,40 @@
+{
+  "region": "kz",
+  "slug": "dtp-s-uchastiem-patrulnogo-avto-v-astane-26-oktyabrya",
+  "title": "В Астане произошло ДТП с участием патрульного автомобиля: подробности и проверка",
+  "description": "В столице Казахстана, Астане, 26 октября вечером произошло дорожно-транспортное происшествие с участием патрульного авто. Водитель Hyundai Tucson не уступил дорогу встречному Chevrolet Cobalt, который после столкновения выбросило на ограждение и припаркованную машину. Пострадавших нет, идет проверка.",
+  "date": "2026-10-27",
+  "category": "городская жизнь",
+  "sections": [
+    {
+      "heading": "Суть происшествия и обстоятельства ДТП в столице",
+      "paragraphs": [
+        "26 октября вечером в Астане произошло столкновение автомобилей Hyundai Tucson и Chevrolet Cobalt. Во время поворота налево водитель Hyundai не уступил дорогу встречному Chevrolet, что привело к аварии.",
+        "После удара Chevrolet Cobalt отбросило на дорожное ограждение и припаркованную машину. К счастью, в результате инцидента никто не пострадал."
+      ]
+    },
+    {
+      "heading": "Реакция полиции и дальнейшие действия по факту аварии",
+      "paragraphs": [
+        "В Департаменте полиции Астаны подтвердили факт аварии и сообщили, что по этому делу проводится проверка. Информация и видео с места происшествия появились 27 октября в местных СМИ и соцсетях.",
+        "На данный момент пострадавших нет, однако выяснение обстоятельств и меры ответственности продолжаются."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "\"Chevrolet Cobalt отбросило на ограждение\": ДТП с участием патрульного авто произошло в Астане",
+      "url": "https://www.nur.kz/incident/road-accident/2448162-chevrolet-cobalt-otbrosilo-na-ograzhdenie-dtp-s-uchastiem-patrulnogo-avto-proizoshlo-v-astane-video/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-27T08:51:30.119Z",
+  "image": {
+    "url": "https://cdn.nur.kz/images/1200x675/dfacd65e82b54a2068bd7bff368d1456.jpeg?version=1",
+    "source": "https://www.nur.kz/incident/road-accident/2448162-chevrolet-cobalt-otbrosilo-na-ograzhdenie-dtp-s-uchastiem-patrulnogo-avto-proizoshlo-v-astane-video/",
+    "credit": "www.nur.kz",
+    "license": "Лицензия не проверена",
+    "alt": "ДТП",
+    "verified": true
+  }
+}
