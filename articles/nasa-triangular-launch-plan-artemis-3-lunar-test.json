@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "nasa-triangular-launch-plan-artemis-3-lunar-test",
+  "title": "NASA готовит тройной запуск ракет для новой лунной миссии Artemis 3",
+  "description": "NASA объявило о запуске трёх тяжелых ракет в течение двух недель с целью тестирования новых лунных посадочных аппаратов в миссии Artemis 3, которая станет важным этапом возвращения людей на Луну.",
+  "date": "2026-10-27",
+  "category": "наука и технологии",
+  "sections": [
+    {
+      "heading": "Тройной запуск ракет на одной миссии",
+      "paragraphs": [
+        "NASA планирует запустить три космических корабля на трёх различных носителях с площадки во Флориде в течение двух недель. Первым стартом станет запуск ракеты Blue Origin New Glenn с тестовым модулем посадочного аппарата Blue Moon Mark 2 на околоземную орбиту высотой около 273 миль.",
+        "Затем состоится запуск ракеты Space Launch System (SLS) с экипажным космическим кораблём Orion, на борту которого находятся NASA-астронавты Рэнди Брезник, Фрэнк Рубио, Андре Дуглас, а также астронавт Европейского космического агентства Лука Пармитано."
+      ]
+    },
+    {
+      "heading": "Тестирование посадочных модулей и стыковка в космосе",
+      "paragraphs": [
+        "Космический корабль Orion зайдёт на высоту около 345 миль и состыкуется с аппаратом Blue Moon Mark 2. Экипаж проверит герметичность, систему жизнеобеспечения и программное обеспечение посадочного модуля.",
+        "Последний этап миссии — запуск ракеты SpaceX с кораблём Starship версии 3, оснащённым системой стыковки. Экипаж не будет заходить в Starship, а проведёт тесты на стыковку и взаимодействие, которая продлится около двух часов."
+      ]
+    },
+    {
+      "heading": "Значение миссии Artemis 3 для будущих полётов на Луну",
+      "paragraphs": [
+        "Такой подход с использованием разных лунных посадочных аппаратов позволит NASA протестировать совместимость космического корабля Orion с разными коммерческими технологиями за одну миссию.",
+        "Кроме того, в рамках Artemis 3 проверки пройдут новые скафандры Orion Crew Survival System для глубокого космоса. Ожидается, что миссия стартует летом 2027 года с возможностью двух попыток посадки на Луну в 2028 году."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA plans to launch three massive rockets for the Artemis 3 crewed lunar test mission",
+      "url": "https://www.engadget.com/2298015/nasa-plans-to-launch-three-massive-rockets-for-the-artemis-3-crewed-lunar-test-mission/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-27T14:09:20.835Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/nasa-plans-to-launch-three-massive-rockets-for-the-artemis-3-crewed-lunar-test-mission/intro-1793101991.jpg",
+    "source": "https://www.engadget.com/2298015/nasa-plans-to-launch-three-massive-rockets-for-the-artemis-3-crewed-lunar-test-mission/",
+    "credit": "Mariella Moon",
+    "license": "Лицензия не проверена",
+    "alt": "Illustration of the NASA Artemis 3 plan",
+    "verified": true
+  }
+}

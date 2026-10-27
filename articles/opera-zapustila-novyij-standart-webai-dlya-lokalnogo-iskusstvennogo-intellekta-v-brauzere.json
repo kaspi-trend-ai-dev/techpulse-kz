@@ -1,0 +1,48 @@
+{
+  "region": "global",
+  "slug": "opera-zapustila-novyij-standart-webai-dlya-lokalnogo-iskusstvennogo-intellekta-v-brauzere",
+  "title": "Opera представила новый стандарт WebAI для локального запуска ИИ прямо в браузере",
+  "description": "Компания Opera запустила инновационный веб-стандарт WebAI, который позволяет пользователям запускать разнообразные модели искусственного интеллекта напрямую в браузере без обращения к облачным серверам, обеспечивая высокую приватность и свободу настройки.",
+  "date": "2026-10-27",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Что такое WebAI и почему это важно",
+      "paragraphs": [
+        "Opera разработала стандарт WebAI, который дает возможность запускать AI-модели локально на устройстве пользователя, не передавая личные данные на удаленные серверы.",
+        "WebAI совместим с разными AI-моделями, включая Google Gemma и Apple foundation model на Mac, что расширяет его универсальность и применимость."
+      ]
+    },
+    {
+      "heading": "Преимущества для пользователей и разработчиков",
+      "paragraphs": [
+        "WebAI обеспечивает высокий уровень конфиденциальности, поскольку данные не покидают устройство пользователя, лишая компании доступа к персональной информации.",
+        "Для разработчиков это означает снижение затрат на поддержку AI-инфраструктуры и возможность лучше контролировать функции AI, предоставляя пользователям гибкость.",
+        "Opera предоставляет доступ к новому стандарту в предварительном режиме в своем флагманском браузере Opera One, а в ближайшем будущем он появится и в браузерах Opera GX и Neon."
+      ]
+    },
+    {
+      "heading": "Технические особенности и ограничения локального ИИ",
+      "paragraphs": [
+        "Использование локального ИИ повышает нагрузку на аппаратное обеспечение пользователя, влияя на производительность, которая зависит от возможностей устройства.",
+        "WebAI позволяет выполнять такие задачи, как генерация текста, классификация контента и понимание взаимосвязей информации прямо в браузере без подключения к интернету."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Opera introduces a new web standard to let users deploy AI locally in their browser",
+      "url": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-27T14:09:44.625Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/ai-agents-chatbots-GettyImages-2243730029.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+    "credit": "Lucas Ropek",
+    "license": "Лицензия не проверена",
+    "alt": "AI Chatbot Assistants, Artificial Intelligence Technology Concept. Digitally generated image.",
+    "verified": true
+  }
+}
