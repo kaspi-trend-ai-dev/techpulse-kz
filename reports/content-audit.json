@@ -1,16 +1,16 @@
 {
   "summary": {
-    "scanned": 582,
-    "validJson": 582,
+    "scanned": 744,
+    "validJson": 744,
     "invalidJson": 0,
-    "reviewRecommended": 8,
+    "reviewRecommended": 11,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 30,
+      "depth": 40,
       "quality": 3,
-      "specificity": 51,
-      "metadata": 119,
+      "specificity": 67,
+      "metadata": 129,
       "local": 1
     }
   },
@@ -100,12 +100,54 @@
       ]
     },
     {
+      "slug": "kazakhstancy-vyrazhayut-lyubov-k-rodine-beshbarmak-i-dombr",
+      "title": "Бешбармак для американцев, кюй на домбре: как казахстанцы выражают любовь к Родине",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 5,
+      "bodyCharacters": 514,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "ordinaty-v-almaty-zagoranie-legkovogo-avtomobilya-i-operativnaya-tushenie",
       "title": "Легковой автомобиль вспыхнул в Алматы: МЧС оперативно потушило пожар в автомобиле",
       "region": "kz",
       "date": "2026-10-25",
       "score": 5,
       "bodyCharacters": 522,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "sabina-altynbekova-osudila-fizicheskoe-nasilie-trenera-v-pavlodare",
+      "title": "Сабина Алтынбекова осудила физическое насилие тренера в Павлодаре",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 5,
+      "bodyCharacters": 506,
       "paragraphs": 3,
       "issues": [
         {
@@ -185,6 +227,27 @@
           "type": "depth",
           "weight": 2,
           "message": "Меньше трёх содержательных абзацев"
+        }
+      ]
+    },
+    {
+      "slug": "v-almaty-natsgvardeycy-spasli-muzhchinu-bez-soznaniya-s-nosevym-krovotecheniem",
+      "title": "В Алматы военнослужащие Нацгвардии оказали помощь мужчине без сознания с носовым кровотечением",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 5,
+      "bodyCharacters": 571,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -337,6 +400,22 @@
       ]
     },
     {
+      "slug": "bagdat-sabaz-zavoeval-bronzu-chempionata-mira-v-astane",
+      "title": "Багдат Сабаз завоевал бронзу чемпионата мира по борьбе в Астане",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 3,
+      "bodyCharacters": 525,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "bernli-uvolil-glavnogo-trenera-posle-poznachitelnogo-porazheniya",
       "title": "Футбольный клуб \"Бернли\" уволил главного тренера после тяжелого поражения с участием казахстанца",
       "region": "kz",
@@ -406,6 +485,22 @@
       ]
     },
     {
+      "slug": "dtp-s-uchastiem-patrulnogo-avto-v-astane-26-oktyabrya",
+      "title": "В Астане произошло ДТП с участием патрульного автомобиля: подробности и проверка",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 3,
+      "bodyCharacters": 637,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "elon-musk-changed-xs-algorithm",
       "title": "Илон Маск изменил алгоритм X — что теперь может появиться в вашей ленте",
       "region": "unknown",
@@ -460,6 +555,27 @@
           "type": "depth",
           "weight": 3,
           "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "inzident-na-prospekte-rayymbeka-v-almaty-zaderzhany-chetyre-muzhchiny-na-gelendvagene",
+      "title": "Драка на проспекте Райымбека: полиция задержала четверых мужчин на «Гелендвагене» в Алматы",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 3,
+      "bodyCharacters": 796,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -587,6 +703,22 @@
       "score": 3,
       "bodyCharacters": 693,
       "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "pojar-v-zhk-astana-spasli-32-cheloveka-i-povrezhdeny-avto",
+      "title": "Пожар в жилом комплексе Астаны: спасены 32 человека, в том числе 13 детей, повреждены четыре автомобиля",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 3,
+      "bodyCharacters": 563,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "depth",
@@ -797,6 +929,54 @@
       ]
     },
     {
+      "slug": "v-almaty-znachitelno-ukhudshilos-obespechenie-bezopasnosti-na-dorogah-otechestvennym-voditelyam-iz-z",
+      "title": "В Алматы у 20-летнего водителя нашли травматический пистолет после дорожного конфликта",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 3,
+      "bodyCharacters": 613,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-astane-na-noch-perekroyut-dorogu-vozle-baytereka-iz-za-remonta",
+      "title": "В Астане на ночь перекроют дорогу возле Байтерека для ремонтных работ",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 3,
+      "bodyCharacters": 547,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-astane-zaderzhali-kvartiranta-izbil-hozyayku-zhilya-posle-konflikta",
+      "title": "В Астане задержали квартиранта, избившего хозяйку жилья после конфликта",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 3,
+      "bodyCharacters": 666,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "v-astane-zakroyut-odin-iz-uchastkov-ulicy-sherhana-murtaza-na-nedelyu",
       "title": "В Астане на неделю закроют улицу Шерхана Муртаза для ремонта дорог",
       "region": "kz",
@@ -804,6 +984,22 @@
       "score": 3,
       "bodyCharacters": 597,
       "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "voditel-pokazal-pistolet-vo-vremya-dorozhnogo-konflikta-v-almaty-video",
+      "title": "Водитель вытащил пистолет во время дорожного конфликта в Алматы",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 3,
+      "bodyCharacters": 683,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "depth",
@@ -861,6 +1057,22 @@
       ]
     },
     {
+      "slug": "anduril-i-qualcomm-predstavili-bluechip-pervyy-amerikanskiy-zaschishchennyy-noutbuk",
+      "title": "Anduril и Qualcomm представили BlueChip — первый в США защищённый ноутбук с большей частью компонентов американского производства",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 1539,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Заголовок слишком длинный"
+        }
+      ]
+    },
+    {
       "slug": "apple-tv-udivit-udobnymi-gorkami-na-pulte-upravleniya",
       "title": "Apple TV удивляет удобными скрытыми горками на пульте управления",
       "region": "global",
@@ -900,6 +1112,22 @@
       "score": 2,
       "bodyCharacters": 1027,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "bank-of-america-preduprezhdaet-ne-podrazhat-ai-assistentu-parol-ot-banka",
+      "title": "Bank of America просит не делиться банковским паролем с AI-ассистентом",
+      "region": "global",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 758,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "specificity",
@@ -1275,6 +1503,22 @@
       ]
     },
     {
+      "slug": "nesovershennoletnij-na-skutere-zaderzhan-v-astane-posle-pogoni",
+      "title": "В Астане подросток на скутере устроил опасную погоню – полицейские задержали нарушителя",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 909,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "netflix-udalyaet-broadchurch-s-octyabrya-2026",
       "title": "В Netflix скоро пропадёт сериал «Broadchurch» с Оливией Колман",
       "region": "global",
@@ -1298,6 +1542,22 @@
       "score": 2,
       "bodyCharacters": 705,
       "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "novye-pravila-bezopasnosti-na-horgose-kazahstan-kitay",
+      "title": "Казахстан и Китай готовят новые правила безопасности на Хоргосе: важные изменения для граждан",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 1088,
+      "paragraphs": 6,
       "issues": [
         {
           "type": "specificity",
@@ -1355,6 +1615,38 @@
       ]
     },
     {
+      "slug": "openai-progreshy-v-matematike-komp-yuternoy-nauke-i-fizike",
+      "title": "OpenAI делает значительный прорыв в математике, компьютерных науках и физике",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 1150,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "opera-zapustila-novyij-standart-webai-dlya-lokalnogo-iskusstvennogo-intellekta-v-brauzere",
+      "title": "Opera представила новый стандарт WebAI для локального запуска ИИ прямо в браузере",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 1130,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "ordabasy-stal-chempionom-kazahstana-po-futbolu-2026",
       "title": "«Ордабасы» во второй раз стал чемпионом Казахстана по футболу",
       "region": "kz",
@@ -1367,6 +1659,22 @@
           "type": "metadata",
           "weight": 2,
           "message": "Мало информации в описании"
+        }
+      ]
+    },
+    {
+      "slug": "palmer-luckey-nazhal-kaliforniyu-ne-uhodit-iz-za-naloga-na-bogatstvo",
+      "title": "Миллиардер Палмер Лаки не покидает Калифорнию из-за спорного налога на богатство",
+      "region": "global",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 791,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -1493,6 +1801,22 @@
       ]
     },
     {
+      "slug": "skandal-v-pavlodare-trener-iz-shymkenta-udaril-i-byl-diskvalificirovan",
+      "title": "Скандал в Павлодаре: тренер из Шымкента ударил юную волейболистку и получил дисквалификацию",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 1163,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "skandal-v-psihonevrologicheskom-uchrezhdenii-kazahstana-pacient-pil-vodu-iz-unitaza",
       "title": "Скандал в психоневрологическом учреждении Казахстана: пациент пил воду из унитаза",
       "region": "kz",
@@ -1578,12 +1902,76 @@
       ]
     },
     {
+      "slug": "v-almaty-ostalis-opasnye-yamy-posle-ukladki-novogo-asfalta",
+      "title": "В Алматы водителей предупредили об опасных ямах после обновления асфальта на улице Саина",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 1135,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "v-almaty-policiya-vozbudila-delo-iz-za-vyrubki-mnogoletnih-derevev",
+      "title": "В Алматы полиция возбудила дело после незаконной вырубки многолетних деревьев",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 965,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "v-karagande-mchs-spasli-pyateryh-detej-pri-pozare-v-devyatietazhke",
       "title": "Сотрудники МЧС спасли пятерых детей при пожаре в девятиэтажке Караганды",
       "region": "kz",
       "date": "2026-10-24",
       "score": 2,
       "bodyCharacters": 733,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "v-pavlodare-trenera-volleybolnoy-komandy-diskvalificirovali-posle-udarov-uchenice",
+      "title": "В Павлодаре тренера волейбольной академии дисквалифицировали после удара несовершеннолетней спортсменке",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 932,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "v-turkestane-otca-nakazali-za-opasnye-poyavleniya-rebenka-v-policeyskoy-forme-na-doroge",
+      "title": "Отца наказали за опасную выходку: ребенок в полицейской форме останавливал машины в Туркестане",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 876,
       "paragraphs": 4,
       "issues": [
         {
@@ -1606,6 +1994,22 @@
           "type": "metadata",
           "weight": 2,
           "message": "Мало информации в описании"
+        }
+      ]
+    },
+    {
+      "slug": "volleyball-trener-iz-shymkenta-udaril-po-golove-v-pavlodare-startovalo-rassledovanie",
+      "title": "В Павлодаре начали расследование после удара тренера из Шымкента по голове юной спортсменке",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 2,
+      "bodyCharacters": 795,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -1834,6 +2238,22 @@
       ]
     },
     {
+      "slug": "apple-predstavil-novyj-imac-s-processorom-m6-i-usilennoj-iskusstvennoj-intellektualnoj-moshhnostyu",
+      "title": "Apple представил новый iMac с процессором M6 и усиленной ИИ-мощностью",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 1,
+      "bodyCharacters": 1564,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "arbitrazhnyy-sud-po-kashaganu-otklonil-isk-kazahstana-12-mlrd",
       "title": "Арбитражный суд отклонил иск Казахстана на $12 млрд по месторождению Кашаган",
       "region": "kz",
@@ -2010,6 +2430,22 @@
       ]
     },
     {
+      "slug": "general-compute-raises-100-million-series-a",
+      "title": "Компания General Compute привлекла $100 млн инвестиций, опровергая кризис на рынке неоклаудов",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 1,
+      "bodyCharacters": 1582,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "glava-nvidia-rasskazal-kazahstanczam-kak-ne-ostatsya-bez-raboty-iz-za-ii",
       "title": "Глава NVIDIA рассказал казахстанцам, как не остаться без работы из-за ИИ",
       "region": "kz",
@@ -2070,6 +2506,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "ino-stranec-snyat-s-reisa-iz-za-shutki-o-bombe-v-astane",
+      "title": "Иностранца сняли с рейса в аэропорту Астаны из-за шутки о взрывном устройстве",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 1,
+      "bodyCharacters": 1131,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
@@ -2426,6 +2878,38 @@
       ]
     },
     {
+      "slug": "osennie-kanikuly-v-almaty-akvaparki-hawaii-miami-i-sanremo-vzyali-na-sebya-semeynyy-otdykh",
+      "title": "Осенние каникулы в Алматы: аквапарки Hawaii, Miami и SanRemo создают яркие семейные приключения",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 1,
+      "bodyCharacters": 1667,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "otmenyennyy-koncert-repera-madk1d-v-almaty-vyzval-pravovye-sledstviya",
+      "title": "Отменённый концерт рэпера madk1d в Алматы вызвал подготовку иска из-за конфликтов с организаторами",
+      "region": "kz",
+      "date": "2026-10-27",
+      "score": 1,
+      "bodyCharacters": 1186,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "php-arma-geddon-openai-google-ai-obyavili-zhutkie-ynyazvimosi",
       "title": "PHP Armageddon: как ИИ обнаружил опасные уязвимости в миллионах веб-сайтов",
       "region": "unknown",
@@ -2746,6 +3230,22 @@
       ]
     },
     {
+      "slug": "venture-funds-raise-multimillion-investments-october-2026",
+      "title": "Венчурные фонды привлекают сотни миллионов долларов в октябре 2026 года",
+      "region": "global",
+      "date": "2026-10-28",
+      "score": 1,
+      "bodyCharacters": 1445,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "vozrosli-ekonomicheskie-prestupleniya-v-kazahstane-dropped-vvedena-otvetstvennost",
       "title": "Экономических преступлений в Казахстане стало в 2,6 раза больше из-за новой статьи о дропперстве",
       "region": "kz",
@@ -2784,6 +3284,22 @@
       "date": "2026-10-23",
       "score": 1,
       "bodyCharacters": 1416,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "vysokotekhnologichnaya-rekonstruktsiya-drevnego-stekla-lycurgus-cup",
+      "title": "Учёные воссоздали загадочный эффект древнего Ликургова кубка с помощью современных технологий",
+      "region": "global",
+      "date": "2026-10-27",
+      "score": 1,
+      "bodyCharacters": 1544,
       "paragraphs": 6,
       "issues": [
         {
@@ -2865,6 +3381,22 @@
       "score": 1,
       "bodyCharacters": 1201,
       "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "zhumanarin-isklyuchil-ogranichenie-komissii-bankov-po-ekvajringu-dlya-magazinov-u-doma",
+      "title": "Жумангарин исключил ограничение комиссий банков по эквайрингу для магазинов «у дома» в Казахстане",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 1,
+      "bodyCharacters": 1838,
+      "paragraphs": 6,
       "issues": [
         {
           "type": "metadata",
