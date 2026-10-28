@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "grand-theft-auto-vi-potrebuyet-210gb-dlya-zagruzki-na-ps5",
+  "title": "Grand Theft Auto VI потребует гигантскую загрузку в 210 ГБ на PS5",
+  "description": "Новая часть культовой игры Grand Theft Auto VI станет настоящим испытанием для внутренней памяти консолей: её размер загрузочного файла достигнет 210 ГБ. Это значительно превышает требования предыдущих крупных проектов и может повлиять на подготовку фанатов к запуску.",
+  "date": "2026-10-28",
+  "category": "развлечения",
+  "sections": [
+    {
+      "heading": "Загрузка и объём игры Grand Theft Auto VI",
+      "paragraphs": [
+        "Согласно данным инсайдеров и посту на платформе X от известного датамайнера PlayStation Game Size, размер загрузки для Grand Theft Auto VI на PlayStation 5 составит внушительные 210 гигабайтов.",
+        "Это значительно больше, чем объём Red Dead Redemption 2, который в 2018 году составлял 149 ГБ на PS4 и является рекордно крупным для своего времени."
+      ]
+    },
+    {
+      "heading": "Влияние размера игры на игроков и рекомендации",
+      "paragraphs": [
+        "Такой размер загрузки окажется значительной нагрузкой на внутреннее хранилище консоли, поскольку стандартная версия PS5 имеет около 512 ГБ, из которых доступно значительно меньше из-за системных файлов.",
+        "Инсайдеры советуют заранее освободить место на диске и воспользоваться возможностью предзагрузки игры, которая станет доступна 12 ноября перед официальным релизом 19 ноября 2026 года."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grand Theft Auto VI reportedly requires a 210GB download",
+      "url": "https://www.engadget.com/2298872/gta-6-download-size-reportedly-210-gb/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-28T01:51:10.470Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/grand-theft-auto-vi-is-reportedly-a-210gb-download/intro-1793129615.jpg",
+    "source": "https://www.engadget.com/2298872/gta-6-download-size-reportedly-210-gb/",
+    "credit": "Ian Carlos Campbell",
+    "license": "Лицензия не проверена",
+    "alt": "Jason and Lucia embracing in front of police boats and helicopters in GTA VI.",
+    "verified": true
+  }
+}

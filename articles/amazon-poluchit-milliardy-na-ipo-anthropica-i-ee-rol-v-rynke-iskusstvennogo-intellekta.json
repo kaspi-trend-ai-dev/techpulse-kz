@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "amazon-poluchit-milliardy-na-ipo-anthropica-i-ee-rol-v-rynke-iskusstvennogo-intellekta",
+  "title": "Amazon получает миллиардные доходы от IPO Anthropic и усиливает влияние в сфере ИИ",
+  "description": "Компания Amazon стала крупнейшим выгодоприобретателем на первичном размещении акций (IPO) стартапа Anthropic, специализирующегося на искусственном интеллекте. Суммарные инвестиции Amazon превысили $18 млрд, часть из которых инвестиции в конвертируемые ноты и привилегированные акции, что может принести гиганту технологический и финансовый рывок.",
+  "date": "2026-10-28",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Amazon – главный бенефициар IPO Anthropic",
+      "paragraphs": [
+        "IPO стартапа Anthropic, оцениваемого в $965 млрд, стало финансовым триумфом для Amazon. Вместо традиционного владения акциями с крупным процентным пакетом, Amazon инвестировала через конвертируемые ноты с общей суммой основного долга в $6,2 млрд на конец июня 2026 года. Переоценка этих нот увеличила фактическую стоимость вложений Amazon до почти $98 млрд.",
+        "Что примечательно, Amazon ограничена в конверсии нот акциями 12% доли компании, но может отказаться от этого ограничения. В дополнение к нотам, Amazon инвестировала по $5 млрд в два последних раунда финансирования Anthropic в этой году, вложив в общей сложности около $18 млрд."
+      ]
+    },
+    {
+      "heading": "Стратегическое партнерство и влияние на рынок ИИ",
+      "paragraphs": [
+        "Amazon и Anthropic связаны не только инвестициями, но и контрактами на инфраструктуру: Anthropic обязался потратить не менее $110 млрд на облачные услуги AWS за 10 лет. Такой масштаб сотрудничества усиливает позиции Amazon как ключевого игрока в развитии инфраструктуры для искусственного интеллекта.",
+        "Другой крупный инвестор – Google – также ожидает значительную выгоду от IPO и контрактов с Anthropic, рассчитывая на $114 млрд в виде облачных обязательств до 2033 года. Тем не менее, в регистрации IPO отмечается, что некоторые облачные провайдеры одновременно строят конкурирующие модели ИИ, что создаёт потенциал для конфликтов интересов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "VCs will make billions on Anthropic&#8217;s IPO, but Amazon is set to make much (much) more",
+      "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T01:50:10.189Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg?w=1024",
+    "source": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+    "credit": "Marina Temkin",
+    "license": "Лицензия не проверена",
+    "alt": "The Anthropic logo is displayed on the screen of a smartphone with the company&#039;s branding in the background.",
+    "verified": true
+  }
+}
