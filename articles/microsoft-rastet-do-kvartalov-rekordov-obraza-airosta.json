@@ -1,0 +1,46 @@
+{
+  "region": "global",
+  "slug": "microsoft-rastet-do-kvartalov-rekordov-obraza-airosta",
+  "title": "Microsoft зафиксировала 10 кварталов рекордных доходов подряд",
+  "description": "В последнем квартальном отчёте Microsoft объявила о рекордном доходе в $92,3 млрд, что на 19% больше, чем за аналогичный период прошлого года. Основной вклад в рост внесли облачные решения Microsoft Cloud — с доходом $63,9 млрд. Кроме того, компания сообщила о доходе в $10 млрд, связанном с OpenAI.",
+  "date": "2026-10-29",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Рекордные финансовые показатели Microsoft",
+      "paragraphs": [
+        "Microsoft зафиксировала квартальную выручку в $92,3 млрд с ростом 19% по сравнению с прошлым годом. Это уже десятый квартал подряд, когда компания обновляет рекорды по доходам. Чистая прибыль (net income) выросла на 32% и достигла $36,6 млрд по стандартам GAAP."
+      ]
+    },
+    {
+      "heading": "Облачные сервисы и структура бизнеса",
+      "paragraphs": [
+        "Доход от облачных решений Microsoft Cloud составил $63,9 млрд, увеличившись на 30% за год. Microsoft реорганизовала отчётность по бизнесу в два основных сегмента: Agents and Infra и Devices and Consumer.",
+        "В сегменте Devices and Consumer выручка составила $15,5 млрд, что на 3% меньше по сравнению с прошлым годом, при этом доход от Windows OEM и устройств снизился на 22%."
+      ]
+    },
+    {
+      "heading": "Доходы, связанные с OpenAI и будущие обязательства",
+      "paragraphs": [
+        "Microsoft также сообщила о доходе в размере $10 млрд, связанном с OpenAI. Компания отметила, что коммерческие обязательства по текущим контрактам выросли на 73% и достигли $677 млрд, что отражает будущие доходы по существующим соглашениям.",
+        "Для выполнения этих обязательств Microsoft увеличила капитальные затраты до рекордных $45,2 млрд за квартал."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft hits 10 quarters of record- breaking revenue in a row",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T22:00:35.629Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/Satya-Nadella.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+    "credit": "Julie Bort",
+    "license": "Лицензия не проверена",
+    "alt": "Microsoft зафиксировала 10 кварталов рекордных доходов подряд",
+    "verified": true
+  }
+}
