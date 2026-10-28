@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "fcc-utverdila-priobretenie-amazon-leo-globalstar-dlya-rasshireniya-spaevogo-interneta",
+  "title": "FCC одобрила покупку Amazon Leo оператора спутниковой связи Globalstar для расширения интернета со спутников",
+  "description": "Федеральная комиссия США по связи (FCC) разрешила Amazon Leo приобрести компанию Globalstar за $11,5 млрд. Эта сделка позволит Amazon расширить покрытие спутниковой сети и внедрить прямое спутниковое подключение для пользователей, включая владельцев iPhone и Apple Watch.",
+  "date": "2026-10-28",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "FCC одобрила сделку Amazon Leo по покупке Globalstar — важный шаг в спутниковом интернете",
+      "paragraphs": [
+        "Федеральная комиссия по связи США официально одобрила приобретение Amazon Leo мобильного спутникового оператора Globalstar стоимостью $11,5 млрд. Эта сделка призвана значительно усилить возможности Amazon в сфере спутниковой связи и расширить их портфель услуг для физических, бизнес- и государственных клиентов.",
+        "Globalstar известна тем, что предоставляет экстренную спутниковую связь для iPhone и Apple Watch Apple, а Amazon в рамках сделки будет развивать прямое подключение к спутникам для поддерживаемых устройств Apple."
+      ]
+    },
+    {
+      "heading": "Расширение покрытия и перспективы для пользователей iPhone и Apple Watch",
+      "paragraphs": [
+        "С помощью Globalstar Amazon вскоре сможет предложить прямое подключение к спутниковому интернету, что особенно актуально для труднодоступных регионов и мест с ограниченным мобильным сигналом.",
+        "Отдельно стоит отметить, что Apple до сделки имела 20-процентный пакет акций Globalstar, что подчеркивает значимость данного оператора для экосистемы Apple. Amazon уже начал развёртывать услуги спутникового интернета, например, в Узбекистане, и планирует масштабировать сеть за счёт запуска более трех тысяч низкоорбитальных спутников."
+      ]
+    },
+    {
+      "heading": "Конкуренция и масштабы рынка спутникового интернета",
+      "paragraphs": [
+        "Amazon Leo напрямую конкурирует со спутниковой сетью Starlink от SpaceX, которая уже имеет в активе около 11 000 спутников.",
+        "В рамках дальнейшего развития Amazon запланировал как минимум шесть новых запусков спутников через европейского оператора Arianespace, ставя амбициозные цели по расширению спутникового покрытия и улучшению качества услуг интернет-подключения."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "FCC clears Amazon Leo to acquire mobile-satellite operator Globalstar",
+      "url": "https://www.engadget.com/2299367/fcc-clears-amazon-leo-to-acquire-mobile-satellite-operator-globalstar/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T16:24:29.839Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/fcc-clears-amazon-leo-to-acquire-mobile-satellite-operator-globalstar/intro-1793193078.jpg",
+    "source": "https://www.engadget.com/2299367/fcc-clears-amazon-leo-to-acquire-mobile-satellite-operator-globalstar/",
+    "credit": "Steve Dent",
+    "license": "Лицензия не проверена",
+    "alt": "Globalstar",
+    "verified": true
+  }
+}
