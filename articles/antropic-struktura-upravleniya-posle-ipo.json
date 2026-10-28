@@ -1,0 +1,42 @@
+{
+  "region": "global",
+  "slug": "antropic-struktura-upravleniya-posle-ipo",
+  "title": "В Anthropic раскрывают уникальную систему контроля после IPO",
+  "description": "Искусственный интеллект и корпоративное управление в компании Anthropic получили новую форму — структура акционерного контроля ставит основателей и долгосрочные интересы выше голосов обычных акционеров. Это новшество меняет привычные правила управления технологическими гигантами.",
+  "date": "2026-10-28",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Особенности корпоративного управления Anthropic после IPO",
+      "paragraphs": [
+        "Компания Anthropic, основанная в 2021 году, строит свою работу на принципах безопасности искусственного интеллекта, что отражено и в её корпоративной структуре.",
+        "Anthropic является публичной компанией с общественной миссией и имеет сложную структуру акционерного контроля, представляемую в том числе Long-Term Benefit Trust (LTBT), который обеспечивает независимый контроль за направлением компании и правом назначать большинство членов совета директоров.",
+        "Учредители компании совместно имеют особый пакет акций, дающий им 50,1% голосов акционеров, таким образом они могут назначать трёх членов совета директоров, обеспечивая значительное влияние на управление."
+      ]
+    },
+    {
+      "heading": "Баланс влияния и роль сотрудников в управлении компанией",
+      "paragraphs": [
+        "Совет директоров компании объединяет представителей основателей, LTBT и независимых экспертов. В числе представителей LTBT — мировые эксперты в области здравоохранения, экономики и национальной безопасности.",
+        "Совет и LTBT могут контролировать друг друга: в случае определённых назначений и смен членов совета директоров решение может быть передано на голосование сотрудников, что формализует возможность влияния коллектива и создаёт дополнительные гарантии соблюдения миссии безопасности ИИ.",
+        "Через десять лет после IPO контроль основателей может быть передан, что позволит акционерам получить больше прав в управлении компанией."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Who&#8217;s really in charge at Anthropic after the IPO?",
+      "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-28T00:09:48.669Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2151610601-e1793125739359.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+    "credit": "Tim Fernholz",
+    "license": "Лицензия не проверена",
+    "alt": "Dario Amodei, co-founder and chief executive officer of Anthropic, left, and Daniela Amodei, co-founder and president of Anthropic, during the Bloomberg Technology Summit in San Francisco, California, US, on Thursday, May 9, 2024. Bloomberg Tech is a future-focused gathering that aims to spark the conversations around cutting-edge technologies and the future applications for business. Photographer: David Paul Morris/Bloomberg via Getty Images",
+    "verified": true
+  }
+}

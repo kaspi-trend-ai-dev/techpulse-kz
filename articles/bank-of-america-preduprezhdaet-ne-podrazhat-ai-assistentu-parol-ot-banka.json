@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "bank-of-america-preduprezhdaet-ne-podrazhat-ai-assistentu-parol-ot-banka",
+  "title": "Bank of America просит не делиться банковским паролем с AI-ассистентом",
+  "description": "Американский банк Bank of America предупредил клиентов о рисках передачи своих учетных данных AI-ассистентам.",
+  "date": "2026-10-28",
+  "category": "общество",
+  "sections": [
+    {
+      "heading": "Рекомендации Bank of America по безопасности",
+      "paragraphs": [
+        "Bank of America направил клиентам электронное письмо с просьбой не передавать свои имя пользователя и пароль никому, включая AI-ассистентов, которые могут действовать от их имени. В письме подчеркивается, что передача учетных данных может привести к несанкционированным операциям с банковскими счетами.",
+        "Банк также напомнил, что клиенты несут ответственность за все действия, совершённые с использованием их учетных данных, если они ими поделились."
+      ]
+    },
+    {
+      "heading": "Возможные риски при использовании AI-ассистентов",
+      "paragraphs": [
+        "В письме отмечается, что использование AI-ассистентов для управления банковскими данными может привести к блокировке аккаунтов или утечке информации из-за уязвимостей в работе таких помощников.",
+        "Bank of America предупреждает, что в случае проблем с безопасностью ответственность за последствия лежит на клиенте."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bank of America kindly asks that you don&#8217;t share your banking password with your AI assistant",
+      "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-28T00:08:17.592Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/05/ai-agents-GettyImages-2229880232.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+    "credit": "Zack Whittaker",
+    "license": "Лицензия не проверена",
+    "alt": "A digitally generated image showing several AI chatbot assistants standing on a segmented or sliced floor surface, symbolizing the distributed and modular nature of artificial intelligence systems. This futuristic and conceptual design reflects the scalability, communication, and parallel functionality of AI-powered virtual assistants.",
+    "verified": true
+  }
+}
