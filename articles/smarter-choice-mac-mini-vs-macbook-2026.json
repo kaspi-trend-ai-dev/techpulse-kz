@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "smarter-choice-mac-mini-vs-macbook-2026",
+  "title": "Почему выбор Mac mini может оказаться умнее, чем покупка MacBook в 2026 году",
+  "description": "Mac mini удивляет своей мощностью и ценой в сравнении с портативными MacBook Neo и Air. Новейший чип M6 и система охлаждения делают его выгодным решением для пользователей с настольной работой.",
+  "date": "2026-10-28",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Преимущества Mac mini в производительности и стоимости",
+      "paragraphs": [
+        "Apple предлагает Mac mini начиная с $899 с последним процессором M6 и 16 ГБ оперативной памяти. Это мощнее и дешевле, чем MacBook Neo за $699 с A18 Pro и 8 ГБ ОЗУ, а также MacBook Air от $1,299.",
+        "В отличие от MacBook, Mac mini оснащён активной системой охлаждения с вентилятором, что позволяет поддерживать высокую производительность дольше при ресурсоёмких задачах — монтаже видео в 4K, программировании и играх."
+      ]
+    },
+    {
+      "heading": "Особенности использования и выбор между портативностью и стационарностью",
+      "paragraphs": [
+        "Mac mini не включает встроенный экран, клавиатуру и мышь — их нужно подключать отдельно, что помогает снизить общую стоимость для тех, у кого уже есть периферия.",
+        "Если вы часто работаете вне дома, ноутбук MacBook даёт мобильность, но для домашнего офиса Mac mini предлагает наилучшее соотношение цены и возможностей благодаря большим портам и более эффективной вентиляции."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Why buying a Mac mini over a MacBook might be the smarter move",
+      "url": "https://www.engadget.com/2296036/why-buying-mac-mini-over-macbook-smarter-move/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-28T05:20:08.952Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/why-buying-a-mac-mini-over-a-macbook-might-be-the-smarter-move/intro-1792413302.jpg",
+    "source": "https://www.engadget.com/2296036/why-buying-mac-mini-over-macbook-smarter-move/",
+    "credit": "Filipe Espósito",
+    "license": "Лицензия не проверена",
+    "alt": "Apple",
+    "verified": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "region": "global",
+  "slug": "disney-plus-kinomagiya-so-skidkoy-52-oktyabr-2026",
+  "title": "Скидки на подписку Disney Plus в октябре 2026 года",
+  "description": "В октябре 2026 года доступны выгодные предложения на подписку Disney Plus, включая пакеты с Hulu и специальные условия для студентов.",
+  "date": "2026-10-28",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Выгодные пакеты с Disney Plus и Hulu",
+      "paragraphs": [
+        "Disney Plus предлагает пакет с Hulu, который начинается примерно от 12 долларов в месяц и позволяет сэкономить значительную сумму. В рамках этого пакета пользователи получают доступ к контенту Disney, Pixar, Marvel, Star Wars и National Geographic, а также оригинальным проектам Hulu."
+      ]
+    },
+    {
+      "heading": "Скидки для студентов",
+      "paragraphs": [
+        "Студенты колледжей и вузов могут оформить пакет Disney Plus с Hulu по сниженной цене — около 6.49 долларов в месяц. Для получения скидки необходимо подтвердить статус студента через сервис SheerID, предоставив данные учебного заведения."
+      ]
+    },
+    {
+      "heading": "Популярные фильмы и сериалы в октябре",
+      "paragraphs": [
+        "В библиотеке Disney Plus в октябре доступны различные фильмы и сериалы, включая проекты с участием персонажей из «Мандалорца» и «Грогу», а также документальный фильм «Hoppers», посвящённый борьбе с вырубкой лесов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Disney Plus Discount Codes: 52% Off October 2026",
+      "url": "https://www.wired.com/story/disney-plus-discounts/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T05:19:23.157Z",
+  "image": {
+    "url": "https://media.wired.com/photos/6acd8e6610b2347a13b0dc66/master/w_775%2Cc_limit/Movie-Guide-Barbarian-Culture-MCDBARB_H3002.jpg",
+    "source": "https://www.wired.com/story/disney-plus-discounts/",
+    "credit": "Molly Higgins",
+    "license": "Лицензия не проверена",
+    "alt": "BARBARIAN, Georgina Campbell, 2022. © 20th Century Studios /Courtesy Everett Collection ",
+    "verified": true
+  }
+}
