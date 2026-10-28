@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "nvidia-predstavila-nemotron-35-novaya-model-dlya-rasshifrovki-rechi-na-40-yazykah",
+  "title": "Nvidia представила Nemotron 3.5 — модель для расшифровки речи на 40 языках бесплатно",
+  "description": "Nvidia выпустила Nemotron 3.5 Transcribe — открытую и бесплатную модель, распознающую речь до 40 языков и способную обрабатывать одновременную речь до восьми человек. Модель подходит для протоколов встреч и медицинской документации и может работать на одном чипе.",
+  "date": "2026-10-28",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Прорыв в технологии распознавания речи от Nvidia",
+      "paragraphs": [
+        "Компания Nvidia анонсировала Nemotron 3.5 Transcribe — новую бесплатную модель с открытыми весами для расшифровки аудио на 40 языках. Она может переводить одновременно 31 язык на английский и обратно, а также отличать речь до восьми говорящих в записи продолжительностью до часа.",
+        "Nemotron 3.5 работает с заранее записанным аудио и ориентирована на приложения для деловых встреч и медицинской транскрипции — одно из самых важных профессиональных направлений в области искусственного интеллекта."
+      ]
+    },
+    {
+      "heading": "Технические особенности и применение модели Nerotron 3.5",
+      "paragraphs": [
+        "Обновлённая модель вместе с версией 2 датасета Granary и инструментами NeMo Speech позволяют разработчикам создавать кастомизированные решения, распознающие профессиональный жаргон на разных языках.",
+        "При размере в 30 миллиардов параметров Nemotron 3.5 может функционировать на одном чипе — от контроллера Jetson AGX Thor для роботов и новых ноутбуков с DGX Spark до серверных чипов Blackwell, что расширяет возможности внедрения в различные устройства."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Voice AI in vogue: Nvidia releases new open transcription model",
+      "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T15:30:20.142Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/AI-on-the-tongue.png?w=1024",
+    "source": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+    "credit": "Julie Bort",
+    "license": "Лицензия не проверена",
+    "alt": "AI, mouth, voice AI",
+    "verified": true
+  }
+}
