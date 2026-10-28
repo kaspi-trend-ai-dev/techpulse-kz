@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "microsoft-azure-vyrosli-do-33-milliardov-dollara-v-3-kvartale-2026-goda",
+  "title": "Microsoft раскрыл доход Azure - $33,2 млрд за третий квартал 2026 года",
+  "description": "Microsoft впервые официально сообщила о квартальном доходе облачной платформы Azure — $33,2 миллиарда с ростом на 48% к прошлому году, превзойдя ожидания аналитиков.",
+  "date": "2026-10-29",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Рекордные финансовые показатели Azure и рост Microsoft",
+      "paragraphs": [
+        "В третьем квартале 2026 года облачная платформа Microsoft Azure принесла компании $33,2 миллиарда дохода, что на 48% выше по сравнению с аналогичным периодом прошлого года. Эта сумма оказалась на $850 миллионов выше ожиданий аналитиков.",
+        "Azure теперь является крупнейшим и быстрорастущим бизнес-направлением Microsoft, обеспечивая около 36% от общего квартального дохода компании в $92,3 миллиарда."
+      ]
+    },
+    {
+      "heading": "Сравнение с конкурентами и структура сегмента Agents and Infra",
+      "paragraphs": [
+        "Напрямую сравнивая показатели, Microsoft Azure превзошёл по доходам Google Cloud, который за тот же период заработал $30,7 миллиарда. Однако рост Google Cloud составил примерно 100%, что почти вдвое выше темпа роста Azure.",
+        "Azure входит в новый бизнес-сегмент Microsoft под названием Agents and Infra, который объединяет облачные сервисы Azure и Microsoft 365. Этот сегмент показал рост дохода на 25% до $76,8 миллиарда."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft just shared Azure&#8217;s actual revenue in dollars: $33.2 billion",
+      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T22:32:48.519Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/04/dollar-signs-data-center.png?w=1024",
+    "source": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+    "credit": "Aditya Mehta",
+    "license": "Лицензия не проверена",
+    "alt": "dollar signs, data center",
+    "verified": true
+  }
+}
