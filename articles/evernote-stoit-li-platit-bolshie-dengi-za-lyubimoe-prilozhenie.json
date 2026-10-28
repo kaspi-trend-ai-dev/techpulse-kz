@@ -1,0 +1,44 @@
+{
+  "region": "global",
+  "slug": "evernote-stoit-li-platit-bolshie-dengi-za-lyubimoe-prilozhenie",
+  "title": "Как изменились тарифы Evernote и что важно знать пользователям",
+  "description": "Популярное приложение для заметок Evernote повысило цены на подписки после покупки компанией Bending Spoons. Рассмотрим причины и последствия этих изменений.",
+  "date": "2026-10-28",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Изменения в ценовой политике Evernote после приобретения",
+      "paragraphs": [
+        "В 2023 году компания Bending Spoons приобрела Evernote, приложение с большой базой пользователей и средним сроком использования около 7 лет. После этого были проведены изменения в тарифах, включая значительное повышение стоимости подписок по сравнению с 2023 годом и предыдущими периодами."
+      ]
+    },
+    {
+      "heading": "Эксперименты с тарифами и функциями для повышения доходов",
+      "paragraphs": [
+        "С 2023 по 2025 год Bending Spoons провела более 200 экспериментов с ценами, функциями и пользовательским опытом. В результате средний доход с активного пользователя в 2025 году стал в 2,5 раза выше, чем в 2022 году. Некоторые ранее платные функции стали доступны бесплатно, но с ограничениями по использованию, что стимулировало переход на платные подписки."
+      ]
+    },
+    {
+      "heading": "Баланс между ростом цен и удержанием пользователей",
+      "paragraphs": [
+        "Хотя повышение цен может вызвать недовольство, компания рассчитывает на лояльность пользователей и продолжает развивать продукт, выпуская обновления, включая крупное обновление Evernote 11 в 2026 году. Это помогает поддерживать интерес и оправдывать изменения в тарифах."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "From cheap tool to premium subscription: When a beloved app&#039;s price skyrockets",
+      "url": "https://arstechnica.com/gadgets/2026/10/from-cheap-tool-to-premium-subscription-when-a-beloved-apps-price-skyrockets/",
+      "published": "2026-10-27"
+    }
+  ],
+  "publishedAt": "2026-10-28T04:38:55.562Z",
+  "image": {
+    "url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1321941710-640x427.jpg",
+    "source": "https://arstechnica.com/gadgets/2026/10/from-cheap-tool-to-premium-subscription-when-a-beloved-apps-price-skyrockets/",
+    "credit": "arstechnica.com",
+    "license": "Лицензия не проверена",
+    "alt": "A picture of a white keyboard zoomed in on a key that says &quot;Subscibe.&quot;",
+    "verified": true
+  }
+}
