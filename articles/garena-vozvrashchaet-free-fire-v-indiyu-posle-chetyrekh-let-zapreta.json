@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "garena-vozvrashchaet-free-fire-v-indiyu-posle-chetyrekh-let-zapreta",
+  "title": "Garena возвращает Free Fire в Индию спустя четыре года запрета",
+  "description": "Garena выпустила локализованную версию игры Free Fire для индийского рынка с учетом требований местных властей.",
+  "date": "2026-10-28",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Возвращение Free Fire в Индию",
+      "paragraphs": [
+        "Garena запустила Free Fire India — отдельную локализованную версию популярной игры, доступную на Android и iOS. В ней реализованы функции родительского контроля, ограничения времени игры и лимиты расходов.",
+        "Компания сообщила, что данные пользователей хранятся на серверах в Индии, что соответствует требованиям местных регуляторов."
+      ]
+    },
+    {
+      "heading": "История запрета и состояние рынка",
+      "paragraphs": [
+        "Free Fire была заблокирована в Индии в феврале 2022 года вместе с другими приложениями из-за опасений по национальной безопасности. После этого Garena продолжала поддерживать Free Fire MAX, которая не была запрещена.",
+        "По данным Sensor Tower на июнь 2026 года, Free Fire имела значительно больше активных пользователей в Индии, чем Battlegrounds Mobile India (BGMI), выпущенная Krafton."
+      ]
+    },
+    {
+      "heading": "Особенности и планы для игроков",
+      "paragraphs": [
+        "Игроки смогут использовать одну учетную запись для Free Fire India и Free Fire MAX, участвовать в общих событиях и играть вместе.",
+        "Garena сообщила, что при подготовке Free Fire India учитывались рекомендации индийских властей."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free Fire returns to India as Garena launches localized version four years after ban",
+      "url": "https://techcrunch.com/2026/10/28/free-fire-returns-to-india-as-garena-launches-localized-version-four-years-after-ban/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T13:49:29.125Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/free-fire-india.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/28/free-fire-returns-to-india-as-garena-launches-localized-version-four-years-after-ban/",
+    "credit": "Jagmeet Singh",
+    "license": "Лицензия не проверена",
+    "alt": "Free Fire India",
+    "verified": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "region": "global",
+  "slug": "amazon-predstavila-novyi-ereader-kindle-paperwhite-signature-edition-2026",
+  "title": "Amazon представила Kindle Paperwhite Signature Edition 2026 с улучшенным экраном и новыми аксессуарами",
+  "description": "Новый Kindle Paperwhite Signature Edition 2026 получил алюминиевую заднюю панель, улучшенный дисплей с автоматической регулировкой подсветки и поддержку новых аксессуаров с pogo-pin контактами, заменивших беспроводную зарядку.",
+  "date": "2026-10-28",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Дизайн и физические изменения устройства",
+      "paragraphs": [
+        "Обновленная версия Kindle Paperwhite Signature Edition стала на миллиметр тоньше предшественника и обзавелась алюминиевой задней панелью с цветовым совпадением фронтальной части и корпуса.",
+        "Кнопка включения была перемещена на верхний правый край устройства, что стало более привычным для пользователей смартфонов.",
+        "Amazon отказалась от стандартной беспроводной зарядки в пользу pogo-pin контактов на задней стороне, которые обеспечивают поддержку новых аксессуаров — например, обложки с физическими кнопками листания страниц и зарядной док-станции."
+      ]
+    },
+    {
+      "heading": "Качество экрана и пользовательский опыт чтения",
+      "paragraphs": [
+        "Экран с разрешением 300 dpi получил повышенную контрастность для более глубоких черных и четкого текста, а также функцию автонастройки фронтальной подсветки по освещению окружающей среды.",
+        "В новой модели появилась поддержка жеста двойного касания для перелистывания страниц, а также встроенный акселерометр для автоматической смены ориентации экрана.",
+        "Amazon гарантирует продолжительное время работы от аккумулятора — до 12 недель на одном заряде, что является одной из сильных сторон устройств Kindle."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kindle Paperwhite Signature Edition (2026) review: Updated in all the right places",
+      "url": "https://www.engadget.com/2299180/kindle-paperwhite-signature-edition-2026-review/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T13:51:32.761Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/kindle-paperwhite-signature-edition-2026-review-updated-in-all-the-right-places/intro-1793129474.jpg",
+    "source": "https://www.engadget.com/2299180/kindle-paperwhite-signature-edition-2026-review/",
+    "credit": "Billy Steele",
+    "license": "Лицензия не проверена",
+    "alt": "Amazon Kindle Paperwhite Signature Edition (2026).",
+    "verified": true
+  }
+}
