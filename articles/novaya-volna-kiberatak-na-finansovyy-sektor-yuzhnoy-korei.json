@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "novaya-volna-kiberatak-na-finansovyy-sektor-yuzhnoy-korei",
+  "title": "Кибератаки затронули финансовый сектор Южной Кореи",
+  "description": "Финансовые организации Южной Кореи столкнулись с новой волной кибератак. В числе пострадавших — брокеры Daishin Securities и Mirae Asset Global Investments, а также криптобиржа Bithumb.",
+  "date": "2026-10-29",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Масштаб и участники кибератак",
+      "paragraphs": [
+        "В последние дни финансовый сектор Южной Кореи подвергся серии кибератак. Среди пострадавших оказались крупные брокерские компании Daishin Securities и Mirae Asset Global Investments, а также криптовалютная биржа Bithumb.",
+        "Daishin Securities сообщила о кибератаке и уведомила клиентов, чьи данные могли быть затронуты. Компания сотрудничает с властями для расследования инцидента."
+      ]
+    },
+    {
+      "heading": "Реакция властей и меры безопасности",
+      "paragraphs": [
+        "Южнокорейские регуляторы призвали финансовые организации усилить меры кибербезопасности после серии атак на финансовый сектор и государственные учреждения.",
+        "Планируется проведение проверок IT-систем в частном секторе для оценки и повышения уровня защиты от возможных угроз."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "South Korea&#8217;s financial industry hit by fresh wave of cyberattacks",
+      "url": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-28T23:13:01.787Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2023/05/south-korea-money-growth.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+    "credit": "Kate Park",
+    "license": "Лицензия не проверена",
+    "alt": "Кибератаки затронули финансовый сектор Южной Кореи",
+    "verified": true
+  }
+}
