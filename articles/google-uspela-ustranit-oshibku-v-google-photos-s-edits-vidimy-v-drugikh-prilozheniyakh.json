@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "google-uspela-ustranit-oshibku-v-google-photos-s-edits-vidimy-v-drugikh-prilozheniyakh",
+  "title": "Google устранила ошибку, из-за которой отредактированные фото скрывались в Android-приложениях",
+  "description": "Google исправила баг в Google Photos, из-за которого пользователи на Android не могли видеть отредактированные фотографии в сторонних приложениях, например в мессенджерах и соцсетях. Проблема была вызвана тем, что отредактированные версии снимков не отображались в выборе изображений.",
+  "date": "2026-10-30",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Суть проблемы и её влияние на пользователей Android",
+      "paragraphs": [
+        "С этим багом Android-пользователи Google Photos столкнулись летом 2026 года. Отредактированные фотографии не появлялись при выборе изображений в других приложениях — мессенджерах, соцсетях и других сервисах. Чтобы обойти проблему, нужно было сохранять изменения не поверх оригинала, а создавать копию снимка.",
+        "Это создавало неудобства тем, кто удалял исходные фото и оставлял только исправленные версии, так как они просто исчезали из списка для выбора в сторонних программах."
+      ]
+    },
+    {
+      "heading": "Как Google исправила неисправность и дальнейшие проблемы с приложением",
+      "paragraphs": [
+        "Как подтвердили эксперты из APK Mirror и 9to5Google, Google добилась исправления ошибки к концу октября 2026 года, что гарантирует полноценный доступ к отредактированным фото из других приложений.",
+        "Отметим, что это не единственная недавняя проблема Google Photos. В сентябре 2026 Google устранила баг, из-за которого кнопки Share, Edit, Add to и Trash становились неактивны после редактирования фото на некоторых устройствах Android."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google fixes an annoying Photos bug that hid edited images from other apps",
+      "url": "https://www.engadget.com/2301675/google-fixes-an-annoying-photos-bug-that-hid-edited-images-from-other-apps/",
+      "published": "2026-10-29"
+    }
+  ],
+  "publishedAt": "2026-10-29T23:29:44.713Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/google-fixes-an-annoying-photos-bug-that-hid-edited-images-from-other-apps/intro-1793305492.jpg",
+    "source": "https://www.engadget.com/2301675/google-fixes-an-annoying-photos-bug-that-hid-edited-images-from-other-apps/",
+    "credit": "Kris Holt",
+    "license": "Лицензия не проверена",
+    "alt": "A hand holding a phone that displays the Google Photos app. A Google logo is in the background.",
+    "verified": true
+  }
+}
