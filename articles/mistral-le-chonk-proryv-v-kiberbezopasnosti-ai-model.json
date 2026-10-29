@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "mistral-le-chonk-proryv-v-kiberbezopasnosti-ai-model",
+  "title": "Искусственный интеллект Le Chonk от Mistral значительно превосходит китайские модели в кибербезопасности",
+  "description": "Французская компания Mistral завершила доработку своей AI-модели Le Chonk, которая теперь считается лучшей открытой моделью в мире с открытыми весами для задач автоматизированного программирования и кибербезопасности. Le Chonk превзошёл разработки ведущих китайских лабораторий, предлагая передовые возможности для защиты предприятий и государственных структур.",
+  "date": "2026-10-29",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Le Chonk — лидер среди AI-моделей с открытыми весами",
+      "paragraphs": [
+        "Компания Mistral выпустила окончательную версию своей модели искусственного интеллекта Le Chonk, которой удалось опередить китайские AI-системы DeepSeek и Z.ai в специализации на кибербезопасности и автоматическом программировании.",
+        "Le Chonk содержит триллион параметров и доступен в открытом доступе, что позволяет без ограничений использовать модель для защиты от растущих угроз в области кибербезопасности."
+      ]
+    },
+    {
+      "heading": "Значение открытого распространения модели для мирового ИИ-рынка",
+      "paragraphs": [
+        "Mistral подчёркивает важность наличия свободно доступных моделей, поскольку в отличие от закрытых решений они не могут быть дистанционно отключены, что повышает их надёжность для бизнеса и правительств.",
+        "Вместе с тем, открытая модель несёт риски двойного применения, включая возможность использования злоумышленниками, но эксперты считают, что правильный мониторинг и контроль позволят минимизировать угрозы."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
+      "url": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/",
+      "published": "2026-10-29"
+    }
+  ],
+  "publishedAt": "2026-10-29T14:40:03.618Z",
+  "image": {
+    "url": "https://media.wired.com/photos/6ae34b392cfd29b998d6a112/master/w_2560%2Cc_limit/Business_Mistral%2520Says%2520Its%2520%25E2%2580%2598Le%2520Chonk%25E2%2580%2599%2520Model%2520Can%2520Outperform%2520Top%2520Chinese%2520Models%2520in%2520Coding%2520and%2520Cybersecurity_v3.jpg",
+    "source": "https://www.wired.com/story/mistral-says-le-chonk-surpasses-chinese-models-cybersecurity/",
+    "credit": "Joel Khalili",
+    "license": "Лицензия не проверена",
+    "alt": "Photo Illustration of AI Cat dominating Chinese Rat",
+    "verified": true
+  }
+}
