@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "elon-musk-putin-sotrudnichestvo-rassvet-i-starlink",
+  "title": "Владимир Путин назвал Илона Маска «истинным гением» и раскрыл сотрудничество по спутниковому интернету",
+  "description": "Президент России Владимир Путин заявил о «тесном контакте» с Илоном Маском по проекту России Rassvet - аналогу спутникового интернета Starlink. Путин подчеркнул, что в орбите у Маска уже более 5 тысяч спутников, а Россия только начинает развивать такую сеть.",
+  "date": "2026-10-30",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Россия и Маск развивают спутниковую сеть Rassvet",
+      "paragraphs": [
+        "В ходе саммита Россия-Африка президент Владимир Путин заявил, что поддерживает тесный контакт с Илоном Маском в связи с разработкой спутниковой сети Rassvet - российского аналога Starlink компании SpaceX.",
+        "Путин подчеркнул успехи Маска в космосе, отметив, что у компании SpaceX уже запущено более 5 000 спутников, в то время как Россия находится на начальной стадии развития подобных систем."
+      ]
+    },
+    {
+      "heading": "Политический контекст и вызовы вокруг Starlink в Украине",
+      "paragraphs": [
+        "В последние месяцы возникли беспокойства в Украине из-за временных ограничений доступа к военной версии Starlink — Starshield, которой пользуются украинские вооружённые силы.",
+        "Маск заявлял, что ограничения ввел он из-за использования технологии для ударов дронов, что вызвало споры и обсуждения, так как отключение спутникового интернета может существенно повлиять на линии фронта."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Elon Musk is &#8216;truly a genius,&#8217; says Vladimir Putin",
+      "url": "https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/",
+      "published": "2026-10-29"
+    }
+  ],
+  "publishedAt": "2026-10-29T22:20:03.008Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2024/07/vladimir-putin-russia-kremlin.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/",
+    "credit": "Amanda Silberling",
+    "license": "Лицензия не проверена",
+    "alt": "Russian President Vladimir Putin looks on as he makes a speech during a joint press statement with Hungarian Prime Minister Viktor Orban on July 05, 2024.",
+    "verified": true
+  }
+}
