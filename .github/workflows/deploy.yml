@@ -35,6 +35,11 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL }}
           GA_MEASUREMENT_ID: G-PQDW0511J6
+      - name: Include standalone CLEARVISOR landing page
+        run: |
+          test -f landing-clearvisor/index.html
+          mkdir -p dist/clearvisor
+          cp landing-clearvisor/index.html dist/clearvisor/index.html
       - uses: actions/configure-pages@v5
         with:
           enablement: true
