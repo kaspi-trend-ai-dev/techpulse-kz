@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "fake-ps5-emulyatory-na-github-rasshirajut-krazhu-parolej",
+  "title": "Поддельные эмуляторы PS5 на GitHub распространяют кражу паролей",
+  "description": "Эксперты NordVPN выявили, что на GitHub распространяются вредоносные программы, маскирующиеся под эмуляторы PS5. Они скрытно крадут пароли и личные данные пользователей, обходя защиту антивирусов.",
+  "date": "2026-10-29",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Опасность фальшивых эмуляторов PlayStation 5",
+      "paragraphs": [
+        "Исследователи из Threat Intelligence NordVPN обнаружили на GitHub поддельные эмуляторы PS5, замаскированные под популярные проекты Kyttyps5 и AnyPS5. Эти вредоносные программы не запускают игру, а крадут пароли и другую конфиденциальную информацию.",
+        "Вредоносный софт автоматически добавляет исключения в Microsoft Defender, чтобы антивирус не мог его обнаружить или удалить, а затем удаляет свои собственные файлы, скрывая свое присутствие на компьютере."
+      ]
+    },
+    {
+      "heading": "Рекомендации по безопасному использованию эмуляторов",
+      "paragraphs": [
+        "Чтобы избежать заражения, пользователям советуют тщательно проверять подлинность источника загрузки и следить за количеством отзывов и датой создания репозиториев на GitHub — подозрительными считаются недавно созданные проекты с малым числом отзывов.",
+        "Важно не отключать антивирусное программное обеспечение во время скачивания и установки программ, чтобы обеспечить дополнительный уровень защиты от подобных угроз."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fake PS5 emulators on GitHub are spreading password-stealing malware",
+      "url": "https://www.engadget.com/2299912/fake-ps5-emulators-on-github-are-spreading-password-stealing-malware/",
+      "published": "2026-10-28"
+    }
+  ],
+  "publishedAt": "2026-10-29T00:15:54.065Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/fake-ps5-emulators-on-github-are-spreading-password-stealing-malware/intro-1793207317.jpg",
+    "source": "https://www.engadget.com/2299912/fake-ps5-emulators-on-github-are-spreading-password-stealing-malware/",
+    "credit": "Lawrence Bonk",
+    "license": "Лицензия не проверена",
+    "alt": "A scary computer with a pirate flag.",
+    "verified": true
+  }
+}
