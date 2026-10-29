@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "amazon-obnovila-aleksu-dlya-upravleniya-spiskami-pokupok-i-podpiskami",
+  "title": "Amazon обновила Alexa для удобного управления списками покупок и подписками",
+  "description": "Amazon расширила функции голосового помощника Alexa, добавив более 100 новых возможностей для управления списками покупок, подписками и инструкциями по доставке, что упростит подготовку к праздникам.",
+  "date": "2026-10-29",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новые возможности Alexa для покупок и подписок",
+      "paragraphs": [
+        "Amazon внедрила в Alexa свыше 100 новых функций, которые позволяют пользователям создавать, просматривать и редактировать списки покупок. При помощи голосовых команд можно также управлять подписками, например, изменять график доставки товаров с ежемесячного на ежеквартальный.",
+        "Кроме того, пользователи теперь могут обновлять адрес доставки и добавлять дополнительные инструкции для курьеров, что повышает удобство получения заказов."
+      ]
+    },
+    {
+      "heading": "Поддержка вопросов о подписках и оплате для пользователей Prime и Audible",
+      "paragraphs": [
+        "Alexa теперь способна отвечать на вопросы касательно подписок Amazon Prime и Audible, а также помогать в решении проблем с оплатой и выставлением счётов.",
+        "За последний год количество пользователей, которые используют Alexa для покупок, выросло в восемь раз, а с начала года более 400 миллионов человек воспользовались голосовым помощником для совершения покупок."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon updates Alexa to help you manage shopping lists and subscriptions and update delivery instructions",
+      "url": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-and-subscriptions-and-update-delivery-instructions/",
+      "published": "2026-10-29"
+    }
+  ],
+  "publishedAt": "2026-10-29T16:27:13.471Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1252468735.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-and-subscriptions-and-update-delivery-instructions/",
+    "credit": "Ivan Mehta",
+    "license": "Лицензия не проверена",
+    "alt": "Amazon обновила Alexa для удобного управления списками покупок и подписками",
+    "verified": true
+  }
+}
