@@ -1,0 +1,41 @@
+{
+  "region": "global",
+  "slug": "doordash-obedinyaet-instacart-v-sdelke-na-17-mlrd-dollarov",
+  "title": "DoorDash объединила силы с Instacart в сделке на 17 миллиардов долларов",
+  "description": "Американские гиганты доставки DoorDash и Instacart объявили о слиянии, которое создаёт крупнейшую в США платформу доставки продуктов с оборотом в 17 миллиардов долларов и потенциальными вызовами регуляторов.",
+  "date": "2026-10-29",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Слияние крупнейших в США сервисов доставки продуктов",
+      "paragraphs": [
+        "DoorDash завершила приобретение Instacart в рамках сделки стоимостью 17 миллиардов долларов, что позволяет объединить две крупнейшие платформы доставки продуктов в стране.",
+        "Ранее DoorDash специализировалась на доставке еды из ресторанов и блюд на заказ, а Instacart представляла собой крупного игрока на рынке доставки продуктов из супермаркетов."
+      ]
+    },
+    {
+      "heading": "Перспективы и технологические инновации после объединения",
+      "paragraphs": [
+        "Интеграция сети Instacart усилит возможности DoorDash в области доставки продуктов, расширяя её сервисы и повышая удобство для клиентов.",
+        "Ранее в 2026 году DoorDash уже тестировала доставку с помощью дронов, что свидетельствует о стремлении компании применять современные технологии для оптимизации сервисов.",
+        "Сделка может столкнуться с проверками антимонопольных органов из-за влияния на конкуренцию на рынке доставки."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "DoorDash acquires Instacart in $17 billion delivery service merger",
+      "url": "https://www.engadget.com/2300741/doordash-acquires-instacart-in-dollar17-billion-delivery-service-merger/",
+      "published": "2026-10-29"
+    }
+  ],
+  "publishedAt": "2026-10-29T12:55:33.019Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/doordash-acquires-instacart-in-17-billion-delivery-service-merger/intro-1793276637.jpg",
+    "source": "https://www.engadget.com/2300741/doordash-acquires-instacart-in-dollar17-billion-delivery-service-merger/",
+    "credit": "Anna Washenko",
+    "license": "Лицензия не проверена",
+    "alt": "Photo of a hand holding a smartphone that displays the logo for DoorDash",
+    "verified": true
+  }
+}
