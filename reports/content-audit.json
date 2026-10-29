@@ -1,17 +1,17 @@
 {
   "summary": {
-    "scanned": 744,
-    "validJson": 744,
+    "scanned": 860,
+    "validJson": 860,
     "invalidJson": 0,
-    "reviewRecommended": 11,
+    "reviewRecommended": 13,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 40,
+      "depth": 49,
       "quality": 3,
-      "specificity": 67,
-      "metadata": 129,
-      "local": 1
+      "specificity": 76,
+      "metadata": 135,
+      "local": 2
     }
   },
   "invalid": [],
@@ -107,6 +107,27 @@
       "score": 5,
       "bodyCharacters": 514,
       "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "novaya-volna-kiberatak-na-finansovyy-sektor-yuzhnoy-korei",
+      "title": "Кибератаки затронули финансовый сектор Южной Кореи",
+      "region": "global",
+      "date": "2026-10-29",
+      "score": 5,
+      "bodyCharacters": 651,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "depth",
@@ -237,6 +258,27 @@
       "date": "2026-10-27",
       "score": 5,
       "bodyCharacters": 571,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "v-pavlodarskoj-oblasti-spasli-zhenschinu-iz-povrezhdyonnogo-ulichnogo-tualeta",
+      "title": "В Павлодарской области спасли женщину из провалившегося в грунт уличного туалета",
+      "region": "kz",
+      "date": "2026-10-29",
+      "score": 5,
+      "bodyCharacters": 623,
       "paragraphs": 4,
       "issues": [
         {
@@ -453,6 +495,27 @@
       ]
     },
     {
+      "slug": "chrome-ai-autofill-dlya-gmail-2026",
+      "title": "Обновление Chrome: умный автозаполнятор теперь использует данные из Gmail для ускорения заполнения форм",
+      "region": "global",
+      "date": "2026-10-29",
+      "score": 3,
+      "bodyCharacters": 974,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "do-16-gradusov-tepla-kakoy-budet-pogoda-v-megapolisah-kazahstana-25-oktyabrya",
       "title": "До 16 градусов тепла: какой будет погода в мегаполисах Казахстана 25 октября",
       "region": "kz",
@@ -601,6 +664,22 @@
       ]
     },
     {
+      "slug": "kazahstanka-zeynep-bayanova-zavoevala-medal-na-chempionate-mira-po-borbe",
+      "title": "Казахстанка Зейнеп Баянова завоевала медаль на чемпионате мира по борьбе",
+      "region": "kz",
+      "date": "2026-10-29",
+      "score": 3,
+      "bodyCharacters": 541,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "kyzylzhar-obygral-ulytau-v-chempionate-kazahstana",
       "title": "«Кызылжар» одержал важную победу против «Улытау» в чемпионате Казахстана",
       "region": "kz",
@@ -728,6 +807,38 @@
       ]
     },
     {
+      "slug": "pozhar-na-territorii-shkoly-v-turkestane-bystroe-tushenie-transformatora",
+      "title": "В Туркестане оперативно потушили пожар трансформатора на территории школы",
+      "region": "kz",
+      "date": "2026-10-29",
+      "score": 3,
+      "bodyCharacters": 649,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "pozhar-v-chastnom-dome-v-almaty-spasen-muzhchina",
+      "title": "В Алматы загорелся частный дом: мужчина получил помощь медиков",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 3,
+      "bodyCharacters": 654,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "pozhar-v-pyatietazhke-karaganda-spasateli-prishli-na-pomoshch",
       "title": "Огненная опасность в Караганде: пожар в пятиэтажном доме быстро потушили спасатели",
       "region": "kz",
@@ -782,6 +893,22 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "silnyj-smog-v-vosmi-gorodah-kazahstana-28-oktyabrya",
+      "title": "В восьми городах Казахстана ожидается сильный смог 28 октября",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 3,
+      "bodyCharacters": 644,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         }
       ]
     },
@@ -945,6 +1072,22 @@
       ]
     },
     {
+      "slug": "v-astane-muzhchina-brosalsya-pod-kolesa-mashin-i-napadal-na-prohozhih",
+      "title": "В Астане мужчина создавал угрозу безопасности на дороге, бросаясь под автомобили и нападая на прохожих",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 3,
+      "bodyCharacters": 641,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "v-astane-na-noch-perekroyut-dorogu-vozle-baytereka-iz-za-remonta",
       "title": "В Астане на ночь перекроют дорогу возле Байтерека для ремонтных работ",
       "region": "kz",
@@ -993,6 +1136,22 @@
       ]
     },
     {
+      "slug": "v-kazahstane-prodlili-zapret-na-vyvoz-szhizhennogo-gaza-dofka-2026-11",
+      "title": "В Казахстане хотят продлить запрет на вывоз сжиженного газа",
+      "region": "kz",
+      "date": "2026-10-29",
+      "score": 3,
+      "bodyCharacters": 570,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "voditel-pokazal-pistolet-vo-vremya-dorozhnogo-konflikta-v-almaty-video",
       "title": "Водитель вытащил пистолет во время дорожного конфликта в Алматы",
       "region": "kz",
@@ -1032,6 +1191,22 @@
       "score": 3,
       "bodyCharacters": 695,
       "paragraphs": 5,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "zharkoe-okonchilos-sneg-i-moroz-vhodyat-v-kazahstan",
+      "title": "Жара до +22 градусов в Казахстане сменится снегопадами",
+      "region": "kz",
+      "date": "2026-10-29",
+      "score": 3,
+      "bodyCharacters": 646,
+      "paragraphs": 3,
       "issues": [
         {
           "type": "depth",
@@ -1127,6 +1302,22 @@
       "date": "2026-10-28",
       "score": 2,
       "bodyCharacters": 758,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "beremennye-kazahstanki-poluchayut-meduslugi-bez-vznosov-osms",
+      "title": "В Казахстане беременным женщинам предоставят медуслуги без взносов в ОСМС",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 1061,
       "paragraphs": 4,
       "issues": [
         {
@@ -1349,12 +1540,44 @@
       ]
     },
     {
+      "slug": "kak-kazahstancy-teryayut-dengi-iz-za-smartfona",
+      "title": "Как казахстанцы теряют деньги из-за смартфонов: риски и современные угрозы",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 1182,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "kak-smotret-pszh-barcelona-translyaciya-ligi-chempionov-besplatno",
       "title": "Как смотреть матч ПСЖ — Барселона: бесплатная трансляция Лиги чемпионов 2026/27",
       "region": "global",
       "date": "2026-10-22",
       "score": 2,
       "bodyCharacters": 964,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kazahstanec-poluchil-udar-tokom-i-stal-invalidom",
+      "title": "Работник карагандинской электросети получил тяжелые травмы и стал инвалидом из-за ошибки в обеспечении безопасности",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 958,
       "paragraphs": 6,
       "issues": [
         {
@@ -1854,6 +2077,22 @@
       ]
     },
     {
+      "slug": "spasenie-rebenka-pri-pozhare-v-shymkente-28-oktyabrya-2026",
+      "title": "Спасли ребенка при пожаре в пятиэтажке Шымкента: без пострадавших",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 762,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "spotify-zhestko-boryetsya-s-obmenom-semeinyh-akkauntov",
       "title": "Spotify жёстко борется с обменом семейных аккаунтов, но пользователи уже находят обходные пути",
       "region": "global",
@@ -1882,6 +2121,22 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "tengizshervoil-vyros-produkcija-nefti-do-39-mln-tonnov-v-2025-godu",
+      "title": "Производство нефти на Тенгизе выросло до 39 млн тонн в 2025 году",
+      "region": "kz",
+      "date": "2026-10-29",
+      "score": 2,
+      "bodyCharacters": 921,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -1956,6 +2211,22 @@
       "date": "2026-10-27",
       "score": 2,
       "bodyCharacters": 932,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "v-shymkente-pozhar-v-zhilom-dome-evakuirovany-zhiteli-i-rebenok",
+      "title": "В Шымкенте вспыхнул крупный пожар в жилом доме: эвакуированы восемь человек, спасен ребенок",
+      "region": "kz",
+      "date": "2026-10-29",
+      "score": 2,
+      "bodyCharacters": 757,
       "paragraphs": 4,
       "issues": [
         {
@@ -2062,6 +2333,22 @@
       ]
     },
     {
+      "slug": "yandeks-karty-v-kazahstane-nauchilis-ekonomit-toplivo",
+      "title": "Яндекс Карты в Казахстане научились предлагать маршруты с меньшим расходом топлива",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 2,
+      "bodyCharacters": 839,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "15-billion-ai-startup-open-evidence-medtech",
       "title": "Медтехнологичный стартап OpenEvidence привлек $15 млрд благодаря ИИ для врачей",
       "region": "unknown",
@@ -2154,6 +2441,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "amazon-poluchit-milliardy-na-ipo-anthropica-i-ee-rol-v-rynke-iskusstvennogo-intellekta",
+      "title": "Amazon получает миллиардные доходы от IPO Anthropic и усиливает влияние в сфере ИИ",
+      "region": "global",
+      "date": "2026-10-28",
+      "score": 1,
+      "bodyCharacters": 1277,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
@@ -2798,6 +3101,22 @@
       ]
     },
     {
+      "slug": "novaya-muzykalnaya-studiya-bajgali-serkebaeva-almaty-studios-v-predgoryah",
+      "title": "Байгали Серкебаев открыл в Алматы уникальную студию звукозаписи с пространством для творчества",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 1,
+      "bodyCharacters": 1235,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "novinka-google-gemini-v-carplay-dlya-udobnyh-poezdok",
       "title": "Google Gemini интегрировали в Google Maps для CarPlay — удобство на дороге выходит на новый уровень",
       "region": "unknown",
@@ -2810,6 +3129,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "novye-pravila-vyezda-v-kazahstan-elektronnoe-razreshenie",
+      "title": "В Казахстане введена электронная система разрешений на въезд для иностранных туристов",
+      "region": "kz",
+      "date": "2026-10-29",
+      "score": 1,
+      "bodyCharacters": 1432,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
@@ -3166,6 +3501,22 @@
       ]
     },
     {
+      "slug": "uefi-firmware-9-5-flaw-threatens-global-server-security",
+      "title": "Опасная уязвимость в прошивке UEFI с рейтингом 9,5 угрожает миллионам серверов по всему миру",
+      "region": "global",
+      "date": "2026-10-28",
+      "score": 1,
+      "bodyCharacters": 2724,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "v-astane-rassleduyut-sluchai-ukhudsheniya-sostoyaniya-mladentsa-v-detskoy-bolnitse",
       "title": "В Астане начали расследование после ухудшения состояния младенца в детской больнице",
       "region": "kz",
@@ -3370,6 +3721,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "zhamilya-bakbergenova-boretsya-za-bronzu-chempionata-mira-v-astane",
+      "title": "Жамиля Бакбергенова сражается за бронзовую медаль чемпионата мира в Астане",
+      "region": "kz",
+      "date": "2026-10-28",
+      "score": 1,
+      "bodyCharacters": 1404,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
