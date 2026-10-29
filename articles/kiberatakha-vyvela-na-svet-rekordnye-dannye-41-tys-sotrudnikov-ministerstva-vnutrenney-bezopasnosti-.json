@@ -1,0 +1,46 @@
+{
+  "region": "global",
+  "slug": "kiberatakha-vyvela-na-svet-rekordnye-dannye-41-tys-sotrudnikov-ministerstva-vnutrenney-bezopasnosti-",
+  "title": "Хакеры обнародовали данные более 41 тысячи сотрудников Министерства внутренней безопасности США",
+  "description": "В результате кибератаки были опубликованы сведения о более чем 41 тысяче сотрудников Министерства внутренней безопасности США, включая служебные контакты и информацию, связанную с undercover и surveillance программами.",
+  "date": "2026-10-29",
+  "category": "общество",
+  "sections": [
+    {
+      "heading": "Масштаб утечки и содержание данных",
+      "paragraphs": [
+        "Утечка затронула более 41 тысячи сотрудников Министерства внутренней безопасности США, включая 21 тысячу работников таможенной и пограничной службы и 10 тысяч сотрудников Службы иммиграционного и таможенного контроля (ICE). Около трети из них связаны с подразделением Homeland Security Investigations.",
+        "В опубликованных данных содержатся электронные адреса, номера телефонов и офисные адреса, а также сведения, связанные с undercover и surveillance программами ведомства."
+      ]
+    },
+    {
+      "heading": "Место и причины взлома, реакция ведомства",
+      "paragraphs": [
+        "Хакеры получили доступ к информации через сервис единого входа Okta, используемый Министерством внутренней безопасности США. При этом Okta заявила, что не обнаружила компрометации своих систем.",
+        "Пресс-служба Министерства внутренней безопасности подтвердила факт потенциального нарушения безопасности и объявила о принятии оперативных мер по защите сотрудников, пообещав информировать общественность о ходе расследования."
+      ]
+    },
+    {
+      "heading": "Распространение данных",
+      "paragraphs": [
+        "Данные были переданы прозрачной некоммерческой организации Distributed Denial of Secrets и исследователю из Швейцарии, которые создали поисковую базу данных под названием «Icepick» для удобного доступа к материалам."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hackers leaked details of more than 41,000 Homeland Security personnel",
+      "url": "https://www.engadget.com/2300661/hackers-leaked-details-more-than-41000-homeland-security-personnel/",
+      "published": "2026-10-29"
+    }
+  ],
+  "publishedAt": "2026-10-29T10:43:08.655Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/hackers-leaked-details-of-more-than-41000-homeland-security-personnel/intro-1793262738.jpg",
+    "source": "https://www.engadget.com/2300661/hackers-leaked-details-more-than-41000-homeland-security-personnel/",
+    "credit": "Mariella Moon",
+    "license": "Лицензия не проверена",
+    "alt": "Homeland security website",
+    "verified": true
+  }
+}
