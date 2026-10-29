@@ -1,0 +1,41 @@
+{
+  "region": "global",
+  "slug": "openai-backed-thrive-holdings-acquires-adt-for-15-billion",
+  "title": "OpenAI-партнёр Thrive Holdings приобрёл компанию ADT за $15,3 млрд и планирует инновации в сфере безопасности",
+  "description": "Инвестиционная компания Thrive Holdings, связанная с OpenAI, купила корпорацию ADT за $15,3 млрд, обещая внедрение новых продуктов с применением искусственного интеллекта в охранной сфере.",
+  "date": "2026-10-30",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Сделка и планы развития",
+      "paragraphs": [
+        "Thrive Holdings объявила о покупке ADT, крупной компании в сфере физической безопасности, за $10 за акцию, что в совокупности составляет около $7,6 млрд в виде капитала и $15,3 млрд в целом с учётом долгов и обязательств.",
+        "Thrive Holdings, спин-офф венчурного фонда Thrive Capital, сотрудничает с OpenAI и намерена использовать искусственный интеллект для обновления и развития приобретённых бизнесов.",
+        "В пресс-релизе говорится, что ADT станет основой для построения умного дома и систем безопасности с использованием искусственного интеллекта, хотя конкретные продукты пока не раскрываются."
+      ]
+    },
+    {
+      "heading": "Текущий контекст рынка AI в безопасности",
+      "paragraphs": [
+        "Сегодня AI-технологии активно применяются в домашней безопасности: Apple, Amazon и ряд стартапов предлагают инновационные решения, включая умные камеры и автономных роботов для охраны.",
+        "Приобретение ADT Thrive Holdings подчёркивает растущий интерес к слиянию классических охранных услуг с современными технологиями и ИИ для повышения эффективности и возможностей систем безопасности."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "OpenAI-backed Thrive Holdings acquires ADT",
+      "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+      "published": "2026-10-29"
+    }
+  ],
+  "publishedAt": "2026-10-29T20:20:33.969Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2023/03/reddit-e1708636699632.jpg?w=563",
+    "source": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+    "credit": "Julie Bort",
+    "license": "Лицензия не проверена",
+    "alt": "Reddit logo displayed on smartphone with Reddit logo in the background",
+    "verified": true
+  }
+}
