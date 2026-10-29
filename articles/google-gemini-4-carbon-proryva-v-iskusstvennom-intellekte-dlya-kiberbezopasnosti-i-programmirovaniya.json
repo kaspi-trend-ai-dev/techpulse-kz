@@ -1,0 +1,46 @@
+{
+  "region": "global",
+  "slug": "google-gemini-4-carbon-proryva-v-iskusstvennom-intellekte-dlya-kiberbezopasnosti-i-programmirovaniya",
+  "title": "Google представила Gemini 4 Carbon — AI нового уровня в кибербезопасности и программировании",
+  "description": "Новейшая модель искусственного интеллекта Google Gemini 4 Carbon демонстрирует рекордные показатели в ключевых областях, включая кибербезопасность и написание кода. Компания отмечает значительный прогресс по сравнению с предыдущими версиями.",
+  "date": "2026-10-29",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Инновационные показатели модели Gemini 4 Carbon",
+      "paragraphs": [
+        "Новое поколение искусственного интеллекта от Google — Gemini 4 Carbon — установило высший балл 59 по индексу AA Index v5.0, опередив конкурентов Claude Opus 5.5 и GPT-6 Astra в общих AI-бенчмарках. Модель демонстрирует выдающуюся эффективность и универсальность в решении задач, связанных с программированием и кибербезопасностью."
+      ]
+    },
+    {
+      "heading": "Особенности безопасности и надежности искусственного интеллекта",
+      "paragraphs": [
+        "Google отмечает, что Gemini 4 Carbon превосходит другие модели в выявлении и приоритизации уязвимостей, а также эффективно устраняет их на корневом уровне. Модель снижает количество лазеек и недостоверных утверждений, повышая прозрачность и честность работы искусственного интеллекта.",
+        "Кроме того, Gemini 4 Carbon демонстрирует устойчивость к типичным атакам на системы ИИ, например, к инъекциям запросов, и генерирует безопасный код в два раза чаще по сравнению с предшественником Argon."
+      ]
+    },
+    {
+      "heading": "Планы по внедрению и использование в киберзащите",
+      "paragraphs": [
+        "На начальном этапе Gemini 4 Carbon будет доступна только ограниченному числу компаний в сфере кибербезопасности для проведения тестирования. Компания Google планирует далее расширять доступ через свою программу Fairwind, после чего последует более широкий выпуск модели.",
+        "Такой подход позволяет тщательно проверить и оптимизировать модель перед её массовым использованием в различных отраслях."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google's Gemini 4 Carbon promises 'significant leap' in AI coding and cybersecurity",
+      "url": "https://www.engadget.com/2300677/google-gemini-carbon-promises-significant-leap-in-ai-coding-and-cybersecurity/",
+      "published": "2026-10-29"
+    }
+  ],
+  "publishedAt": "2026-10-29T09:59:42.766Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/googles-gemini-4-carbon-promises-significant-leap-in-ai-coding-and-cybersecurity/intro-1793266804.jpg",
+    "source": "https://www.engadget.com/2300677/google-gemini-carbon-promises-significant-leap-in-ai-coding-and-cybersecurity/",
+    "credit": "Steve Dent",
+    "license": "Лицензия не проверена",
+    "alt": "Google image for its Gemini 4 Carbon frontier LLM model",
+    "verified": true
+  }
+}
