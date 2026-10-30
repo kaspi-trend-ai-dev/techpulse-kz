@@ -1,0 +1,44 @@
+{
+  "region": "global",
+  "slug": "ai-yur-firma-crosby-predlagaet-kupit-sovremennuyu-kompaniyu-weil-gotshal",
+  "title": "AI-юридическая фирма Crosby претендует на покупку легендарной юридической компании Weil, Gotshal",
+  "description": "Молодая компания Crosby, специализирующаяся на юридических услугах с использованием искусственного интеллекта, подала заявку на приобретение части активов знаменитой старой юридической фирмы Weil, Gotshal & Manges, которая готовится к роспуску.",
+  "date": "2026-10-31",
+  "category": "бизнес и технологии",
+  "sections": [
+    {
+      "heading": "Планы приобретения активов Weil, Gotshal",
+      "paragraphs": [
+        "Юридическая компания Crosby, ориентированная на использование искусственного интеллекта, подала заявку на приобретение части активов Weil, Gotshal & Manges, включая торговую марку, бренд и некоторые внутренние данные. Weil Gotshal готовится к голосованию о роспуске после ухода ряда ведущих юристов и отмены планов слияния с конкурентом."
+      ]
+    },
+    {
+      "heading": "Особенности компании Crosby",
+      "paragraphs": [
+        "Crosby позиционирует себя как юридическую фирму, использующую собственные технологии искусственного интеллекта для предоставления услуг с высокой скоростью и эффективностью. Компания привлекла около 85 миллионов долларов инвестиций, включая раунд серии B в марте 2026 года, в котором участвовали ведущие венчурные фонды."
+      ]
+    },
+    {
+      "heading": "Перспективы и неопределённость сделки",
+      "paragraphs": [
+        "Условия предложения Crosby не разглашаются, и нет гарантии, что компания выиграет торги. Если сделка состоится, это может означать продолжение наследия Weil, Gotshal в новой форме, основанной на технологиях искусственного интеллекта."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "AI law firm Crosby bids on disintegrating, famed firm Weil Gotshal",
+      "url": "https://techcrunch.com/2026/10/30/ai-law-firm-crosby-bids-on-disintegrating-famed-firm-weil-gotshal/",
+      "published": "2026-10-30"
+    }
+  ],
+  "publishedAt": "2026-10-30T20:00:53.601Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2025/06/Crosby-cofounders.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/30/ai-law-firm-crosby-bids-on-disintegrating-famed-firm-weil-gotshal/",
+    "credit": "Julie Bort",
+    "license": "Лицензия не проверена",
+    "alt": "Crosby co-founders John Sarihan (left) and Ryan Daniels (right).",
+    "verified": true
+  }
+}
