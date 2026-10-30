@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "meta-zapustila-ai-prilozhenie-dlya-virtualnoy-podborki-odezhdy",
+  "title": "Meta представила новое AI-приложение для подбора одежды и виртуальной примерки",
+  "description": "Meta выпустила ограниченно доступное приложение Style Sketch, позволяющее создавать виртуальный гардероб и примерять одежду по параметрам тела и тону кожи. App доступно в нескольких странах Азии и интегрируется с Facebook и Instagram.",
+  "date": "2026-10-30",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новые возможности виртуального гардероба от Meta",
+      "paragraphs": [
+        "Корпорация Meta запустила AI-приложение Style Sketch, позволяющее пользователям создавать виртуальный гардероб из фото одежды, размещённых в их аккаунтах Facebook и Instagram, а также загружать изображения одежды с устройства. Такой подход даёт возможность собрать каталог личных вещей для дальнейшего подбора комплектов.",
+        "Приложение доступно на Android и iOS в Индонезии, Сингапуре и Таиланде. Пользователи могут примерять на виртуальной модели, точно повторяющей их телосложение и цвет кожи, различные комбинации одежды. Для подбора комплектов можно указывать погодные условия и планируемые поездки."
+      ]
+    },
+    {
+      "heading": "Значение приложения Style Sketch в индустрии и развитие AI от Meta",
+      "paragraphs": [
+        "Meta продолжает активно внедрять AI-технологии в потребительские сервисы. Глава компании Марк Цукерберг ранее заявил о выпуске множества подобных приложений, способных как расширить аудиторию, так и улучшить обучение AI-систем.",
+        "Style Sketch не является первой попыткой на рынке виртуальной примерки: Google уже с 2025 года предлагает подобный функционал в своём поиске и в фотоприложении. OpenAI также реализовала возможность загрузки фото для визуализации одежды. Однако интеграция Style Sketch с соцсетями Meta и персонализация одежды под тип тела выделяет это приложение среди конкурентов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meta quietly launches an AI fashion app for virtually trying on clothes",
+      "url": "https://www.engadget.com/2302003/meta-quietly-launches-an-ai-fashion-app-for-virtually-trying-on-clothes/",
+      "published": "2026-10-30"
+    }
+  ],
+  "publishedAt": "2026-10-30T12:17:24.183Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/meta-quietly-launches-an-ai-fashion-app-for-virtually-trying-on-clothes/intro-1793361850.jpg",
+    "source": "https://www.engadget.com/2302003/meta-quietly-launches-an-ai-fashion-app-for-virtually-trying-on-clothes/",
+    "credit": "Mariella Moon",
+    "license": "Лицензия не проверена",
+    "alt": "Screenshots of Meta app displaying clothes.",
+    "verified": true
+  }
+}
