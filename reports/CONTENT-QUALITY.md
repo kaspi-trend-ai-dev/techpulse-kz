@@ -4,18 +4,18 @@
 
 | Показатель | Количество |
 |---|---:|
-| JSON-файлов в архиве | 860 |
-| Успешно прочитаны | 860 |
-| Статей для ручной проверки (оценка ≥5) | 13 |
+| JSON-файлов в архиве | 1012 |
+| Успешно прочитаны | 1012 |
+| Статей для ручной проверки (оценка ≥5) | 14 |
 | Высокий приоритет (оценка ≥10) | 1 |
 | Кандидатов на дубли | 0 |
 | Некорректных JSON | 0 |
 
 ## Признаки для проверки
 
-- metadata: 135
-- specificity: 76
-- depth: 49
+- metadata: 150
+- specificity: 92
+- depth: 58
 - quality: 3
 - local: 2
 
@@ -32,6 +32,7 @@
 | 5 | [Сабина Алтынбекова осудила физическое насилие тренера в Павлодаре](https://harmex.asia/articles/sabina-altynbekova-osudila-fizicheskoe-nasilie-trenera-v-pavlodare.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Грузовик не убедился и столкнулся с пассажирским поездом в Карагандинской области — никто не пострадал](https://harmex.asia/articles/stolknovenie-gruzovika-i-passazhirskogo-poezda-v-karagandinskoj-oblasti.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
 | 5 | [Новый проигрыватель винила Technics разработан с участием диджеев и звукорежиссеров](https://harmex.asia/articles/technics-novyj-turntable-dlja-dj-ei-zvukovyh-inzhenerov.html) | Мало информации в описании; Регион не указан; Нет числовых данных при коротком материале (проверить вручную) |
+| 5 | [Ушел из жизни известный врач-онколог из Караганды, спасший тысячи женщин](https://harmex.asia/articles/umer-izvestnyj-vrach-onkolog-knaub-pomog-tysyacham-patsientok-karaganda.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Казахстанцы увидят ноябрьский парад планет](https://harmex.asia/articles/unikalnyj-noyabrskij-parad-planet-v-kazahstane-2026.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
 | 5 | [В Алматы военнослужащие Нацгвардии оказали помощь мужчине без сознания с носовым кровотечением](https://harmex.asia/articles/v-almaty-natsgvardeycy-spasli-muzhchinu-bez-soznaniya-s-nosevym-krovotecheniem.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [В Павлодарской области спасли женщину из провалившегося в грунт уличного туалета](https://harmex.asia/articles/v-pavlodarskoj-oblasti-spasli-zhenschinu-iz-povrezhdyonnogo-ulichnogo-tualeta.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
