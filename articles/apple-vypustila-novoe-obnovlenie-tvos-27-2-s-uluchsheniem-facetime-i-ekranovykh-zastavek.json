@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "apple-vypustila-novoe-obnovlenie-tvos-27-2-s-uluchsheniem-facetime-i-ekranovykh-zastavek",
+  "title": "Apple вывела обновление tvOS 27.2 с новыми функциями FaceTime и экранных заставок",
+  "description": "Компания Apple выпустила tvOS 27.2 — обновление для Apple TV, добавляющее разнообразные экранные заставки, улучшенный FaceTime и поддержку поиска Siri Remote в приложении Find My.",
+  "date": "2026-10-30",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новые экранные заставки и управление фото",
+      "paragraphs": [
+        "Обновление tvOS 27.2 впервые добавляет опцию Shuffle, позволяющую менять стиль экранных заставок между Aerials, Memories, Portraits и Snoopy. Это разнообразит пользовательский опыт, показывая каждый раз разные изображения при включении экрана заставки.",
+        "Также появилась возможность выбирать отдельные фотографии с iPhone для использования в качестве заставок без необходимости делиться всей фототекой, что повышает конфиденциальность при совместном использовании Apple TV."
+      ]
+    },
+    {
+      "heading": "Расширенные функции FaceTime и поддержка сопровождения",
+      "paragraphs": [
+        "FaceTime на Apple TV получил обновление, упрощающее присоединение к звонкам через ссылки непосредственно с телевизора, при этом сам видеоконтент транслируется через iPhone с использованием Continuity Camera.",
+        "Впервые реализована поддержка добавления третьих лиц для жестового перевода и субтитров в реальном времени, что облегчает коммуникацию для пользователей с нарушениями слуха."
+      ]
+    },
+    {
+      "heading": "Новая интеграция Siri Remote и улучшенный интерфейс",
+      "paragraphs": [
+        "Обновление добавляет поддержку отображения Siri Remote в приложении Find My на более старых моделях Apple TV, упрощая поиск пульта дистанционного управления без необходимости заходить в отдельное меню на iPhone.",
+        "Реализована синхронизация профилей между Apple TV и iOS-устройствами, а также обновлено оформление значков Apple Music — теперь черно-белое в соответствии с новой айдентикой платформы."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "New tvOS 27.2 features to try for an upgraded Apple TV experience",
+      "url": "https://www.engadget.com/2302449/tvos-27-2-features-try-upgraded-apple-tv-experience/",
+      "published": "2026-10-30"
+    }
+  ],
+  "publishedAt": "2026-10-30T18:29:24.966Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/new-tvos-27-2-features-to-try-for-an-upgraded-apple-tv-experience/intro-1793349181.jpg",
+    "source": "https://www.engadget.com/2302449/tvos-27-2-features-try-upgraded-apple-tv-experience/",
+    "credit": "Filipe Espósito",
+    "license": "Лицензия не проверена",
+    "alt": "The new Apple TV 4K and the tvOS 27 Home Screen.",
+    "verified": true
+  }
+}
