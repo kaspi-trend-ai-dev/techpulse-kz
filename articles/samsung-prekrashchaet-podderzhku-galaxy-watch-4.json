@@ -1,0 +1,42 @@
+{
+  "region": "global",
+  "slug": "samsung-prekrashchaet-podderzhku-galaxy-watch-4",
+  "title": "Samsung прекращает поддержку Galaxy Watch 4 в пользу обновления One UI 9",
+  "description": "Samsung официально сообщила, что модели Galaxy Watch 4 и Watch 4 Classic не получат обновление One UI 9 Watch, завершив цикл обновлений для этих умных часов. Пользователям рекомендуется рассмотреть покупку новейших Galaxy Watch для получения актуальных функций и поддержки.",
+  "date": "2026-10-31",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Особенности и последствия прекращения поддержки Galaxy Watch 4",
+      "paragraphs": [
+        "Samsung объявила, что умные часы Galaxy Watch 4 и Galaxy Watch 4 Classic, выпущенные в 2021 году, не получат последнее крупное обновление операционной системы One UI 9 Watch.",
+        "Ранее эти модели получили четыре основных обновления ОС, включая One UI Watch 4.5, Watch 5, Watch 6 и Watch 8, но теперь их поддержка завершается.",
+        "Отсутствие новой версии операционной системы означает, что часы не будут получать дальнейшие исправления ошибок, новые функции и обновления безопасности."
+      ]
+    },
+    {
+      "heading": "Рекомендации по обновлению и новые возможности One UI 9",
+      "paragraphs": [
+        "Samsung советует владельцам устаревших моделей рассмотреть обновление на серии Galaxy Watch 5 и 9, которые к концу 2026 года получат One UI 9 Watch с улучшенным интерфейсом и новыми функциями.",
+        "Система One UI 9 Watch включает активацию ИИ-ассистента при подъёме руки и новые показатели здоровья, такие как Daily Cardio Load и Heart Health Score.",
+        "Новейшая линейка Galaxy Watch 9 и Ultra 2 также гарантирует поддержку до пяти крупных обновлений программного обеспечения, что существенно превышает срок поддержки предыдущих моделей."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "These Samsung Galaxy Watches won't be getting the new One UI update",
+      "url": "https://www.engadget.com/2301961/samsung-galaxy-watches-not-getting-one-ui-update/",
+      "published": "2026-10-31"
+    }
+  ],
+  "publishedAt": "2026-10-31T17:38:59.920Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/these-samsung-galaxy-watches-wont-be-getting-the-new-one-ui-update/intro-1793353080.jpg",
+    "source": "https://www.engadget.com/2301961/samsung-galaxy-watches-not-getting-one-ui-update/",
+    "credit": "Antony Terence",
+    "license": "Лицензия не проверена",
+    "alt": "Hand holding a Samsung Galaxy Watch 8 Classic on display.",
+    "verified": true
+  }
+}
