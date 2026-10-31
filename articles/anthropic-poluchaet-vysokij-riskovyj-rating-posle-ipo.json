@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "anthropic-poluchaet-vysokij-riskovyj-rating-posle-ipo",
+  "title": "Anthropic получил высокий \"мусорный\" кредитный рейтинг после IPO, обостряя финансовые риски",
+  "description": "После недавнего IPO AI-компания Anthropic ожидает присвоения кредитным агентством рейтинга высокой спекулятивности, что усложнит привлечение новых инвестиций для развития технологий искусственного интеллекта.",
+  "date": "2026-10-31",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новый статус рейтинга и его последствия для Anthropic",
+      "paragraphs": [
+        "Финансовое издание Financial Times сообщает, что инвестиционный гигант Blackstone, ключевой инвестор в $63 миллиардах сделки по финансированию оборудования для Anthropic, ожидает присвоения компании кредитного рейтинга в категории \"junk\" (мусорный), относящегося к высокому уровню риска.",
+        "Ранее Blackstone прогнозировал инвестиционный рейтинг высокого качества, однако сменил позицию, ожидая рейтинг в диапазоне двойного B, верхней ступени спекулятивных баллов, что значительно повышает стоимость и сложности привлечения капитала."
+      ]
+    },
+    {
+      "heading": "Финансовые вызовы на фоне амбициозной технологической экспансии",
+      "paragraphs": [
+        "Anthropic в течение последнего года активно увеличивала расходы на вычислительные мощности, что вызывается обеспокоенность среди инвесторов по поводу устойчивости модели финансирования компании.",
+        "Официальные представители Anthropic и Blackstone отказались комментировать информацию, однако заявленная кредитным агентством высокая степень риска может значительно повлиять на дальнейшее развитие AI-стартапа и динамику всего сектора искусственного интеллекта."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anthropic expected to receive high &#8216;junk&#8217; rating from credit agencies following IPO, FT report says",
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "published": "2026-10-30"
+    }
+  ],
+  "publishedAt": "2026-10-31T08:17:50.060Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2282033342.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+    "credit": "Lucas Ropek",
+    "license": "Лицензия не проверена",
+    "alt": "EVIAN-LES-BAINS, FRANCE - JUNE 17: CEO of Anthropic Dario Amodei attends a working lunch with G7 leaders, G7 outreach partners, and global tech CEOs on innovation and AI, during the G7 Summit on June 17, 2026 in Evian-les-Bains, France. Leaders from the Group of 7 (G7) countries convened in Evian, France, near the Swiss border, for their annual summit to discuss challenges to peace and security for Ukraine and Europe, the situation in the Middle East, and other geopolitical issues. (Photo by Anna Moneymaker/Getty Images)",
+    "verified": true
+  }
+}
