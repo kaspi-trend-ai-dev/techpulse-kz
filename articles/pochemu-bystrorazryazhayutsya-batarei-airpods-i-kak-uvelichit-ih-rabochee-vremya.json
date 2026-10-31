@@ -1,0 +1,42 @@
+{
+  "region": "global",
+  "slug": "pochemu-bystrorazryazhayutsya-batarei-airpods-i-kak-uvelichit-ih-rabochee-vremya",
+  "title": "Почему быстро разряжаются батареи AirPods и как продлить их работу",
+  "description": "Apple объяснила причины быстрой разрядки аккумуляторов в AirPods и дала советы по уходу, чтобы увеличить время работы беспроводных наушников.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Особенности аккумуляторов в AirPods и причины разрядки",
+      "paragraphs": [
+        "Apple использует литий-ионные аккумуляторы в AirPods, которые проходят примерно 300–500 циклов зарядки, что соответствует 2–3 годам эксплуатации до заметного снижения ёмкости.",
+        "На работу батареи влияют активное шумоподавление и Spatial Audio — включение этих функций увеличивает энергопотребление и сокращает время работы до 4–5 часов непрерывного прослушивания.",
+        "При использовании наушники продолжают расходовать мощность, если не убрать их в зарядный кейс, так как остаются подключёнными к устройству или ищут соединение."
+      ]
+    },
+    {
+      "heading": "Как ухаживать за AirPods для продления времени работы",
+      "paragraphs": [
+        "Важно держать зарядный кейс и контакты наушников чистыми от пыли и воска: грязь нарушает зарядку, поэтому даже при вставленных наушниках батарея может заряжаться неравномерно.",
+        "Apple рекомендует аккуратно протирать кейс влажной салфеткой с изопропиловым спиртом и чистить сетки наушников мягкой зубной щёткой с мицеллярной водой, затем споласкивать дистиллированной водой.",
+        "Сброс настроек AirPods через меню Bluetooth помогает решить проблемы с энергопотреблением и пересоздать оптимальный режим работы аккумуляторов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Why your Apple AirPods' battery drains so fast and how to make it last longer",
+      "url": "https://www.engadget.com/2300231/why-airpods-battery-drains-fast-how-to-fix/",
+      "published": "2026-10-31"
+    }
+  ],
+  "publishedAt": "2026-10-31T23:41:36.444Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/why-your-apple-airpods-battery-drains-so-fast-and-how-to-make-it-last-longer/intro-1793108793.jpg",
+    "source": "https://www.engadget.com/2300231/why-airpods-battery-drains-fast-how-to-fix/",
+    "credit": "Thomas Godwin",
+    "license": "Лицензия не проверена",
+    "alt": "Apple AirPods flanking an iPhone with the Spotify app open on the screen.",
+    "verified": true
+  }
+}
