@@ -4,18 +4,18 @@
 
 | Показатель | Количество |
 |---|---:|
-| JSON-файлов в архиве | 1012 |
-| Успешно прочитаны | 1012 |
-| Статей для ручной проверки (оценка ≥5) | 14 |
+| JSON-файлов в архиве | 1142 |
+| Успешно прочитаны | 1142 |
+| Статей для ручной проверки (оценка ≥5) | 15 |
 | Высокий приоритет (оценка ≥10) | 1 |
 | Кандидатов на дубли | 0 |
 | Некорректных JSON | 0 |
 
 ## Признаки для проверки
 
-- metadata: 150
-- specificity: 92
-- depth: 58
+- metadata: 166
+- specificity: 98
+- depth: 67
 - quality: 3
 - local: 2
 
@@ -27,6 +27,7 @@
 | 9 | ["Окжетпес" разгромил "Каспий" в матче чемпионата Казахстана по футболу](https://harmex.asia/articles/okzhetpes-pobeditel-s-razgromnym-schetom-v-chempionate-kazahstana.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев; Article lacks sufficient sourced detail (less than 450 characters of body text) |
 | 6 | [Генеральный директор Proton Энди Йен получил Liberal Award 2026 года](https://harmex.asia/articles/proton-ceo-andy-yen-wins-2026-liberal-award.html) | Мало информации в описании; Менее 700 знаков основного текста; Регион не указан |
 | 5 | [Бешбармак для американцев, кюй на домбре: как казахстанцы выражают любовь к Родине](https://harmex.asia/articles/kazakhstancy-vyrazhayut-lyubov-k-rodine-beshbarmak-i-dombr.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
+| 5 | [Мать из Шымкента родила тройню и стала мамой десятерых детей](https://harmex.asia/articles/mnogodetnaya-mat-iz-shymkenta-rozhdaet-troynyu-i-stanovyatsya-mamoj-desyaterykh-detey.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Кибератаки затронули финансовый сектор Южной Кореи](https://harmex.asia/articles/novaya-volna-kiberatak-na-finansovyy-sektor-yuzhnoy-korei.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Легковой автомобиль вспыхнул в Алматы: МЧС оперативно потушило пожар в автомобиле](https://harmex.asia/articles/ordinaty-v-almaty-zagoranie-legkovogo-avtomobilya-i-operativnaya-tushenie.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Сабина Алтынбекова осудила физическое насилие тренера в Павлодаре](https://harmex.asia/articles/sabina-altynbekova-osudila-fizicheskoe-nasilie-trenera-v-pavlodare.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |

@@ -1,16 +1,16 @@
 {
   "summary": {
-    "scanned": 1012,
-    "validJson": 1012,
+    "scanned": 1142,
+    "validJson": 1142,
     "invalidJson": 0,
-    "reviewRecommended": 14,
+    "reviewRecommended": 15,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 58,
+      "depth": 67,
       "quality": 3,
-      "specificity": 92,
-      "metadata": 150,
+      "specificity": 98,
+      "metadata": 166,
       "local": 2
     }
   },
@@ -107,6 +107,27 @@
       "score": 5,
       "bodyCharacters": 514,
       "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "mnogodetnaya-mat-iz-shymkenta-rozhdaet-troynyu-i-stanovyatsya-mamoj-desyaterykh-detey",
+      "title": "Мать из Шымкента родила тройню и стала мамой десятерых детей",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 5,
+      "bodyCharacters": 652,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "depth",
@@ -585,6 +606,22 @@
       ]
     },
     {
+      "slug": "dimash-kudaybergen-osvyatil-kazahskuyu-muzyku-v-ankare-na-sammite-otg",
+      "title": "Димаш Кудайберген выступил с казахской музыкой на саммите ОТГ в Анкаре",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 3,
+      "bodyCharacters": 682,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "do-16-gradusov-tepla-kakoy-budet-pogoda-v-megapolisah-kazahstana-25-oktyabrya",
       "title": "До 16 градусов тепла: какой будет погода в мегаполисах Казахстана 25 октября",
       "region": "kz",
@@ -876,6 +913,22 @@
       ]
     },
     {
+      "slug": "minusovaya-temperatura-nochyu-v-megalopolisah-kazahstana-30-oktyabrya-2026",
+      "title": "Минусовую температуру ночью обещают в мегаполисах Казахстана",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 3,
+      "bodyCharacters": 537,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "mistral-le-chonk-proryv-v-kiberbezopasnosti-ai-model",
       "title": "Искусственный интеллект Le Chonk от Mistral значительно превосходит китайские модели в кибербезопасности",
       "region": "global",
@@ -977,6 +1030,22 @@
       "date": "2026-10-27",
       "score": 3,
       "bodyCharacters": 563,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "poslednyaya-produktovaya-yarmarka-v-astane-31-oktyabrya",
+      "title": "В Астане пройдет последняя в этом году продуктовая ярмарка с 497 тоннами товаров",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 3,
+      "bodyCharacters": 581,
       "paragraphs": 4,
       "issues": [
         {
@@ -1252,6 +1321,54 @@
       ]
     },
     {
+      "slug": "uzbekistantsy-pytalis-vyvezti-iz-shymkenta-zoloto-na-227-mln-tenge",
+      "title": "Узбекистанцы пытались вывезти из Шымкента золото на 227 млн теңге",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 3,
+      "bodyCharacters": 603,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-almaty-vosstanovyat-povrezhdennyy-uchastok-trotuara-s-bryuschatkoy-posle-uteki-vody",
+      "title": "В Алматы восстанавливают поврежденный участок тротуара с брусчаткой после утечки воды",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 3,
+      "bodyCharacters": 642,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-almaty-zaderzhali-voditelya-pod-kayfom-s-bolsim-arkhivom-rostitelnogo-veshchestva",
+      "title": "В Алматы задержали водителя «под кайфом» с емкостями и пакетами с растительным веществом",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 3,
+      "bodyCharacters": 504,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "v-almaty-znachitelno-ukhudshilos-obespechenie-bezopasnosti-na-dorogah-otechestvennym-voditelyam-iz-z",
       "title": "В Алматы у 20-летнего водителя нашли травматический пистолет после дорожного конфликта",
       "region": "kz",
@@ -1348,6 +1465,22 @@
       ]
     },
     {
+      "slug": "v-turkestane-pogasili-pozhar-v-kafe-na-pervom-etazhe-zhilogo-doma",
+      "title": "В Туркестане пожарные оперативно потушили огонь в кафе на первом этаже жилого дома",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 3,
+      "bodyCharacters": 693,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "voditel-pokazal-pistolet-vo-vremya-dorozhnogo-konflikta-v-almaty-video",
       "title": "Водитель вытащил пистолет во время дорожного конфликта в Алматы",
       "region": "kz",
@@ -1371,6 +1504,22 @@
       "score": 3,
       "bodyCharacters": 607,
       "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "zaderzhanie-muzhchiny-za-nezakonnuyu-prodazhu-veipov-v-shymkente",
+      "title": "В Шымкенте задержали мужчину с 400 вейпами на 4 миллиона тенге",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 3,
+      "bodyCharacters": 603,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "depth",
@@ -1428,6 +1577,22 @@
       ]
     },
     {
+      "slug": "almaty-vyshla-v-internet-video-s-lisoy-na-povodke-proverka-komiteta-zhivotnogo-mira",
+      "title": "В Алматы заметили лису на поводке — Комитет лесного хозяйства начал проверку",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 2,
+      "bodyCharacters": 867,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "anduril-i-qualcomm-predstavili-bluechip-pervyy-amerikanskiy-zaschishchennyy-noutbuk",
       "title": "Anduril и Qualcomm представили BlueChip — первый в США защищённый ноутбук с большей частью компонентов американского производства",
       "region": "global",
@@ -1440,6 +1605,22 @@
           "type": "metadata",
           "weight": 2,
           "message": "Заголовок слишком длинный"
+        }
+      ]
+    },
+    {
+      "slug": "anime-death-stranding-izolyations-vystupil-s-tejzerom",
+      "title": "Аниме Death Stranding: Isolations представило первый тизер перед премьерой на Disney+",
+      "region": "global",
+      "date": "2026-10-30",
+      "score": 2,
+      "bodyCharacters": 1045,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -1466,6 +1647,22 @@
       "date": "2026-10-27",
       "score": 2,
       "bodyCharacters": 864,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "applebees-vskryl-dannye-millionov-klientov-cherez-okno-v-prilozhenii",
+      "title": "Applebee’s случайно раскрыла персональные данные миллионов клиентов через уязвимость в мобильном приложении",
+      "region": "global",
+      "date": "2026-10-31",
+      "score": 2,
+      "bodyCharacters": 1047,
       "paragraphs": 4,
       "issues": [
         {
@@ -1562,6 +1759,22 @@
       "date": "2026-10-24",
       "score": 2,
       "bodyCharacters": 939,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "dune-part-three-amc-novye-kovshiki-dlya-popkorna",
+      "title": "AMC выпустила новые ковшики для попкорна к выходу Dune: Part Three",
+      "region": "global",
+      "date": "2026-10-30",
+      "score": 2,
+      "bodyCharacters": 768,
       "paragraphs": 4,
       "issues": [
         {
@@ -1998,6 +2211,22 @@
           "type": "depth",
           "weight": 2,
           "message": "Меньше трёх содержательных абзацев"
+        }
+      ]
+    },
+    {
+      "slug": "myaso-sajgi-v-gosmatreze-kazahstana-mozhet-poyavitsya-ne-ranshe-2027-goda",
+      "title": "В Казахстане появление мяса сайги в госматрезерве отложили до 2027 года",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 2,
+      "bodyCharacters": 938,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -3073,6 +3302,38 @@
       ]
     },
     {
+      "slug": "blokirovka-bankovskih-schetov-ip-v-kazahstane-novye-problemy-biznesa",
+      "title": "В Казахстане предприниматели жалуются на блокировку счетов после уведомлений налоговой",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1510,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "boom-supersonic-smenyaet-kurs-na-energetiku-dlya-centr-ii",
+      "title": "Boom Supersonic меняет приоритеты: от сверхзвуковых самолётов к энергетике для ИИ-центров",
+      "region": "global",
+      "date": "2026-10-31",
+      "score": 1,
+      "bodyCharacters": 1421,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "bose-acquires-skullcandy-expands-audio-reach-2026",
       "title": "Bose приобретает Skullcandy: расширение аудиопортфолио с сохранением духа бренда",
       "region": "unknown",
@@ -3153,6 +3414,22 @@
       ]
     },
     {
+      "slug": "evraziyskiy-bank-vyletel-iz-top-10-krupneyshikh-bankov-kazakhstana",
+      "title": "Евразийский банк потерял позицию в топ-10 крупнейших банков Казахстана",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 803,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "ex-palantir-execs-launch-ai-startup-dream-for-construction",
       "title": "Бывшие топ-менеджеры Palantir запустили стартап Dream с $17 млн инвестиций для AI-моделирования строительства",
       "region": "global",
@@ -3185,6 +3462,22 @@
       ]
     },
     {
+      "slug": "fujifilm-uvelichivaet-proizvodstvo-magnitnyh-lent-iz-za-rosta-sprosa-na-hranenie-dannyh-v-ere-ii",
+      "title": "Fujifilm увеличивает производство магнитных лент в 5 раз из-за бурного роста потребности в хранении данных в эпоху ИИ",
+      "region": "global",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1522,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "general-compute-raises-100-million-series-a",
       "title": "Компания General Compute привлекла $100 млн инвестиций, опровергая кризис на рынке неоклаудов",
       "region": "global",
@@ -3192,6 +3485,22 @@
       "score": 1,
       "bodyCharacters": 1582,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "general-motors-220-million-dollar-settlement-for-data-privacy-violation",
+      "title": "General Motors согласилась выплатить 220 миллионов долларов для урегулирования иска по нарушению конфиденциальности данных",
+      "region": "global",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1373,
+      "paragraphs": 7,
       "issues": [
         {
           "type": "metadata",
@@ -3393,6 +3702,22 @@
       ]
     },
     {
+      "slug": "kak-ne-oshibitsya-s-pensionnymi-nakopleniyami-kazahstanczam-dali-sovety",
+      "title": "Как не ошибиться с пенсионными накоплениями: казахстанцам дали советы",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1620,
+      "paragraphs": 9,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "kak-raspoznat-white-label-ustrojstva-i-pochemu-eto-vazhno",
       "title": "Как распознать white label устройства и почему это важно для выбора электроники",
       "region": "unknown",
@@ -3505,6 +3830,22 @@
       ]
     },
     {
+      "slug": "konsress-po-vnutrennej-meditsine-v-almaty-obedinil-spetsialistov-dlya-sovmestnogo-lecheniya",
+      "title": "В Алматы стартовал Конгресс врачей внутренней медицины с международным участием",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 2226,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "legal-ai-startup-legora-raises-550m-series-e",
       "title": "Legal AI стартап Legora привлек $550 млн в раунде Series E с оценкой $8,8 млрд",
       "region": "unknown",
@@ -3521,6 +3862,22 @@
       ]
     },
     {
+      "slug": "malicious-anthropic-claude-extension-infected-5000-devices",
+      "title": "Зловредное расширение для Anthropic Claude заразило до 5 тысяч устройств разработчиков",
+      "region": "global",
+      "date": "2026-10-31",
+      "score": 1,
+      "bodyCharacters": 1273,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "mark-zuckerberg-ostay-silicon-valley-ai-future",
       "title": "Марк Цукерберг решил остаться в Кремниевой долине ради развития AI в Meta",
       "region": "unknown",
@@ -3533,6 +3890,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "mediapremiya-zolotogo-yabloka-v-kazahstane-trendy-doverie-i-pobediteli",
+      "title": "В Казахстане впервые прошла медиапремия «Золотое Яблоко»: кто лидирует в бьюти-индустрии и за кого голосовали?",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1945,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
@@ -3809,6 +4182,22 @@
       ]
     },
     {
+      "slug": "pozhar-v-astane-mnogodetnaya-semya-ostalas-bez-zhilya",
+      "title": "Потрясение в Астане: многодетная семья потеряла дом из-за ночного пожара",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1034,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "pozhar-v-fitness-centre-v-astane-evakuirovali-20-chelovek",
       "title": "Пожар в фитнес-центре Астаны: эвакуировали 20 человек, пострадавших нет",
       "region": "kz",
@@ -3885,6 +4274,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "solidcore-resources-narastil-dohody-i-proizvodstvo-zolota",
+      "title": "Крупнейший золотодобытчик Solidcore Resources увеличил доходы на 83% и производство золота на 44%",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1402,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
@@ -4097,6 +4502,22 @@
       ]
     },
     {
+      "slug": "v-almaty-otkrylas-it-konferenciya-halyk-oiy-tech-2026-s-voprosami-iskusstvennogo-intellekta-i-fintek",
+      "title": "В Алматы прошла масштабная IT-конференция Halyk OIY Tech с участием 500 специалистов",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1476,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "v-almaty-otkryli-sovremennyi-simulyacionnyi-centr-dlya-podgotovki-vrachei",
       "title": "В Алматы запустили уникальный симуляционный центр для подготовки врачей",
       "region": "kz",
@@ -4113,12 +4534,44 @@
       ]
     },
     {
+      "slug": "v-almaty-u-voditelya-toyota-camry-izjali-desyatki-paketov-s-narkotikami",
+      "title": "В Алматы у водителя Toyota Camry изъяли крупную партию наркотиков при задержании",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1067,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "v-astane-rassleduyut-sluchai-ukhudsheniya-sostoyaniya-mladentsa-v-detskoy-bolnitse",
       "title": "В Астане начали расследование после ухудшения состояния младенца в детской больнице",
       "region": "kz",
       "date": "2026-10-23",
       "score": 1,
       "bodyCharacters": 1117,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "v-astanu-avia-priviezli-1100-plemennyh-ovets-dlya-biznes-proekta-eks-top-menedzhera-ktzh",
+      "title": "В Астану авиаперевозкой доставили более 1100 племенных овец для крупного бизнес-проекта",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1239,
       "paragraphs": 6,
       "issues": [
         {
@@ -4241,6 +4694,22 @@
       ]
     },
     {
+      "slug": "vvedut-shtrafy-za-samovolnyj-zabor-vody-iz-orositelnyh-kanalov",
+      "title": "В Казахстане готовы ввести штрафы до 9,4 млн тенге за самовольный забор воды из каналов",
+      "region": "kz",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1498,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "vysokotekhnologichnaya-rekonstruktsiya-drevnego-stekla-lycurgus-cup",
       "title": "Учёные воссоздали загадочный эффект древнего Ликургова кубка с помощью современных технологий",
       "region": "global",
@@ -4301,6 +4770,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "waymo-toyota-nachinayut-testirovanie-robotaksi-v-yaponii-v-2027",
+      "title": "Waymo и Toyota начнут тестирование роботакси в Японии в 2027 году",
+      "region": "global",
+      "date": "2026-10-30",
+      "score": 1,
+      "bodyCharacters": 1012,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
