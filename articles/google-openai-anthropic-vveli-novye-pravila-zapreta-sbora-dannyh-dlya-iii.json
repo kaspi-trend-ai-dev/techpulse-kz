@@ -1,0 +1,41 @@
+{
+  "region": "global",
+  "slug": "google-openai-anthropic-vveli-novye-pravila-zapreta-sbora-dannyh-dlya-iii",
+  "title": "Google, OpenAI и Anthropic согласовали единые правила запрета сбора данных для обучения ИИ",
+  "description": "Крупные технологические компании Google, OpenAI и Anthropic приняли новое правило для robots.txt, позволяющее владельцам сайтов эффективно ограничивать скрапинг своего контента для обучения генеративных моделей искусственного интеллекта. Новая директива стандартизирует способ блокировки сбора данных ИИ-краулерами с начала 2027 года.",
+  "date": "2026-10-31",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новое совместное решение ведущих ИИ-компаний в сфере ограничения сбора данных",
+      "paragraphs": [
+        "Google, OpenAI и Anthropic приняли предложение под эгидой организации IETF, цель которого – дать владельцам веб-сайтов единый инструмент для борьбы с нежелательным скрапингом контента для обучения искусственного интеллекта.",
+        "Ранее владельцам приходилось прописывать индивидуальные правила для каждого ИИ-краулера, теперь же достаточно создать одну директиву в файле robots.txt с новым user-agent '__usage_ai-training'."
+      ]
+    },
+    {
+      "heading": "Как будет работать новая директива и сроки её внедрения",
+      "paragraphs": [
+        "Директива запрещает краулинг, направленный исключительно на сбор данных для обучения ИИ, но не влияет на индексирование сайта для поисковых систем.",
+        "Google, Anthropic и Microsoft пообещали внедрить поддержку этой директивы в начале 2027 года, при этом Microsoft начнёт 1 февраля, а Google – в первые месяцы года.",
+        "Директива также позволяет владельцам сайтов разрешать сбор данных для определённых разделов, например, пресс-китов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google joins OpenAI and Anthropic in promising new scraping controls",
+      "url": "https://www.engadget.com/2303225/google-openai-anthropic-ai-crawling-controls/",
+      "published": "2026-10-31"
+    }
+  ],
+  "publishedAt": "2026-10-31T10:42:10.059Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/google-joins-openai-and-anthropic-in-promising-new-scraping-controls/intro-1793442580.jpg",
+    "source": "https://www.engadget.com/2303225/google-openai-anthropic-ai-crawling-controls/",
+    "credit": "Mariella Moon",
+    "license": "Лицензия не проверена",
+    "alt": "A person on a laptop.",
+    "verified": true
+  }
+}
