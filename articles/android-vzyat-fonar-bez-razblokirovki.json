@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "android-vzyat-fonar-bez-razblokirovki",
+  "title": "Как включить фонарик на Android без разблокировки — быстро и удобно",
+  "description": "У пользователей Android-смартфонов Samsung Galaxy и Google Pixel появилась возможность включать фонарик прямо с заблокированного экрана. Это значительно облегчает использование фонарика в экстренных ситуациях.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Особенности включения фонарика на Google Pixel",
+      "paragraphs": [
+        "На смартфонах Google Pixel для включения фонарика достаточно вызвать меню Быстрых настроек с экрана блокировки, свайпнув вниз по верхней части экрана. Там нужно нажать на иконку фонарика. При отсутствии кнопки её легко добавить через редактор иконок, нажав значок карандаша.",
+        "В Pixel можно назначить жест «Quick Tap» — двойное нажатие по задней панели телефона для включения и выключения фонарика. Этот способ настраивается в разделах Настройки > Система > Жесты. Также помощью ассистента Google фразу «Hey, Google, turn on the flashlight» можно произнести, не разблокируя устройство."
+      ]
+    },
+    {
+      "heading": "Удобные функции фонарика на Samsung Galaxy",
+      "paragraphs": [
+        "В смартфонах Samsung Galaxy фонарик активируется через Панель быстрого доступа, открываемую свайпом вниз с верхнего края экрана, даже на заблокированном устройстве. Если иконка фонарика отсутствует или требуется её перестановка, пользователь может вручную изменить расположение кнопок через редактор Панели быстрых настроек.",
+        "Более того, функция настройки двух кнопок в нижних углах экрана блокировки позволяет заменить стандартные значки телефона или камеры на фонарик, чтобы быстро получить к нему доступ без разблокировки."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to turn on the flashlight on your Android phone without unlocking it",
+      "url": "https://www.engadget.com/2300305/how-to-turn-on-andoird-phone-flashlight-without-unlocking/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T21:01:13.644Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/how-to-turn-on-the-flashlight-on-your-android-phone-without-unlocking-it/intro-1792959825.jpg",
+    "source": "https://www.engadget.com/2300305/how-to-turn-on-andoird-phone-flashlight-without-unlocking/",
+    "credit": "Mariella Moon",
+    "license": "Лицензия не проверена",
+    "alt": "The back of a phone",
+    "verified": true
+  }
+}
