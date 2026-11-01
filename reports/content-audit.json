@@ -1,16 +1,16 @@
 {
   "summary": {
-    "scanned": 1142,
-    "validJson": 1142,
+    "scanned": 1230,
+    "validJson": 1230,
     "invalidJson": 0,
-    "reviewRecommended": 15,
+    "reviewRecommended": 16,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 67,
+      "depth": 74,
       "quality": 3,
-      "specificity": 98,
-      "metadata": 166,
+      "specificity": 103,
+      "metadata": 170,
       "local": 2
     }
   },
@@ -180,6 +180,27 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "pavlodar-otpravlyaet-k-grazhdanskomu-miru-narushiteli-spokojstvya-poluchayut-shtrafy",
+      "title": "Жители Павлодара оштрафованы за нарушение тишины во время ночного ремонта",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 5,
+      "bodyCharacters": 527,
+      "paragraphs": 2,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "depth",
+          "weight": 2,
+          "message": "Меньше трёх содержательных абзацев"
         }
       ]
     },
@@ -606,6 +627,22 @@
       ]
     },
     {
+      "slug": "devushka-poluchila-5-sutok-aresta-za-nadpis-na-stene-v-almaty",
+      "title": "Девушка получила 5 суток ареста за надпись на стене жилого комплекса в Алматы",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 3,
+      "bodyCharacters": 640,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "dimash-kudaybergen-osvyatil-kazahskuyu-muzyku-v-ankare-na-sammite-otg",
       "title": "Димаш Кудайберген выступил с казахской музыкой на саммите ОТГ в Анкаре",
       "region": "kz",
@@ -824,6 +861,22 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kazahstanka-poluchila-podarok-ot-restorana-baku-na-den-rozhdeniya",
+      "title": "Ресторан в Баку удивил казахстанку подарком с нулевым счётом на день рождения",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 3,
+      "bodyCharacters": 663,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         }
       ]
     },
@@ -1385,6 +1438,22 @@
       ]
     },
     {
+      "slug": "v-astane-arestovali-vladelca-avto-s-nadpisju-obidnogo-soderzhaniya",
+      "title": "В Астане арестовали водителя за надпись оскорбительного содержания на автомобиле",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 3,
+      "bodyCharacters": 606,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "v-astane-muzhchina-brosalsya-pod-kolesa-mashin-i-napadal-na-prohozhih",
       "title": "В Астане мужчина создавал угрозу безопасности на дороге, бросаясь под автомобили и нападая на прохожих",
       "region": "kz",
@@ -1449,6 +1518,22 @@
       ]
     },
     {
+      "slug": "v-karagandinskoj-oblasti-nakazali-zhenschinu-za-necenzurnuyu-bran-v-tiktok",
+      "title": "В Карагандинской области оштрафовали женщину за нецензурную брань в прямом эфире TikTok",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 3,
+      "bodyCharacters": 629,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "v-kazahstane-prodlili-zapret-na-vyvoz-szhizhennogo-gaza-dofka-2026-11",
       "title": "В Казахстане хотят продлить запрет на вывоз сжиженного газа",
       "region": "kz",
@@ -1456,6 +1541,22 @@
       "score": 3,
       "bodyCharacters": 570,
       "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-pavlodarskoj-oblasti-rassledovanie-iz-za-perevodov-bolee-100-mln-tenge-zaversheno",
+      "title": "В Павлодарской области завершено расследование дела о переводах на сумму более 100 млн тенге",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 3,
+      "bodyCharacters": 661,
+      "paragraphs": 3,
       "issues": [
         {
           "type": "depth",
@@ -1577,6 +1678,22 @@
       ]
     },
     {
+      "slug": "almaty-proverka-na-nezakonnoe-zabor-telefona-i-narushenie-privatnosti",
+      "title": "В Алматы проводят проверку после жалобы на силовой отбор телефона с важными видеозаписями",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 2,
+      "bodyCharacters": 785,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "almaty-vyshla-v-internet-video-s-lisoy-na-povodke-proverka-komiteta-zhivotnogo-mira",
       "title": "В Алматы заметили лису на поводке — Комитет лесного хозяйства начал проверку",
       "region": "kz",
@@ -1616,6 +1733,22 @@
       "score": 2,
       "bodyCharacters": 1045,
       "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "apple-ceo-o-iskusstvennom-intellekte-otkroveniya-2026",
+      "title": "Глава Apple объяснил, почему компания не торопится выпускать ИИ ради самого ИИ",
+      "region": "global",
+      "date": "2026-11-01",
+      "score": 2,
+      "bodyCharacters": 877,
+      "paragraphs": 3,
       "issues": [
         {
           "type": "specificity",
@@ -1728,6 +1861,22 @@
       "score": 2,
       "bodyCharacters": 1121,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "bluesky-sozdaet-udobnyy-vstroennyy-punkt-moderatsii",
+      "title": "Bluesky запускает встроенный почтовый ящик для модерации",
+      "region": "global",
+      "date": "2026-10-31",
+      "score": 2,
+      "bodyCharacters": 782,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "specificity",
@@ -2020,6 +2169,22 @@
       "score": 2,
       "bodyCharacters": 958,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kazahstanskij-rod-konyrat-okazalsya-samym-drevnim-po-genealogii",
+      "title": "Историк подтвердил: конират – самый древний казахский род с глубокой генеалогией",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 2,
+      "bodyCharacters": 842,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "specificity",
@@ -2758,6 +2923,22 @@
       ]
     },
     {
+      "slug": "ubijstvo-malchika-v-kostanayskoy-oblasti-vystavlyaet-novye-voprosy-o-semejnyh-otnosheniyah",
+      "title": "Трагедия в Костанайской области: расследование убийства пятилетнего мальчика выявляет сложные семейные обстоятельства",
+      "region": "kz",
+      "date": "2026-10-31",
+      "score": 2,
+      "bodyCharacters": 917,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "ukraines-new-stargate-drone-evacuates-wounded-soldiers-safely",
       "title": "Новый дрон StarGate Украины может эвакуировать раненых без риска для спасательной команды",
       "region": "global",
@@ -3446,6 +3627,22 @@
       ]
     },
     {
+      "slug": "fda-nameren-snyat-tavneos-iz-rynka-iz-za-riskov-i-nedostatochnykh-dannykh",
+      "title": "FDA намерена отозвать одобрение препарата Tavneos из-за серьезных рисков и сомнений в эффективности",
+      "region": "global",
+      "date": "2026-10-31",
+      "score": 1,
+      "bodyCharacters": 2107,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "foursquare-sozdaet-uroschennye-resheniya-dlya-smart-tv-i-razvlecheniy",
       "title": "Сооснователь Foursquare рассказал о провале компании и итогах её продажи",
       "region": "global",
@@ -3596,6 +3793,22 @@
       "date": "2026-10-28",
       "score": 1,
       "bodyCharacters": 1131,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "iskusstvennyj-intellekt-i-avtomaticheskoe-samo-razmnozhenie-ugrozy-i-realnost",
+      "title": "Учёные предупреждают: искусственный интеллект скоро сможет автоматически распространяться, создавая новые киберугрозы",
+      "region": "global",
+      "date": "2026-10-31",
+      "score": 1,
+      "bodyCharacters": 1495,
       "paragraphs": 4,
       "issues": [
         {
@@ -3974,6 +4187,22 @@
       ]
     },
     {
+      "slug": "nasa-prizyvaet-kompanii-spasit-teleskop-habbl-ot-gibel",
+      "title": "NASA запускает конкурс предложений по спасению телескопа Хаббл от падения на Землю",
+      "region": "global",
+      "date": "2026-10-31",
+      "score": 1,
+      "bodyCharacters": 1312,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "naschet-depozitov-i-posobij-novyj-podhod-o-chem-rasskazal-nacbank",
       "title": "Глава Нацбанка опроверг страхи об оттоке депозитов казахстанцев из-за новых правил назначения пособий",
       "region": "kz",
@@ -4274,6 +4503,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "slate-vs-ford-fathom-ev-pickup-smarthphone-infotainment",
+      "title": "Ford и Slate предложили кардинально разные электро-пикапы: смартфон вместо экрана против встроенного дисплея",
+      "region": "global",
+      "date": "2026-11-01",
+      "score": 1,
+      "bodyCharacters": 1754,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
