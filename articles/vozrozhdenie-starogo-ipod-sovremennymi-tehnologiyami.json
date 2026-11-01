@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "vozrozhdenie-starogo-ipod-sovremennymi-tehnologiyami",
+  "title": "Устали от устаревших iPod? Новый мод Sprout возвращает им жизнь с Bluetooth и Spotify",
+  "description": "Лондонская студия представила мод Sprout — новую логику плату для старых iPod, которая добавляет поддержку беспроводных технологий и потокового аудио.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Современные технологии для классических плееров",
+      "paragraphs": [
+        "Специалисты из Лондона разработали модифицированную логику плату Sprout, способную заменить старую электронику внутри первых поколений iPod mini и iPod 3-4 поколений.",
+        "Новый мод сохраняет оригинальный экран и сенсорное колесо навигации, но обеспечивает устройства Bluetooth, Wi-Fi, USB-C зарядку и встроенный hi-fi ЦАП для качественного аудио."
+      ]
+    },
+    {
+      "heading": "Поддержка популярных сервисов и расширенные возможности",
+      "paragraphs": [
+        "Sprout позволит запускать стриминг Apple Music и Spotify — раньше доступный только для iPod touch, что позволит слушателям пользоваться современными платформами на классическом устройстве.",
+        "Кроме того, предусмотрен слот для microSD объёмом до 2 ТБ для локального хранения музыки, что значительно расширяет емкость по сравнению с оригинальными моделями."
+      ]
+    },
+    {
+      "heading": "Ограничения и перспективы распространения",
+      "paragraphs": [
+        "Проект ограничивается определёнными старинными моделями iPod, не включая классические и nano с цветными экранами, а полноценная поддержка Wi-Fi и AirPlay находится в разработке.",
+        "Пока что точные сроки выпуска и цены на мод chưa объявлены, а кампания Crowd Supply по сбору средств ещё не стартовала, однако интерес к обновлению классики уже высок."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Your old iPod could get Spotify and USB-C support — here's how",
+      "url": "https://www.engadget.com/2300286/how-old-ipod-get-spotify-usb-c-upgrade-sprout-mod/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T15:56:45.233Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/your-old-ipod-could-get-spotify-and-usb-c-support-heres-how/intro-1793116115.jpg",
+    "source": "https://www.engadget.com/2300286/how-old-ipod-get-spotify-usb-c-upgrade-sprout-mod/",
+    "credit": "Filipe Espósito",
+    "license": "Лицензия не проверена",
+    "alt": "Four different iPod generations lined up. From left to right: 1st, 2nd, 3rd and 4th generation iPods.",
+    "verified": true
+  }
+}
