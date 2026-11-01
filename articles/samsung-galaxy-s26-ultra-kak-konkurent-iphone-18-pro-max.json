@@ -1,0 +1,48 @@
+{
+  "region": "global",
+  "slug": "samsung-galaxy-s26-ultra-kak-konkurent-iphone-18-pro-max",
+  "title": "Samsung Galaxy S26 Ultra назван главным конкурентом iPhone 18 Pro Max",
+  "description": "Samsung Galaxy S26 Ultra признан единственным Android-смартфоном, способным соперничать с новым iPhone 18 Pro Max по сочетанию аппаратных характеристик и программного обеспечения. Эта модель вышла в феврале 2026 года и оснащена современным процессором Qualcomm Snapdragon 8 Elite Gen 5, 12 или 16 ГБ оперативной памяти, а также аккумулятором емкостью 5000 мАч. В числе особенностей — экран с технологией защиты от посторонних взглядов Privacy Display.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Почему Samsung Galaxy S26 Ultra считается серьёзным конкурентом iPhone 18 Pro Max",
+      "paragraphs": [
+        "Samsung Galaxy S26 Ultra вышел в начале 2026 года и предлагает одно из самых продвинутых технических решений среди Android-устройств. Он оснащен процессором Snapdragon 8 Elite Gen 5, что обеспечивает высокую производительность для игр, редактирования видео и других требовательных задач.",
+        "Варианты с 12 и 16 ГБ оперативной памяти позволяют выбирать между комфортом многозадачности и большим объёмом памяти, а емкость аккумулятора 5000 мАч поддерживает длительную автономную работу с быстрой зарядкой."
+      ]
+    },
+    {
+      "heading": "Отличительные черты и возможности экрана Galaxy S26 Ultra",
+      "paragraphs": [
+        "Дисплей S26 Ultra отличается высоким качеством и защитой от просмотра с боковых углов благодаря функции Privacy Display, что становится важным преимуществом для пользователей, ценящих конфиденциальность.",
+        "Сам Samsung входит в число поставщиков экранов для iPhone, что отражается на качестве изображения, сравнимом с флагманом Apple."
+      ]
+    },
+    {
+      "heading": "Обзор конкуренции и перспективы рынка флагманских смартфонов",
+      "paragraphs": [
+        "Хотя Snapdragon 8 Elite Gen 5 сильный чип, ему не хватает мощности по сравнению с миллиардным нанометровым процессором Apple A20 Pro, используемым в iPhone 18 Pro Max.",
+        "Другие модели, такие как Google Pixel 11 Pro XL, уступают по производительности из-за менее мощного процессора Tensor G6. На международных рынках появляются и другие варианты, например Xiaomi 18 Pro Max с Snapdragon 8 Elite Gen 6, но он менее распространён на североамериканском рынке.",
+        "Планируемый выход Samsung Galaxy S27 Ultra с обновлённой камерой и новейшим процессором Snapdragon 8 Elite Gen 6 подчеркивает продолжающуюся борьбу производителей за лидерство."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Which Android is the closest counterpart to the iPhone 18 Pro Max?",
+      "url": "https://www.engadget.com/2300277/which-android-closest-to-iphone-18-pro-max/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T14:54:22.901Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/which-android-is-the-closest-counterpart-to-the-iphone-18-pro-max/intro-1793079780.jpg",
+    "source": "https://www.engadget.com/2300277/which-android-closest-to-iphone-18-pro-max/",
+    "credit": "Max Miller",
+    "license": "Лицензия не проверена",
+    "alt": "iPhone 18 Pro and iPhone 18 Pro Max models on display",
+    "verified": true
+  }
+}

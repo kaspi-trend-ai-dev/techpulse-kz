@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "starlink-sputnikovyy-internet-na-samoletakh-u-200-tys-reysov",
+  "title": "Starlink обеспечил быстрым интернетом уже более 200 тысяч рейсов по всему миру",
+  "description": "Сервис спутникового интернета Starlink по состоянию на ноябрь 2026 года доступен на более 200 тысячах авиарейсов. Крупнейшие авиакомпании мира постепенно оснащают свои флоты оборудованием SpaceX для высокоскоростного Wi-Fi.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Глобальное распространение Starlink в авиации",
+      "paragraphs": [
+        "Starlink, спутниковый интернет от компании SpaceX, внедряется на рейсах авиакомпаний по всему миру. На данный момент более 200 тысяч рейсов уже используют этот сервис для высокоскоростного Wi-Fi на борту.",
+        "В Северной Америке такими операторами, как Alaska Airlines, United Airlines, Southwest Airlines и WestJet, ведутся активные работы по установке оборудования Starlink на свои самолёты. В Европе и Азии Starlink доступен у Lufthansa, Swiss, Emirates, Qatar Airways, SAS Scandinavian Airlines, Air France, British Airways и многих других."
+      ]
+    },
+    {
+      "heading": "Примеры завершённых и почти завершённых установлентий",
+      "paragraphs": [
+        "Некоторые авиакомпании уже полностью оборудовали свои флоты Starlink. Так, Hawaiian Airlines оснащает все свои Airbus самолёты высокоскоростным интернетом от SpaceX. Аналогично Horizon Air, часть Alaska Airlines, уже полностью перешла на Starlink.",
+        "Qatar Airways установила Starlink на все свои Boeing 787-8 и более половины 787-9, что составляет примерно 60% парка. Компания планирует завершить полное оснащение этой модели самолётов к концу 2026 года. WestJet уже установила Starlink на 76-83% своих самолетов, а Emirates оборудовала более 50 судов."
+      ]
+    },
+    {
+      "heading": "Особенности использования и ограничения Starlink в полётах",
+      "paragraphs": [
+        "Несмотря на широкое внедрение Starlink, сервис не работает над территорией Китая, России, Афганистана и других стран, запрещённых санкциями США. Более того, обслуживание каждым авиаперевозчиком может варьироваться: во время бронирования не всегда можно определить, будет ли конкретный рейс оснащён Starlink.",
+        "Некоторые авиакомпании, например Delta, выбрали конкурентные проекты спутникового интернета, например Amazon Leo, предпочтительный для их флота альтернативный сервис для обеспечения связи на борту."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to check if your upcoming flight has Starlink Wi-Fi",
+      "url": "https://www.engadget.com/2300275/starlink-wifi-how-to-check-upcoming-flight/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T14:55:12.468Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/how-to-check-if-your-upcoming-flight-has-starlink-wi-fi/intro-1793040764.jpg",
+    "source": "https://www.engadget.com/2300275/starlink-wifi-how-to-check-upcoming-flight/",
+    "credit": "Kate Irwin",
+    "license": "Лицензия не проверена",
+    "alt": "Photo of smiling woman holding smartphone and coffee while sitting in commercial airplane seat.",
+    "verified": true
+  }
+}
