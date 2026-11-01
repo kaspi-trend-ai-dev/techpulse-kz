@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "microsoft-pc-manager-effektivno-ubiraet-lishnie-fayly",
+  "title": "Microsoft PC Manager выявил скрытые гигабайты «мусора» на жестком диске Windows",
+  "description": "Новый инструмент Microsoft PC Manager показал высокую эффективность очистки накопителя, выявив до 90% нежелательных файлов, в отличие от штатных средств Windows, которые почти не освобождают место.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Сравнительный анализ утилит для очистки Windows",
+      "paragraphs": [
+        "Тест провели на 1-терабайтном диске с менее чем 4% свободного места. Стандартные инструменты Windows — Disk Cleanup и Storage Sense — обнаружили всего около 1,66 ГБ удаляемых файлов, покрывая около 8% от реального объема мусора.",
+        "В то же время PC Manager показал список на 26 ГБ, включая этот мусор и дополнительные объекты. При этом он охватил порядка 90% всех реальных ненужных данных на диске, что значительно эффективнее штатных средств."
+      ]
+    },
+    {
+      "heading": "Основные источники накопления «мусора» на диске",
+      "paragraphs": [
+        "Самыми крупными «загрязнителями» оказались 9,25 ГБ кеша видеодрайвера NVIDIA, около 5 ГБ кеша браузера Chrome и свыше 2 ГБ дампов сбоев приложений. Все эти тяжелые файлы не замечались штатными очистками Windows.",
+        "PC Manager дополнительно выявил кеши различных разработческих инструментов, таких как Python и Node.js, оставшиеся после работы программ."
+      ]
+    },
+    {
+      "heading": "Рекомендации по поддержанию чистоты на компьютере",
+      "paragraphs": [
+        "Disk Cleanup устарел и дублируется Storage Sense, который лучше запускать регулярно, изменив настройки очистки подкачки файлов и корзины.",
+        "Microsoft PC Manager — это глубокий и более тщательный инструмент, который удобно использовался для поиска мусора и определения самых больших файлов, мешающих освободить место на диске."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "You might be neglecting the one thing that keeps your PC healthy",
+      "url": "https://www.engadget.com/2300290/desktop-pc-neglecting-cleaning-computer-health/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T16:27:21.457Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/you-might-be-neglecting-the-one-thing-that-keeps-your-pc-healthy/intro-1793116336.jpg",
+    "source": "https://www.engadget.com/2300290/desktop-pc-neglecting-cleaning-computer-health/",
+    "credit": "Nimrod Aldea",
+    "license": "Лицензия не проверена",
+    "alt": "Close-up image of Random Access memory (RAM) and Central Processing Unit (CPU) utilization on a Laptop or PC.",
+    "verified": true
+  }
+}
