@@ -1,0 +1,39 @@
+{
+  "region": "global",
+  "slug": "tekkranch-founder-summit-v-bostone-setyah-2026",
+  "title": "В Бостоне пройдет TechCrunch Founder Summit 2026 с возможностями для целевого нетворкинга",
+  "description": "4 ноября в Бостоне на площадке SoWa Power Station состоится TechCrunch Founder Summit 2026. Мероприятие предлагает насыщенную программу с возможностями для целевого нетворкинга и обмена опытом между основателями стартапов и инвесторами.",
+  "date": "2026-11-01",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Целевой нетворкинг с помощью Braindate",
+      "paragraphs": [
+        "TechCrunch Founder Summit использует платформу Braindate, которая позволяет участникам планировать индивидуальные и групповые обсуждения по конкретным темам. Это помогает основателям и инвесторам общаться по вопросам, таким как стратегии привлечения инвестиций, сложности найма и выход на корпоративных клиентов."
+      ]
+    },
+    {
+      "heading": "Разнообразие форматов и возможностей для общения",
+      "paragraphs": [
+        "В день саммита предусмотрены круглые столы для тематических разговоров, панели с обсуждениями и выставка стартапов и партнеров. Завершит программу вечерний прием, где участники смогут продолжить общение в неформальной обстановке.",
+        "Кроме основного дня, в течение недели в Бостоне пройдут официальные сопутствующие мероприятия, расширяющие возможности для установления полезных контактов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
+      "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+      "published": "2026-10-31"
+    }
+  ],
+  "publishedAt": "2026-11-01T03:42:23.971Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2025/03/Early-Stage-2024-audience.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+    "credit": "TechCrunch Events",
+    "license": "Лицензия не проверена",
+    "alt": "TechCrunch Early Stage 2024 audience",
+    "verified": true
+  }
+}
