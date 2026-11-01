@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "roku-stroim-tochno-na-kachestvo-izobrazheniya",
+  "title": "Roku обновляет линейку: как выбрать стриминговый стик с учётом качества картинки",
+  "description": "Эксперты рассказали, какой стриминговый стик Roku стоит выбрать в 2026 году в зависимости от потребностей в качестве изображения и дополнительных функциях.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Основные различия моделей Roku по качеству видео",
+      "paragraphs": [
+        "Компания Roku предлагает пять вариантов стриминговых устройств, но основной критерий выбора — поддержка 4K. Все модели, кроме самой бюджетной стоимостью 40 долларов, способны транслировать видео в формате 4K. Продвинутый Streaming Stick 4K и более доступный Streaming Stick Plus отличаются поддержкой Dolby Vision и дальностью Wi-Fi, при этом последний стоит на 20 долларов дешевле.",
+        "Dolby Vision — это формат HDR с расширенным динамическим диапазоном, который может улучшить качество изображения, но мнения пользователей разделились относительно его влияния."
+      ]
+    },
+    {
+      "heading": "Дополнительные преимущества моделей премиум-класса Roku",
+      "paragraphs": [
+        "Модели Roku Ultra и Streambar SE стоят около 150 долларов, но при этом имеют заметные различия. Ultra — это компактная приставка с поддержкой Wi-Fi 6 и Ethernet-портом, что гарантирует более стабильное и быстрое интернет-соединение для высокого качества видео.",
+        "Streambar SE объединяет функции звуковой панели и стримингового устройства, оснащён встроенными динамиками, но не поддерживает Dolby Atmos, который доступен в Ultra. Такой вариант подойдёт тем, кто хочет иметь звуковую систему и стриминговый плеер в одном устройстве."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "The best Roku Streaming Stick depends on your picture quality needs",
+      "url": "https://www.engadget.com/2302428/best-roku-streaming-stick-depends-on-picture-quality-needs/",
+      "published": "2026-10-31"
+    }
+  ],
+  "publishedAt": "2026-11-01T04:30:53.175Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/the-best-roku-streaming-stick-depends-on-your-picture-quality-needs/intro-1793294370.jpg",
+    "source": "https://www.engadget.com/2302428/best-roku-streaming-stick-depends-on-picture-quality-needs/",
+    "credit": "Robin Bea",
+    "license": "Лицензия не проверена",
+    "alt": "Roku Streaming Stick and remote on white background.",
+    "verified": true
+  }
+}
