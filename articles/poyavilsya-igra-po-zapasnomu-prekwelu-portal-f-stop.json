@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "poyavilsya-igra-po-zapasnomu-prekwelu-portal-f-stop",
+  "title": "Создана почти завершённая версия отменённой игры-предшественника Portal — F-Stop",
+  "description": "После крупного утечки данных сообщества разработчиков собрали из всех утёков почти законченный игровой билд F-Stop — отменённого прелюда к серии Portal. Игра демонстрирует уникальную механику фотографирования и перемещения объектов, ближе всего к официальному выходу.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "История утечек и создание играбельной версии",
+      "paragraphs": [
+        "В августе 2026 года произошла масштабная утечка — более 12 ТБ данных Steam, включающих материалы отменённой игры F-Stop, а также ранние версии других проектов Valve. Недавно в Discord-сервере Valve Cut Content появилось исходное кода и карта уровней F-Stop, что позволило собрать почти полностью завершённый игровой билд из всех доступных данных.",
+        "Созданная неофициально версия пока не до конца готова — в ней отсутствуют некоторые текстуры и диалоги, но, по обзорам на YouTube, она достаточно стабильна для ознакомления с игрой."
+      ]
+    },
+    {
+      "heading": "Уникальная игровая механика и перспективы выхода",
+      "paragraphs": [
+        "Главной особенностью F-Stop стала механика камеры, позволяющей фотографировать реальные объекты в игровом мире, после чего можно изменять и перемещать их, открывая необычные геймплейные возможности. Эта идея могла бы стать инновацией в жанре головоломок на основе физики.",
+        "Поскольку у Valve пока нет планов по официальному релизу игры, эта неофициальная сборка, вероятно, будет единственным шансом игрокам попробовать F-Stop вблизи её завершённой формы."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "All the leaks for the Portal prequel F-Stop have been compiled into a playable game",
+      "url": "https://www.engadget.com/2303446/all-the-leaks-for-the-portal-prequel-f-stop-have-been-compiled-into-a-playable-game/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T18:03:20.505Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/all-the-leaks-for-the-portal-prequel-f-stop-have-been-compiled-into-a-playable-game/intro-1793554498.jpg",
+    "source": "https://www.engadget.com/2303446/all-the-leaks-for-the-portal-prequel-f-stop-have-been-compiled-into-a-playable-game/",
+    "credit": "Jackson Chen",
+    "license": "Лицензия не проверена",
+    "alt": "A gameplay screenshot of F-Stop showing a mannequin and a camera.",
+    "verified": true
+  }
+}
