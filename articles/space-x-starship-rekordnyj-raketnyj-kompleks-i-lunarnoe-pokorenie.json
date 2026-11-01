@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "space-x-starship-rekordnyj-raketnyj-kompleks-i-lunarnoe-pokorenie",
+  "title": "SpaceX представила рекордно мощный ракетный комплекс Starship для лунных миссий",
+  "description": "SpaceX создала ракетный комплекс Starship высотой 407 футов и мощностью 18,1 млн фунтов-силы, предназначенный для доставки грузов и экипажа за пределы орбиты Земли, включая планируемые полёты на Луну вместе с NASA.",
+  "date": "2026-11-01",
+  "category": "Наука и технологии",
+  "sections": [
+    {
+      "heading": "Рекордные размеры и мощность ракеты Starship от SpaceX",
+      "paragraphs": [
+        "Полностью собранный двухступенчатый ракетный комплекс Starship достигает высоты 407 футов (около 124 метров), что делает его одним из самых высоких и мощных ракетных носителей в истории космонавтики.",
+        "Первая ступень, Super Heavy, имеет высоту 236,2 фута и оснащена 33 двигателями Raptor, обеспечивающими тягу 18,1 миллиона фунтов-силы. Для сравнения, ракета NASA Space Launch System развивает тягу порядка 8,8–9,4 миллиона фунтов-силы."
+      ]
+    },
+    {
+      "heading": "Назначение и технологические особенности Starship для космических миссий",
+      "paragraphs": [
+        "Starship разработан для перевозки больших грузов и пассажиров за пределы земной орбиты, включая лунные миссии в сотрудничестве с NASA в рамках программы Artemis.",
+        "Для выполнения лунных миссий Starship планируется дозаправлять топливом на орбите Земли с помощью специализированных топливных кораблей и заправочных станций, поскольку ракета не сможет достичь Луны без дозаправки."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "How big and powerful is SpaceX's Starship rocket?",
+      "url": "https://www.engadget.com/2300227/how-big-powerful-spacex-starship-rocket/",
+      "published": "2026-10-31"
+    }
+  ],
+  "publishedAt": "2026-11-01T00:13:08.260Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/how-big-and-powerful-is-spacexs-starship-rocket/intro-1793113657.jpg",
+    "source": "https://www.engadget.com/2300227/how-big-powerful-spacex-starship-rocket/",
+    "credit": "Thomas Godwin",
+    "license": "Лицензия не проверена",
+    "alt": "Starships SN15 and SN16 in Boca Chica, Texas.",
+    "verified": true
+  }
+}
