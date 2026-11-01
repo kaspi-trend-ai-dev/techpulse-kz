@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "anthropic-zapreshchaet-klonu-igram-s-pomoshchyu-iskusstvennogo-intellekta",
+  "title": "Anthropic запретила AI воссоздавать существующие видеоигры, защищая интеллектуальную собственность",
+  "description": "Компания Anthropic обновила своего ИИ Claude, запретив ему создавать точные копии существующих видеоигр. Теперь AI может помочь только с разработкой оригинальных игр или игр в жанре с собственными элементами.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новые ограничения для AI и защита авторских прав",
+      "paragraphs": [
+        "Anthropic внесла обновления в AI Claude, которые запрещают ему создавать точные воссоздания конкретных существующих видеоигр, даже если такие проекты переименованы или поданы как оригинальные.",
+        "Компания направлена на предотвращение нарушения интеллектуальных прав, что подтверждено заявлением сотрудника Anthropic Адди Османи, который подчеркнул, что использование Claude для копирования чужих игр противоречит политике компании."
+      ]
+    },
+    {
+      "heading": "Значение обновления в условиях роста AI-поддерживаемых игр",
+      "paragraphs": [
+        "Такое обновление связано с увеличением количества игр AAA-класса, декомпилированных и воспроизведённых с помощью AI на браузерных платформах, включая известные проекты по Halo, Call of Duty и Grand Theft Auto.",
+        "Ранее Anthropic столкнулась с крупными юридическими исками, в том числе с соглашением на $1,5 млрд из-за использования авторских материалов без согласования, а также с исками от наследников знаменитостей, что подчеркивает важность нового курса компании."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anthropic updates Claude to stop it from recreating existing video games",
+      "url": "https://www.engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T22:04:25.172Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/intro-1793566610.jpg",
+    "source": "https://www.engadget.com/2303469/anthropic-updates-claude-to-stop-it-from-recreating-existing-video-games/",
+    "credit": "Jackson Chen",
+    "license": "Лицензия не проверена",
+    "alt": "Anthropic",
+    "verified": true
+  }
+}

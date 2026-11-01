@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "openai-perebrosit-datacentry-v-ai-compute-campuses",
+  "title": "OpenAI переименует свои дата-центры в «AI compute campuses» и готовится к новой эре ИИ",
+  "description": "OpenAI планирует изменить восприятие своих дата-центров, переименовав их в «AI compute campuses». Компания также начинает масштабную PR-кампанию после американских выборов 2026 года, нацеливаясь влиять на нормативную политику и общественное мнение о искусственном интеллекте.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Переосмысление инфраструктуры ИИ и новые стандарты",
+      "paragraphs": [
+        "OpenAI объявила о планах по ребрендингу своих дата-центров, предлагая называть их «AI compute campuses». Это связано с негативным восприятием дата-центров в обществе и стремлением компании подчеркнуть инновационный и созидательный характер своей инфраструктуры.",
+        "Глава по глобальным вопросам OpenAI Крис Лехейн заявил, что дата-центры должны приносить явную пользу сообществам, где они расположены, и подчеркнул важность ответственности компаний перед этими сообществами. В ходе переговоров с местными властями фирмы Amazon и Microsoft отказались от использования соглашений о неразглашении, что способствует повышению прозрачности."
+      ]
+    },
+    {
+      "heading": "Подготовка к политическим и общественным изменениям в США",
+      "paragraphs": [
+        "OpenAI запускает масштабную PR-кампанию после промежуточных выборов конгресса США 2026 года, так как ожидает усиления роли вопросов ИИ в политике к президентским выборам 2028 года.",
+        "Компания планирует продвигать идеи регуляции, в том числе введение «скоростных ограничений» на развитие ИИ, а также призывает США взять на себя инициативу по формированию глобальных стандартов в области искусственного интеллекта. Стратегия направлена на то, чтобы люди воспринимали ИИ не как угрозу, а как инструмент, расширяющий возможности в повседневной жизни."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+      "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T22:03:38.818Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2283113936-maller.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+    "credit": "Anthony Ha",
+    "license": "Лицензия не проверена",
+    "alt": "A sign opposed to AI is held during a protest against AI data centers in Vancouver, British Columbia, Canada, on Saturday, June 27, 2026. Canadians aren&#039;t universally sold on building sovereign compute, with early signs of protest against AI server farms in British Columbia and Manitoba. Photographer: Ethan Cairns/Bloomberg via Getty Images",
+    "verified": true
+  }
+}
