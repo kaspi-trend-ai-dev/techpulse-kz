@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "apple-watch-assistivetouch-novinki-2026",
+  "title": "Apple Watch получил новый уровень управления без касаний с помощью AssistiveTouch",
+  "description": "Функция AssistiveTouch на Apple Watch позволяет управлять устройством без прикосновений, используя движения пальцев и руки, что расширяет возможности взаимодействия и делает гаджет доступнее.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Как работает AssistiveTouch и где включить",
+      "paragraphs": [
+        "AssistiveTouch — это новая функция в watchOS, позволяющая управлять Apple Watch с помощью жестов рук и пальцев, без касания экрана. Система задействует данные гироскопа, акселерометра и оптического датчика сердечного ритма для распознавания даже малейших движений.",
+        "Чтобы активировать AssistiveTouch, нужно зайти в настройки часов в раздел «Доступность», включить эту функцию и настроить жесты. Например, одинарное касание пальцев становится эквивалентом нажатия на экран, а двойное нажатие — открывает центр уведомлений."
+      ]
+    },
+    {
+      "heading": "Преимущества и сферы применения технологии в реальной жизни",
+      "paragraphs": [
+        "AssistiveTouch предназначена в первую очередь для людей с ограниченными возможностями, которым сложно касаться экрана, но полезна и в повседневных ситуациях. Например, когда руки заняты, мокрые или в перчатках, управление устройством остаётся удобным и эффективным.",
+        "Кроме управления жестами, функция Motion Pointer выводит на экран движущийся указатель, который реагирует на движения руки, расширяя возможности взаимодействия с интерфейсом Apple Watch."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "What is AssistiveTouch on your Apple Watch and when should you use it?",
+      "url": "https://www.engadget.com/2302464/what-is-assistivetouch-apple-watch-when-use-it/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T17:02:29.855Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/what-is-assistivetouch-on-your-apple-watch-and-when-should-you-use-it/intro-1793294003.jpg",
+    "source": "https://www.engadget.com/2302464/what-is-assistivetouch-apple-watch-when-use-it/",
+    "credit": "Filipe Espósito",
+    "license": "Лицензия не проверена",
+    "alt": "An Apple Watch on someone",
+    "verified": true
+  }
+}
