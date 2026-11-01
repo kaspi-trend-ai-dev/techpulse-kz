@@ -1,0 +1,45 @@
+{
+  "region": "global",
+  "slug": "meta-sozdaet-prototip-gumanoida-dlya-domashnih-rabot",
+  "title": "Meta сообщила о создании прототипа робота-гуманоида для домашних задач",
+  "description": "Компания Meta разработала прототип робота-гуманоида, который может помогать в быту. Первый аппарат, получивший внутреннее название Max, весит примерно 106 фунтов (около 48 кг) и имеет рост около 1,5 метра. Meta также работает над вторым прототипом с улучшенными сенсорами.",
+  "date": "2026-11-01",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Особенности прототипа робота Meta Max",
+      "paragraphs": [
+        "Прототип робота, известный под кодовым названием Max, был разработан Meta совместно с китайской компанией Fourier примерно за три месяца. Робот оснащён дисплеем, который может отображать выражения лица, встроенным динамиком и манипуляторами, предназначенными для захвата мелких предметов.",
+        "Для вычислительной мощности в роботе используются процессоры NVIDIA Jetson Thor."
+      ]
+    },
+    {
+      "heading": "Разработка второго прототипа Max 2",
+      "paragraphs": [
+        "Meta с сентября 2026 года работает над вторым прототипом робота, который получил кодовое имя Max 2. В новой версии планируется улучшение конструкции корпуса и рук, а также добавление проектора и дополнительных сенсоров, которые помогут роботу лучше справляться с преодолением лестниц."
+      ]
+    },
+    {
+      "heading": "Контекст развития робототехники в Meta",
+      "paragraphs": [
+        "Разработка роботов-гуманоидов является частью стратегии Meta по расширению в области робототехники. Ранее в 2026 году компания приобрела стартап, специализирующийся на искусственном интеллекте для роботов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meta reportedly built a humanoid robot prototype that can do household chores",
+      "url": "https://www.engadget.com/2303434/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/",
+      "published": "2026-11-01"
+    }
+  ],
+  "publishedAt": "2026-11-01T17:31:11.865Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/intro-1793552988.jpg",
+    "source": "https://www.engadget.com/2303434/meta-reportedly-built-a-humanoid-robot-prototype-that-can-do-household-chores/",
+    "credit": "Jackson Chen",
+    "license": "Лицензия не проверена",
+    "alt": "Woman walking past several docked humanoid robots.",
+    "verified": true
+  }
+}
