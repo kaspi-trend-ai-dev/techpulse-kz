@@ -1,0 +1,44 @@
+{
+  "region": "global",
+  "slug": "android-auto-novoe-obnovlenie-rasshiryaet-vozmozhnosti-raboty-v-avtomobile",
+  "title": "Android Auto тестирует рабочий режим для управления приложениями в дороге",
+  "description": "Новое обновление Android Auto содержит скрытую функцию Work Mode — переключатель, который может быть связан с управлением рабочими профилями на автомобильном дисплее. Пока функция находится в стадии тестирования и не выполняет никаких действий.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Тестирование функции Work Mode в Android Auto",
+      "paragraphs": [
+        "В версии Android Auto 18.0.664204 обнаружена скрытая иконка Work Mode с изображением портфеля, которая может указывать на будущую поддержку управления рабочими профилями. На данный момент при нажатии на переключатель никаких действий не происходит, так как функция находится в экспериментальной стадии."
+      ]
+    },
+    {
+      "heading": "Особенности рабочего профиля на Android",
+      "paragraphs": [
+        "Рабочий профиль на смартфонах Android создаёт отдельное пространство для приложений и данных работодателя, отделяя их от личных приложений пользователя. Это позволяет разграничивать личные и служебные ресурсы на одном устройстве. Однако некоторые ограничения, например, в работе видеоконференц-приложений, сохраняются."
+      ]
+    },
+    {
+      "heading": "Ограничения и возможности интеграции с Android Auto",
+      "paragraphs": [
+        "Поддержка рабочих приложений в Android Auto ограничена политиками работодателей и особенностями платформы. Не все корпоративные приложения доступны в автомобильном интерфейсе, а функция Work Mode пока не показала возможности управления уведомлениями или запуском приложений. Также администраторы могут контролировать состояние рабочего профиля и время его активности."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Android Auto could upset your work-life balance with its next update",
+      "url": "https://www.engadget.com/2300324/android-auto-next-update-could-upset-work-life-balance/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T01:18:14.929Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/android-auto-could-upset-your-work-life-balance-with-its-next-update/intro-1793021238.jpg",
+    "source": "https://www.engadget.com/2300324/android-auto-next-update-could-upset-work-life-balance/",
+    "credit": "Husain Parvez",
+    "license": "Лицензия не проверена",
+    "alt": "Smartphone beside a keyboard displaying the Android Auto app listing with Update and Uninstall buttons.",
+    "verified": true
+  }
+}

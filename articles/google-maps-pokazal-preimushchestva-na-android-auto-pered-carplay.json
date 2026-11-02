@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "google-maps-pokazal-preimushchestva-na-android-auto-pered-carplay",
+  "title": "Google Maps продемонстрировал явные преимущества на Android Auto в сравнении с CarPlay",
+  "description": "В недавнем сравнительном тесте Google Maps на Android Auto и Apple CarPlay выявлены существенные различия в использовании навигации. Android Auto обеспечивает более удобный голосовой ввод, лучший просмотр и выбор маршрутов, а также расширенное планирование поездок для электромобилей.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Удобство голосового управления и изменения маршрута",
+      "paragraphs": [
+        "В тестировании приложению Google Maps на Android Auto удалось быстрее и удобнее обрабатывать голосовые запросы через встроенного помощника Gemini, который можно активировать без прикосновения к экрану, в отличие от CarPlay, где голосовой помощник требует предварительного нажатия.",
+        "Также маршруты на Android Auto менять удобнее — можно быстро добавлять остановки и просматривать варианты без перезапуска диалога, что сделало навигацию более динамичной."
+      ]
+    },
+    {
+      "heading": "Лучший обзор и сравнение вариантов на карте",
+      "paragraphs": [
+        "Android Auto позволяет одновременно видеть несколько точек с оценками и дополнительной информацией, упрощая выбор остановки. В CarPlay пользователю приходится листать варианты по одному, что требует дополнительных действий.",
+        "Кроме того, интерфейс Android Auto предоставляет более интуитивное взаимодействие с картой через привычные жесты: масштабирование и прокрутка работают прямо на карте, в то время как CarPlay вынуждает переходить в отдельный режим управления."
+      ]
+    },
+    {
+      "heading": "Расширенное планирование маршрутов для электромобилей",
+      "paragraphs": [
+        "Google Maps на Android Auto в США поддерживает продвинутую систему планирования поездок для электромобилей, включая расчет потребления батареи с учетом трафика и погодных условий, автоматическую интеграцию остановок для зарядки и расчет времени с учетом зарядки.",
+        "Подобная функция не реализована на CarPlay, что делает Android Auto предпочтительной платформой для владельцев электромобилей."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "6 Google Maps features that work better on Android Auto vs. CarPlay",
+      "url": "https://www.engadget.com/2300327/google-maps-features-work-better-android-auto-vs-carplay/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T01:16:24.008Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/6-google-maps-features-that-work-better-on-android-auto-vs-carplay/intro-1793216852.jpg",
+    "source": "https://www.engadget.com/2300327/google-maps-features-work-better-android-auto-vs-carplay/",
+    "credit": "Husain Parvez",
+    "license": "Лицензия не проверена",
+    "alt": "Google Maps route options on Android Auto above the Google Maps settings menu on Apple CarPlay.",
+    "verified": true
+  }
+}
