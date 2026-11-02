@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "apple-predstavit-tri-novyh-ipad-vesnoj-2027-goda",
+  "title": "Apple представит три новых iPad с серьёзными обновлениями в начале 2027 года",
+  "description": "Компания Apple планирует выпустить три новых модели iPad весной 2027 года, включая базовую версию, iPad Air и топовый iPad Pro с значительными техническими улучшениями: новые процессоры, поддержка Wi-Fi 7 и 5G, а также OLED-экран у iPad Air.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "План выпуска и основные новшества новых моделей iPad",
+      "paragraphs": [
+        "По данным Bloomberg, Apple намерена расширить линейку iPad в начале 2027 года, представив сразу три обновлённые модели — базовую, iPad Air и iPad Pro.",
+        "В базовой версии ожидается установка процессора A19, 8 ГБ оперативной памяти и новых чипов N1 и C1X, которые обеспечат поддержку Wi-Fi 7 и 5G стандарта sub-6 GHz, что обещает более быструю связь и экономию заряда батареи."
+      ]
+    },
+    {
+      "heading": "Технологические улучшения iPad Air и iPad Pro для новых сценариев использования",
+      "paragraphs": [
+        "iPad Air обзаведётся OLED-экраном, аналогичным недавно выпущенному iPad mini, что значительно улучшит качество изображения за счёт более глубоких чёрных оттенков и контраста.",
+        "Топовый iPad Pro получит новый мощный процессор — возможно, M6 или даже M7, а также систему охлаждения с использованием паровой камеры для эффективного снижения температуры при задачах с искусственным интеллектом."
+      ]
+    },
+    {
+      "heading": "Значение обновлений для рынка и пользователей",
+      "paragraphs": [
+        "Обновлённые модели iPad сохранят ключевую роль в ассортименте Apple, несмотря на появление новых устройств, таких как iPhone Duo и MacBook Pro с сенсорным экраном, которые могут конкурировать с планшетами.",
+        "Apple продаёт около 60 миллионов iPad ежегодно, и новые улучшения позволят устройствам оставаться востребованными, расширяя возможности для пользователей в работе и развлечениях."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple is reportedly launching three new iPads early next year",
+      "url": "https://www.engadget.com/2303590/apple-is-reportedly-launching-three-new-ipads-early-next-year/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T12:40:10.975Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/apple-is-reportedly-launching-three-new-ipads-early-next-year/intro-1793617622.jpg",
+    "source": "https://www.engadget.com/2303590/apple-is-reportedly-launching-three-new-ipads-early-next-year/",
+    "credit": "Steve Dent",
+    "license": "Лицензия не проверена",
+    "alt": "Two iPad models are shown against a grey carpet",
+    "verified": true
+  }
+}
