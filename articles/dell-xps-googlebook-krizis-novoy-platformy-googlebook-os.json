@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "dell-xps-googlebook-krizis-novoy-platformy-googlebook-os",
+  "title": "Dell XPS Googlebook разочаровывает: премиальный корпус не спасает сырую ОС Googlebook",
+  "description": "Новый ноутбук Dell XPS Googlebook оснащён мощным Snapdragon X Elite и стильным корпусом, но новинка работает на нестабильной платформе Googlebook OS, которая значительно уступает Windows и ChromeOS. Отсутствие оптимизированных приложений и проблемы с батареей ставят под вопрос смысл приобретения устройства.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Дизайн и технические характеристики Dell XPS Googlebook",
+      "paragraphs": [
+        "Ноутбук Dell XPS Googlebook получил корпус из металла весом всего 2,2 фунта и 13,4-дюймовый экран InfinityEdge. Он работает на базе процессора Qualcomm Snapdragon X Elite с 16 ГБ оперативной памяти — технически это тот же набор, что и в $1000 версии XPS 13 с Windows 11.",
+        "Устройство оснащено двумя портами USB-C, но отсутствует традиционный разъём для наушников. В задней части корпуса встроена светодиодная \"Glowbar\", которая отображает уровень зарядки, но практическую пользу она не несёт."
+      ]
+    },
+    {
+      "heading": "Недостатки Googlebook OS и проблемы с приложениями",
+      "paragraphs": [
+        "Новейшая операционная система Googlebook OS, сочетающая Android и ChromeOS с интегрированным ИИ Gemini, оказалась \"сырой\" и неполноценной. Поддержка Android-приложений неудовлетворительна: многие программы работают в мобильной версии с ограниченным функционалом, например Slack не позволяет полноценно управлять каналами.",
+        "Некоторые полезные приложения, такие как Evernote, отсутствуют в магазине Google Play на Googlebook, а масштабирование и редактирование изображений требует обходных путей через сторонние приложения. Также есть проблемы с энергопотреблением — CapCut Pad в фоновом режиме быстро разряжает батарею."
+      ]
+    },
+    {
+      "heading": "Заключение: стоит ли покупать Dell XPS Googlebook?",
+      "paragraphs": [
+        "Несмотря на высококачественную аппаратную часть, неконкурентоспособная ОС и ограниченный функционал изолируют Dell XPS Googlebook от рынка ноутбуков. Более зрелые альтернативы с Windows 11 или привычными Chromebook предлагают лучший опыт и стабильность.",
+        "Встроенный ИИ Gemini и функция диктовки Rambler работают на базовом уровне, но не оправдывают перехода на новую платформу. Редактор рекомендует ориентироваться на проверенные решения, а не экспериментировать с Googlebook OS."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dell XPS Googlebook review: Beautiful hardware for a useless platform",
+      "url": "https://www.engadget.com/2302835/dell-xps-googlebook-review/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T17:33:12.351Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/dell-xps-googlebook-review-beautiful-hardware-for-a-useless-platform/intro-1793629252.jpg",
+    "source": "https://www.engadget.com/2302835/dell-xps-googlebook-review/",
+    "credit": "Devindra Hardawar",
+    "license": "Лицензия не проверена",
+    "alt": "The Dell XPS Googlebook.",
+    "verified": true
+  }
+}

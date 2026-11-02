@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "nagashi-studio-iskluchitelno-zakryl-proekty-gang-of-dragon-v-opasnosti",
+  "title": "Студия Nagoshi закрыта: судьба долгожданной игры Gang of Dragon под вопросом",
+  "description": "Созданная известным разработчиком Toshihiro Nagoshi студия Nagoshi Studio официально прекратила существование, что ставит под сомнение выпуск их первого проекта Gang of Dragon, несмотря на ожидания фанатов.",
+  "date": "2026-11-02",
+  "category": "культура",
+  "sections": [
+    {
+      "heading": "Ликвидация студии Nagoshi Studio и её последствия",
+      "paragraphs": [
+        "Nagoshi Studio, основанная Toshihiro Nagoshi, известным создателем серии Yakuza, официально прекратила работу 31 октября 2026 года, о чём было сообщено в государственном издании Японии Kanpo после собрания акционеров.",
+        "Студия начала работу над игрой Gang of Dragon и выпустила её первый трейлер в декабре 2025 года. Игра должна была показать криминальный мир района Кабукичо в Токио под новым серьёзным углом с новым протагонистом Шин Джи-Сонгом."
+      ]
+    },
+    {
+      "heading": "Финансовые трудности и неопределённость выхода игры",
+      "paragraphs": [
+        "По данным Bloomberg, один из инвесторов проекта, компания NetEase, отозвала своё финансирование, и на завершение разработки Gang of Dragon не хватало свыше 44 миллионов долларов.",
+        "Теперь, когда Nagoshi Studio закрыта, студия начала процесс ликвидации активов и урегулирования обязательств, а страница игры в Steam остаётся активной, но выход проекта в ближайшее время маловероятен."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nagoshi Studio, from the creator of the Yakuza series, officially shuts down",
+      "url": "https://www.engadget.com/2303975/nagoshi-studio-from-the-creator-of-the-yakuza-series-officially-shuts-down/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T17:35:03.024Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/nagoshi-studio-from-the-creator-of-the-yakuza-series-officially-shuts-down/intro-1793635351.jpg",
+    "source": "https://www.engadget.com/2303975/nagoshi-studio-from-the-creator-of-the-yakuza-series-officially-shuts-down/",
+    "credit": "Jackson Chen",
+    "license": "Лицензия не проверена",
+    "alt": "Gameplay screenshot of Gang of Dragon with protagonist throwing an explosive.",
+    "verified": true
+  }
+}
