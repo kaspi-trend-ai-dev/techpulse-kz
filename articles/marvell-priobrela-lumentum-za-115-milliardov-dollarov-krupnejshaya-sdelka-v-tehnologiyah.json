@@ -1,0 +1,41 @@
+{
+  "region": "global",
+  "slug": "marvell-priobrela-lumentum-za-115-milliardov-dollarov-krupnejshaya-sdelka-v-tehnologiyah",
+  "title": "Marvell совершила одну из крупнейших сделок в истории технологий — покупка Lumentum за $115 млрд",
+  "description": "Компания Marvell объявила о гигантском поглощении производителя оптических чипов и сетевого оборудования Lumentum на $115 миллиардов в виде акции, что сделает Marvell лидером в области AI-коннективности и решений для центров обработки данных.",
+  "date": "2026-11-02",
+  "category": "бизнес",
+  "sections": [
+    {
+      "heading": "Сделка и её значение для технологического рынка",
+      "paragraphs": [
+        "Marvell заключила соглашение о приобретении Lumentum с общей стоимостью сделки в $115 миллиардов, включая долговые обязательства. Оценка собственного капитала Lumentum составляет около $80 миллиардов, и за каждый акции Lumentum Marvell предложит 4,5 собственных акций.",
+        "Эта сделка — одна из крупнейших в истории технологий, превышающая по объему покупку Microsoft Activision Blizzard за $68,7 млрд в 2022 году и приобретение Dell компании EMC за $67 млрд в 2016 году."
+      ]
+    },
+    {
+      "heading": "Связь с Nvidia и планы по развитию AI-сегмента",
+      "paragraphs": [
+        "Значимый акционер обоих компаний — Nvidia — ранее вложила $2 миллиарда в поддержку разработок и расширение производства Lumentum, а также $2 миллиарда в Marvell для усиления его портфеля продуктов в области оптической сети и чипов.",
+        "Объединившись с Lumentum, Marvell намерена стать лидером в области AI-коннективности, предлагая комплексные решения от чипов до инфраструктуры дата-центров.",
+        "Завершение сделки ожидается в первой половине 2028 года после одобрения акционерами и регулирующими органами."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "In one of the largest deals in tech history, Marvell buys Lumentum for $115B",
+      "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T18:26:59.634Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/06/Chip-chips-dollar-signs-money.png?w=1024",
+    "source": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+    "credit": "Julie Bort",
+    "license": "Лицензия не проверена",
+    "alt": "Chip, chips, dollar signs, money",
+    "verified": true
+  }
+}

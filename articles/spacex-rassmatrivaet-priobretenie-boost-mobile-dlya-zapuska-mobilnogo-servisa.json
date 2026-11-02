@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "spacex-rassmatrivaet-priobretenie-boost-mobile-dlya-zapuska-mobilnogo-servisa",
+  "title": "SpaceX рассматривает покупку Boost Mobile для запуска собственного мобильного сервиса",
+  "description": "SpaceX ведёт переговоры с EchoStar о возможном приобретении оператора Boost Mobile или использовании его сети, чтобы стать мобильным оператором в США. Сделка требует согласия крупных сотовых компаний и является новым шагом Starlink в развитии 5G.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Переговоры SpaceX с EchoStar по Boost Mobile",
+      "paragraphs": [
+        "Компания SpaceX, управляющая спутниковой сетью Starlink, ведёт переговоры с материнской компанией оператора сотовой связи Boost Mobile — EchoStar. Дискуссия касается возможности либо выкупа Boost Mobile, либо доступа к его сотовой сети, которая арендуется у операторов AT&T и T-Mobile.",
+        "Этот шаг может стать для SpaceX коротким путем на рынок мобильных операторов США, позволяя использовать уже существующую инфраструктуру без строительства собственной сети с нуля."
+      ]
+    },
+    {
+      "heading": "Препятствия на пути запуска мобильного оператора",
+      "paragraphs": [
+        "Крупнейшие сотовые операторы США — AT&T, T-Mobile и Verizon — ранее отказывали SpaceX в доступе к их сетям для запуска отдельного мобильного сервиса. Поэтому любое сотрудничество с Boost Mobile требует «зеленого света» от этих компаний.",
+        "Без такого согласия процесс создания собственного мобильного оператора будет значительно осложнён или невозможен."
+      ]
+    },
+    {
+      "heading": "Связь с расширением возможностей сети Starlink",
+      "paragraphs": [
+        "В 2025 году SpaceX приобрели у EchoStar лицензии на радиочастоты стоимостью $2,6 млрд для улучшения 5G-сети Starlink. В дальнейшем Starlink планирует стать значимым мобильным оператором в США, что подкреплено последними крупными приобретениями и планами по развитию услуг.",
+        "Таким образом, потенциальная сделка с Boost Mobile становится логичным продолжением стратегии компании в области расширения мобильной связи."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "SpaceX is reportedly looking at buying Boost Mobile or using its cell network",
+      "url": "https://www.engadget.com/2304301/spacex-is-reportedly-looking-at-buying-boost-mobile-or-using-its-cell-network/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T18:25:44.844Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/spacex-is-reportedly-looking-at-buying-boost-mobile-or-using-its-cell-network/intro-1793642642.jpg",
+    "source": "https://www.engadget.com/2304301/spacex-is-reportedly-looking-at-buying-boost-mobile-or-using-its-cell-network/",
+    "credit": "Jackson Chen",
+    "license": "Лицензия не проверена",
+    "alt": "The SpaceX logo in front of its offices.",
+    "verified": true
+  }
+}
