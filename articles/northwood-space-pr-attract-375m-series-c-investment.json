@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "northwood-space-pr-attract-375m-series-c-investment",
+  "title": "Northwood Space привлекает $375 млн инвестиций и достигает оценки в $2 млрд",
+  "description": "Компания Northwood Space, специализирующаяся на технологиях для улучшения связи спутников с Землей, успешно завершила раунд финансирования Series C на сумму $375 миллионов, достигнув рыночной оценки в $2 миллиарда.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Крупное финансирование и рост компании Northwood Space",
+      "paragraphs": [
+        "Northwood Space объявила о привлечении $375 млн в раунде Series C, который совместно возглавили венчурные фонды Andreessen Horowitz и DFJ Growth. Сейчас оценка компании составляет 2 миллиарда долларов США.",
+        "Компания была основана в 2022 году и специализируется на разработке антенн и программного обеспечения, которые улучшают связь спутников с наземными станциями."
+      ]
+    },
+    {
+      "heading": "Поддержка контрактов и планы развития",
+      "paragraphs": [
+        "Ранее в этом году в январе Northwood Space привлекла $100 млн в раунде Series B, а также получила контракт на сумму почти $50 млн от ВВС США для модернизации их спутниковой системы управления.",
+        "С привлечёнными средствами и финансовой поддержкой HSBC компания планирует расширять команду и выполнять существующие договоры, что позволит укрепить её позиции на рынке космических технологий."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Northwood Space raises $375M Series C at a $2B valuation from a16z and DFJ growth",
+      "url": "https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T15:41:28.179Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2025/10/Disrupt-2024-Bridgit-Mendler.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/",
+    "credit": "Dominic-Madori Davis",
+    "license": "Лицензия не проверена",
+    "alt": "TechCrunch Disrupt 2024 Bridgit Mendler",
+    "verified": true
+  }
+}
