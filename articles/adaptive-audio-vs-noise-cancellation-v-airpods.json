@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "adaptive-audio-vs-noise-cancellation-v-airpods",
+  "title": "Apple усиливает контроль за звуком в AirPods с функцией Adaptive Audio",
+  "description": "Apple представила режим Adaptive Audio в некоторых моделях AirPods с чипом H2, который умно регулирует подавление внешних шумов, создавая баланс между полным шумоподавлением и сохранением важных звуков из окружения.",
+  "date": "2026-11-02",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новая ступень активного шумоподавления",
+      "paragraphs": [
+        "Технология активного шумоподавления (ANC) в наушниках AirPods использует микрофоны для улавливания окружающего шума и подавляет его, создавая «антишум». Однако стандартный ANC хорошо работает с постоянными низкими шумами, но может полностью изолировать пользователя, что не всегда удобно и безопасно.",
+        "Adaptive Audio, доступный в моделях AirPods Pro 3, AirPods Max 2, AirPods 4 и 5 с чипом Apple H2, предлагает более гибкий подход: наушники блокируют большую часть фоновых звуков, но при этом пропускают важные звуки, например, сигналы сирен или голос рядом находящегося человека."
+      ]
+    },
+    {
+      "heading": "Особенности и возможности Adaptive Audio",
+      "paragraphs": [
+        "Режим Adaptive Audio автоматически адаптируется к меняющимся условиям окружающей среды, регулируя уровень подавления шума в реальном времени.",
+        "В комплект функций входит Conversation Awareness — технология, распознающая начало разговора самого пользователя и автоматически снижая громкость медиа, чтобы улучшить восприятие речи. Это помогает не пропустить важные разговоры без необходимости вручную приостанавливать звук."
+      ]
+    },
+    {
+      "heading": "Настройка и ограничения режима",
+      "paragraphs": [
+        "Пользователи iPhone и iPad могут переключать Adaptive Audio и Conversation Awareness через Центр управления, а также настраивать чувствительность режима.",
+        "Для некоторых моделей адаптивный режим недоступен — они ограничены стандартным ANC или пассивным шумоподавлением. Важно помнить, что Adaptive Audio не всегда способен определить все значимые звуки, поэтому в ситуациях, связанных с безопасностью, рекомендуется использовать режим Transparency, открывающий звуки окружающей среды полностью."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "What's the difference between AirPods' Noise Cancellation and Adaptive Audio modes?",
+      "url": "https://www.engadget.com/2300337/difference-between-airpods-noise-cancellation-adaptive-audio-modes/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T13:52:33.366Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/whats-the-difference-between-airpods-noise-cancellation-and-adaptive-audio-modes/intro-1793049678.jpg",
+    "source": "https://www.engadget.com/2300337/difference-between-airpods-noise-cancellation-adaptive-audio-modes/",
+    "credit": "Roger Fingas",
+    "license": "Лицензия не проверена",
+    "alt": "A model bathed in low-key blue light, showing off Apple",
+    "verified": true
+  }
+}
