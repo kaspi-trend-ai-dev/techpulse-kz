@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "google-otmechaet-vyshel-vyhod-remake-zelda-ocarina-of-time",
+  "title": "Google удивил пасхалкой к выходу ремейка легендарной Zelda: Ocarina of Time",
+  "description": "В честь выхода ремейка классической игры The Legend of Zelda: Ocarina of Time Google активировал уникальный пасхальный эффект в своей поисковой системе, возвращающий пользователей к интерфейсу 1998 года.",
+  "date": "2026-11-03",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Необычная пасхалка в Google к юбилею игры Zelda",
+      "paragraphs": [
+        "Отмечая дебют ремейка The Legend of Zelda: Ocarina of Time, вышедшего на этой неделе, Google добавила в поиск специальный Easter egg. При вводе запросов «Zelda» или «Ocarina of Time» на экране появляется анимация Мастер-меча в углу.",
+        "После нажатия на анимацию страница загрузки с изображением Трифорса захватывает вкладку, а затем результаты поиска меняются на стиль 1998 года — года выхода оригинальной игры на Nintendo 64."
+      ]
+    },
+    {
+      "heading": "Возвращение к классическому поисковому интерфейсу 1998 года",
+      "paragraphs": [
+        "Обновлённая страница результатов демонстрирует привычные синие гиперссылки и краткие описания страниц, расположенные по релевантности, без избыточной рекламы и современных AI-расширений. Нажимаемая кнопка \"I'm Feeling Lucky\" работает в классическом формате — отправляясь на случайную страницу.",
+        "Однако эффект действует только при поиске запросов, связанных с игрой. Любые другие поиски вернут пользователя к современному виду Google Search."
+      ]
+    },
+    {
+      "heading": "Значение и контекст пасхалки для пользователей",
+      "paragraphs": [
+        "Данный Easter egg вызывает ностальгию по временам, когда поисковая система была проще и понятнее, без перегрузки рекламой и AI-элементами, критикуемыми многими пользователями сегодня.",
+        "Кроме того, Google предлагает использовать вкладку Web для классических результатов поиска без излишних AI-интерфейсов, что позволяет вернуть более традиционный опыт работы с поиском."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google's Ocarina of Time Easter egg is a link to a past when Search wasn't horrible",
+      "url": "https://www.engadget.com/2303943/googles-ocarina-of-time-easter-egg-is-a-link-to-a-past-when-search-wasnt-horrible/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T21:29:37.312Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/googles-ocarina-of-time-easter-egg-is-a-link-to-a-past-when-search-wasnt-horrible/intro-1793634639.jpg",
+    "source": "https://www.engadget.com/2303943/googles-ocarina-of-time-easter-egg-is-a-link-to-a-past-when-search-wasnt-horrible/",
+    "credit": "Kris Holt",
+    "license": "Лицензия не проверена",
+    "alt": "Video game screenshot of a young boy in a green tunic pulling a large sword from a pedestal.",
+    "verified": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "casio-novyj-klaviatura-zapretit-oshibki-dlya-nachinayushchikh-muzykantov",
+  "title": "Casio представила клавиатуру, на которой невозможно сыграть фальшиво",
+  "description": "Компания Casio выпустила новую клавиатуру CT-FS1 с технологией Feel Sync, позволяющей играть вместе с любой песней без нот ошибок. Технология анализирует загруженные пользователем композиции через специальное приложение и подстраивает инструмент так, чтобы всегда оставаться в тональности.",
+  "date": "2026-11-03",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Инновационная Feel Sync технология делает обучение музыке доступнее",
+      "paragraphs": [
+        "Casio объявила о выпуске CT-FS1 — клавиатуры с новой технологией Feel Sync, благодаря которой новичок не сможет сыграть ни одной неправильной ноты. Это достигается за счет проприетарного приложения, которое анализирует любую загруженную песню и автоматически регулирует клавиши для игры в нужной тональности.",
+        "Feel Sync работает даже с самыми сложными композициями, куда входят многочисленные смены тональностей и музыкальные мосты. Клавиатура оснащена 61 чувствительной к нажатию клавишей, стереодинамиком с объемным звуком и поддерживает Bluetooth."
+      ]
+    },
+    {
+      "heading": "Особенности дизайна и удобства использования модели CT-FS1",
+      "paragraphs": [
+        "Инструмент может работать от батареек типа AA или от сетевого адаптера, весит менее 10 фунтов (около 4,5 кг) и доступен в двух монохромных цветах: полностью черном и белом, что представляет собой нестандартное элегантное решение.",
+        "Клавиатура оснащена функцией разделения клавиатуры на две зоны, позволяя двум музыкантам разного уровня играть одновременно: новичок — на одной стороне, опытный музыкант — на другой. CT-FS1 стоит 400 долларов и уже поступила в продажу."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Casio's new keyboard lets anyone play along to songs without ever hitting a wrong note",
+      "url": "https://www.engadget.com/2304552/casio-new-keyboard-lets-anyone-play-along-to-songs-without-ever-hitting-a-wrong-note/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-02T21:30:48.849Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/casios-new-keyboard-lets-anyone-play-along-to-songs-without-ever-hitting-a-wrong-note/intro-1793648368.jpg",
+    "source": "https://www.engadget.com/2304552/casio-new-keyboard-lets-anyone-play-along-to-songs-without-ever-hitting-a-wrong-note/",
+    "credit": "Lawrence Bonk",
+    "license": "Лицензия не проверена",
+    "alt": "A person playing a white keyboard.",
+    "verified": true
+  }
+}
