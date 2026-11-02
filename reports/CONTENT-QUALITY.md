@@ -4,18 +4,18 @@
 
 | Показатель | Количество |
 |---|---:|
-| JSON-файлов в архиве | 1230 |
-| Успешно прочитаны | 1230 |
-| Статей для ручной проверки (оценка ≥5) | 16 |
+| JSON-файлов в архиве | 1308 |
+| Успешно прочитаны | 1308 |
+| Статей для ручной проверки (оценка ≥5) | 18 |
 | Высокий приоритет (оценка ≥10) | 1 |
 | Кандидатов на дубли | 0 |
 | Некорректных JSON | 0 |
 
 ## Признаки для проверки
 
-- metadata: 170
-- specificity: 103
-- depth: 74
+- metadata: 172
+- specificity: 110
+- depth: 78
 - quality: 3
 - local: 2
 
@@ -31,9 +31,11 @@
 | 5 | [Кибератаки затронули финансовый сектор Южной Кореи](https://harmex.asia/articles/novaya-volna-kiberatak-na-finansovyy-sektor-yuzhnoy-korei.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Легковой автомобиль вспыхнул в Алматы: МЧС оперативно потушило пожар в автомобиле](https://harmex.asia/articles/ordinaty-v-almaty-zagoranie-legkovogo-avtomobilya-i-operativnaya-tushenie.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Жители Павлодара оштрафованы за нарушение тишины во время ночного ремонта](https://harmex.asia/articles/pavlodar-otpravlyaet-k-grazhdanskomu-miru-narushiteli-spokojstvya-poluchayut-shtrafy.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
+| 5 | [Пожар в кафе в Алматы: спасены кислородные баллоны, пострадавших нет](https://harmex.asia/articles/pozhar-v-kafe-v-almaty-spasenie-ksilochnykh-ballonov.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Сабина Алтынбекова осудила физическое насилие тренера в Павлодаре](https://harmex.asia/articles/sabina-altynbekova-osudila-fizicheskoe-nasilie-trenera-v-pavlodare.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Грузовик не убедился и столкнулся с пассажирским поездом в Карагандинской области — никто не пострадал](https://harmex.asia/articles/stolknovenie-gruzovika-i-passazhirskogo-poezda-v-karagandinskoj-oblasti.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
 | 5 | [Новый проигрыватель винила Technics разработан с участием диджеев и звукорежиссеров](https://harmex.asia/articles/technics-novyj-turntable-dlja-dj-ei-zvukovyh-inzhenerov.html) | Мало информации в описании; Регион не указан; Нет числовых данных при коротком материале (проверить вручную) |
+| 5 | [В Бостоне пройдет TechCrunch Founder Summit 2026 с возможностями для целевого нетворкинга](https://harmex.asia/articles/tekkranch-founder-summit-v-bostone-setyah-2026.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Ушел из жизни известный врач-онколог из Караганды, спасший тысячи женщин](https://harmex.asia/articles/umer-izvestnyj-vrach-onkolog-knaub-pomog-tysyacham-patsientok-karaganda.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Казахстанцы увидят ноябрьский парад планет](https://harmex.asia/articles/unikalnyj-noyabrskij-parad-planet-v-kazahstane-2026.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
 | 5 | [В Алматы военнослужащие Нацгвардии оказали помощь мужчине без сознания с носовым кровотечением](https://harmex.asia/articles/v-almaty-natsgvardeycy-spasli-muzhchinu-bez-soznaniya-s-nosevym-krovotecheniem.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |

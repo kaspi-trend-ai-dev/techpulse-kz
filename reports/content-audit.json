@@ -1,16 +1,16 @@
 {
   "summary": {
-    "scanned": 1230,
-    "validJson": 1230,
+    "scanned": 1308,
+    "validJson": 1308,
     "invalidJson": 0,
-    "reviewRecommended": 16,
+    "reviewRecommended": 18,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 74,
+      "depth": 78,
       "quality": 3,
-      "specificity": 103,
-      "metadata": 170,
+      "specificity": 110,
+      "metadata": 172,
       "local": 2
     }
   },
@@ -205,6 +205,27 @@
       ]
     },
     {
+      "slug": "pozhar-v-kafe-v-almaty-spasenie-ksilochnykh-ballonov",
+      "title": "Пожар в кафе в Алматы: спасены кислородные баллоны, пострадавших нет",
+      "region": "kz",
+      "date": "2026-11-01",
+      "score": 5,
+      "bodyCharacters": 607,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "sabina-altynbekova-osudila-fizicheskoe-nasilie-trenera-v-pavlodare",
       "title": "Сабина Алтынбекова осудила физическое насилие тренера в Павлодаре",
       "region": "kz",
@@ -264,6 +285,27 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "tekkranch-founder-summit-v-bostone-setyah-2026",
+      "title": "В Бостоне пройдет TechCrunch Founder Summit 2026 с возможностями для целевого нетворкинга",
+      "region": "global",
+      "date": "2026-11-01",
+      "score": 5,
+      "bodyCharacters": 698,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         },
         {
           "type": "specificity",
@@ -966,6 +1008,22 @@
       ]
     },
     {
+      "slug": "masshtabnye-rejdy-v-pavlodare-po-protivodejstviju-kradam-skovada-i-narushenijam",
+      "title": "Полиция Павлодара развернула 10 мобильных постов для масштабных рейдовых проверок",
+      "region": "kz",
+      "date": "2026-11-01",
+      "score": 3,
+      "bodyCharacters": 697,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "minusovaya-temperatura-nochyu-v-megalopolisah-kazahstana-30-oktyabrya-2026",
       "title": "Минусовую температуру ночью обещают в мегаполисах Казахстана",
       "region": "kz",
@@ -1486,6 +1544,22 @@
       ]
     },
     {
+      "slug": "v-astane-ogranichat-dvizhenie-i-budut-trenirovochnye-poletu-voennoj-aviacii",
+      "title": "В Астане временно ограничат движение транспорта и начнут тренировочные полеты военной авиации",
+      "region": "kz",
+      "date": "2026-11-01",
+      "score": 3,
+      "bodyCharacters": 646,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "v-astane-zaderzhali-kvartiranta-izbil-hozyayku-zhilya-posle-konflikta",
       "title": "В Астане задержали квартиранта, избившего хозяйку жилья после конфликта",
       "region": "kz",
@@ -1710,6 +1784,22 @@
       ]
     },
     {
+      "slug": "android-vzyat-fonar-bez-razblokirovki",
+      "title": "Как включить фонарик на Android без разблокировки — быстро и удобно",
+      "region": "global",
+      "date": "2026-11-02",
+      "score": 2,
+      "bodyCharacters": 1108,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "anduril-i-qualcomm-predstavili-bluechip-pervyy-amerikanskiy-zaschishchennyy-noutbuk",
       "title": "Anduril и Qualcomm представили BlueChip — первый в США защищённый ноутбук с большей частью компонентов американского производства",
       "region": "global",
@@ -1765,6 +1855,22 @@
       "score": 2,
       "bodyCharacters": 1142,
       "paragraphs": 5,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "apple-watch-assistivetouch-novinki-2026",
+      "title": "Apple Watch получил новый уровень управления без касаний с помощью AssistiveTouch",
+      "region": "global",
+      "date": "2026-11-01",
+      "score": 2,
+      "bodyCharacters": 973,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "specificity",
@@ -2093,6 +2199,22 @@
       ]
     },
     {
+      "slug": "iskusstvennyy-intellekt-xai-i-ischezhenie-chistogo-vozdukha-v-tennessi",
+      "title": "Суд обязал xAI ответить за загрязнение воздуха из-за турбин на дата-центрах в Теннесси",
+      "region": "global",
+      "date": "2026-11-02",
+      "score": 2,
+      "bodyCharacters": 1176,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "judge-denies-trumps-claim-to-dismiss-data-center-pollution-lawsuits",
       "title": "Суд отклонил претензии Трампа на право отменять иски по загрязнению от дата-центров",
       "region": "unknown",
@@ -2380,6 +2502,22 @@
       ]
     },
     {
+      "slug": "modernizaciya-aeroportov-v-kazahstane-do-2029-goda",
+      "title": "Какие аэропорты Казахстана обновят до 2029 года: список городов",
+      "region": "kz",
+      "date": "2026-11-01",
+      "score": 2,
+      "bodyCharacters": 778,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "myaso-sajgi-v-gosmatreze-kazahstana-mozhet-poyavitsya-ne-ranshe-2027-goda",
       "title": "В Казахстане появление мяса сайги в госматрезерве отложили до 2027 года",
       "region": "kz",
@@ -2514,6 +2652,22 @@
       "date": "2026-10-30",
       "score": 2,
       "bodyCharacters": 934,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "opasnost-iskusstvennyy-intellekt-v-podgotovke-pohozhdeniy-v-gorah",
+      "title": "Опасность ИИ в горах: как чатботы вводят туристов в заблуждение с серьезными последствиями",
+      "region": "global",
+      "date": "2026-11-01",
+      "score": 2,
+      "bodyCharacters": 1120,
       "paragraphs": 4,
       "issues": [
         {
@@ -3202,6 +3356,22 @@
       "score": 1,
       "bodyCharacters": 1324,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "5-pravil-bezopasnogo-vibe-kodinga-ispolzuya-iskusstvennyj-intellekt",
+      "title": "Эксперты раскрыли 5 обязательных правил для безопасного vibe-кодинга с ИИ",
+      "region": "global",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 1416,
+      "paragraphs": 7,
       "issues": [
         {
           "type": "metadata",
@@ -4503,6 +4673,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "samsung-galaxy-s26-ultra-kak-konkurent-iphone-18-pro-max",
+      "title": "Samsung Galaxy S26 Ultra назван главным конкурентом iPhone 18 Pro Max",
+      "region": "global",
+      "date": "2026-11-01",
+      "score": 1,
+      "bodyCharacters": 1462,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
