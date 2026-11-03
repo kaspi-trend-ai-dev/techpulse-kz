@@ -1,16 +1,16 @@
 {
   "summary": {
-    "scanned": 1308,
-    "validJson": 1308,
+    "scanned": 1438,
+    "validJson": 1438,
     "invalidJson": 0,
-    "reviewRecommended": 18,
+    "reviewRecommended": 20,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 78,
+      "depth": 85,
       "quality": 3,
-      "specificity": 110,
-      "metadata": 172,
+      "specificity": 116,
+      "metadata": 183,
       "local": 2
     }
   },
@@ -96,6 +96,27 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "ayym-seytmetova-i-ee-malenkaya-doch-primerili-obrazy-geroev-semeyki-addams",
+      "title": "Айым Сейтметова и дочь в образах героинь \"Семейки Аддамс\"",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 5,
+      "bodyCharacters": 452,
+      "paragraphs": 2,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "depth",
+          "weight": 2,
+          "message": "Меньше трёх содержательных абзацев"
         }
       ]
     },
@@ -363,6 +384,27 @@
       "date": "2026-10-27",
       "score": 5,
       "bodyCharacters": 571,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "v-kazavtozhole-predupredili-voditelej-o-gololede-na-trassah-kazahstana",
+      "title": "В КазАвтоЖоле предупредили водителей о гололеде на трассах Казахстана 2 ноября",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 5,
+      "bodyCharacters": 695,
       "paragraphs": 4,
       "issues": [
         {
@@ -669,6 +711,27 @@
       ]
     },
     {
+      "slug": "deti-v-almaty-samostoyatelno-reshayut-kak-otmetit-novyi-god-i-nauryz-v-detskih-sadah",
+      "title": "В детских садах Алматы дети и воспитатели самостоятельно определяют формат празднования Нового года и Наурыза",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 3,
+      "bodyCharacters": 1060,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "devushka-poluchila-5-sutok-aresta-za-nadpis-na-stene-v-almaty",
       "title": "Девушка получила 5 суток ареста за надпись на стене жилого комплекса в Алматы",
       "region": "kz",
@@ -903,6 +966,22 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kazahstan-vyshyel-v-lidery-po-medalyam-na-chempionate-azii-po-fehtovaniyu-u23",
+      "title": "Казахстан стал вторым по медалям на чемпионате Азии (U23) по фехтованию",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 3,
+      "bodyCharacters": 549,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         }
       ]
     },
@@ -1384,6 +1463,22 @@
       ]
     },
     {
+      "slug": "teplovoz-stolknulsya-s-gruzovikom-v-aktau",
+      "title": "Тепловоз получил серьёзные повреждения после столкновения с грузовиком в Актау",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 3,
+      "bodyCharacters": 657,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "tkani-zagorelis-v-odnom-iz-magazinov-v-shymkente",
       "title": "Ткани загорелись в одном из магазинов в Шымкенте",
       "region": "kz",
@@ -1576,6 +1671,22 @@
       ]
     },
     {
+      "slug": "v-astane-zaderzhali-podozrevaemogo-v-moshennichestve-s-vyishkoy-bolee-100-chelovek",
+      "title": "В Астане задержали подозреваемого в мошенничестве с обещаниями работы в Чехии более 100 граждан",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 3,
+      "bodyCharacters": 628,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "v-astane-zakroyut-odin-iz-uchastkov-ulicy-sherhana-murtaza-na-nedelyu",
       "title": "В Астане на неделю закроют улицу Шерхана Муртаза для ремонта дорог",
       "region": "kz",
@@ -1679,6 +1790,22 @@
       "score": 3,
       "bodyCharacters": 607,
       "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "yunaya-kazahstanka-ispolnila-pesnyu-daydidau-na-koncerte-dimasha-v-ispanii",
+      "title": "Юная казахстанская певица Жанель Али выступила на концерте Димаша в Мадриде",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 3,
+      "bodyCharacters": 562,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "depth",
@@ -1823,6 +1950,22 @@
       "score": 2,
       "bodyCharacters": 1045,
       "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "anthropic-predosteregaet-o-blizkoy-capability-samostoyatelnogo-razvitiya-ii",
+      "title": "Anthropic предупреждает о скором прорыве в способности к самостоятельному развитию искусственного интеллекта",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 2,
+      "bodyCharacters": 1168,
+      "paragraphs": 6,
       "issues": [
         {
           "type": "specificity",
@@ -2300,6 +2443,22 @@
       ]
     },
     {
+      "slug": "kazahstanskaya-federaciya-boksa-naznachila-novogo-sportivnogo-direktora",
+      "title": "Казахстанская Федерация бокса назначила нового спортивного директора",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 2,
+      "bodyCharacters": 770,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "kazahstanskij-rod-konyrat-okazalsya-samym-drevnim-po-genealogii",
       "title": "Историк подтвердил: конират – самый древний казахский род с глубокой генеалогией",
       "region": "kz",
@@ -2694,6 +2853,22 @@
       ]
     },
     {
+      "slug": "openai-obedinila-chat-i-rabotu-v-chatgpt",
+      "title": "OpenAI объединила вкладки «Чат» и «Работа» в ChatGPT для удобства пользователей",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 2,
+      "bodyCharacters": 947,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "openai-progreshy-v-matematike-komp-yuternoy-nauke-i-fizike",
       "title": "OpenAI делает значительный прорыв в математике, компьютерных науках и физике",
       "region": "global",
@@ -2977,6 +3152,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "snap-settles-social-media-addiction-lawsuit-to-avoid-trial",
+      "title": "Snap урегулировала иск о зависимости от социальных сетей, избежав судебного разбирательства",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 2,
+      "bodyCharacters": 1009,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
         }
       ]
     },
@@ -3445,6 +3636,22 @@
       ]
     },
     {
+      "slug": "alley-shuaq-v-almaty-stala-populyarna-sredi-lyubitelej-vechernih-progulok",
+      "title": "Долгая прогулка и уют: Аллея Shuaq в Алматы стала любимым местом в соцсетях",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 1053,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "amazon-biggest-hiring-plan-christmas-2026",
       "title": "Amazon готовит крупнейший набор сотрудников на рождественский сезон 2026 года",
       "region": "unknown",
@@ -3733,6 +3940,22 @@
       ]
     },
     {
+      "slug": "dvukh-chinovnikov-v-kazahstane-oshtrafovali-za-nezakonnuyu-proverku-lc-waikiki",
+      "title": "В Кызылорде оштрафовали двух чиновников за незаконную проверку компании LC Waikiki",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 815,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "ea-zakryvaet-bioware-i-uvolnyaet-400-sotrudnikov",
       "title": "EA закрывает BioWare и сокращает около 400 сотрудников",
       "region": "unknown",
@@ -3804,6 +4027,22 @@
       "score": 1,
       "bodyCharacters": 2107,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "ford-zapustil-klyuchevuyu-obeshchanie-po-zashchite-dannyh-klientov",
+      "title": "Ford объявила о новом «обещании конфиденциальности» и раскрыла, как использует данные клиентов",
+      "region": "global",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 1277,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "metadata",
@@ -4085,6 +4324,22 @@
       ]
     },
     {
+      "slug": "kachestvo-vozdushnogo-sreda-v-almaty-s-nachalom-otopitelnogo-sezona",
+      "title": "Эксперты раскрыли серьезное ухудшение качества воздуха в Алматы с началом отопительного сезона",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 2050,
+      "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "kak-ne-oshibitsya-s-pensionnymi-nakopleniyami-kazahstanczam-dali-sovety",
       "title": "Как не ошибиться с пенсионными накоплениями: казахстанцам дали советы",
       "region": "kz",
@@ -4140,6 +4395,22 @@
       "score": 1,
       "bodyCharacters": 1348,
       "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "kazahstan-i-kitay-sozdadut-fond-investiczij-do-200-mln",
+      "title": "Казахстан и Китай договорились о создании фонда прямых инвестиций до $200 млн",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 1229,
+      "paragraphs": 6,
       "issues": [
         {
           "type": "metadata",
@@ -4220,6 +4491,22 @@
       "score": 1,
       "bodyCharacters": 2226,
       "paragraphs": 8,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "krupnye-banki-kazahstana-proveryat-kak-raschityvajut-dolgovuyu-nagruzku",
+      "title": "Крупные банки Казахстана проверят на правильность расчёта долговой нагрузки при выдаче кредитов",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 1259,
+      "paragraphs": 6,
       "issues": [
         {
           "type": "metadata",
@@ -4629,6 +4916,22 @@
       ]
     },
     {
+      "slug": "rekonstrukciya-astanskogo-starogo-vokzala-vyzvala-spory",
+      "title": "Реконструкция старого вокзала Астаны вызвала споры среди жителей",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 1471,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "review-carrie-pryamushchaya-remiks-televizionnyy-miniserial",
       "title": "«Кэрри»: торжественный ремикс с одной серьёзной ошибкой в новом мини-сериале",
       "region": "global",
@@ -4673,6 +4976,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "rost-gosdolga-kazahstana-v-2026-sostoit-v-uvelichenii-vnutrennih-zakazov",
+      "title": "Государственный долг Казахстана превысил 41 трлн тенге: взрывной рост займов в Китае и внутренняя переориентация",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 1,
+      "bodyCharacters": 1648,
+      "paragraphs": 9,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
@@ -4901,6 +5220,22 @@
       ]
     },
     {
+      "slug": "tyazhelye-posledstviya-dlya-karagandinyat-v-uzbekistane",
+      "title": "16 юных футболистов из Караганды госпитализировали в Ташкенте после международного турнира",
+      "region": "kz",
+      "date": "2026-11-02",
+      "score": 1,
+      "bodyCharacters": 755,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "uchitelya-istorii-rossii-s-zarplatoy-v-500-tys-tenge-iskal-kollezh-v-almaty",
       "title": "Колледж в Алматы искал учителя истории России с зарплатой в 471 тыс. тенге — ошибка вызвала обсуждение",
       "region": "kz",
@@ -5004,6 +5339,22 @@
       "score": 1,
       "bodyCharacters": 1239,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "v-kazahstane-deti-s-epilepsiej-mogut-ostatsya-bez-ospolota-v-2027-godu",
+      "title": "В Казахстане дети с эпилепсией рискуют остаться без препарата «Осполот» в 2027 году",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 1,
+      "bodyCharacters": 1397,
+      "paragraphs": 8,
       "issues": [
         {
           "type": "metadata",
