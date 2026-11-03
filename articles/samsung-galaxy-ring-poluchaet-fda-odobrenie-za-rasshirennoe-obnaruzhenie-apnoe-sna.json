@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "samsung-galaxy-ring-poluchaet-fda-odobrenie-za-rasshirennoe-obnaruzhenie-apnoe-sna",
+  "title": "Samsung Galaxy Ring получил одобрение FDA за продвинутую диагностику апноэ сна",
+  "description": "Компания Samsung объявила об обновлении функции Galaxy Ring с использованием ИИ для точного измерения частоты дыхательных нарушений сна после получения разрешения FDA в июле 2026 года.",
+  "date": "2026-11-03",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Новые возможности диагностики апноэ сна в Galaxy Ring",
+      "paragraphs": [
+        "Samsung расширил функционал смарт-устройства Galaxy Ring, внедрив продвинутую функцию обнаружения апноэ сна, получившую одобрение FDA в июле 2026 года. Обновлённая технология использует искусственный интеллект для определения количества дыхательных нарушений за каждый час сна пользователя.",
+        "Для работы функции необходимо спать не менее пяти часов в течение двух ночей в десятидневный период. Приложение Samsung Health Monitor после анализа данных определит наличие лёгкой, случайной или частой формы апноэ сна, что поможет людям понять причины утренней усталости."
+      ]
+    },
+    {
+      "heading": "Техническая поддержка и совместимость новых функций",
+      "paragraphs": [
+        "Samsung впервые получил разрешение De Novo FDA на функцию обнаружения симптомов апноэ средней и тяжёлой степени на своих устройствах Galaxy Watch и Galaxy Ring ещё в феврале 2024 года. Новая версия технологии дополнительно измеряет частоту нарушений дыхания с помощью ИИ.",
+        "Кроме Galaxy Ring, обновлённая функция доступна на модели Galaxy Watch 9 с Wear OS 7.0 и выше, а также будет внедрена на Galaxy Watch 7 и Galaxy Watch 8 с помощью будущих программных обновлений. Компания подчёркивает, что официальный диагноз может поставить только врач, но устройство служит ценным инструментом для привлечения внимания к состоянию здоровья."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Samsung's Galaxy Ring gets FDA approval for advanced sleep apnea detection",
+      "url": "https://www.engadget.com/2305182/samsung-galaxy-ring-gets-fda-approval-for-advanced-sleep-apnea-detection/",
+      "published": "2026-11-03"
+    }
+  ],
+  "publishedAt": "2026-11-03T14:29:20.455Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/samsungs-galaxy-ring-gets-fda-approval-for-advanced-sleep-apnea-detection/intro-1793715607.jpg",
+    "source": "https://www.engadget.com/2305182/samsung-galaxy-ring-gets-fda-approval-for-advanced-sleep-apnea-detection/",
+    "credit": "Steve Dent",
+    "license": "Лицензия не проверена",
+    "alt": "Sasmung Galaxy Ring user shown sleeping with the black color version",
+    "verified": true
+  }
+}
