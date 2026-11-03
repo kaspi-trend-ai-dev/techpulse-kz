@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "new-york-times-sues-brave-browser-for-alleged-copyright-infringement-2026",
+  "title": "The New York Times подала в суд на браузер Brave за массовое незаконное использование контента",
+  "description": "Американское издание The New York Times предъявило иск браузеру Brave, обвиняя компанию в сборе и передаче её защищенного авторским правом контента ряду крупных AI-компаний. Иск был подан 2 ноября 2026 года в федеральный суд Манхэттена и затрагивает вопросы нарушения интеллектуальной собственности в эпоху ИИ.",
+  "date": "2026-11-03",
+  "category": "общество",
+  "sections": [
+    {
+      "heading": "Иск против Brave: обвинения и детали дела",
+      "paragraphs": [
+        "2 ноября 2026 года The New York Times подала в суд на компанию Brave, разработчика одноимённого браузера, с обвинениями в незаконном сборе и распространении защищённого авторским правом контента. В иске браузер назван «поставщиком, дилером и распространителем украденного контента» для компаний, работающих в сфере искусственного интеллекта, таких как Anthropic, Perplexity, Mistral, xAI и Cohere.",
+        "Претензии основаны на утверждении, что Brave создал индекс из более 30 миллиардов веб-страниц, используя неизвестный краулер, который издатели не могли заблокировать. Кроме того, в иске критикуется одна из функций браузера, позволяющая обходить платные стены (paywalls), а также практика блокировки рекламы издателей при одновременной продаже собственной рекламы Brave."
+      ]
+    },
+    {
+      "heading": "Контекст и значимость судебного противостояния",
+      "paragraphs": [
+        "The New York Times не впервые инициирует судебные процессы по подобным вопросам — ранее аналогичные иски были поданы против компаний OpenAI и Perplexity. В суде издание характеризует Brave как «воровальную структуру», поставляющую украденный контент разработчикам ИИ, что поднимает важные вопросы о праве на интеллектуальную собственность в цифровую эпоху.",
+        "Brave, основанная в 2015 году и уже привлекшая около $250 миллионов инвестиций, пока не дала комментариев по иску. Истец требует вынесения запретительного распоряжения по использованию контента и компенсации ущерба."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-03T02:30:48.258Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2024/08/brave-browser.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+    "credit": "Rebecca Bellan",
+    "license": "Лицензия не проверена",
+    "alt": "In this photo illustration, a hand of a person holds a smartphone with a Brave Browser logo displayed in the background.",
+    "verified": true
+  }
+}
