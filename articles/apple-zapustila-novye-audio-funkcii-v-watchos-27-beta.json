@@ -1,0 +1,41 @@
+{
+  "region": "global",
+  "slug": "apple-zapustila-novye-audio-funkcii-v-watchos-27-beta",
+  "title": "Apple представила новые интерактивные аудиофункции Siri Recap и Live Rewind для Apple Watch",
+  "description": "В свежей бета-версии watchOS 27 компания Apple запустила уникальные функции Siri Recap и Live Rewind, позволяющие пользователям получать краткие обзоры бесед и текстовые выписки последних 15 секунд аудио, что значительно улучшает восприятие информации.",
+  "date": "2026-11-03",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Описание новых аудиотехнологий в watchOS 27",
+      "paragraphs": [
+        "Apple представила в бета-версии watchOS 27 две инновационные функции: Siri Recap, которая создает заголовок и ключевые моменты разговора, и Live Rewind, позволяющую конвертировать последние 15 секунд аудио в текст для повторного просмотра.",
+        "Эти возможности доступны на Apple Watch Series 12 и Apple Watch Ultra 4, которые оснащены специальным микрофоном и процессором S11, обеспечивающим локальную обработку аудио и немедленное удаление записей, что значительно снижает риски для конфиденциальности пользователей."
+      ]
+    },
+    {
+      "heading": "Безопасность и доступность новинок Apple Watch",
+      "paragraphs": [
+        "Apple подчеркнула, что функции не записывают и не сохраняют реальные аудиофайлы, при этом пользователи могут отказаться от их использования, активируя эти опции вручную.",
+        "Live Rewind уведомляет пользователя звуковым сигналом и визуальным индикатором на дисплее даже в беззвучном режиме, а Siri Recap исключает показ чувствительной информации, например, финансовых данных.",
+        "Для использования функций требуется совместимый iPhone 16 или новее с включенным модулем Apple Intelligence. На старте Siri Recap и Live Rewind будут доступны только на английском языке и не во всех регионах, например, пока не планируются в ЕС."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple's latest watchOS 27 beta enables Siri Recap and Live Rewind audio features",
+      "url": "https://www.engadget.com/2304993/apples-latest-watchos-27-beta-enables-siri-recap-and-live-rewind-audio-features/",
+      "published": "2026-11-03"
+    }
+  ],
+  "publishedAt": "2026-11-03T11:29:16.252Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/apples-latest-watchos-27-beta-enables-siri-recap-and-live-rewind-audio-features/intro-1793697908.jpg",
+    "source": "https://www.engadget.com/2304993/apples-latest-watchos-27-beta-enables-siri-recap-and-live-rewind-audio-features/",
+    "credit": "Kris Holt",
+    "license": "Лицензия не проверена",
+    "alt": "Apple Watch showing the Live Rewind feature, showing a text version of the last 15 seconds of a conversation. An Ask Siri prompt is on the display as well.",
+    "verified": true
+  }
+}
