@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "mikrosd-express-karta-dlya-nintendo-switch-2-klyuchevaya-novinka",
+  "title": "МикроSD Express карта: необходимый аксессуар для Nintendo Switch 2",
+  "description": "Nintendo Switch 2 обладает накопителем емкостью 256 ГБ, но с учетом современных объемов игр этого пространства может не хватить. Использование специальной microSD Express карты обеспечивает расширение хранилища и комфортную загрузку цифрового контента.",
+  "date": "2026-11-03",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Важность использования microSD Express для расширения памяти",
+      "paragraphs": [
+        "Nintendo Switch 2 поставляется с 256 ГБ внутренней памяти, из которых около 249 ГБ доступны пользователю после учета системного программного обеспечения. Однако современные игры занимают десятки гигабайт: Final Fantasy VII Remake Intergrade — 90,4 ГБ, Assassin's Creed Shadows — 69 ГБ и другие.",
+        "Поскольку Switch 2 использует цифровые версии игр с большими обновлениями и загружаемым контентом, базового объема памяти быстро становится недостаточно. Применение microSD Express карты позволяет владельцам приставки увеличить объем хранилища и хранить больше цифровых игр без частых удалений."
+      ]
+    },
+    {
+      "heading": "Технические требования и особенности microSD Express карт",
+      "paragraphs": [
+        "Для Nintendo Switch 2 подходит только специальный тип карт microSD Express с обозначением \"Express\" и логотипом \"EX\". Старые microSD карты от оригинальной Switch несовместимы и могут использоваться только для переноса скриншотов и видеофайлов.",
+        "Nintendo рекомендует использовать одну microSD Express карту без частой замены, так как данные не распределяются между картами. Также сохранения игр хранятся во внутренней памяти консоли и не переносятся на карту."
+      ]
+    },
+    {
+      "heading": "Советы по выбору емкости microSD Express и затратам",
+      "paragraphs": [
+        "Выбор объема карты зависит от объема цифровых игр в вашей библиотеке. Например, игра Split Fiction занимает около 69 ГБ, что на 128-ГБ карте займет более половины свободного пространства.",
+        "Оптимальным выбором для большинства пользователей считается карта объемом 256 ГБ — она предлагает пространство примерно равное внутренней памяти konzoli. Максимальный размер microSD Express, доступный на рынке, составляет 1 ТБ. Стоимость карт колеблется от 60 долларов за 256 ГБ до нескольких сотен долларов за 1 ТБ."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Why it's important to use a microSD Express card with your Nintendo Switch 2",
+      "url": "https://www.engadget.com/2300346/nintendo-switch-2-microsd-card-why-its-important-to-use/",
+      "published": "2026-11-02"
+    }
+  ],
+  "publishedAt": "2026-11-03T05:10:37.952Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/why-its-important-to-use-a-microsd-card-with-your-nintendo-switch-2/intro-1791815329.jpg",
+    "source": "https://www.engadget.com/2300346/nintendo-switch-2-microsd-card-why-its-important-to-use/",
+    "credit": "Thomas Godwin",
+    "license": "Лицензия не проверена",
+    "alt": "A Nintendo Switch 2 situated in its dock, with several blurry physical games in the background.",
+    "verified": true
+  }
+}
