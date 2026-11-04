@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "film-you-can-see-everything-pokazhut-na-mks-pered-vyhodom-v-evrope",
+  "title": "Фильм «You Can See Everything» покажут на МКС до премьеры в Европе",
+  "description": "Документальную ленту о Елизавете Холмс «You Can See Everything» впервые покажут на Международной космической станции, ещё до выхода фильма в Европе.",
+  "date": "2026-11-04",
+  "category": "культура",
+  "sections": [
+    {
+      "heading": "Непривычная премьера на орбите",
+      "paragraphs": [
+        "Компания A24 предоставила NASA право на показ документального фильма «You Can See Everything» на Международной космической станции. Это происходит до того, как лента официально выйдет на европейских экранах.",
+        "Фильм, созданный режиссёрами Натаном Филдером и Лансом Оппенхаймом, стал лидером проката в Северной Америке и вызвал международный интерес, что и побудило пользователей МКС к просмотру."
+      ]
+    },
+    {
+      "heading": "Особенности международного релиза",
+      "paragraphs": [
+        "Sony Pictures получила права на театральный релиз фильма в Германии, Латинской Америке, Южной Корее и других регионах, но конкретные даты пока не объявлены.",
+        "Великобритания и Франция увидят кинотеатральные показы позже: 20 ноября и 30 декабря соответственно, из-за чего сейчас легче посмотреть фильм на низкой околоземной орбите, чем в Лондоне."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "&#8216;You Can See Everything&#8217; is getting an outer space release and it hasn&#8217;t even come out in Europe yet",
+      "url": "https://techcrunch.com/2026/11/04/you-can-see-everything-is-getting-an-outer-space-release-and-it-hasnt-even-come-out-in-europe-yet/",
+      "published": "2026-11-04"
+    }
+  ],
+  "publishedAt": "2026-11-04T18:59:58.446Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/10/V8_PHASE-1_LOBTS.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/11/04/you-can-see-everything-is-getting-an-outer-space-release-and-it-hasnt-even-come-out-in-europe-yet/",
+    "credit": "Amanda Silberling",
+    "license": "Лицензия не проверена",
+    "alt": "Фильм «You Can See Everything» покажут на МКС до премьеры в Европе",
+    "verified": true
+  }
+}
