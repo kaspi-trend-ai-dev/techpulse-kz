@@ -1,16 +1,16 @@
 {
   "summary": {
-    "scanned": 1438,
-    "validJson": 1438,
+    "scanned": 1565,
+    "validJson": 1565,
     "invalidJson": 0,
     "reviewRecommended": 20,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 85,
+      "depth": 89,
       "quality": 3,
-      "specificity": 116,
-      "metadata": 183,
+      "specificity": 119,
+      "metadata": 190,
       "local": 2
     }
   },
@@ -986,6 +986,22 @@
       ]
     },
     {
+      "slug": "kazahstanka-irina-yunusmetova-zavoevala-bronzu-na-chempionate-mira-po-pulevoy-strelbe",
+      "title": "Казахстанка Ирина Юнусметова завоевала бронзу на чемпионате мира по пулевой стрельбе",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 3,
+      "bodyCharacters": 521,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "kazahstanka-poluchila-podarok-ot-restorana-baku-na-den-rozhdeniya",
       "title": "Ресторан в Баку удивил казахстанку подарком с нулевым счётом на день рождения",
       "region": "kz",
@@ -1168,6 +1184,22 @@
       "score": 3,
       "bodyCharacters": 576,
       "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "nebolshoe-poteplenie-v-megapolisah-kazahstana-3-noyabrya-2026",
+      "title": "Небольшое потепление ожидается в мегаполисах Казахстана",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 3,
+      "bodyCharacters": 454,
+      "paragraphs": 3,
       "issues": [
         {
           "type": "depth",
@@ -1533,6 +1565,38 @@
       "date": "2026-10-30",
       "score": 3,
       "bodyCharacters": 603,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-almaty-goryashhij-chastnyj-dom-bylo-bystro-likvidirovano",
+      "title": "Быстро потушили пожар в частном доме Алматы: подробности возгорания",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 3,
+      "bodyCharacters": 507,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-almaty-policzeyskie-nashli-narkotiki-v-peschenye-i-zaderzhali-podozrevaemogo",
+      "title": "В Алматы полиция изъяла наркотики, спрятанные внутри печенья, задержан подозреваемый",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 3,
+      "bodyCharacters": 637,
       "paragraphs": 3,
       "issues": [
         {
@@ -2693,6 +2757,22 @@
       ]
     },
     {
+      "slug": "ne-nado-ustanavlivat-shtapeli-uzlovykh-setevykh-filtrov",
+      "title": "Опасность подключения сетевых удлинителей друг к другу: что нужно знать",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 2,
+      "bodyCharacters": 1176,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "nesovershennoletnij-na-skutere-zaderzhan-v-astane-posle-pogoni",
       "title": "В Астане подросток на скутере устроил опасную погоню – полицейские задержали нарушителя",
       "region": "kz",
@@ -2933,6 +3013,22 @@
       ]
     },
     {
+      "slug": "pochemu-na-iphone-nekotorye-zvonkhii-nelzya-otkljuchit",
+      "title": "Открыта тайна: почему на iPhone не всегда есть кнопка отклонения звонка",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 2,
+      "bodyCharacters": 1020,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "pochemu-naushniki-dorozhe-naushnikov-otvet-tekhnologii-i-populyarnost",
       "title": "Почему наушники обычно дороже наушников-вкладышей",
       "region": "global",
@@ -3072,6 +3168,22 @@
       "date": "2026-10-30",
       "score": 2,
       "bodyCharacters": 948,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "reddit-vvodit-reklamu-v-poiskovye-rezultaty-na-fone-padenia-poseshhaemosti-iz-google",
+      "title": "Reddit запускает рекламу в поиске на фоне снижения трафика из Google",
+      "region": "global",
+      "date": "2026-11-04",
+      "score": 2,
+      "bodyCharacters": 984,
       "paragraphs": 4,
       "issues": [
         {
@@ -4180,12 +4292,44 @@
       ]
     },
     {
+      "slug": "google-gemini-ispolzuet-dannye-pochety-pochty-i-kak-otkazatsya",
+      "title": "Google Gemini анализирует вашу почту: как работает ИИ и как отключить его доступ",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 1,
+      "bodyCharacters": 1731,
+      "paragraphs": 9,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "google-rasskazal-o-problemakh-i-planah-po-iskusstvennomu-intellektu-v-poiske",
       "title": "Google признал снижение доходов с AI-поиска и объявил планы по расширению рекламы",
       "region": "global",
       "date": "2026-10-30",
       "score": 1,
       "bodyCharacters": 1217,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "google-skolko-shkoly-smogut-otklyuchit-iskusstvennyy-intellekt",
+      "title": "Google меняет правила для школ: отключить ИИ можно, но без поиска в интернете",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 1,
+      "bodyCharacters": 1550,
       "paragraphs": 6,
       "issues": [
         {
@@ -4240,6 +4384,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "iskusstvennyy-intellekt-i-vybory-v-ssha-2026-nedostatki-i-opasnosti",
+      "title": "Почему использование ИИ для выбора на выборах в США 2026 может быть рискованным",
+      "region": "global",
+      "date": "2026-11-04",
+      "score": 1,
+      "bodyCharacters": 1171,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
@@ -4724,6 +4884,22 @@
       ]
     },
     {
+      "slug": "novyj-realme-16-pro-vypushhena-s-harry-potter-dizajnom-i-unikalnoj-tehnologiej-izmeneniya-cveta",
+      "title": "Realme представила яркий Android-смартфон в стиле Гарри Поттера с инновационным изменением цвета",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 1,
+      "bodyCharacters": 2033,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "nvidia-microduck-robots-christmas-hit-2026",
       "title": "Nvidia представила очаровательных Microduck-роботов — возможный хит рождественских продаж 2026",
       "region": "global",
@@ -5092,6 +5268,22 @@
       ]
     },
     {
+      "slug": "squarespace-uvolnyaet-podavlyayushhee-bolsinstvo-sotrudnikov-iz-za-perestrojki",
+      "title": "Squarespace сокращает штат почти на пятую часть ради обновления стратегии и ускорения роста",
+      "region": "global",
+      "date": "2026-11-03",
+      "score": 1,
+      "bodyCharacters": 1504,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "starlink-ukraine-starshield-slowdown-musk-decision-2026",
       "title": "Илон Маск принял решение замедлить военную сеть Starshield для Украины — что это значит для пользователей",
       "region": "unknown",
@@ -5364,6 +5556,22 @@
       ]
     },
     {
+      "slug": "v-kazahstane-rasshirili-goskontrol-lekarstv-i-vveli-bezpredvaritelnyie-proverki",
+      "title": "В Казахстане с 2027 года вводят проверки лекарств без предупреждения и упрощают регистрацию препаратов",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 1,
+      "bodyCharacters": 1121,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "v-pavlodare-u-nedonoshennogo-mladenca-obnaruzhili-perelom-semya-trebuet-proverki",
       "title": "В Павлодаре у недоношенного младенца выявили перелом бедра: родственники требуют проверки центра",
       "region": "kz",
@@ -5594,6 +5802,22 @@
       "date": "2026-10-28",
       "score": 1,
       "bodyCharacters": 1404,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "zhena-ipoteka-umaj-v-almaty-provalila-davka-na-podachu-zayavok-3-noyabrya-2026",
+      "title": "Давка за ипотеку «Ұмай» в Алматы: как 524 женщины успели подать заявки за день",
+      "region": "kz",
+      "date": "2026-11-03",
+      "score": 1,
+      "bodyCharacters": 1230,
       "paragraphs": 6,
       "issues": [
         {
