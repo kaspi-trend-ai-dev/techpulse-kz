@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "novyj-york-krupnoe-razobrazhdenie-sistemy-nablyudeniya-v-madison-square-garden",
+  "title": "Мэр Нью-Йорка выступил против технологий слежки в Madison Square Garden",
+  "description": "Мэр Нью-Йорка Зохран Мамдани критикует владельца Madison Square Garden за использование технологий слежки и поддерживает инициативу запрета сбора биометрических данных в общественных местах.",
+  "date": "2026-11-04",
+  "category": "общество",
+  "sections": [
+    {
+      "heading": "Критика использования систем видеонаблюдения в Нью-Йорке",
+      "paragraphs": [
+        "Мэр Нью-Йорка Зохран Мамдани выразил критику в адрес владельца крупного развлекательного комплекса Madison Square Garden, отметив, что использование технологий слежки является «признаком многих проблем в нашей стране сегодня».",
+        "Он подчеркнул важность обсуждения вопросов, связанных с применением таких технологий."
+      ]
+    },
+    {
+      "heading": "Законодательные инициативы против биометрического контроля",
+      "paragraphs": [
+        "Член городского совета Шахана Ханиф представила два законопроекта, направленных на запрет сбора биометрических данных, включая использование распознавания лиц, в общественных местах Нью-Йорка.",
+        "Мэр Мамдани назвал эти инициативы «важным ответом на подобные проблемы»."
+      ]
+    },
+    {
+      "heading": "Ответ Madison Square Garden и судебные разбирательства",
+      "paragraphs": [
+        "После публикаций Wired, в которых сообщалось, что владелец Madison Square Garden ведёт базу данных с пометками, включая обозначение некоторых посетителей как «LGBTQIA», компания опровергла эти сведения и начала судебные иски против издания.",
+        "В 2021 году сообщалось о случае, когда женщина была запрещена в одном из заведений компании после распознавания её лицом, хотя она не была связана с судебным процессом против владельца."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "New York City&#8217;s Mamdani criticizes Madison Square Garden owner over surveillance tech",
+      "url": "https://techcrunch.com/2026/11/03/new-york-citys-mamdani-criticizes-madison-square-garden-owner-over-surveillance-tech/",
+      "published": "2026-11-03"
+    }
+  ],
+  "publishedAt": "2026-11-04T02:51:30.823Z",
+  "image": {
+    "url": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-1160769930.jpg?w=1024",
+    "source": "https://techcrunch.com/2026/11/03/new-york-citys-mamdani-criticizes-madison-square-garden-owner-over-surveillance-tech/",
+    "credit": "Zack Whittaker",
+    "license": "Лицензия не проверена",
+    "alt": "Executive chairman and CEO of The Madison Square Garden Company and executive chairman of MSG Networks James L. Dolan",
+    "verified": true
+  }
+}
