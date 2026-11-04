@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "apple-music-zapustila-funkciyu-selfie-sing-dlya-karaoke-v-ios-273",
+  "title": "Apple Music запустила функцию Selfie Sing для записи караоке-видео с эффектами голоса",
+  "description": "Apple Music представила обновлённую караоке-функцию Selfie Sing, которая позволяет записывать видео с пением на фоне музыки и применять голосовые эффекты. Новинка уже доступна в бета-версии iOS 27.3.",
+  "date": "2026-11-04",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Самая простая запись караоке прямо в Apple Music",
+      "paragraphs": [
+        "Apple Music расширила возможности своей караоке-функции Sing, добавив новую опцию Selfie Sing, которая позволяет пользователям одновременно включать камеру и записывать своё исполнение популярных хитов. Такая функция встроена в приложение и не требует использования сторонних программ.",
+        "Выпуск Selfie Sing приурочен к выходу iOS 27.3, доступной сейчас в бета-версии. В интерфейсе одновременно отображаются слова песни, что помогает синхронизировать исполнение и повысить качество записи."
+      ]
+    },
+    {
+      "heading": "Выбор лучших песен и уникальные голосовые настройки",
+      "paragraphs": [
+        "В сопровождении Selfie Sing идёт отдельный плейлист с любимыми хитами, включающими такие композиции, как Since U Been Gone (Kelly Clarkson), What Makes You Beautiful (One Direction), Like a Virgin (Madonna), Baby One More Time (Britney Spears) и 9 to 5 (Dolly Parton).",
+        "Пользователи могут регулировать громкость голоса и добавлять эффекты, включая Megaphone, Echo, Concert Hall и Studio, чтобы придать исполнению индивидуальное звучание перед сохранением или публикацией видео."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apple Music's upcoming feature will let you record yourself doing karaoke",
+      "url": "https://www.engadget.com/2306269/apple-music-selfie-sing-karaoke-video/",
+      "published": "2026-11-04"
+    }
+  ],
+  "publishedAt": "2026-11-04T11:38:45.307Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/apple-musics-upcoming-feature-will-let-you-record-yourself-doing-karaoke/intro-1793789894.jpg",
+    "source": "https://www.engadget.com/2306269/apple-music-selfie-sing-karaoke-video/",
+    "credit": "Mariella Moon",
+    "license": "Лицензия не проверена",
+    "alt": "Apple Music",
+    "verified": true
+  }
+}
