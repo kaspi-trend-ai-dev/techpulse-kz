@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "binance-raskril-ataku-na-6-3-mlrd-kriptovaljut",
+  "title": "Binance раскрыла детали хакерской атаки на $6,3 млрд с использованием поддельных собеседований",
+  "description": "Криптобиржа Binance подтвердила, что хакеры, связанные с Северной Кореей, украли цифровых активов на сумму $6,34 млрд, применяя сложные методы социальной инженерии с фальшивыми собеседованиями и вредоносным ПО.",
+  "date": "2026-11-04",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Как выполнялась атака на одну из крупнейших криптобирж мира",
+      "paragraphs": [
+        "Хакеры начали подготовку к краже не в один день: в июне один из инженеров Binance скачал заражённый файл AI-инструмента, что дало злоумышленникам доступ к информации о коллегах.",
+        "В сентябре другой инженер прошёл через два этапа поддельных собеседований с мошенниками, которые предоставили ему вредоносное задание, внедрённое в файл для загрузки и выполнения."
+      ]
+    },
+    {
+      "heading": "Масштабы ущерба и ответные меры Binance",
+      "paragraphs": [
+        "В итоге 29 октября злоумышленники запустили вредоносный скрипт на компьютере инженера, что позволило им украсть $6,34 миллиарда в цифровых активах, из которых $2,85 млрд уже заморожены.",
+        "Binance модернизировала внутренние системы безопасности, обновила устройства сотрудников, внедрила AI-поддержку для обнаружения аномалий и взяла на себя все финансовые потери, уже возместив 98% украденных токенов."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Binance attackers used fake job interviews to pull off $6.3 billion crypto heist",
+      "url": "https://www.engadget.com/2306223/binance-attackers-fake-job-interviews-6-3-billion-crypto-heist/",
+      "published": "2026-11-04"
+    }
+  ],
+  "publishedAt": "2026-11-04T09:36:26.167Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/binance-reveals-how-attackers-used-fake-job-interviews-to-launch-6-3-billion-crypto-heist/intro-1793781948.jpg",
+    "source": "https://www.engadget.com/2306223/binance-attackers-fake-job-interviews-6-3-billion-crypto-heist/",
+    "credit": "Mariella Moon",
+    "license": "Лицензия не проверена",
+    "alt": "Binance logo.",
+    "verified": true
+  }
+}
