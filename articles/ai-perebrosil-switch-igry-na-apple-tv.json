@@ -1,0 +1,47 @@
+{
+  "region": "global",
+  "slug": "ai-perebrosil-switch-igry-na-apple-tv",
+  "title": "Искусственный интеллект позволяет запускать игры Nintendo Switch нативно на Apple TV",
+  "description": "Реддитор создал проект TVPort, использующий ИИ для перекомпиляции игр Nintendo Switch и Switch 2, чтобы запускать их на Apple TV 4K с возможностью выбора частоты кадров и сохранением прогресса.",
+  "date": "2026-11-04",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Уникальная разработка с помощью искусственного интеллекта",
+      "paragraphs": [
+        "Реддитор под псевдонимом u/FloatingFalafel представил открытый проект TVPort, обеспечивающий нативную поддержку игр Nintendo Switch на Apple TV 4K. В основе решения — использование Claude Opus 5.5 для перекомпиляции и адаптации кроссплатформенных игр с помощью модифицированного набора nxnative.",
+        "Проект позволяет запускать игры с выбором частоты изображения в 30 или 60 кадров в секунду, а также автоматически создавать резервные копии сохранений на Mac или iCloud."
+      ]
+    },
+    {
+      "heading": "Работа над оптимизацией и совместимостью игр",
+      "paragraphs": [
+        "Тесты показали, что игра Super Mario Odyssey функционирует на 60 кадрах в секунду с редкими небольшими подвисаниями и локальными проблемами с аудио возле водопадов. Animal Crossing: New Horizons демонстрирует стабильные 30 кадров без замеченных сбоев.",
+        "Однако более требовательные игры, например The Legend of Zelda: Tears of the Kingdom, испытывают проблемы с термоограничением на Apple TV, и для их полноценного запуска необходимы серьезные доработки в движке и диагностике."
+      ]
+    },
+    {
+      "heading": "Юридические и этические аспекты использования ИИ в портировании игр",
+      "paragraphs": [
+        "TVPort не содержит файлов самих игр — пользователь должен самостоятельно добавлять легально приобретённые образы.",
+        "Использование ИИ для обратного инжиниринга и портирования программного обеспечения вызывает дискуссии в профессиональном сообществе, что повлияло на закрытие некоторых платформ, ранее поддерживавших подобные инициативы."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Redditor uses AI to get Switch games running natively on Apple TV",
+      "url": "https://www.engadget.com/2306727/redditor-uses-ai-to-get-switch-games-running-natively-on-apple-tv/",
+      "published": "2026-11-04"
+    }
+  ],
+  "publishedAt": "2026-11-04T17:19:34.432Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/redditor-uses-ai-to-get-switch-games-running-natively-on-apple-tv/intro-1793812470.jpg",
+    "source": "https://www.engadget.com/2306727/redditor-uses-ai-to-get-switch-games-running-natively-on-apple-tv/",
+    "credit": "Kris Holt",
+    "license": "Лицензия не проверена",
+    "alt": "Screenshot of Animal Crossing: New Horizons, with various characters enjoying festivities and fireworks.",
+    "verified": true
+  }
+}
