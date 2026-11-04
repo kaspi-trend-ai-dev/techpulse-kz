@@ -1,0 +1,40 @@
+{
+  "region": "global",
+  "slug": "ne-uzhidayte-starye-airpods-zamenite-batareyu-i-polzuytes-novymi-vozmozhnostyami",
+  "title": "Не спешите выбрасывать старые AirPods — замените батарею и дайте им новую жизнь",
+  "description": "Apple предлагает заменить батарею в старых AirPods по сниженной цене и даже бесплатно для владельцев AppleCare. Это позволяет использовать старые наушники в качестве запасных или подарков, а компания также заботится об их переработке для экологичности.",
+  "date": "2026-11-04",
+  "category": "технологии",
+  "sections": [
+    {
+      "heading": "Как заменить батарею в старых AirPods и почему это выгодно",
+      "paragraphs": [
+        "Apple не открывает саму гарнитуру для замены батарей, а предлагает принять старые AirPods на переработку и выдать новые по цене ниже покупки новых наушников. Замена батареи стоит 49 долларов за наушник, что вдвое дешевле покупки новых AirPods Pro или AirPods Max.",
+        "Владельцы AppleCare могут получить замену батареи бесплатно, если ёмкость упала ниже 80% или если батарея выходит из строя на гарантии. Такая политика снижает отходы и продлевает срок службы устройств."
+      ]
+    },
+    {
+      "heading": "Что делать со старыми AirPods после замены батареи",
+      "paragraphs": [
+        "Старые AirPods можно использовать в качестве запасных наушников для повседневного использования или подарить близким, особенно если они вынуждены экономить на покупке новых устройств. Чтобы обеспечить комфорт, рекомендуется заменить амбушюры и удалить устройство из аккаунта Apple.",
+        "Если наушники окончательно вышли из строя, Apple бесплатно принимает их на переработку, предлагая при этом предоплаченные ярлыки для отправки, что помогает сохранить экологию."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Don't throw away your old AirPods — do this instead",
+      "url": "https://www.engadget.com/2300435/dont-throw-away-old-airpods-do-this-instead/",
+      "published": "2026-11-03"
+    }
+  ],
+  "publishedAt": "2026-11-04T03:34:16.890Z",
+  "image": {
+    "url": "https://www.engadget.com/img/gallery/dont-throw-away-your-old-airpods-do-this-instead/intro-1793046798.jpg",
+    "source": "https://www.engadget.com/2300435/dont-throw-away-old-airpods-do-this-instead/",
+    "credit": "Filipe Espósito",
+    "license": "Лицензия не проверена",
+    "alt": "Hands taking an AirPod out of its charging case.",
+    "verified": true
+  }
+}
