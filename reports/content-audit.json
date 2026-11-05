@@ -1,17 +1,17 @@
 {
   "summary": {
-    "scanned": 1565,
-    "validJson": 1565,
+    "scanned": 1647,
+    "validJson": 1647,
     "invalidJson": 0,
     "reviewRecommended": 20,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 89,
+      "depth": 92,
       "quality": 3,
-      "specificity": 119,
-      "metadata": 190,
-      "local": 2
+      "specificity": 121,
+      "metadata": 196,
+      "local": 3
     }
   },
   "invalid": [],
@@ -764,6 +764,22 @@
       ]
     },
     {
+      "slug": "diskvalifikaciya-kazahstanskih-borcov-dopin-komplienty-2026",
+      "title": "Казахстанских борцов Нурсултана Садыка и Сабину Торей дисквалифицировали на два года за допинг",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 3,
+      "bodyCharacters": 612,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "do-16-gradusov-tepla-kakoy-budet-pogoda-v-megapolisah-kazahstana-25-oktyabrya",
       "title": "До 16 градусов тепла: какой будет погода в мегаполисах Казахстана 25 октября",
       "region": "kz",
@@ -977,6 +993,22 @@
       "score": 3,
       "bodyCharacters": 549,
       "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "kazahstanec-lishilsya-palca-i-potreboval-kompensaciyu-za-travmu",
+      "title": "Казахстанец лишился пальца при производственной травме и потребовал компенсацию в Павлодаре",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 3,
+      "bodyCharacters": 556,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "depth",
@@ -1607,6 +1639,27 @@
       ]
     },
     {
+      "slug": "v-almaty-poyavilas-usluga-porugayus-za-vas",
+      "title": "В Алматы появилась необычная услуга — «поругаюсь за вас»",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 3,
+      "bodyCharacters": 920,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        },
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "v-almaty-vosstanovyat-povrezhdennyy-uchastok-trotuara-s-bryuschatkoy-posle-uteki-vody",
       "title": "В Алматы восстанавливают поврежденный участок тротуара с брусчаткой после утечки воды",
       "region": "kz",
@@ -1790,6 +1843,22 @@
       "score": 3,
       "bodyCharacters": 570,
       "paragraphs": 4,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
+      "slug": "v-kazakhstane-planiruyut-zapustit-106-novykh-vagonov-stadler-v-noyabre-2026",
+      "title": "В Казахстане планируют запустить 106 новых пассажирских вагонов Stadler в ноябре",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 3,
+      "bodyCharacters": 655,
+      "paragraphs": 3,
       "issues": [
         {
           "type": "depth",
@@ -2126,6 +2195,22 @@
       "score": 2,
       "bodyCharacters": 1027,
       "paragraphs": 6,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "baladzhi-shrinivasan-zapuskayet-shkolu-v-astane-dlya-razvitiya-cifrovyh-tekhnologij",
+      "title": "Баладжи Шринивасан запускает школу в Астане для развития цифровых технологий и человеческого капитала",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 2,
+      "bodyCharacters": 1148,
+      "paragraphs": 4,
       "issues": [
         {
           "type": "specificity",
@@ -2535,6 +2620,22 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "kazakh-tourism-ubytki-i-reshenie-ne-vyplachivat-vozvrahatelnye-vyiplaty",
+      "title": "Kazakh Tourism претерпел убытки в 2025 году и отменил выплату вознаграждений членам совета директоров",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 2,
+      "bodyCharacters": 1150,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "local",
+          "weight": 2,
+          "message": "Неочевидна связь с Казахстаном"
         }
       ]
     },
@@ -3364,6 +3465,22 @@
       ]
     },
     {
+      "slug": "the-legend-of-zelda-ocarina-of-time-nintendo-2026",
+      "title": "Легенда возвращается: в 2026 году переиздали The Legend of Zelda: Ocarina of Time с улучшенной графикой и сохранённым геймплеем",
+      "region": "global",
+      "date": "2026-11-04",
+      "score": 2,
+      "bodyCharacters": 1141,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 2,
+          "message": "Заголовок слишком длинный"
+        }
+      ]
+    },
+    {
       "slug": "trump-ignoriroval-razvedku-o-shpione-vokruzhnom-nvidia-chtoby-zashchitit-akcii",
       "title": "Трамп проигнорировал разведданные о шпионе у Nvidia, чтобы не навредить акциям компании",
       "region": "global",
@@ -4032,6 +4149,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "demokraty-ekspandiruet-borbu-protiv-centr-dannyh-posle-vyborov-2026",
+      "title": "Демократы усиливают контроль над центрами обработки данных после промежуточных выборов в США",
+      "region": "global",
+      "date": "2026-11-05",
+      "score": 1,
+      "bodyCharacters": 1563,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
@@ -4948,6 +5081,22 @@
       ]
     },
     {
+      "slug": "openai-predlagaet-novyi-nacionalnyi-podkhod-k-issledovaniyu-ii-pered-vyborami-2028-goda",
+      "title": "OpenAI предлагает новый национальный курс по ИИ перед выборами 2028 года",
+      "region": "global",
+      "date": "2026-11-05",
+      "score": 1,
+      "bodyCharacters": 1558,
+      "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
       "slug": "oppo-find-x10-pro-max-novye-funktsii-i-problemy",
       "title": "Oppo Find X10 Pro Max: три 200-мегапиксельные камеры и новые возможности съемки",
       "region": "unknown",
@@ -5195,6 +5344,22 @@
       "score": 1,
       "bodyCharacters": 1754,
       "paragraphs": 7,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "socialnye-vyplaty-materinam-v-kazahstane-2027",
+      "title": "Социальные выплаты по уходу за ребёнком с 2027 года будут получать только матери — новые правила и исключения",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 1,
+      "bodyCharacters": 1591,
+      "paragraphs": 6,
       "issues": [
         {
           "type": "metadata",
@@ -5792,6 +5957,22 @@
           "type": "metadata",
           "weight": 1,
           "message": "Регион не указан"
+        }
+      ]
+    },
+    {
+      "slug": "zaderzhka-stroitelstva-tec-3-v-almaty-iz-za-geologicheskih-voprosov-i-prokladki-linii",
+      "title": "В \"Самрук-Энерго\" объяснили почти годовую задержку строительства ТЭЦ-3 в Алматы",
+      "region": "kz",
+      "date": "2026-11-04",
+      "score": 1,
+      "bodyCharacters": 1823,
+      "paragraphs": 6,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
         }
       ]
     },
