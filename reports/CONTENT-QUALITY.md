@@ -4,18 +4,18 @@
 
 | Показатель | Количество |
 |---|---:|
-| JSON-файлов в архиве | 1647 |
-| Успешно прочитаны | 1647 |
-| Статей для ручной проверки (оценка ≥5) | 20 |
+| JSON-файлов в архиве | 1672 |
+| Успешно прочитаны | 1672 |
+| Статей для ручной проверки (оценка ≥5) | 22 |
 | Высокий приоритет (оценка ≥10) | 1 |
 | Кандидатов на дубли | 0 |
 | Некорректных JSON | 0 |
 
 ## Признаки для проверки
 
-- metadata: 196
-- specificity: 121
-- depth: 92
+- metadata: 197
+- specificity: 122
+- depth: 98
 - quality: 3
 - local: 3
 
@@ -28,6 +28,7 @@
 | 6 | [Генеральный директор Proton Энди Йен получил Liberal Award 2026 года](https://harmex.asia/articles/proton-ceo-andy-yen-wins-2026-liberal-award.html) | Мало информации в описании; Менее 700 знаков основного текста; Регион не указан |
 | 5 | [Айым Сейтметова и дочь в образах героинь "Семейки Аддамс"](https://harmex.asia/articles/ayym-seytmetova-i-ee-malenkaya-doch-primerili-obrazy-geroev-semeyki-addams.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
 | 5 | [Бешбармак для американцев, кюй на домбре: как казахстанцы выражают любовь к Родине](https://harmex.asia/articles/kazakhstancy-vyrazhayut-lyubov-k-rodine-beshbarmak-i-dombr.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
+| 5 | [Астана объединила 27 стран для борьбы с киберпреступностью на международной конференции](https://harmex.asia/articles/mezhdunarodnaya-konferenciya-po-borbe-s-kiberprestupnostyu-v-astane.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
 | 5 | [Мать из Шымкента родила тройню и стала мамой десятерых детей](https://harmex.asia/articles/mnogodetnaya-mat-iz-shymkenta-rozhdaet-troynyu-i-stanovyatsya-mamoj-desyaterykh-detey.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Кибератаки затронули финансовый сектор Южной Кореи](https://harmex.asia/articles/novaya-volna-kiberatak-na-finansovyy-sektor-yuzhnoy-korei.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Легковой автомобиль вспыхнул в Алматы: МЧС оперативно потушило пожар в автомобиле](https://harmex.asia/articles/ordinaty-v-almaty-zagoranie-legkovogo-avtomobilya-i-operativnaya-tushenie.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
@@ -39,6 +40,7 @@
 | 5 | [В Бостоне пройдет TechCrunch Founder Summit 2026 с возможностями для целевого нетворкинга](https://harmex.asia/articles/tekkranch-founder-summit-v-bostone-setyah-2026.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Ушел из жизни известный врач-онколог из Караганды, спасший тысячи женщин](https://harmex.asia/articles/umer-izvestnyj-vrach-onkolog-knaub-pomog-tysyacham-patsientok-karaganda.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [Казахстанцы увидят ноябрьский парад планет](https://harmex.asia/articles/unikalnyj-noyabrskij-parad-planet-v-kazahstane-2026.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
+| 5 | [В Алматы снесли незаконную пристройку к дому, которая служила входом в груминг-салон](https://harmex.asia/articles/v-almaty-nasiliem-snesli-nezakonnuyu-pristroyku-k-domu-s-grooming-salonom.html) | Менее 700 знаков основного текста; Меньше трёх содержательных абзацев |
 | 5 | [В Алматы военнослужащие Нацгвардии оказали помощь мужчине без сознания с носовым кровотечением](https://harmex.asia/articles/v-almaty-natsgvardeycy-spasli-muzhchinu-bez-soznaniya-s-nosevym-krovotecheniem.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [В КазАвтоЖоле предупредили водителей о гололеде на трассах Казахстана 2 ноября](https://harmex.asia/articles/v-kazavtozhole-predupredili-voditelej-o-gololede-na-trassah-kazahstana.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |
 | 5 | [В Павлодарской области спасли женщину из провалившегося в грунт уличного туалета](https://harmex.asia/articles/v-pavlodarskoj-oblasti-spasli-zhenschinu-iz-povrezhdyonnogo-ulichnogo-tualeta.html) | Менее 700 знаков основного текста; Нет числовых данных при коротком материале (проверить вручную) |

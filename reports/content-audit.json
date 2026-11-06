@@ -1,16 +1,16 @@
 {
   "summary": {
-    "scanned": 1647,
-    "validJson": 1647,
+    "scanned": 1672,
+    "validJson": 1672,
     "invalidJson": 0,
-    "reviewRecommended": 20,
+    "reviewRecommended": 22,
     "highPriority": 1,
     "duplicateCandidates": 0,
     "issueTypes": {
-      "depth": 92,
+      "depth": 98,
       "quality": 3,
-      "specificity": 121,
-      "metadata": 196,
+      "specificity": 122,
+      "metadata": 197,
       "local": 3
     }
   },
@@ -138,6 +138,27 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "mezhdunarodnaya-konferenciya-po-borbe-s-kiberprestupnostyu-v-astane",
+      "title": "Астана объединила 27 стран для борьбы с киберпреступностью на международной конференции",
+      "region": "kz",
+      "date": "2026-11-06",
+      "score": 5,
+      "bodyCharacters": 464,
+      "paragraphs": 2,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "depth",
+          "weight": 2,
+          "message": "Меньше трёх содержательных абзацев"
         }
       ]
     },
@@ -363,6 +384,27 @@
       "date": "2026-10-26",
       "score": 5,
       "bodyCharacters": 515,
+      "paragraphs": 2,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        },
+        {
+          "type": "depth",
+          "weight": 2,
+          "message": "Меньше трёх содержательных абзацев"
+        }
+      ]
+    },
+    {
+      "slug": "v-almaty-nasiliem-snesli-nezakonnuyu-pristroyku-k-domu-s-grooming-salonom",
+      "title": "В Алматы снесли незаконную пристройку к дому, которая служила входом в груминг-салон",
+      "region": "kz",
+      "date": "2026-11-06",
+      "score": 5,
+      "bodyCharacters": 462,
       "paragraphs": 2,
       "issues": [
         {
@@ -637,6 +679,22 @@
       ]
     },
     {
+      "slug": "avtobusnaya-polosa-na-prospekte-abilay-khana-v-astane-rabotaet-vse-dni",
+      "title": "Автобусная полоса на проспекте Абылай хана в Астане заработает все дни недели",
+      "region": "kz",
+      "date": "2026-11-05",
+      "score": 3,
+      "bodyCharacters": 668,
+      "paragraphs": 3,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
+        }
+      ]
+    },
+    {
       "slug": "bagdat-sabaz-zavoeval-bronzu-chempionata-mira-v-astane",
       "title": "Багдат Сабаз завоевал бронзу чемпионата мира по борьбе в Астане",
       "region": "kz",
@@ -686,6 +744,22 @@
           "type": "specificity",
           "weight": 2,
           "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
+      "slug": "bolshe-70-zhertv-mebelshchika-iz-aktobe-prodolzhaet-rassledovanie",
+      "title": "Мебельщик из Актобе обманул более 70 клиентов: расследование близится к завершению",
+      "region": "kz",
+      "date": "2026-11-06",
+      "score": 3,
+      "bodyCharacters": 693,
+      "paragraphs": 5,
+      "issues": [
+        {
+          "type": "depth",
+          "weight": 3,
+          "message": "Менее 700 знаков основного текста"
         }
       ]
     },
@@ -3018,6 +3092,22 @@
       ]
     },
     {
+      "slug": "opasnye-radioaktivnye-othody-budut-bezopasno-uyty-u-nacionalnogo-yadernogo-centra",
+      "title": "В Казахстане назначили национального оператора для безопасного обращения с радиоактивными отходами",
+      "region": "kz",
+      "date": "2026-11-06",
+      "score": 2,
+      "bodyCharacters": 939,
+      "paragraphs": 4,
+      "issues": [
+        {
+          "type": "specificity",
+          "weight": 2,
+          "message": "Нет числовых данных при коротком материале (проверить вручную)"
+        }
+      ]
+    },
+    {
       "slug": "openai-google-sovmestnaya-rabota-v-ii-budet-vliyat-na-chatgpt-i-gemini",
       "title": "OpenAI и Google объявили о неожиданном партнерстве в сфере ИИ",
       "region": "global",
@@ -5312,6 +5402,22 @@
       "score": 1,
       "bodyCharacters": 1648,
       "paragraphs": 9,
+      "issues": [
+        {
+          "type": "metadata",
+          "weight": 1,
+          "message": "Слишком длинное описание"
+        }
+      ]
+    },
+    {
+      "slug": "rost-insultov-v-kazahstane-borba-s-ozhireniem-novye-metody-profilaktiki-2026",
+      "title": "Резкий рост инсультов в Казахстане: как ожирение влияет на здоровье и борьбу с болезнью",
+      "region": "kz",
+      "date": "2026-11-06",
+      "score": 1,
+      "bodyCharacters": 2253,
+      "paragraphs": 8,
       "issues": [
         {
           "type": "metadata",
